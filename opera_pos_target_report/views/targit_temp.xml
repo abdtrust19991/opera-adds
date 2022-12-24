@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+            <report
+                id="target_sales_report"
+                model="pos.target.report.wizard"
+                report_type="qweb-html"
+                string="Sales Target"
+                name="opera_pos_target_report.target_sales_doc"
+                file="opera_pos_target_report.target_sales_doc"
+            />
+        <template id="target_sales_doc">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page" dir="rtl">
+                    <br/>
+                    <center>
+                        <span style="text-decoration: underline;font-size:22px;color: red;font-weight: bold;">POS Target Report</span>
+                    </center>
+                    <table class="table table-condensed">
+                         <thead>
+                            <tr class="text-center">
+                                <th style="border-bottom: 2px solid black">Branch Name</th>
+                                <th style="border-bottom: 2px solid black">Showroom Manager</th>
+                                <th style="border-bottom: 2px solid black">Target Of Month</th>
+                                <th style="border-bottom: 2px solid black">Daily Target</th>
+                                <th style="border-bottom: 2px solid black">Daily sales</th>
+                                <th style="border-bottom: 2px solid black">Total sales</th>
+                                <th style="border-bottom: 2px solid black">Remain For Target</th>
+                                <th style="border-bottom: 2px solid black">Over Target</th>
+                                <th style="border-bottom: 2px solid black">%Sales </th>
+                                <th style="border-bottom: 2px solid black">Average Daily Sales</th>
+                                <th style="border-bottom: 2px solid black">Run rate</th>
+                                <th style="border-bottom: 2px solid black">%Run rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <t t-foreach="data" t-as="dt">
+                            <tr  class="text-center">
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['name']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['user']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="round(dt['target_amount'],2)"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="round(dt['currant']['day_target'],2)"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="round(dt['currant']['day_total'],2)"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['total_sales']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['rem_target']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['over_target']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['sale_percent']"/>%</th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['avg_sales_day']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['run_ret']"/></th>
+                                <th style="border-bottom: 2px solid black"><span t-esc="dt['run_ret_per']"/>%</th>
+
+                            </tr>
+                        </t>
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </t>
+        </t>
+    </template>
+
+
+
+    </data>
+</odoo>

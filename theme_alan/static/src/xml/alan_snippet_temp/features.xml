@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_features_templates">
+
+<t t-name="theme_alan.feature_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="black-bg p-60px-tb">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 m-15px-tb text-lg-left text-center">
+                                    <div class="white-color h5 m-10px-b">OUR WORK FLOW</div>
+                                    <p class="white-color-alt m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </div>
+                                <div class="col-lg-2 m-15px-tb text-center">
+                                    <div class="icon-50px text-center d-inline-block white-color border-1 border-radius-50">
+                                        <i class="fa fa-comments-o"></i>
+                                    </div>
+                                    <div class="white-color m-15px-t">1. DISCUSS</div>
+                                </div>
+                                <div class="col-lg-2 m-15px-tb text-center">
+                                    <div class="icon-50px text-center d-inline-block white-color border-1 border-radius-50">
+                                        <i class="fa fa-paint-brush"></i>
+                                    </div>
+                                    <div class="white-color m-15px-t">2. DESIGN</div>
+                                </div>
+                                <div class="col-lg-2 m-15px-tb text-center">
+                                    <div class="icon-50px text-center d-inline-block white-color border-1 border-radius-50">
+                                        <i class="fa fa-cog"></i>
+                                    </div>
+                                    <div class="white-color m-15px-t">3. DEVELOPMENT</div>
+                                </div>
+                                <div class="col-lg-2 m-15px-tb text-center">
+                                    <div class="icon-50px text-center d-inline-block white-color border-1 border-radius-50">
+                                        <i class="fa fa-paper-plane-o"></i>
+                                    </div>
+                                    <div class="white-color m-15px-t">4. LIVE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 1</h6>
+                <label class="e-sb-label" for="e_feature_01"><input id="e_feature_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-40px-tb" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-truck"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-700 dark-color">FREE SHIPPING</div>
+                                            <label class="theme-color small">ALL ORDER OVER $45</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-headphones"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-700 dark-color">CUSTOMER SUPPORT</div>
+                                            <label class="theme-color small">SUPPORT 24/7</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-700 dark-color">PAYMENT SECURITY</div>
+                                            <label class="theme-color small">100 SECURE PAYMENT</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-700 dark-color">RETURNS POLICY</div>
+                                            <label class="theme-color small">BEST RETURNS POLICY</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 2</h6>
+                <label class="e-sb-label" for="e_feature_02"><input id="e_feature_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-40px-tb" style="background-color: #111;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-60px white-color">
+                                            <i class="fa-2x fa fa-user-o"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h2 font-w-300 m-0px">60</div>
+                                            <p class="white-color m-0px">EMPLOYEES</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-60px white-color">
+                                            <i class="fa-2x fa fa-smile-o"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h2 font-w-300 m-0px">980</div>
+                                            <p class="white-color m-0px">SATISFIED CLIENTS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-60px white-color">
+                                            <i class="fa-2x fa fa-clock-o"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h2 font-w-300 m-0px">15</div>
+                                            <p class="white-color m-0px">EXPERIENCE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-60px white-color">
+                                            <i class="fa-2x fa fa-rss"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h2 font-w-300 m-0px">400</div>
+                                            <p class="white-color m-0px">BLOGS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 3</h6>
+                <label class="e-sb-label" for="e_feature_03"><input id="e_feature_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-40px-tb" style="background-color: #000;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-truck"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-400 white-color">FREE SHIPPING</div>
+                                            <label class="white-color-alt small letter-spacing-2">ALL ORDER OVER $45</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-headphones"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-400 white-color">CUSTOMER SUPPORT</div>
+                                            <label class="white-color-alt small letter-spacing-2">SUPPORT 24/7</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-400 white-color">PAYMENT SECURITY</div>
+                                            <label class="white-color-alt small letter-spacing-2">100 SECURE PAYMENT</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px theme-color">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="font-w-400 white-color">RETURNS POLICY</div>
+                                            <label class="white-color-alt small letter-spacing-2">BEST RETURNS POLICY</label>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 4</h6>
+                <label class="e-sb-label" for="e_feature_04"><input id="e_feature_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-bg.png'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-60px white-color d-inline-block border-1 border-color-white">
+                                            <i class="fa fa-truck"></i>
+                                        </div>
+                                        <div class="feature-content m-25px-t">
+                                            <div class="h5 m-10px-b font-w-600 white-color text-uppercase letter-spacing-2">Free Shipping</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-60px white-color d-inline-block border-1 border-color-white">
+                                            <i class="fa fa-headphones"></i>
+                                        </div>
+                                        <div class="feature-content m-25px-t">
+                                            <div class="h5 m-10px-b font-w-600 white-color text-uppercase letter-spacing-2">Customer support</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-60px white-color d-inline-block border-1 border-color-white">
+                                            <i class="fa fa-lock"></i>
+                                        </div>
+                                        <div class="feature-content m-25px-t">
+                                            <div class="h5 m-10px-b font-w-600 white-color text-uppercase letter-spacing-2">Payment Security</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-60px white-color d-inline-block border-1 border-color-white">
+                                            <i class="fa fa-refresh"></i>
+                                        </div>
+                                        <div class="feature-content m-25px-t">
+                                            <div class="h5 m-10px-b font-w-600 white-color text-uppercase letter-spacing-2">Returns Policy</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 5</h6>
+                <label class="e-sb-label" for="e_feature_05"><input id="e_feature_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-25px-tb" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px dark-color d-inline-block">
+                                            <i class="fa fa-2x fa-truck"></i>
+                                        </div>
+                                        <div class="h5 m-30px-t font-w-700 dark-color text-uppercase letter-spacing-2">Free Shipping</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px dark-color d-inline-block">
+                                            <i class="fa fa-2x fa-headphones"></i>
+                                        </div>
+                                        <div class="h5 m-30px-t font-w-700 dark-color text-uppercase letter-spacing-2">Customer support</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px dark-color d-inline-block">
+                                            <i class="fa fa-2x fa-lock"></i>
+                                        </div>
+                                        <div class="h5 m-30px-t font-w-700 dark-color text-uppercase letter-spacing-2">Payment Security</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px dark-color d-inline-block">
+                                            <i class="fa fa-2x fa-refresh"></i>
+                                        </div>
+                                        <div class="h5 m-30px-t font-w-700 dark-color text-uppercase letter-spacing-2">Returns Policy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 6</h6>
+                <label class="e-sb-label" for="e_feature_06"><input id="e_feature_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-25px-tb border-top-1 border-color-gray" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px theme-color d-inline-block">
+                                            <i class="fa fa-2x fa-truck"></i>
+                                        </div>
+                                        <div class="h5 m-20px-t font-w-700 dark-color text-uppercase letter-spacing-2">Free Shipping</div>
+                                        <div class="font-w-400">On all orders over $250</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px theme-color d-inline-block">
+                                            <i class="fa fa-2x fa-headphones"></i>
+                                        </div>
+                                        <div class="h5 m-20px-t font-w-700 dark-color text-uppercase letter-spacing-2">Customer support</div>
+                                        <div class="font-w-400">100% Security Payment.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="m-15px-tb text-center p-25px-lr">
+                                        <div class="icon-50px theme-color d-inline-block">
+                                            <i class="fa fa-2x fa-lock"></i>
+                                        </div>
+                                        <div class="h5 m-20px-t font-w-700 dark-color text-uppercase letter-spacing-2">Payment Security</div>
+                                        <div class="font-w-400">15 days money back guarante</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 7</h6>
+                <label class="e-sb-label" for="e_feature_07"><input id="e_feature_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-con-3.png'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="white-color"><i class="fa-3x fa fa-list-ul"></i></div>
+                                    <div class="m-25px-t">
+                                        <span class="white-color h2 font-w-700 d-block">25</span>
+                                        <span class="white-color-alt">year of experience</span> </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="white-color"><i class="fa-3x fa fa-users"></i></div>
+                                    <div class="m-25px-t">
+                                        <span class="white-color h2 font-w-700 d-block">55</span>
+                                        <span class="white-color-alt">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="white-color"><i class="fa-3x fa fa-thumbs-o-up"></i></div>
+                                    <div class="m-25px-t">
+                                        <span class="white-color h2 font-w-700 d-block">1756</span>
+                                        <span class="white-color-alt">Happy Customer</span> </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="white-color"><i class="fa-3x fa fa-trophy"></i></div>
+                                    <div class="m-25px-t">
+                                        <span class="white-color h2 font-w-700 d-block">88</span>
+                                        <span class="white-color-alt">Professional Awards</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 8</h6>
+                <label class="e-sb-label" for="e_feature_08"><input id="e_feature_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp9">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/feature-9.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="section s_parallax parallax s_parallax_is_fixed">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/g-3.jpg'); background-position: 50% 75%;"></span>
+                    <div class="container">
+                        <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                            <div class="col-lg-6 text-center">
+                                <div class="font-w-600 h5 theme-color">WHAT WE OFFER</div>
+                                <div class="font-w-600 h1 white-color">DEFINE YOUR GOAL</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="p-25px-lr p-35px-tb border-4 border-color-white">
+                                    <div class="avatar-80px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/g-4.png" title="" alt="" />
+                                    </div>
+                                    <div class="font-w-600 h5 white-color m-20px-t m-10px-b">CROSSFIT</div>
+                                    <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="p-25px-lr p-35px-tb border-4 border-color-white">
+                                    <div class="avatar-80px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/g-5.png" title="" alt="" />
+                                    </div>
+                                    <div class="font-w-600 h5 white-color m-20px-t m-10px-b">HEALTHY LIFE</div>
+                                    <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="p-25px-lr p-35px-tb border-4 border-color-white">
+                                    <div class="avatar-80px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/g-6.png" title="" alt="" />
+                                    </div>
+                                    <div class="font-w-600 h5 white-color m-20px-t m-10px-b">STRATEGIES</div>
+                                    <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="p-25px-lr p-35px-tb border-4 border-color-white">
+                                    <div class="avatar-80px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/g-7.png" title="" alt="" />
+                                    </div>
+                                    <div class="font-w-600 h5 white-color m-20px-t m-10px-b">WORKOUT</div>
+                                    <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Feature 9</h6>
+            <label class="e-sb-label" for="e_feature_09"><input id="e_feature_09" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <div class="container-fluid p-0px">
+                            <div class="row no-gutters">
+                                <div class="col-lg-3" style="background: #22b0ca">
+                                    <div class="p-30px-lr p-50px-tb">
+                                        <div class="m-15px-b avatar-60px"><img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-1.png" /></div>
+                                        <div class="text-uppercase h5 m-15px-b white-color letter-spacing-2 font-w-600">Heart rate</div>
+                                        <p class="white-color-alt m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3" style="background: #2ebad4">
+                                    <div class="p-30px-lr p-50px-tb">
+                                        <div class="m-15px-b avatar-60px"><img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-2.png" /></div>
+                                        <div class="text-uppercase h5 m-15px-b white-color letter-spacing-2 font-w-600">TEST LAB</div>
+                                        <p class="white-color-alt m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3" style="background: #16afcc">
+                                    <div class="p-30px-lr p-50px-tb">
+                                        <div class="m-15px-b avatar-60px"><img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-3.png" /></div>
+                                        <div class="text-uppercase h5 m-15px-b white-color letter-spacing-2 font-w-600">SYMPHTOM CHECK</div>
+                                        <p class="white-color-alt m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3" style="background: #1899b1">
+                                    <div class="p-30px-lr p-50px-tb">
+                                        <div class="m-15px-b avatar-60px"><img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-4.png" /></div>
+                                        <div class="text-uppercase h5 m-15px-b white-color letter-spacing-2 font-w-600">ONLINE HELP</div>
+                                        <p class="white-color-alt m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 10</h6>
+                <label class="e-sb-label" for="e_feature_10"><input id="e_feature_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section light-gray-bg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-60px theme-color">
+                                            <i class="fa-2x fa fa-scissors"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">Top Groomers</div>
+                                            <p class="font-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-60px theme-color">
+                                            <i class="fa-2x fa fa-certificate"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">V.I.P. Service</div>
+                                            <p class="font-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-60px theme-color">
+                                            <i class="fa-2x fa fa-paw"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">We Love Every Pet</div>
+                                            <p class="font-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 11</h6>
+                <label class="e-sb-label" for="e_feature_11"><input id="e_feature_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-80px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/care-8.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="border-1 border-color-white-alt p-30px">
+                                        <div class="white-color"><i class="fa-3x fa fa-thumbs-o-up"></i></div>
+                                        <div class="m-25px-t">
+                                            <span class="white-color h2 font-w-700 d-block">100%</span>
+                                            <span class="white-color-alt">Passing to Universities</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="border-1 border-color-white-alt p-30px">
+                                        <div class="white-color"><i class="fa-3x fa fa-users"></i></div>
+                                        <div class="m-25px-t">
+                                            <span class="white-color h2 font-w-700 d-block">126</span>
+                                            <span class="white-color-alt">People working</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="border-1 border-color-white-alt p-30px">
+                                        <div class="white-color"><i class="fa-3x fa fa-certificate"></i></div>
+                                        <div class="m-25px-t">
+                                            <span class="white-color h2 font-w-700 d-block">2480</span>
+                                            <span class="white-color-alt">Students Enrolled</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb text-center">
+                                    <div class="border-1 border-color-white-alt p-30px">
+                                        <div class="white-color"><i class="fa-3x fa fa-calendar-o"></i></div>
+                                        <div class="m-25px-t">
+                                            <span class="white-color h2 font-w-700 d-block">38</span>
+                                            <span class="white-color-alt">Years of experience</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 12</h6>
+                <label class="e-sb-label" for="e_feature_12"><input id="e_feature_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp13">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-13.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-40px-tb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="feature-box-1 media">
+                                    <div class="icon">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>WORLDWIDE SHIPPING</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="feature-box-1 media">
+                                    <div class="icon">
+                                        <span class="fa fa-bookmark"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>CERTIFICATED </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="feature-box-1 media">
+                                    <div class="icon">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>30 DAYS MONEY BACK</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="feature-box-1 media">
+                                    <div class="icon">
+                                        <span class="fa fa-smile-o"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>99% POSITIVE FEEDBACK</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Feature 13</h6>
+                <label class="e-sb-label" for="e_feature_13"><input id="e_feature_13" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp14">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-14.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-20px-tb" style="background-color: #f9edd8;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="feature-box-2 media">
+                                        <div class="icon">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5>Free Shipping</h5>
+                                            <p>Lorem Ipsue Is Dummy Text Used In Laying Out Print.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="feature-box-2 media">
+                                        <div class="icon">
+                                            <span class="fa fa-bookmark"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5>Festival Offer </h5>
+                                            <p>Lorem Ipsue Is Dummy Text Used In Laying Out Print.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="feature-box-2 media">
+                                        <div class="icon">
+                                            <span class="fa fa-calendar"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5>24 X 7 Service</h5>
+                                            <p>Lorem Ipsue Is Dummy Text Used In Laying Out Print.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="feature-box-2 media">
+                                        <div class="icon">
+                                            <span class="fa fa-smile-o"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5>9Big Saving</h5>
+                                            <p>Lorem Ipsue Is Dummy Text Used In Laying Out Print.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 14</h6>
+                <label class="e-sb-label" for="e_feature_14"><input id="e_feature_14" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp15">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-15.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #fff5f5;">
+                        <div class="container">
+                            <div class="row justify-content-center m-30px-b">
+                                <div class="col-lg-6 text-center">
+                                    <h3 class="h1 dark-color m-10px-b font-w-600">Why Choose us?</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow-hover p-30px media hover-top white-bg">
+                                        <div class="icon-50px theme-bg white-color rounded-circle">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">Free Shipping</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow-hover p-30px media hover-top white-bg">
+                                        <div class="icon-50px theme-bg white-color rounded-circle">
+                                            <span class="fa fa-bookmark"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">Festival Offer </h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow-hover p-30px media hover-top white-bg">
+                                        <div class="icon-50px theme-bg white-color rounded-circle">
+                                            <span class="fa fa-calendar"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">24 X 7 Service</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow-hover p-30px media hover-top white-bg">
+                                        <div class="icon-50px theme-bg white-color rounded-circle">
+                                            <span class="fa fa-smile-o"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">9Big Saving</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow-hover p-30px media hover-top white-bg">
+                                        <div class="icon-50px theme-bg white-color rounded-circle">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">Free Shipping</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow-hover p-30px media hover-top white-bg">
+                                        <div class="icon-50px theme-bg white-color rounded-circle">
+                                            <span class="fa fa-bookmark"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">Festival Offer </h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 15</h6>
+                <label class="e-sb-label" for="e_feature_15"><input id="e_feature_15" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp16">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-16.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f5faff;">
+                    <div class="container">
+                        <div class="row justify-content-center m-30px-b">
+                            <div class="col-lg-6 text-center">
+                                <h3 class="h1 dark-color m-10px-b font-w-600">Why Choose us?</h3>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                <div class="box-shadow-hover p-30px hover-top white-bg rounded text-center">
+                                    <div class="icon-90px theme-bg white-color rounded-circle m-20px-b">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="">
+                                        <h5 class="dark-color">Free Shipping</h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                <div class="box-shadow-hover p-30px hover-top white-bg rounded text-center">
+                                    <div class="icon-90px theme-bg white-color rounded-circle m-20px-b">
+                                        <span class="fa fa-bookmark"></span>
+                                    </div>
+                                    <div class="">
+                                        <h5 class="dark-color">Festival Offer </h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                <div class="box-shadow-hover p-30px hover-top white-bg rounded text-center">
+                                    <div class="icon-90px theme-bg white-color rounded-circle m-20px-b">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <div class="">
+                                        <h5 class="dark-color">24 X 7 Service</h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                <div class="box-shadow-hover p-30px hover-top white-bg rounded text-center">
+                                    <div class="icon-90px theme-bg white-color rounded-circle m-20px-b">
+                                        <span class="fa fa-smile-o"></span>
+                                    </div>
+                                    <div class="">
+                                        <h5 class="dark-color">9Big Saving</h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </textarea>
+                <h6>Feature 16</h6>
+                <label class="e-sb-label" for="e_feature_16"><input id="e_feature_16" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp17">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-17.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f5faff;">
+                    <div class="container">
+                        <div class="row justify-content-center m-30px-b">
+                            <div class="col-lg-6 text-center">
+                                <h3 class="h1 dark-color m-10px-b font-w-600">Why Choose us?</h3>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 m-15px-tb">
+                                <div class="box-shadow p-30px white-bg rounded-lg media">
+                                    <div class="icon-60px dark-bg white-color rounded">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h5 class="dark-color">Free Shipping</h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 m-15px-tb">
+                                <div class="box-shadow p-30px white-bg rounded-lg media">
+                                    <div class="icon-60px dark-bg white-color rounded">
+                                        <span class="fa fa-bookmark"></span>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h5 class="dark-color">Festival Offer </h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 m-15px-tb">
+                                <div class="box-shadow p-30px white-bg rounded-lg media">
+                                    <div class="icon-60px dark-bg white-color rounded">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h5 class="dark-color">24 X 7 Service</h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 m-15px-tb">
+                                <div class="box-shadow p-30px white-bg rounded-lg media">
+                                    <div class="icon-60px dark-bg white-color rounded">
+                                        <span class="fa fa-smile-o"></span>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h5 class="dark-color">9Big Saving</h5>
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </textarea>
+                <h6>Feature 17</h6>
+                <label class="e-sb-label" for="e_feature_17"><input id="e_feature_17" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp18">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/feature-18.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="section" style="background-color: #f5faff;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/bg-41.jpg" />
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="p-20px-b">
+                                <h3 class="h1 dark-color m-10px-b font-w-600">Why Choose us?</h3>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 m-15px-tb">
+                                    <div class="box-shadow p-30px white-bg rounded-lg media">
+                                        <div class="icon-60px dark-bg white-color rounded">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">Free Shipping</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 m-15px-tb">
+                                    <div class="box-shadow p-30px white-bg rounded-lg media">
+                                        <div class="icon-60px dark-bg white-color rounded">
+                                            <span class="fa fa-bookmark"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">Festival Offer </h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 m-15px-tb">
+                                    <div class="box-shadow p-30px white-bg rounded-lg media">
+                                        <div class="icon-60px dark-bg white-color rounded">
+                                            <span class="fa fa-calendar"></span>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <h5 class="dark-color">24 X 7 Service</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </textarea>
+            <h6>Feature 18</h6>
+            <label class="e-sb-label" for="e_feature_18"><input id="e_feature_18" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp19">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-19.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 m-15px-b">
+                                    <h3 class="h1 dark-color font-w-700 m-15px-b">Digital Products for Your Ideas</h3>
+                                    <div class="lead font-w-500 m-20px-b">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn btn-lg as-btn-theme" href="#">Contact Today</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 m-15px-tb">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="theme-bg box-shadow rounded p-30px">
+                                                <div class="icon-60px rounded-circle white-bg theme-color m-20px-b">
+                                                    <i class="fa fa-cloud-upload"></i>
+                                                </div>
+                                                <h5 class="font-w-600 white-color">Cloud Service</h5>
+                                                <p class="m-0 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="theme-bg box-shadow rounded p-30px m-30px-t">
+                                                <div class="icon-60px rounded-circle white-bg theme-color m-20px-b">
+                                                    <i class="fa fa-bug"></i>
+                                                </div>
+                                                <h5 class="font-w-600 white-color">Bug free code</h5>
+                                                <p class="m-0 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="theme-bg box-shadow rounded p-30px  m-30px-t">
+                                                <div class="icon-60px rounded-circle white-bg theme-color m-20px-b">
+                                                    <i class="fa fa-check-square"></i>
+                                                </div>
+                                                <h5 class="font-w-600 white-color">Well Documented</h5>
+                                                <p class="m-0 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="theme-bg box-shadow rounded p-30px  m-30px-t">
+                                                <div class="icon-60px rounded-circle white-bg theme-color m-20px-b">
+                                                    <i class="fa fa-diamond"></i>
+                                                </div>
+                                                <h5 class="font-w-600 white-color">Clean Code</h5>
+                                                <p class="m-0 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 19</h6>
+                <label class="e-sb-label" for="e_feature_19"><input id="e_feature_19" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp20">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-20.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #fcfcff;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 m-15px-tb">
+                                    <h3 class="h1 font-w-600 dark-color">Save Time &amp; Effort With the Limpid</h3>
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                                    <div class="row no-gutters p-5px-t">
+                                        <div class="media col-lg-12 m-15px-tb">
+                                            <div class="icon-30px rounded-circle theme-bg white-color">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                            <div class="media-body p-15px-l">
+                                                <h5 class="font-w-600 dark-color m-5px-b">Content Marketing</h5>
+                                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media col-lg-12 m-15px-tb">
+                                            <div class="icon-30px rounded-circle theme-bg white-color">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                            <div class="media-body p-15px-l">
+                                                <h5 class="font-w-600 dark-color m-5px-b">Social Marketing</h5>
+                                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media col-lg-12 m-15px-tb">
+                                            <div class="icon-30px rounded-circle theme-bg white-color">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                            <div class="media-body p-15px-l">
+                                                <h5 class="font-w-600 dark-color m-5px-b">App Development</h5>
+                                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 m-15px-tb">
+                                    <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/bg-42.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Feature 20</h6>
+                <label class="e-sb-label" for="e_feature_20"><input id="e_feature_20" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp21">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-21.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f5faff;">
+                    <div class="container">
+                        <div class="row justify-content-center m-30px-b">
+                            <div class="col-lg-6 text-center">
+                                <h3 class="h1 dark-color m-10px-b font-w-600">Connect with us.</h3>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 my-4">
+                                <div class="shadow-lg white-bg p-sm-30px p-40px rounded h-100 text-center">
+                                    <div class="icon-70px theme-bg white-color rounded-circle m-20px-b">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <h5 class="font-w-600 dark-color m-10px-b">+01 856 965 8595</h5>
+                                    <h5 class="font-w-600 dark-color m-0">+44 7256 865 3249</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 my-4">
+                                <div class="shadow-lg white-bg p-sm-30px p-40px rounded h-100 text-center">
+                                    <div class="icon-70px theme-bg white-color rounded-circle m-20px-b">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <h5 class="font-w-600 dark-color m-10px-b">info@domain.com</h5>
+                                    <h5 class="font-w-600 dark-color m-0">support@domain.com</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 my-4">
+                                <div class="shadow-lg white-bg p-sm-30px p-40px rounded h-100 text-center">
+                                    <div class="icon-70px theme-bg white-color rounded-circle m-20px-b">
+                                        <i class="fa fa-map"></i>
+                                    </div>
+                                    <h5 class="font-w-600 dark-color m-0">301 The Greenhouse, Factory, LD, E2 8DY</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </textarea>
+                <h6>Feature 21</h6>
+                <label class="e-sb-label" for="e_feature_21"><input id="e_feature_21" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp22">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/feature-22.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 min-h-400">
+                            <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+                                <div class="col-10 text-center p-50px-tb">
+                                    <div>
+                                        <div class="icon-50px theme-bg white-color rounded-circle m-20px-b">
+                                            <span class="fa fa-bookmark"></span>
+                                        </div>
+                                        <div>
+                                            <h5 class="dark-color">Festival Offer</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 min-h-400" style="background-color: #f5faff;">
+                            <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+                                <div class="col-10 text-center p-50px-tb">
+                                    <div>
+                                        <div class="icon-50px theme-bg white-color rounded-circle m-20px-b">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div>
+                                            <h5 class="dark-color">Free Shipping</h5>
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </textarea>
+            <h6>Feature 22</h6>
+            <label class="e-sb-label" for="e_feature_22"><input id="e_feature_22" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp23">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-23.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #324598">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <h3 class="display-4 white-color">Do the math.</h3>
+                            </div>
+                            <div class="col-lg-7">
+                                <p class="white-color-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="row p-40px-t">
+                            <div class="col-lg-4">
+                                <div class="display-3 white-color font-w-600 m-15px-b">8/10</div>
+                                <div class="white-color-light">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, odio nec vulputate ultricies, sem neque venenatis risus, sed euismod lectus ipsum sed elit</p>
+                                </div>
+                                <div class="p-10px-t">
+                                    <a class="as-btn btn-sm as-btn-white" href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="display-3 white-color font-w-600 m-15px-b">85%</div>
+                                <div class="white-color-light">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, odio nec vulputate ultricies, sem neque venenatis risus, sed euismod lectus ipsum sed elit</p>
+                                </div>
+                                <div class="p-10px-t">
+                                    <a class="as-btn btn-sm as-btn-white" href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="display-3 white-color font-w-600 m-15px-b">92%</div>
+                                <div class="white-color-light">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, odio nec vulputate ultricies, sem neque venenatis risus, sed euismod lectus ipsum sed elit</p>
+                                </div>
+                                <div class="p-10px-t">
+                                    <a class="as-btn btn-sm as-btn-white" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Feature 23</h6>
+                <label class="e-sb-label" for="e_feature_23"><input id="e_feature_23" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp24">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-24.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #123298;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center m-25px-b">
+                                <h3 class="h1 white-color font-w-600">We like to make it easy</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 m-15px-tb">
+                                <div class="white-bg p-40px-lr p-60px-tb rounded text-center box-shadow-hover">
+                                    <div class="icon-80px theme-bg rounded-circle m-20px-b white-color">
+                                        01
+                                    </div>
+                                    <h5 class="dark-color font-w-600 m-15px-b">You Collect</h5>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, odio nec vulputate ultricies, sem neque venenatis risus, sed euismod lectus ipsum sed elit</p>
+                                    </div>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn btn-sm as-btn-dark" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 m-15px-tb">
+                                <div class="white-bg p-40px-lr p-60px-tb rounded text-center box-shadow-hover">
+                                    <div class="icon-80px theme-bg rounded-circle m-20px-b white-color">
+                                        02
+                                    </div>
+                                    <h5 class="dark-color font-w-600 m-15px-b">We Build</h5>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, odio nec vulputate ultricies, sem neque venenatis risus, sed euismod lectus ipsum sed elit</p>
+                                    </div>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn btn-sm as-btn-dark" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 m-15px-tb">
+                                <div class="white-bg p-40px-lr p-60px-tb rounded text-center box-shadow-hover">
+                                    <div class="icon-80px theme-bg rounded-circle m-20px-b white-color">
+                                        03
+                                    </div>
+                                    <h5 class="dark-color font-w-600 m-15px-b">You Manage</h5>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan, odio nec vulputate ultricies, sem neque venenatis risus, sed euismod lectus ipsum sed elit</p>
+                                    </div>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn btn-sm as-btn-dark" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </textarea>
+                <h6>Feature 24</h6>
+                <label class="e-sb-label" for="e_feature_24"><input id="e_feature_24" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.feature_temp25">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/feature-25.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                    <div class="container">
+                        <div class="row justify-content-center m-30px-b">
+                            <div class="col-lg-6 text-center">
+                                <div class="h1 dark-color font-w-600">The Best Features</div>
+                                <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 m-15px-tb">
+                                <div class="media">
+                                    <div class="icon-60px rounded-circle theme-bg white-color">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="media-body p-20px-l">
+                                        <h5 class="font-w-600 dark-color">Free Shipping</h5>
+                                        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 m-15px-tb">
+                                <div class="media">
+                                    <div class="icon-60px rounded-circle theme-bg white-color">
+                                        <span class="fa fa-bookmark"></span>
+                                    </div>
+                                    <div class="media-body p-20px-l">
+                                        <h5 class="font-w-600 dark-color">Festival Offer</h5>
+                                        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 m-15px-tb">
+                                <div class="media">
+                                    <div class="icon-60px rounded-circle theme-bg white-color">
+                                        <span class="fa fa-calendar"></span>
+                                    </div>
+                                    <div class="media-body p-20px-l">
+                                        <h5 class="font-w-600 dark-color">24 X 7 Service</h5>
+                                        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 m-15px-tb">
+                                <div class="media">
+                                    <div class="icon-60px rounded-circle theme-bg white-color">
+                                        <span class="fa fa-smile-o"></span>
+                                    </div>
+                                    <div class="media-body p-20px-l">
+                                        <h5 class="font-w-600 dark-color">Big Saving</h5>
+                                        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Feature 25</h6>
+                <label class="e-sb-label" for="e_feature_25"><input id="e_feature_25" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

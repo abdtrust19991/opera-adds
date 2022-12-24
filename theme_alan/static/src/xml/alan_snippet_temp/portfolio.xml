@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="as_portfolio_templates">
+
+    <t t-name="theme_alan.portfolio_temp_1">
+       <div class="col-md-3">
+            <div class="e_sb_snnippet_box">
+                <div class="img">
+                    <img src="/theme_alan/static/src/icon/portfolio-1.jpg" />
+                </div>
+                <div class="snippet-as">
+                    <textarea class="sr-only snippet-textarea">
+                        <section class="section alan-our-works">
+                            <div class="container">
+                                <div class="row justify-content-center m-65px-b md-m-40px-b sm-m-20px-b">
+                                    <div class="col-lg-6 text-center">
+                                        <div class="h2 dark-color font-w-300 text-uppercase letter-spacing-2 m-0px m-15px-b font-alt">Our Works</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 m-15px-tb">
+                                        <div class="hover-scale position-relative">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-works1.png" />
+                                            <div class="position-absolute bottom-0 w-100 p-20px black-bg-alt">
+                                                <div class="white-color h5 font-w-600">OUR NEW WORKS</div>
+                                                <a class="as-btn as-btn-white btn-sm" href="#">READ MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 m-15px-tb">
+                                        <div class="hover-scale position-relative">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-works2.png" />
+                                            <div class="position-absolute bottom-0 w-100 p-20px black-bg-alt">
+                                                <div class="white-color h5 font-w-600">OUR NEW WORKS</div>
+                                                <a class="as-btn as-btn-white btn-sm" href="#">READ MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 m-15px-tb">
+                                        <div class="hover-scale position-relative">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-works3.png" />
+                                            <div class="position-absolute bottom-0 w-100 p-20px black-bg-alt">
+                                                <div class="white-color h5 font-w-600">OUR NEW WORKS</div>
+                                                <a class="as-btn as-btn-white btn-sm" href="#">READ MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </textarea>
+                    <h6>Portfolio 1</h6>
+                    <label class="e-sb-label" for="e_portfolio_01"><input id="e_portfolio_01" name="radio-snippet" type="radio" /><span /></label>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="theme_alan.portfolio_temp_2">
+        <div class="col-md-3">
+            <div class="e_sb_snnippet_box">
+                <div class="img">
+                    <img src="/theme_alan/static/src/icon/portfolio-2.jpg" />
+                </div>
+                <div class="snippet-as">
+                    <textarea class="sr-only snippet-textarea">
+                        <section class="section p-10px-b">
+                            <div class="container">
+                                <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                    <div class="col-lg-6 text-center">
+                                        <div class="dark-color font-w-600 h1 m-20px-b">Our Latest Work</div>
+                                        <p class="font-w-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid p-0px">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-4.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-5.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-1.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-2.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-3.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-4.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-5.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 position-relative hover-opacity grayscale-hover hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-portfolio-6.jpg" />
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center p-30px hover-opacity-in">
+                                            <div class="white-bg p-15px-lr p-25px-tb text-center box-shadow-lg border-radius-5">
+                                                <div class="h5 dark-color font-w-600 m-10px-b">Recent Projects</div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                <a class="as-line-btn" href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- row -->
+                            </div> <!-- container -->
+                        </section>
+                    </textarea>
+                    <h6>Portfolio 2</h6>
+                    <label class="e-sb-label" for="e_portfolio_02"><input id="e_portfolio_02" name="radio-snippet" type="radio" /><span /></label>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="theme_alan.portfolio_temp_3">
+        <div class="col-md-3">
+            <div class="e_sb_snnippet_box">
+                <div class="img">
+                    <img src="/theme_alan/static/src/icon/portfolio-3.jpg" />
+                </div>
+                <div class="snippet-as">
+                    <textarea class="sr-only snippet-textarea">
+                        <section class="section p-10px-b">
+                            <div class="container">
+                                <div class="row m-45px-b md-m-25px-b">
+                                    <div class="col-lg-8">
+                                        <div class="h1 dark-color after-50px theme-after font-w-700 m-20px-b p-20px-b">OUR RECENT PROJECTS</div>
+                                        <p class="w-800px max-w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    </div> <!-- col -->
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p2.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p3.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p4.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p5.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p6.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p7.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p1.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="border-radius-5 hover-scale box-shadow">
+                                            <a href=""> <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-con-p8.png" /> </a>
+                                        </div>
+                                        <div class="white-bg p-20px mt-n4 position-relative m-15px-lr box-shadow border-radius-5">
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Recent Projects</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                            <a class="as-line-btn dark" href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div> <!-- row -->
+                            </div> <!-- container -->
+                        </section>
+                    </textarea>
+                    <h6>Portfolio 3</h6>
+                    <label class="e-sb-label" for="e_portfolio_03"><input id="e_portfolio_03" name="radio-snippet" type="radio" /><span /></label>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="theme_alan.portfolio_temp_4">
+        <div class="col-md-3">
+            <div class="e_sb_snnippet_box">
+                <div class="img">
+                    <img src="/theme_alan/static/src/icon/portfolio-4.jpg" />
+                </div>
+                <div class="snippet-as">
+                    <textarea class="sr-only snippet-textarea">
+                        <section class="section alan-our-works">
+                            <div class="container">
+                                <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                    <div class="col-lg-6 text-center">
+                                        <div class="h1 dark-color font-w-600">Our Works</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 m-15px-tb">
+                                        <div id="portfolio_slider_01" class="carousel s_carousel s_carousel_default s_carousel_alan slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="hover-scale">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-1.png" />
+                                                        <div class="dark-bg position-relative p-15px">
+                                                            <div class="white-color m-10px-b">
+                                                                Our New Works
+                                                            </div>
+                                                            <a class="as-btn as-btn-white btn-sm" href="#">Read More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="hover-scale">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-1.png" />
+                                                        <div class="dark-bg position-relative p-15px">
+                                                            <div class="white-color m-10px-b">
+                                                                Our New Works
+                                                            </div>
+                                                            <a class="as-btn as-btn-white btn-sm" href="#">Read More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#portfolio_slider_01" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#portfolio_slider_01" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- col -->
+                                    <div class="col-lg-4 m-15px-tb">
+                                        <div id="portfolio_slider_02" class="carousel s_carousel s_carousel_default s_carousel_alan slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="hover-scale">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-1.png" />
+                                                        <div class="dark-bg position-relative p-15px">
+                                                            <div class="white-color m-10px-b">
+                                                                Our New Works
+                                                            </div>
+                                                            <a class="as-btn as-btn-white btn-sm" href="#">Read More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="hover-scale">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-1.png" />
+                                                        <div class="dark-bg position-relative p-15px">
+                                                            <div class="white-color m-10px-b">
+                                                                Our New Works
+                                                            </div>
+                                                            <a class="as-btn as-btn-white btn-sm" href="#">Read More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#portfolio_slider_02" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#portfolio_slider_02" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- col -->
+                                    <div class="col-lg-4 m-15px-tb">
+                                        <div id="portfolio_slider_03" class="carousel s_carousel s_carousel_default s_carousel_alan slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="hover-scale">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-1.png" />
+                                                        <div class="dark-bg position-relative p-15px">
+                                                            <div class="white-color m-10px-b">
+                                                                Our New Works
+                                                            </div>
+                                                            <a class="as-btn as-btn-white btn-sm" href="#">Read More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="hover-scale">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-1.png" />
+                                                        <div class="dark-bg position-relative p-15px">
+                                                            <div class="white-color m-10px-b">
+                                                                Our New Works
+                                                            </div>
+                                                            <a class="as-btn as-btn-white btn-sm" href="#">Read More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#portfolio_slider_03" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#portfolio_slider_03" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- col -->
+                                </div>
+                            </div>
+                        </section>
+                    </textarea>
+                    <h6>Portfolio 4</h6>
+                    <label class="e-sb-label" for="e_portfolio_04"><input id="e_portfolio_04" name="radio-snippet" type="radio" /><span /></label>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

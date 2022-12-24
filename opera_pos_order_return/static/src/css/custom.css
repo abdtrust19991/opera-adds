@@ -1,0 +1,188 @@
+
+.reorder-product-list {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.reorder_product_header {
+    background-color: #7f82ac;
+    color: #fff;
+    height: 40px;
+}
+
+.reorder_product_body {
+    height: 40px;
+}
+/*
+#entered_item_qty {
+	height: 35px;
+	width: 30%;
+	min-height: 0px;
+}
+*/
+
+.reorder-product-list-contents {
+    display: block;
+    height: 300px;
+    width: 468px;
+    overflow-y: scroll;
+}
+
+
+.return-product-list {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.return_product_header {
+    background-color: #7f82ac;
+    color: #fff;
+    height: 40px;
+}
+
+.return_product_body {
+    height: 40px;
+    width: 100%;
+    display:inline-block;
+}
+
+[id^=entered_item_qty] {
+	height: 35px !important;
+	width: 45% !important;
+	min-height: 0px !important;
+}
+
+#entered_item_qty-* {
+	height: 35px;
+	width: 45%;
+	min-height: 0px;
+}
+
+.return-product-list-contents {
+    display: block;
+    height: 300px;
+    width: 1180px;
+    overflow-y: scroll;
+}
+
+/* bi_pos_custom_discount custom css */
+
+.button_disabled {
+    pointer-events: none;
+}
+
+.pos .numpad.numpad-button-disable {
+    color: rgb(172, 172, 172);
+    pointer-events: none;
+}
+
+.pos .input-button.input-button-disable {
+    color: rgb(172, 172, 172);
+    pointer-events: none;
+}
+/*
+.pos .order .orderline .product-name{
+    padding:0;
+    display:inline-block;
+    font-weight: bold;
+    width:75%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+*/
+
+/*
+@media print {
+    * {
+        color: black !important;
+    }
+    body {
+        margin: 0;
+        color: white !important;
+    }
+    .oe_leftbar,
+    .oe_loading,
+    .pos .pos-topheader,
+    .pos .pos-leftpane,
+    .pos .keyboard_frame,
+    .pos .receipt-screen header,
+    .pos .receipt-screen .top-content,
+    .pos .receipt-screen .centered-content .button {
+        display: none !important;
+    }
+    .pos,
+    .pos .pos-content,
+    .pos .rightpane,
+    .pos .screen,
+    .pos .window,
+    .pos .window .subwindow,
+    .pos .subwindow .subwindow-container{
+        display: block;
+        position: static;
+        height: auto;
+    }
+    .pos{
+        background: white !important;
+    }
+    .pos .rightpane {
+        left: 0px !important;
+        background-color: white;
+    }
+    .pos .receipt-screen {
+        text-align: left;
+    }
+    .pos .receipt-screen .centered-content{
+        position: static;
+        border: none;
+    }
+    .pos .pos-receipt-container {
+        text-align: left;
+    }
+    .pos-actionbar {
+        display: none !important;
+    }
+    .debug-widget{
+        display: none !important;
+    }
+    .pos *{
+        text-shadow: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+    .pos .pos-sale-ticket{
+        margin: 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border: none !important;
+        font-size: 13px !important;
+        width: 250px !important;
+    }
+    .o_debug_manager {
+        display: none !important;
+    }
+    .o_chat_window {
+        display: none !important;
+    }
+
+    .o_notification_manager{
+        display: none !important;
+    }
+
+    .o_loading{
+        display: none !important;
+    }
+
+    .o_thread_window{
+        display: none !important;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+

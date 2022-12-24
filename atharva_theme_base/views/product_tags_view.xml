@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_view_inherit_prod_tag" model="ir.ui.view">
+        <field name="name">product.template.view.form.inherit.tags</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="product_tags_page" string="Product Tags">
+                    <group>
+                        <field name="product_tags_ids" widget="many2many_tags"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_tree_view_inherit_prod_tag" model="ir.ui.view">
+        <field name="name">product.template.tree.view.inherit.tags</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="product_tags_ids" widget="many2many_tags"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_template_search_view_inherit_prod_tag" model="ir.ui.view">
+        <field name="name">product.template.search.view.inherit.tag</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="product_tags_ids" string="Tags" filter_domain="['|',('product_tags_ids','ilike',self)]"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_template_kanban_view_inherit_prod_tag" model="ir.ui.view">
+        <field name="name">product.template.kanban.view.inherit.tag</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_kanban_details')]" position="inside">
+                <div>
+                    <ul>
+                        <li><field name="product_tags_ids"/></li>
+                    </ul>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_tags_view_form" model="ir.ui.view">
+        <field name="name">product.tags.view.form</field>
+        <field name="model">product.tags</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Product Tag"/>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                    <group>
+                        <field name="product_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="product_tags_view_tree" model="ir.ui.view">
+        <field name="name">product.tags.view.tree</field>
+        <field name="model">product.tags</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_product_tags_view" model="ir.actions.act_window">
+        <field name="name">Product Tags</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.tags</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create The First Product Tag</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_product_tags" name="Product Tags" action="action_product_tags_view" parent="website_sale.menu_catalog" sequence="5"/>
+
+</odoo>

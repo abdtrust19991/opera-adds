@@ -1,0 +1,18 @@
+<odoo>
+
+<!--    <template id="assets_backend_index" name="index pos ui" inherit_id="point_of_sale.index">-->
+<!--        <xpath expr="//head" position="inside">-->
+<!--            <script type="text/javascript" src="/opera_pos_receipt/static/src/libs/js/jquery-barcode-last.min.js"/>-->
+<!--            <script type="text/javascript" src="/opera_pos_receipt/static/src/libs/js/qrcode.js"></script>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+    <template id="assets" inherit_id="point_of_sale.assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/opera_pos_receipt/static/src/js/pos_receipt.js"></script>
+            <script type="text/javascript" src="/opera_pos_receipt/static/src/js/pos.js"></script>
+            <script type="text/javascript" src="/opera_pos_receipt/static/src/js/qrcode.js"></script>
+            <script type="text/javascript" src="/opera_pos_receipt/static/src/js/qrcode.min.js"></script>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="video_snippet_box_02" name="Video Box 2">
+        <section class="bg-center bg-cover bg-no-repeat" style="background-image: url(/theme_alan/static/src/img/snippets/shop-banner-47.jpg);">
+            <div class="container">
+                <div class="row justify-content-center min-vh-65 align-items-center section">
+                    <div class="col-lg-6 text-center">
+                        <h5 class="white-color font-w-500 m-15px-b">LOREM IPSUM DOLOR SIT AMET</h5>
+                        <h3 class="display-4 white-color font-w-600">GET INSPIRED TODAY</h3>
+                        <div class="p-20px-t"><a class="video-btn white" href="#"><span></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

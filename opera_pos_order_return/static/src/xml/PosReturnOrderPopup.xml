@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="PosReturnOrderPopup" owl="1">
+        <div class="modal-dialog">
+            <div class="popup popup-confirm" style="height: 450px; width:1200px;max-width:1200px;">
+                <p class="title" style="background-color: rgb(110,200,155); color: #fff;">Return Products</p>
+
+                <div class="body">
+                    <div class='div-container' style="height: 350px;">
+                        <table class='return-product-list'>
+                            	<colgroup>
+                                    <col span="1" style="width: 15%;"/>
+                                    <col span="1" style="width: 40%;"/>
+                                    <col span="1" style="width: 15%;"/>
+                                    <col span="1" style="width: 15%;"/>
+                                    <col span="1" style="width: 15%;"/>
+                                </colgroup>
+                            <thead>
+                                <tr class="return_product_header">
+                                    <th>Barcode</th>
+                                    <th>Product</th>
+                                    <th>Qty</th>
+                                    <th>Returned Qty</th>
+                                    <th>Return Qty</th>
+                                </tr>
+                            </thead>
+                            <tbody class='return-product-list-contents'>
+                                <t t-foreach="props.order.get_orderlines()" t-as="orderline" >
+                                    <t t-set="product" t-value="orderline.get_product()" />
+                                    <t t-set="qty" t-value="orderline.get_quantity()" />
+                                    <t t-set="return_qty" t-value="orderline.get_total_return_qty()" />
+                                    <tr t-if="product.type === 'product' &amp;&amp; qty > 0 &amp;&amp; return_qty &lt; qty" class="return_product_body">
+                                        <td class="barcode_td" t-att-data_barcode="product.barcode" style="display: inline-block;width: 15%;"><t t-esc="product.barcode" /></td>
+                                        <td style="display: inline-block;width: 40%;"><t t-esc="product.display_name" /></td>
+                                        <td style="display: inline-block;width: 15%;"><t t-esc="qty" /></td>
+                                        <td style="display: inline-block;width: 15%;"><t t-esc="return_qty" /></td>
+                                        <td class="entered_item_qty" style="display: inline-block;width: 15%;">
+                                            <input t-on-change="captureChange" t-att-qty='qty' t-att-return_qty='return_qty' t-att-line_id='orderline.id' t-att-id="'entered_item_qty-' + orderline.id.toString()"  type="text" class="input-field entered_item_qty" name="code"></input>
+    <!--                                        <input type="text" class="input-field entered_item_qty" name="code"></input>-->
+                                        </td>
+                                    </tr>
+                                </t>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="footer" style="background-color: rgb(110,200,155); color: #fff;">
+                    <div class="button cancel" style="background-color: #0075AC; color: #fff;" t-on-click="cancel">
+                        Cancel
+                    </div>
+                    <div class="button confirm" style="background-color: #0075AC; color: #fff;" t-on-click="confirm">
+                        Confirm
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

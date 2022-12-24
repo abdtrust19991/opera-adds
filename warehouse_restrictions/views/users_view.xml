@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_location_security_users_form" model="ir.ui.view">
+            <field name="name">location_security.users.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <group name="messaging" position="before">
+                    <group string="Warehouse Restrictions" attrs="{'invisible': [('login','=', 'admin')]}">
+                        <field name="default_picking_type_ids" widget="many2many_tags" attrs="{'invisible': [('login','=', 'admin')]}"/>
+                    </group>
+                    <group string="Locations" attrs="{'invisible': [('login','=', 'admin')]}">
+                        <field name="restrict_locations" attrs="{'invisible': [('login','=', 'admin')]}"/>
+                        <field name="default_location_id" attrs="{'invisible': ['|',('login','=', 'admin'),('restrict_locations','!=', True)],'required': [('restrict_locations','=', True)]}"/>
+                    </group>
+                </group>
+            <notebook position="inside">
+                    <page string="Internal Transfers Locations" attrs="{'invisible': [('restrict_locations','!=', True)]}">
+                        <field name="location_ids" nolabel="1" colspan="2"/>
+                    </page>
+                    <page string="Allowed Stock Locations" attrs="{'invisible': [('restrict_locations','!=', True)]}">
+                        <field name="stock_location_ids" nolabel="1" colspan="2"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</openerp>

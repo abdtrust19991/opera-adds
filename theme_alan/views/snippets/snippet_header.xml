@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_header" inherit_id="website.snippet_options">
+        <xpath expr="//div/we-select[@data-variable='header-template']" position="inside">
+        <we-button title="Custom1"
+                data-name="header_custom1_opt"
+                data-customize-website-views="theme_alan.header_layout_1,theme_alan.assets_frontend_header1"
+                data-customize-website-variable="'custom1'"
+                data-img="/theme_alan/static/src/img/icon/header-option-1.svg"/>
+        <we-button title="Custom2"
+                data-name="header_custom2_opt"
+                data-customize-website-views="theme_alan.header_layout_2,theme_alan.assets_frontend_header2"
+                data-customize-website-variable="'custom2'"
+                data-img="/theme_alan/static/src/img/icon/header-option-2.svg"/>
+        <we-button title="Custom3"
+                data-name="header_custom3_opt"
+                data-customize-website-views="theme_alan.header_layout_3,theme_alan.assets_frontend_header3"
+                data-customize-website-variable="'custom3'"
+                data-img="/theme_alan/static/src/img/icon/header-option-3.svg"/>
+        <we-button title="Custom4"
+                data-name="header_custom4_opt"
+                data-customize-website-views="theme_alan.header_layout_4,theme_alan.assets_frontend_header4"
+                data-customize-website-variable="'custom4'"
+                data-img="/theme_alan/static/src/img/icon/header-option-4.svg"/>
+        <we-button title="Custom5"
+                data-name="header_custom5_opt"
+                data-customize-website-views="theme_alan.header_layout_5,theme_alan.assets_frontend_header5"
+                data-customize-website-variable="'custom5'"
+                data-img="/theme_alan/static/src/img/icon/header-option-5.svg"/>
+        <we-button title="Custom6"
+                data-name="header_custom6_opt"
+                data-customize-website-views="theme_alan.header_layout_6,theme_alan.assets_frontend_header6"
+                data-customize-website-variable="'custom6'"
+                data-img="/theme_alan/static/src/img/icon/header-option-6.svg"/>
+        <we-button title="Custom7"
+                data-name="header_custom7_opt"
+                data-customize-website-views="theme_alan.header_layout_7,theme_alan.assets_frontend_header7"
+                data-customize-website-variable="'custom7'"
+                data-img="/theme_alan/static/src/img/icon/header-option-7.svg"/>
+        <we-button title="Custom8"
+                data-name="header_custom8_opt"
+                data-customize-website-views="theme_alan.header_layout_8,theme_alan.assets_frontend_header8"
+                data-customize-website-variable="'custom8'"
+                data-img="/theme_alan/static/src/img/icon/header-option-8.svg"/>
+        <we-button title="Custom9"
+                data-name="header_custom9_opt"
+                data-customize-website-views="theme_alan.header_layout_9,theme_alan.assets_frontend_header9"
+                data-customize-website-variable="'custom9'"
+                data-img="/theme_alan/static/src/img/icon/header-option-8.svg"/>
+        </xpath>
+    </template>
+</odoo>

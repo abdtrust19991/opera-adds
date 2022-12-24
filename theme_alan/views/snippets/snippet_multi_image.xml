@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options_multislider" name="Custom multi image slider" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='OptionsTab']//we-select[@data-variable='custom-buttom']" position="after">
+            <we-title>Multi Image Slider</we-title>
+            <we-select string="Multi Image Slider" data-variable="custom-multi-image-slider" data-no-preview="true">
+                <we-button title="Custom_multi_image_1"
+                    data-name="Custom_multi_image_opt_1"
+                    data-customize-website-views="theme_alan.options_vertical_slider"
+                    data-customize-website-variable="'Custom_multi_image_1'">Vertical Slider</we-button>
+                <we-button title="Custom_multi_image_2"
+                    data-name="Custom_multi_image_opt_2"
+                    data-customize-website-views="theme_alan.options_horizontal_slider"
+                    data-customize-website-variable="'Custom_multi_image_2'">Horizontal Slider</we-button>
+            </we-select>
+        </xpath>
+    </template>
+</odoo>

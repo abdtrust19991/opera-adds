@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Product Variant Collection View -->
+    <record id="view_prod_collection_configure_form" model="ir.ui.view">
+        <field name="name">slider_var.collection.configure.form</field>
+        <field name="model">slider_var.collection.configure</field>
+        <field name="arch" type="xml">
+            <form string="Product Variant Collection Configuration">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="website_id"/>
+                    </group>
+                    <group string="Choose Products">
+                        <field name="product_variant_ids" >
+                            <tree editable="bottom">
+                                <field name="sequence" widget="handle"/>
+                                <field name="product_id" required="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_pro_configure" model="ir.actions.act_window">
+        <field name="name">Product Variant Slider Collection Configuration</field>
+        <field name="res_model">slider_var.collection.configure</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_action_prod_variant_collection_configure" name="Product Variant Collection Configuration" action="action_pro_configure" parent="atharva_theme_base.menu_slider_type_settings" sequence="103"/>
+</odoo>

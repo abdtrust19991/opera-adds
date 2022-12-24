@@ -1,0 +1,2339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_slider_templates">
+
+<t t-name="theme_alan.slider_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_1" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_1" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_1" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-slider-3.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center justify-content-center">
+                                        <div class="col-10 col-lg-5 text-center white-bg ">
+                                            <div class="p-35px-tb">
+                                                <div class="dark-color m-15px-b">Look Out!</div>
+                                                <div class="h1 dark-color font-w-600 m-0px">New Collections</div>
+                                                <div class="btn-bar p-25px-t">
+                                                    <a class="as-btn as-btn-theme" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-slider-4.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center justify-content-center">
+                                        <div class="col-10 col-lg-5 text-center white-bg ">
+                                            <div class="p-35px-tb">
+                                                <div class="dark-color m-15px-b">Look Out!</div>
+                                                <div class="h1 dark-color font-w-600 m-0px">New Collections</div>
+                                                <div class="btn-bar p-25px-t">
+                                                    <a class="as-btn as-btn-theme" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_1" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_1" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 1</h6>
+                <label class="e-sb-label" for="e_slider_01"><input id="e_slider_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp2">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/slider-2.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section id="slider_snippet_2" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider_snippet_2" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider_snippet_2" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-car-banner-1.png);">
+                            <div class="container">
+                                <div class="row screen-85 align-items-center justify-content-center p-50px-tb">
+                                    <div class="col-10 col-lg-6 text-center white-bg">
+                                        <div class="p-45px display-inline-block">
+                                            <div class="display-4 dark-color font-w-700 m-20px-b">SELECT YOUR
+                                                <br />VEHICLE</div>
+                                            <div class="lead">Customize, Modify, Upgrade, Repair, Replace</div>
+                                            <div class="m-30px-t">
+                                                <a class="as-btn as-btn-dark" href="#">More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-car-banner-2.png);">
+                            <div class="container">
+                                <div class="row screen-85 align-items-center justify-content-center p-50px-tb">
+                                    <div class="col-10 col-lg-6 text-center white-bg">
+                                        <div class="p-45px display-inline-block">
+                                            <div class="display-4 dark-color font-w-700 m-20px-b">SELECT YOUR
+                                                <br />VEHICLE</div>
+                                            <div class="lead">Customize, Modify, Upgrade, Repair, Replace</div>
+                                            <div class="m-30px-t">
+                                                <a class="as-btn as-btn-dark" href="#">More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                    </div>
+                    <a class="carousel-control carousel-control-prev" href="#slider_snippet_2" role="button" data-slide="prev">
+                        <span class="prev-icon"></span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" href="#slider_snippet_2" role="button" data-slide="next">
+                        <span class="next-icon"></span>
+                    </a>
+                </section>
+            </textarea>
+            <h6>Slider 2</h6>
+            <label class="e-sb-label" for="e_slider_02"><input id="e_slider_02" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+</div>
+</t>
+<t t-name="theme_alan.slider_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_3" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_3" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_3" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-banner-1.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="p-45px-tb d-inline-block">
+                                                <div class="lead white-color m-5px-b font-w-500">The Best products </div>
+                                                <div class="display-3 white-color font-w-700">2018 New Collections</div>
+                                                <div class="m-20px-t">
+                                                    <a class="as-btn as-btn-white" href="#">More Collections</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-banner-2.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="p-45px-tb d-inline-block">
+                                                <div class="lead white-color m-5px-b font-w-500">The Best products </div>
+                                                <div class="display-3 white-color font-w-700">2018 New Collections</div>
+                                                <div class="m-20px-t">
+                                                    <a class="as-btn as-btn-white" href="#">More Collections</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_3" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_3" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 3</h6>
+                <label class="e-sb-label" for="e_slider_03"><input id="e_slider_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_4" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_4" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_4" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background: #bfc2ff;">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="p-45px-tb d-inline-block">
+                                                <div class="lead white-color m-5px-b font-w-500">The Best products </div>
+                                                <div class="display-3 white-color font-w-700">2018 New Collections</div>
+                                                <div class="m-20px-t">
+                                                    <a class="as-btn as-btn-white" href="#">More Collections</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="m-15px-tb">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bag-banner-3.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item" style="background: #ffad9e;">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="p-45px-tb d-inline-block">
+                                                <div class="lead white-color m-5px-b font-w-500">The Best products </div>
+                                                <div class="display-3 white-color font-w-700">2018 New Collections</div>
+                                                <div class="m-20px-t">
+                                                    <a class="as-btn as-btn-white" href="#">More Collections</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="m-15px-tb">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bag-banner-4.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_4" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_4" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 4</h6>
+                <label class="e-sb-label" for="e_slider_04"><input id="e_slider_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_5" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_5" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_5" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-2.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center p-50px-tb">
+                                        <div class="col-10 col-lg-5 white-bg">
+                                            <div class="p-40px sm-p-20px">
+                                                <div class="h1 font-w-700 dark-color m-15px-b">Best Solutions
+                                                    <br />For Your Business</div>
+                                                <p class="color-black"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                                </p>
+                                                <div class="p-10px-t">
+                                                    <a href="#" class="as-btn as-btn-dark">Learn More</a>
+                                                    <a href="#" class="as-btn as-btn-dark">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col -->
+                                    </div>
+                                    <!-- row -->
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-new-collection-1.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center p-50px-tb">
+                                        <div class="col-10 col-lg-5 white-bg">
+                                            <div class="p-40px sm-p-20px">
+                                                <div class="h1 font-w-700 dark-color m-15px-b">Best Solutions
+                                                    <br />For Your Business</div>
+                                                <p class="color-black"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                                </p>
+                                                <div class="p-10px-t">
+                                                    <a href="#" class="as-btn as-btn-dark">Learn More</a>
+                                                    <a href="#" class="as-btn as-btn-dark">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_5" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_5" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 5</h6>
+                <label class="e-sb-label" for="e_slider_05"><input id="e_slider_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_6" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_6" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_6" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-7.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center p-50px-tb">
+                                        <div class="col-10 col-lg-5 black-bg">
+                                            <div class="p-40px sm-p-20px">
+                                                <div class="h1 font-w-700 m-20px-b white-color">New Collections 2018</div>
+                                                <p class="white-color-alt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                                </p>
+                                                <div class="p-20px-t">
+                                                    <a href="#" class="as-btn as-btn-white">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col -->
+                                    </div>
+                                    <!-- row -->
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-8.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center p-50px-tb">
+                                        <div class="col-10 col-lg-5 black-bg">
+                                            <div class="p-40px sm-p-20px">
+                                                <div class="h1 font-w-700 m-20px-b white-color">New Collections 2018</div>
+                                                <p class="white-color-alt"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                                </p>
+                                                <div class="p-20px-t">
+                                                    <a href="#" class="as-btn as-btn-white">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- col -->
+                                    </div>
+                                    <!-- row -->
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_6" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_6" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 6</h6>
+                <label class="e-sb-label" for="e_slider_06"><input id="e_slider_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.slider_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_7" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_7" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_7" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-jwl-01.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center justify-content-end">
+                                        <div class="col-10 col-lg-5 white-bg">
+                                            <div class="p-40px sm-p-20px">
+                                                <div class="h1 dark-color font-w-700 m-15px-b">New Jewellery Look</div>
+                                                <p class="color-black font-16"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                                </p>
+                                                <div class="p-10px-t">
+                                                    <a href="#" class="as-btn-dark as-btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-jwl-02.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center justify-content-end">
+                                        <div class="col-10 col-lg-5 white-bg">
+                                            <div class="p-40px sm-p-20px">
+                                                <div class="h1 dark-color font-w-700 m-15px-b">New Jewellery Look</div>
+                                                <p class="color-black font-16"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                                </p>
+                                                <div class="p-10px-t">
+                                                    <a href="#" class="as-btn-dark as-btn">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_7" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_7" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 7</h6>
+                <label class="e-sb-label" for="e_slider_07"><input id="e_slider_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_8" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_8" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_8" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-wine-shop2.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center justify-content-center">
+                                        <div class="col-lg-8 text-center">
+                                            <div class="display-3 white-color font-w-700 m-20px-b">Classic Brands Wine</div>
+                                            <p class="lead white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                            </p>
+                                            <div class="p-10px-t">
+                                                <a class="as-btn as-btn-white m-5px-lr" href="#">Shop Now</a>
+                                                <a class="as-btn as-btn-white m-5px-lr" href="#">Lear More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-wine-shop1.png);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center justify-content-center">
+                                        <div class="col-lg-8 text-center">
+                                            <div class="display-3 white-color font-w-700 m-20px-b">Classic Brands Wine</div>
+                                            <p class="lead white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                            </p>
+                                            <div class="p-10px-t">
+                                                <a class="as-btn as-btn-white m-5px-lr" href="#">Shop Now</a>
+                                                <a class="as-btn as-btn-white m-5px-lr" href="#">Lear More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_8" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_8" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 8</h6>
+                <label class="e-sb-label" for="e_slider_08"><input id="e_slider_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_9" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_9" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_9" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background-color: #e1c5a1;">
+                                <div class="container main-half-slider">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6 md-m-30px-t">
+                                            <div class="h5 dark-color font-w-500">
+                                                New Collection 2018
+                                            </div>
+                                            <div class="dark-color font-w-700 display-4 m-15px-b">
+                                                Don't Miss This Chance
+                                            </div>
+                                            <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <div class="p-45px-tb">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fur-1.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="background-color: #ffd1ec;">
+                                <div class="container main-half-slider">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6 md-m-30px-t">
+                                            <div class="h5 dark-color font-w-500">
+                                                New Collection 2018
+                                            </div>
+                                            <div class="dark-color font-w-700 display-4 m-15px-b">
+                                                Don't Miss This Chance
+                                            </div>
+                                            <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <div class="p-45px-tb">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fur-2.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_9" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_9" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 9</h6>
+                <label class="e-sb-label" for="e_slider_09"><input id="e_slider_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.slider_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_10" class="carousel-arrow center dark s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_10" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_10" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-slider-1.png" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-slider-2.png" />
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_10" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_10" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 10</h6>
+                <label class="e-sb-label" for="e_slider_10"><input id="e_slider_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_11" class="carousel-arrow center dark s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_11" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_11" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-rep eat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-banner-1.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="lead font-w-700 dark-color m-10px-b">New Collection 2018</div>
+                                            <div class="display-4 dark-color font-w-700 m-20px-b">Don't Miss This Chance</div>
+                                            <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-banner-2.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="lead font-w-700 dark-color m-10px-b">New Collection 2018</div>
+                                            <div class="display-4 dark-color font-w-700 m-20px-b">Don't Miss This Chance</div>
+                                            <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_11" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_11" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 11</h6>
+                <label class="e-sb-label" for="e_slider_11"><input id="e_slider_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_12" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_12" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_12" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/g-1.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center p-100px-tb">
+                                        <div class="col-lg-7">
+                                            <div class="border-1 border-color-white d-inline-block p-10px-tb p-20px-lr font-w-700 white-color m-15px-b border-radius-5">Alan Fitness Club</div>
+                                            <div class="display-4 white-color font-w-700 m-20px-b">Make You Be The Fighter</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                            </p>
+                                            <div class="p-15px-t">
+                                                <a class="as-btn as-btn-white" href="#">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/g-2.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center p-100px-tb">
+                                        <div class="col-lg-7">
+                                            <div class="border-1 border-color-white d-inline-block p-10px-tb p-20px-lr font-w-700 white-color m-15px-b border-radius-5">Alan Fitness Club</div>
+                                            <div class="display-4 white-color font-w-700 m-20px-b">Make You Be The Fighter</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                            </p>
+                                            <div class="p-15px-t">
+                                                <a class="as-btn as-btn-white" href="#">Join Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_12" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_12" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 12</h6>
+                <label class="e-sb-label" for="e_slider_12"><input id="e_slider_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp13">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-13.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_13" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_13" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_13" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/pet-1.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 p-100px-tb align-items-center justify-content-center slider">
+                                        <div class="col-lg-7 text-center">
+                                            <div class="p-45px-tb display-inline-block">
+                                                <div class="display-4 font-w-300 white-color">WE WILL TAKE CARE OF YOUR PETS</div>
+                                                <p class="white-color-alt lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                <div class="p-10px-t">
+                                                    <a class="as-btn as-btn-white" href="#">Call Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/pet-2.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 p-100px-tb align-items-center justify-content-center slider">
+                                        <div class="col-lg-7 text-center">
+                                            <div class="p-45px-tb display-inline-block">
+                                                <div class="display-4 font-w-300 white-color">WE WILL TAKE CARE OF YOUR PETS</div>
+                                                <p class="white-color-alt lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                <div class="p-10px-t">
+                                                    <a class="as-btn as-btn-white" href="#">Call Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_13" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_13" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 13</h6>
+                <label class="e-sb-label" for="e_slider_13"><input id="e_slider_13" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp14">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-14.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_14" class="carousel-arrow center dark s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_14" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_14" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/ac-1.jpg);">
+                                <div class="container main-half-slider">
+                                    <div class="row slider align-items-center">
+                                        <div class="col-lg-6 md-m-30px-t">
+                                            <div class="p-45px-tb display-inline-block">
+                                                <div class="lead dark-color font-w-500">THE BEST ACADEMY OF THE STAT</div>
+                                                <div class="display-4 dark-color font-w-700 m-25px-b">ALAN ACADEMY</div>
+                                                <p class="dark-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                                <div class="btn-bar m-30px-t">
+                                                    <a class="as-btn as-btn-dark" href="#">Join Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <div class="p-45px-t">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-2.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/ac-1.jpg);">
+                                <div class="container main-half-slider">
+                                    <div class="row  slider align-items-center">
+                                        <div class="col-lg-6 md-m-30px-t">
+                                            <div class="p-45px-tb display-inline-block">
+                                                <div class="lead dark-color font-w-500">THE BEST ACADEMY OF THE STAT</div>
+                                                <div class="display-4 dark-color font-w-700 m-25px-b">ALAN ACADEMY</div>
+                                                <p class="dark-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                                <div class="btn-bar m-30px-t">
+                                                    <a class="as-btn as-btn-dark" href="#">Join Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <div class="p-45px-t">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-4.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_14" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_14" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 14</h6>
+                <label class="e-sb-label" for="e_slider_14"><input id="e_slider_14" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp15">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-15.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_15" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_15" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_15" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/spa-1.jpg);">
+                                <div class="container">
+                                    <div class="row align-items-center screen-85">
+                                        <div class="col-lg-6 p-45px-tb">
+                                            <div class="white-color m-10px-b">Something mystic, something magical</div>
+                                            <div class="white-color display-3 font-w-600 m-15px-b">Natural Spa</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                            <div class="p-10px-t">
+                                                <a class="as-btn as-btn-white" href="#">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/spa-2.jpg);">
+                                <div class="container">
+                                    <div class="row align-items-center screen-85">
+                                        <div class="col-lg-6 p-45px-tb">
+                                            <div class="white-color m-10px-b">Something mystic, something magical</div>
+                                            <div class="white-color display-3 font-w-600 m-15px-b">Natural Spa</div>
+                                            <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                            <div class="p-10px-t">
+                                                <a class="as-btn as-btn-white" href="#">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_15" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_15" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 15</h6>
+                <label class="e-sb-label" for="e_slider_15"><input id="e_slider_15" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp16">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-16.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_16" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_16" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_16" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/fas-banner-1.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center slider">
+                                        <div class="col-lg-6 text-center text-lg-right">
+                                            <div class="display-3 dark-color font-w-800">FASHION SALE</div>
+                                            <div class="display-3 m-15px-b dark-color font-w-300">50% Off</div>
+                                            <div class="m-25px-t">
+                                                <a class="as-btn as-btn-dark" href="#">Get the offer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/fas-banner-2.jpg);">
+                                <div class="container">
+                                    <div class="row screen-85 align-items-center slider">
+                                        <div class="col-lg-6 text-center text-lg-right">
+                                            <div class="display-3 dark-color font-w-800">FASHION SALE</div>
+                                            <div class="display-3 m-15px-b dark-color font-w-300">50% Off</div>
+                                            <div class="m-25px-t">
+                                                <a class="as-btn as-btn-dark" href="#">Get the offer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_16" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_16" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 16</h6>
+                <label class="e-sb-label" for="e_slider_16"><input id="e_slider_16" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp17">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-17.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_17" class="carousel-arrow center dark s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_17" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_17" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background-color: #edc7bd;">
+                                <div class="container main-half-slider">
+                                    <div class="row slider align-items-center">
+                                        <div class="col-lg-6 md-m-30px-t">
+                                            <div class="dark-color font-w-500 m-20px-b md-m-10px-b">New Collection 2018</div>
+                                            <div class="display-4 m-30px-b md-m-20px-b dark-color font-w-700">
+                                                Don't Miss This Chance
+                                            </div>
+                                            <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <div class="p-45px-t">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-slider-5.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="background-color: #f2e0bd;">
+                                <div class="container main-half-slider">
+                                    <div class="row  slider align-items-center">
+                                        <div class="col-lg-6 md-m-30px-t">
+                                            <div class="dark-color font-w-500 m-20px-b md-m-10px-b">New Collection 2018</div>
+                                            <div class="display-4 m-30px-b md-m-20px-b dark-color font-w-700">
+                                                Don't Miss This Chance
+                                            </div>
+                                            <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                        <div class="col-lg-6 text-center">
+                                            <div class="p-45px-t">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-slider-6.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_17" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_17" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 17</h6>
+                <label class="e-sb-label" for="e_slider_17"><input id="e_slider_17" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp18">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-18.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_18" class="carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_18" data-slide-to="0" class="active"></li>
+                            <li data-target="#slider_snippet_18" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-lamp-slider2.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-lamp-slider1.jpg" />
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_18" role="button" data-slide="prev">
+                            <span class="prev-icon"></span>
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_18" role="button" data-slide="next">
+                            <span class="next-icon"></span>
+                        </a>
+                    </section>
+                </textarea>
+                <h6>Slider 18</h6>
+                <label class="e-sb-label" for="e_slider_18"><input id="e_slider_18" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp19">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-19.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_19" class="ani-carousel carousel-arrow center dark s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#slider_snippet_19" data-slide-to="0" class="active" />
+                            <li data-target="#slider_snippet_19" data-slide-to="1" />
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center active" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-v2-slider-1.jpg);">
+                            <div class="container">
+                                <div class="row screen-65 p-50px-tb align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="p-50px-r md-p-0px-r ani-fade-left ani-2">
+                                    <div class="ani-fade-left ani-1 dark-color m-20px-b white-bg d-inline-block p-15px-lr p-5px-tb border-radius-5">Furniture</div>
+                                    <div class="ani-fade-left ani-1 font-alt display-4 dark-color font-w-700 m-20px-b">Make Your Living room cozy.</div>
+                                    <p class="ani-fade-left ani-1 lead">Lorem ipsum dolor sit amet, eam et reque justo quidam, audire ius no oblique phaedrum pertinacia.</p>
+                                    <div class="ani-fade-bottom ani-3 p-15px-t">
+                                        <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="ani-fade-right ani-1" src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-slider-in-1.png" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-v2-slider-2.jpg);">
+                            <div class="container">
+                                <div class="row screen-65 p-50px-tb align-items-center">
+                                <div class="col-lg-6">
+                                    <img class="ani-fade-left ani-1" src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-slider-in-2.png" />
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="p-50px-l md-p-0px-l ani-fade-right ani-2">
+                                    <div class="ani-fade-left ani-1 dark-color m-20px-b white-bg d-inline-block p-15px-lr p-5px-tb border-radius-5">Furniture</div>
+                                    <div class="ani-fade-left ani-1 font-alt display-4 dark-color font-w-700 m-20px-b">Make Your Living room cozy.</div>
+                                    <p class="ani-fade-left ani-1 lead">Lorem ipsum dolor sit amet, eam et reque justo quidam, audire ius no oblique phaedrum pertinacia.</p>
+                                    <div class="ani-fade-bottom ani-3 p-15px-t">
+                                        <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#slider_snippet_19" role="button" data-slide="prev">
+                            <span class="prev-icon" />
+                        </a>
+                        <a class="carousel-control carousel-control-next" href="#slider_snippet_19" role="button" data-slide="next">
+                            <span class="next-icon" />
+                        </a>
+                        </section>
+                </textarea>
+                <h6>Slider 19</h6>
+                <label class="e-sb-label" for="e_slider_19"><input id="e_slider_19" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp20">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-20.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-5px-tb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 m-15px-tb">
+                                <div id="slider_snippet_20" class="ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#slider_snippet_20" data-slide-to="0" class="active"></li>
+                                        <li data-target="#slider_snippet_20" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active bg-center bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-7.jpg);">
+                                            <div class="row screen-65 align-items-center">
+                                                <div class="col-lg-12 text-center">
+                                                    <div class="p-20px">
+                                                        <div class="h5 white-color ani-fade-bottom ani-1 m-0px">On Sale</div>
+                                                        <div class="display-4 white-color ani-fade-bottom ani-2 font-w-700">Accessories</div>
+                                                        <div class="ani-fade-bottom ani-3 p-15px-t">
+                                                            <a class="as-btn as-btn as-btn-white" href="#">Shop Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item bg-center bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-8.jpg);">
+                                            <div class="row screen-65 align-items-center">
+                                                <div class="col-lg-12 text-center">
+                                                    <div class="p-20px">
+                                                        <div class="h5 white-color ani-fade-bottom ani-1 m-0px">On Sale</div>
+                                                        <div class="display-4 white-color ani-fade-bottom ani-2 font-w-700">Accessories</div>
+                                                        <div class="ani-fade-bottom ani-3 p-15px-t">
+                                                            <a class="as-btn as-btn as-btn-white" href="#">Shop Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 m-15px-tb">
+                                <section class="h-100 min-h-250px bg-center d-flex align-items-center justify-content-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-9.jpg) ">
+                                    <div class="text-center p-50px-tb">
+                                        <h6 class="white-color">Get up to</h6>
+                                        <div class="h1 white-color font-w-700">50% Off</div>
+                                        <div class="p-10px-t">
+                                            <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </textarea>
+                <h6>Slider 20</h6>
+                <label class="e-sb-label" for="e_slider_20"><input id="e_slider_20" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.slider_temp21">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-21.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_21" class="ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider_snippet_21" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider_snippet_21" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-color:#af1426;">
+                            <div class="container">
+                                <div class="row p-50px-tb align-items-center justify-content-between">
+                                    <div class="col-lg-6">
+                                        <div class="p-50px-r md-p-0px-r ani-fade-bottom ani-2">
+                                            <div class="ani-fade-left ani-1 white-color m-20px-b d-inline-block">Deals and Promotions</div>
+                                            <div class="ani-fade-left ani-1 font-alt display-4 white-color font-w-700 m-20px-b">Beats by<br />Dre Studio 2.</div>
+                                            <div class="d-flex ani-fade-left ani-1">
+                                                <span class="white-color m-10px-t m-10px-r"><del>$349,95</del></span>
+                                                <span class="h1 font-w-600 white-color">$279<sup class="h4">.99</sup></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="ani-fade-bottom ani-3 p-15px-t">
+                                                <a class="as-btn as-btn-white" href="#">Click Here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <img class="ani-fade-top ani-1" src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-1.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" style="background-color:#002676;">
+                            <div class="container">
+                                <div class="row p-50px-tb align-items-center justify-content-between">
+                                    <div class="col-lg-6">
+                                        <div class="p-50px-r md-p-0px-r ani-fade-bottom ani-2">
+                                            <div class="ani-fade-left ani-1 white-color m-20px-b d-inline-block">Deals and Promotions</div>
+                                            <div class="ani-fade-left ani-1 font-alt display-4 white-color font-w-700 m-20px-b">Beats by<br />Dre Studio 2.</div>
+                                            <div class="d-flex ani-fade-left ani-1">
+                                                <span class="white-color m-10px-t m-10px-r"><del>$349,95</del></span>
+                                                <span class="h1 font-w-600 white-color">$279<sup class="h4">.99</sup></span>
+                                                <span></span>
+                                            </div>
+                                            <div class="ani-fade-bottom ani-3 p-15px-t">
+                                                <a class="as-btn as-btn-white" href="#">Click Here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <img class="ani-fade-top ani-1" src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-2.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control carousel-control-prev" href="#slider_snippet_21" role="button" data-slide="prev">
+                        <span class="prev-icon"></span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" href="#slider_snippet_21" role="button" data-slide="next">
+                        <span class="next-icon"></span>
+                    </a>
+                    </section>
+                </textarea>
+                <h6>Slider 21</h6>
+                <label class="e-sb-label" for="e_slider_21"><input id="e_slider_21" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp22">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-22.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="slider_snippet_22" class="ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider_snippet_22" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider_snippet_22" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg-center active bg-no-repeat bg-cover" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/glasses-slider-1.jpg);">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-8 col-lg-6 screen-65 d-flex align-items-center justify-content-center">
+                                        <div class="p-20px">
+                                            <div class="ani-fade-top ani-1 white-color m-20px-b d-inline-block">Up to -50%</div>
+                                            <div class="ani-fade-top ani-2 font-alt display-3 white-color font-w-700 m-20px-b">DARK STYLE ON SALE</div>
+                                            <div class="ani-fade-bottom ani-3 p-15px-t">
+                                                <a class="as-btn as-btn-white" href="#">For Him</a>
+                                                <a class="as-btn as-btn-white" href="#">For Her</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-center bg-no-repeat bg-cover" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/glasses-slider-2.jpg);">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-end">
+                                    <div class="col-12 col-md-8 col-lg-6 screen-65 d-flex align-items-center justify-content-center">
+                                        <div class="p-20px">
+                                            <div class="ani-fade-top ani-1 white-color m-20px-b d-inline-block">Up to -50%</div>
+                                            <div class="ani-fade-top ani-2 font-alt display-3 white-color font-w-700 m-20px-b">DARK STYLE ON SALE</div>
+                                            <div class="ani-fade-bottom ani-3 p-15px-t">
+                                                <a class="as-btn as-btn-white" href="#">For Him</a>
+                                                <a class="as-btn as-btn-white" href="#">For Her</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control carousel-control-prev" href="#slider_snippet_22" role="button" data-slide="prev">
+                        <span class="prev-icon"></span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" href="#slider_snippet_22" role="button" data-slide="next">
+                        <span class="next-icon"></span>
+                    </a>
+                </section>
+                </textarea>
+                <h6>Slider 22</h6>
+                <label class="e-sb-label" for="e_slider_22"><input id="e_slider_22" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp23">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-23.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_1" class="as-home-slider-1 ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_1" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_1" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-name="Slide" style="background-color: #fff0d4;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6 text-center text-lg-left m-50px-tb">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h2 class="display-3 font-w-700 dark-color ani-fade-left">Just start with <br />“Ok Google”.</h2>
+                                <p class="ani-2 ani-fade-left display-4 theme-color font-w-700">$900</p>
+                                <div class="p-10px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-theme" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-1-banner-1.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item" data-name="Slide" style="background-color: #fff0d4;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6 text-center text-lg-left m-50px-tb">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h2 class="display-3 font-w-700 dark-color ani-fade-left">Just start with <br />“Ok Google”.</h2>
+                                <p class="ani-2 ani-fade-left display-4 theme-color font-w-700">$900</p>
+                                <div class="p-10px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-theme" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-1-banner-2.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_1" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_1" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 23</h6>
+                <label class="e-sb-label" for="e_slider_23"><input id="e_slider_23" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.slider_temp24">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-24.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_2" class="as-home-slider-2 as-slider-full-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_2" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_2" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-2-bg-1.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center slider-screen">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="as-slider-typo-wrap ani-hidden ani-fade">
+                                <h6 class="h6 white-color font-w-500 ani-fade-left m-15px-b">- HUGE DISCOUNT</h6>
+                                <h2 class="display-3 white-color font-w-300 ani-fade-left delay-1">Wireless <br /><strong class="font-w-600">Earbuds</strong></h2>
+                                <div class="btn-bar ani-fade-left ani-2 m-40px-t">
+                                    <a class="as-btn as-btn-white" href="#">Shop Collections</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-5 ani-right">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-2-banner-1.png" />
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-2-bg-1.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center slider-screen">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="as-slider-typo-wrap ani-hidden ani-fade">
+                                <h6 class="h6 white-color font-w-500 ani-fade-left m-15px-b">- HUGE DISCOUNT</h6>
+                                <h2 class="display-3 white-color font-w-300 ani-fade-left delay-1">Wireless <br /><strong class="font-w-600">Earbuds</strong></h2>
+                                <div class="btn-bar ani-fade-left ani-2 m-40px-t">
+                                    <a class="as-btn as-btn-white" href="#">Shop Collections</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-5 ani-right">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-2-banner-2.png" />
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_2" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_2" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 24</h6>
+                <label class="e-sb-label" for="e_slider_24"><input id="e_slider_24" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp25">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-25.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_3" class="as-home-slider-3 as-slider-full-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_3" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_3" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-3-bg-1.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center slider-screen">
+                            <div class="col-lg-12">
+                                <div class="as-slider-typo-wrap">
+                                <h6 class="h6 white-color">LIMITED COLLECTIONS</h6>
+                                <h2 class="display-4 white-color">Space planning that’s both<br /> intelligent and imaginative</h2>
+                                </div>
+                                <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-3-bg-2.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center slider-screen">
+                            <div class="col-lg-12">
+                                <div class="as-slider-typo-wrap">
+                                <h6 class="h6 white-color">LIMITED COLLECTIONS</h6>
+                                <h2 class="display-4 white-color">Space planning that’s both<br /> intelligent and imaginative</h2>
+                                </div>
+                                <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="ss-box">
+                                    <a href="#">
+                                        <h4>LEXINGTON</h4>
+                                        <h6>Bedroom</h6>
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_3" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_3" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 25</h6>
+                <label class="e-sb-label" for="e_slider_25"><input id="e_slider_25" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp26">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-26.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_4" class="as-home-slider-4 as-slider-full-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_4" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_4" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg-center bg-no-repeat active" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-4-bg-1.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center slider-screen">
+                            <div class="col-lg-6">
+                                <div class="as-slider-typo-wrap text-center ani-top">
+                                <h6 class="h4 dark-color">Special Offer</h6>
+                                <h2 class="display-4 dark-color font-w-600">Final Clearance<br /> Up to 80% Off</h2>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-dark m-5px-r" href="#">Shop Women</a>
+                                    <a class="as-btn as-btn-dark m-5px-l" href="#">Shop Man</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-center bg-no-repeat" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-4-bg-2.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center slider-screen">
+                            <div class="col-lg-6">
+                                <div class="as-slider-typo-wrap text-center ani-top">
+                                <h6 class="h4 dark-color">Special Offer</h6>
+                                <h2 class="display-4 dark-color font-w-600">Final Clearance<br /> Up to 80% Off</h2>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-dark m-5px-r" href="#">Shop Women</a>
+                                    <a class="as-btn as-btn-dark m-5px-l" href="#">Shop Man</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_4" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_4" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 26</h6>
+                <label class="e-sb-label" for="e_slider_26"><input id="e_slider_26" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp27">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-27.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_5" class="as-home-slider-5 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_5" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_5" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg-center bg-no-repeat active" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-5-bg-1.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center slider-screen">
+                            <div class="col-lg-6">
+                                <div class="as-slider-typo-wrap text-center ani-top">
+                                <h6 class="h4 white-color">Don’t wait and save on...</h6>
+                                <h2 class="display-4 white-color font-w-600">MID SEASON SALE!<br />UP TO -50%</h2>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-white m-5px-r" href="#">Shop Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-center bg-no-repeat" style="background-image: url('https://odoo-snippets.atharvasystem.com/source/img/v3/home-5-bg-2.jpg');" data-name="Slide">
+                        <div class="container">
+                            <div class="row justify-content-center align-items-center slider-screen">
+                            <div class="col-lg-6">
+                                <div class="as-slider-typo-wrap text-center ani-top">
+                                <h6 class="h4 white-color">Don’t wait and save on...</h6>
+                                <h2 class="display-4 white-color font-w-600">MID SEASON SALE!<br />UP TO -50%</h2>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-white m-5px-r" href="#">Shop Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_5" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_5" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 27</h6>
+                <label class="e-sb-label" for="e_slider_27"><input id="e_slider_27" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp28">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-28.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_6" class="as-home-slider-6 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_6" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_6" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-6-bg-1.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-around slider-screen align-items-center">
+                            <div class="col-md-6 col-lg-6 m-50px-tb ani-hidden">
+                                <h6 class="h6 white-color m-0px ani-fade-left">HARDER. BETTER. STRONGER.</h6>
+                                <div class="p-15px-t p-20px-b ani-2 ani-fade-left">
+                                <h2 class="display-3 font-w-700 white-color m-0px">
+                                    THE MEN'S <br />STORE
+                                </h2>
+                                </div>
+                                <div class="ani-3 ani-fade-left">
+                                <a class="btn-lg as-btn as-btn-white" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <div class="ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-24.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-6-bg-2.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-around slider-screen align-items-center">
+                            <div class="col-md-6 col-lg-6 m-50px-tb ani-hidden">
+                                <h6 class="h6 white-color m-0px ani-fade-left">HARDER. BETTER. STRONGER.</h6>
+                                <div class="p-15px-t p-20px-b ani-2 ani-fade-left">
+                                <h2 class="display-3 font-w-700 white-color m-0px">
+                                    THE MEN'S <br />STORE
+                                </h2>
+                                </div>
+                                <div class="ani-3 ani-fade-left">
+                                <a class="btn-lg as-btn as-btn-white" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <div class="ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-23.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_6" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_6" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 28</h6>
+                <label class="e-sb-label" for="e_slider_28"><input id="e_slider_28" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.slider_temp29">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-29.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_7" class="as-home-slider-7 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_7" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_7" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-7-bg-3.jpg);">
+                        <div class="container">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6 lg-p-50px-t">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h2 class="display-3 font-w-700 white-color ani-fade-left">Backpack<br /> Solid Black</h2>
+                                <p class="lead white-color ani-2 ani-fade-left">Weekly selection from our team.</p>
+                                <div class="p-10px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-white" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-7-bg-1.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-7-bg-3.jpg);">
+                        <div class="container">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6 lg-p-50px-t">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h2 class="display-3 font-w-700 white-color ani-fade-left">Backpack<br /> Solid Black</h2>
+                                <p class="lead white-color ani-2 ani-fade-left">Weekly selection from our team.</p>
+                                <div class="p-10px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-white" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-7-bg-2.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_7" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_7" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 29</h6>
+                <label class="e-sb-label" for="e_slider_29"><input id="e_slider_29" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp30">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-30.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_8" class="as-home-slider-8 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_8" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_8" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-color: #536b86;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6 lg-p-50px-t">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h6 class="white-color font-w-500 white-color ani-fade-left">The Best Natural </h6>
+                                <h2 class="display-3 font-w-700 white-color ani-fade-left">Healthy skin care </h2>
+                                <p class="lead white-color-light ani-2 ani-fade-left">Lorem ipsum dolor sit amet, consecter adipisicing elit, sed do eiusmod</p>
+                                <h5 class="font-w-600 white-color ani-2 ani-fade-left">from $49.99 </h5>
+                                <div class="p-20px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-white" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-8-bg-1.jpg" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-color: #536b86;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                            <div class="col-lg-6 lg-p-50px-t">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h6 class="white-color font-w-500 white-color ani-fade-left">The Best Natural </h6>
+                                <h2 class="display-3 font-w-700 white-color ani-fade-left">Healthy skin care </h2>
+                                <p class="lead white-color-light ani-2 ani-fade-left">Lorem ipsum dolor sit amet, consecter adipisicing elit, sed do eiusmod</p>
+                                <h5 class="font-w-600 white-color ani-2 ani-fade-left">from $49.99 </h5>
+                                <div class="p-20px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-white" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-8-bg-2.jpg" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_8" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_8" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 30</h6>
+                <label class="e-sb-label" for="e_slider_30"><input id="e_slider_30" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp31">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-31.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_9" class="as-home-slider-9 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_9" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_9" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-color: #fe7402;">
+                        <div class="container">
+                            <div class="row align-items-center slider-screen">
+                            <div class="col-lg-6 lg-p-50px-t">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h6 class="white-color font-w-500 white-color ani-fade-left">Healthy Fruits 20% Off </h6>
+                                <h2 class="display-3 font-w-700 white-color ani-fade-left">Fresh Organic <strong>Foods</strong></h2>
+                                <p class="lead white-color-light ani-2 ani-fade-left">The best Fruits and Vegetables Available for OrganiCart Online Shop</p>
+                                <h5 class="font-w-600 white-color ani-2 ani-fade-left">from $49.99 </h5>
+                                <div class="p-20px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-white" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-9-bg-1.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-color: #fe9701;">
+                        <div class="container">
+                            <div class="row align-items-center slider-screen">
+                            <div class="col-lg-6 lg-p-50px-t">
+                                <div class="as-slider-typo-wrap ani-hidden">
+                                <h6 class="white-color font-w-500 white-color ani-fade-left">Healthy Fruits 20% Off </h6>
+                                <h2 class="display-3 font-w-700 white-color ani-fade-left">Fresh Organic <strong>Foods</strong></h2>
+                                <p class="lead white-color-light ani-2 ani-fade-left">The best Fruits and Vegetables Available for OrganiCart Online Shop</p>
+                                <h5 class="font-w-600 white-color ani-2 ani-fade-left">from $49.99 </h5>
+                                <div class="p-20px-t ani-3 ani-fade-left">
+                                    <a class="as-btn as-btn-white" href="#">Explore More</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="as-slider-img-wrap ani-right delay-1">
+                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/home-9-bg-2.png" />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_9" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_9" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 31</h6>
+                <label class="e-sb-label" for="e_slider_31"><input id="e_slider_31" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.slider_temp32">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-32.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_10" class="as-home-slider-10 as-slider-full-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_10" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_10" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-10-bg-1.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-center slider-screen align-items-center">
+                            <div class="col-lg-12">
+                                <div class="typo-box ani-hidden ani-right">
+                                <h2 class="black-color h1 delay-1 ani-fade-left">WELCOME ON WEBSITE</h2>
+                                <p class="lead ani-2 ani-fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu minim veniam.</p>
+                                <div class="btn-bar ani-2 ani-fade-left">
+                                    <a class="as-btn as-btn-dark" href="#">find out more</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-10-bg-2.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-center slider-screen align-items-center">
+                            <div class="col-lg-12">
+                                <div class="typo-box ani-hidden ani-right">
+                                <h2 class="black-color h1 delay-1 ani-fade-left">WELCOME ON WEBSITE</h2>
+                                <p class="lead ani-2 ani-fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu minim veniam.</p>
+                                <div class="btn-bar ani-2 ani-fade-left">
+                                    <a class="as-btn as-btn-dark" href="#">find out more</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_10" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_10" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 32</h6>
+                <label class="e-sb-label" for="e_slider_32"><input id="e_slider_32" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp33">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-33.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_11" class="as-home-slider-11 as-slider-full-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_11" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_11" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-11-bg-1.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-center slider-screen align-items-center p-100px-tb">
+                            <div class="col-lg-10 text-center">
+                                <div class="typo-box ani-hidden ani-right">
+                                <div class="display-3 white-color font-w-200 m-30px-b">
+                                    Designed to Make Your Stay Magnificent
+                                </div>
+                                <div class="btn-bar ani-2 ani-fade-left">
+                                    <a class="as-btn as-btn-white btn-lg" href="#">Find out more</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-11-bg-2.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-center slider-screen align-items-center p-100px-tb">
+                            <div class="col-lg-10 text-center">
+                                <div class="typo-box ani-hidden ani-right">
+                                <div class="display-3 white-color font-w-200 m-30px-b">
+                                    Designed to Make Your Stay Magnificent
+                                </div>
+                                <div class="btn-bar ani-2 ani-fade-left">
+                                    <a class="as-btn as-btn-white btn-lg" href="#">Find out more</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_11" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_11" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 33</h6>
+                <label class="e-sb-label" for="e_slider_33"><input id="e_slider_33" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp34">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-34.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_12" class="as-home-slider-12 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_12" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_12" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-12-bg-1.jpg);">
+                        <div class="container">
+                            <div class="row slider-screen align-items-center p-100px-tb">
+                            <div class="col-lg-7">
+                                <div class="typo-box ani-hidden ani-right">
+                                <h6 class="dark-color font-w-500 m-10px-b">New Arrivals</h6>
+                                <div class="display-4 dark-color font-w-500 m-20px-b">
+                                    Summer Collection
+                                </div>
+                                <div class="h3 dark-color">Up to 33% off on all products.</div>
+                                <div class="btn-bar ani-2 ani-fade-left p-20px-t">
+                                    <a class="as-btn as-btn-dark btn-lg" href="#">Discover More</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-12-bg-2.jpg);">
+                        <div class="container">
+                            <div class="row slider-screen align-items-center p-100px-tb">
+                            <div class="col-lg-7">
+                                <div class="typo-box ani-hidden ani-right">
+                                <h6 class="dark-color font-w-500 m-10px-b">New Arrivals</h6>
+                                <div class="display-4 dark-color font-w-500 m-20px-b">
+                                    Summer Collection
+                                </div>
+                                <div class="h3 dark-color">Up to 33% off on all products.</div>
+                                <div class="btn-bar ani-2 ani-fade-left p-20px-t">
+                                    <a class="as-btn as-btn-dark btn-lg" href="#">Discover More</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_12" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_12" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 34</h6>
+                <label class="e-sb-label" for="e_slider_34"><input id="e_slider_34" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp35">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-35.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <div id="alan_v3_home_slider_13" class="as-home-slider-13 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#alan_v3_home_slider_13" data-slide-to="0" class="active"></li>
+                        <li data-target="#alan_v3_home_slider_13" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-13-bg-1.jpg);">
+                        <div class="container">
+                            <div class="row slider-screen align-items-center p-100px-tb justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="typo-box ani-hidden ani-bottom text-center">
+                                <div class="display-4 white-color font-w-300 m-20px-b">
+                                    Kitchen &amp; Dining<br />Furniture
+                                </div>
+                                <p class="white-color">You really can have it all with furniture pieces that are both cozy and functional.</p>
+                                <div class="btn-bar ani-2 ani-bottom p-20px-t">
+                                    <a class="as-btn as-btn-white btn-lg" href="#">Shop Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-13-bg-2.jpg);">
+                        <div class="container">
+                            <div class="row slider-screen align-items-center p-100px-tb justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="typo-box ani-hidden ani-bottom text-center">
+                                <div class="display-4 white-color font-w-300 m-20px-b">
+                                    Kitchen &amp; Dining<br />Furniture
+                                </div>
+                                <p class="white-color">You really can have it all with furniture pieces that are both cozy and functional.</p>
+                                <div class="btn-bar ani-2 ani-bottom p-20px-t">
+                                    <a class="as-btn as-btn-white btn-lg" href="#">Shop Now</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" data-target="#alan_v3_home_slider_13" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                        <span class="prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" data-target="#alan_v3_home_slider_13" data-slide="next" role="img" aria-label="Next" title="Next">
+                        <span class="next-icon"></span>
+                    </div>
+                    </div>
+                </textarea>
+                <h6>Slider 35</h6>
+                <label class="e-sb-label" for="e_slider_35"><input id="e_slider_35" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.slider_temp36">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/slider-36.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="as-home-slider-14">
+                    <div class="container">
+                        <div id="alan_v3_home_slider_14" class="as-home-slider-14 as-slider-half-screen ani-carousel carousel-arrow center white s_carousel s_carousel_default carousel slide oe_snippet_body" data-interval="10000" data-name="Carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#alan_v3_home_slider_14" data-slide-to="0" class="active"></li>
+                            <li data-target="#alan_v3_home_slider_14" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-14-bg-1.jpg);">
+                            <div class="container">
+                                <div class="row slider-screen align-items-center p-100px-tb justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="typo-box ani-hidden ani-bottom text-center">
+                                    <div class="display-4 black-color font-w-600 m-20px-b">
+                                        Kitchen &amp; Dining<br />Furniture
+                                    </div>
+                                    <p class="dark-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <div class="btn-bar ani-2 ani-bottom p-20px-t">
+                                        <a class="as-btn as-btn-dark btn-lg" href="#">Shop Now</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item bg-cover bg-no-repeat bg-center" data-name="Slide" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/home-14-bg-2.jpg);">
+                            <div class="container">
+                                <div class="row slider-screen align-items-center p-100px-tb justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="typo-box ani-hidden ani-bottom text-center">
+                                    <div class="display-4 black-color font-w-600 m-20px-b">
+                                        Kitchen &amp; Dining<br />Furniture
+                                    </div>
+                                    <p class="dark-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <div class="btn-bar ani-2 ani-bottom p-20px-t">
+                                        <a class="as-btn as-btn-dark btn-lg" href="#">Shop Now</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev" data-target="#alan_v3_home_slider_14" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                            <span class="prev-icon"></span>
+                        </div>
+                        <div class="carousel-control-next" data-target="#alan_v3_home_slider_14" data-slide="next" role="img" aria-label="Next" title="Next">
+                            <span class="next-icon"></span>
+                        </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Slider 36</h6>
+                <label class="e-sb-label" for="e_slider_36"><input id="e_slider_36" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

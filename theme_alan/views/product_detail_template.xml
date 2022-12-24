@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_sticky_media" name="Sticky Media" inherit_id="website_sale.product" active="True" customize_show="True">
+        <xpath expr="//div[hasclass('row')]/div[hasclass('col-md-6')]" position="attributes">
+            <attribute name="class">col-lg-6 as-pd-sticky-box as-product-photos</attribute>
+        </xpath>
+    </template>
+    <!-- Custom product Detail  -->
+    <template id="custom_product_detail_page" name="Custom Product Details" inherit_id="website_sale.product" priority="50">
+        <!-- Replace Website description -->
+        <xpath expr="//div[@t-field='product.website_description']" position="replace">
+            <t t-call="atharva_theme_base.custom_product_detail_st"/>
+        </xpath>
+
+        <!-- Replace product default description -->
+        <xpath expr="//hr[@t-if='product.description_sale']" position="replace"/>
+        <xpath expr="//p[@t-field='product.description_sale']" position="replace"/>
+
+
+        <xpath expr="//a[@id='add_to_cart']" position="replace">
+            <t t-call="atharva_theme_base.cart_btn_sts"/>
+        </xpath>
+
+
+        <!-- Hide default breadcrumb row -->
+        <xpath expr="//div[hasclass('row')][1]" position="attributes">
+            <attribute name="class">row d-none</attribute>
+        </xpath>
+
+        <!-- Custom breadcrumb -->
+        <xpath expr="//section[@id='product_detail']" position="before">
+            <t t-call="atharva_theme_base.product_breadcrumb_st"/>
+        </xpath>
+
+        <!-- Replace carousel -->
+        <xpath expr="//div[hasclass('row')]/div[hasclass('col-md-6')]" position="attributes">
+            <attribute name="class">col-lg-6 as-product-photos</attribute>
+        </xpath>
+
+        <!-- Change class for product_details -->
+        <xpath expr="//div[@id='product_details']" position="attributes">
+            <attribute name="class">col-lg-6 as-product-single-info</attribute>
+        </xpath>
+
+        <!-- Product Description -->
+        <xpath expr="//h1[@t-field='product.name']" position="after">
+            <t t-call="atharva_theme_base.product_description_st"/>
+        </xpath>
+
+        <!-- product rating -->
+        <xpath expr="//div[@id='product_details']/h1" position="after">
+            <t t-call="atharva_theme_base.product_rating_st"/>
+        </xpath>
+        <!-- Product Brand detail -->
+        <xpath expr="//div[@id='product_details']/hr" position="after">
+            <t t-call="atharva_theme_base.product_brand_st"/>
+        </xpath>
+
+        <xpath expr="//div[hasclass('row')][2]" position="attributes">
+            <attribute name="class">row as-product-detail-row</attribute>
+        </xpath>
+
+        <!-- product sticky-->
+        <xpath expr="//div[hasclass('as-product-detail-row')]" position="after">
+            <t t-call="atharva_theme_base.product_sticky_st"/>
+        </xpath>
+
+        <xpath expr="//div[hasclass('justify-content-end')]/t[@t-call='website_sale.search']" position="replace"/>
+    </template>
+
+    <template id="as_product_attributes_body" name="Product Attributes Table Extended As" inherit_id="website_sale_comparison.product_attributes_body">
+        <xpath expr="//section[@id='product_full_spec']" position="replace"/>
+    </template>
+
+    <!-- Product Rating Replace -->
+    <template id="as_product_comment" inherit_id="website_sale.product_comment">
+        <xpath expr="//div[hasclass('o_shop_discussion_rating')]" position="replace"/>
+    </template>
+
+    <!--Remove Default Alternative Products item -->
+    <template id='as_recommended_products' inherit_id="website_sale.recommended_products" name="Alternative Products">
+        <xpath expr="//div[@t-if='product.alternative_product_ids']" position="replace"/>
+    </template>
+
+    <template id="product_image_gallery" inherit_id="website_sale.shop_product_carousel" name="Product Image Gallery" customize_show="True" active="False">
+        <xpath expr="//div[hasclass('carousel-inner')]" position="replace">
+            <t t-call="atharva_theme_base.product_image_gallary_st"/>
+        </xpath>
+    </template>
+
+    <template id="shop_product_carousel_extend" name="Shop Product Carousel Extend" inherit_id="website_sale.shop_product_carousel">
+        <xpath expr="//div[hasclass('d-md-block')]" position="replace">
+            <t t-call="atharva_theme_base.shop_product_carousel_st"/>
+        </xpath>
+    </template>
+
+</odoo>

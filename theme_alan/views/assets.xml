@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" name="Frontend Assets theme alan" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/lib/frontend/bootstrap-slider.min.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/product_share.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/product.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/shop.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/cart.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/login_popup.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/load_on_scroll.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/quick_alternative.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/megamenu_front.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/js/quick_add_to_cart.js" />
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/lib/linearicons.css"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/lib/frontend/bootstrap-slider.min.css"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/variable.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/login.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/mixins.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/header.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/base.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/button.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/snippets.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/blog.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/effect.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/mega-menu.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/shop.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/quick-view.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/product-details.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/product-snippet.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/categories.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/brand.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/cart.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/hotspot.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/quick-cart.scss"/>
+	        <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom-option.scss"/>
+        </xpath>
+    </template>
+
+    <template id="theme_alan_editor" inherit_id="website.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_latest_product_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_offer_timer/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_snippet_builder/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_category_product_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_brand_product_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_product_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_product_var_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_blog_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_brand_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_category_slider/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_best_seller_product/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_product_banner/options.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_img_hotspot/options.js"/>
+        </xpath>
+    </template>
+
+    <template id="theme_alan_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/theme.scss"/>
+        </xpath>
+    </template>
+
+    <template id="theme_alan_assets_frontend_helpers" inherit_id="portal._assets_frontend_helpers">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/bootstrap-override.scss"/>
+        </xpath>
+    </template>
+
+    <!-- Custom Header Assets: Start -->
+        <template id="assets_frontend_header1" name="Alan: Header-1 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header1.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header2" name="Alan: Header-2 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header2.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header3" name="Alan: Header-3 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header3.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header4" name="Alan: Header-4 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header4.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header5" name="Alan: Header-5 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header5.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header6" name="Alan: Header-6 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header6.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header7" name="Alan: Header-7 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header7.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header8" name="Alan: Header-8 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header8.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_header9" name="Alan: Header-9 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_header/header9.scss"/>
+            </xpath>
+        </template>
+    <!-- Custom Header Assets: End -->
+
+    <!-- Custom Footer Assets: Start -->
+        <template id="assets_frontend_footer1" name="Alan: Footer-1 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer1.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer2" name="Alan: Footer-2 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer2.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer3" name="Alan: Footer-3 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer3.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer4" name="Alan: Footer-4 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer4.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer5" name="Alan: Footer-5 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer5.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer6" name="Alan: Footer-6 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer6.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer7" name="Alan: Footer-7 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer7.scss"/>
+            </xpath>
+        </template>
+
+        <template id="assets_frontend_footer8" name="Alan: Footer-8 Frontend Assets" inherit_id="website.assets_frontend" active="False">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_footer/footer8.scss"/>
+            </xpath>
+        </template>
+    <!-- Custom Footer Assets: End -->
+</odoo>

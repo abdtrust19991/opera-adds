@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_service_templates">
+
+<t t-name="theme_alan.service_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-7 text-center">
+                                    <div class="h2 dark-color font-w-300 m-10px-b">OUR SERVICES</div>
+                                    <p class="font-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px dark-color text-center dark-bg-alt border-radius-5">
+                                            <i class="fa fa-bookmark-o"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 dark-color font-w-600">CREATIVITY</div>
+                                            <p class="m-0px">rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px dark-color text-center dark-bg-alt border-radius-5">
+                                            <i class="fa fa-lightbulb-o"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 dark-color font-w-600">DOCUMENTATION</div>
+                                            <p class="m-0px">rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px dark-color text-center dark-bg-alt border-radius-5">
+                                            <i class="fa fa-mobile"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 dark-color font-w-600">RESPONSIVE</div>
+                                            <p class="m-0px">rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px dark-color text-center dark-bg-alt border-radius-5">
+                                            <i class="fa fa-clone"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 dark-color font-w-600">ADVANCED</div>
+                                            <p class="m-0px">rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px dark-color text-center dark-bg-alt border-radius-5">
+                                            <i class="fa fa-comments-o"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 dark-color font-w-600">BEST SUPPORT</div>
+                                            <p class="m-0px">rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-50px dark-color text-center dark-bg-alt border-radius-5">
+                                            <i class="fa fa-flag-o"></i>
+                                        </div>
+                                        <div class="media-body p-15px-l">
+                                            <div class="h5 dark-color font-w-600">REASONABLE</div>
+                                            <p class="m-0px">rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services</h6>
+                <label class="e-sb-label" for="e_services_01"><input id="e_services_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-9 text-center">
+                                    <div class="dark-color h1 after-50px theme-after font-w-400 m-30px-b p-30px-b">Discover Services</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-paint-brush"></i>
+                                            </div>
+                                            <label>Service Provide</label>
+                                            <div class="h5 font-w-600 dark-color m-20px-b">We’re Canada based SEO and digital marketing</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-diamond"></i>
+                                            </div>
+                                            <label>Digital Agency</label>
+                                            <div class="h5 font-w-600 dark-color m-20px-b">We’re Canada based SEO and digital marketing</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <label>Marketing Analysis</label>
+                                            <div class="h5 font-w-600 dark-color m-20px-b">We’re Canada based SEO and digital marketing</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-hdd-o"></i>
+                                            </div>
+                                            <label>Service Provide</label>
+                                            <div class="h5 font-w-600 dark-color m-20px-b">We’re Canada based SEO and digital marketing</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 2</h6>
+                <label class="e-sb-label" for="e_services_02"><input id="e_services_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-9 text-center">
+                                    <div class="dark-color h1 font-w-600 m-20px-b">ABOUT ALAN</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-paint-brush"></i>
+                                            </div>
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Service Provide</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-diamond"></i>
+                                            </div>
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Digital Agency</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Marketing Analysis</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="card white-bg m-15px-tb">
+                                        <div class="card-body">
+                                            <div class="m-15px-b icon-70px theme-color">
+                                                <i class="fa fa-hdd-o"></i>
+                                            </div>
+                                            <div class="h5 font-w-600 dark-color m-15px-b">Service Provide</div>
+                                            <p class="p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-line-btn dark" href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 3</h6>
+                <label class="e-sb-label" for="e_services_03"><input id="e_services_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-12">
+                                    <div class="h1 dark-color font-w-600 after-50px theme-after p-30px-b m-30px-b">OUR BEST SERVICES</div>
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                </div> <!-- col -->
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="text-center transition hover-top box-shadow-hover p-25px-lr p-40px-tb border-radius-5">
+                                        <div class="icon-80px d-inline-block theme-color theme-bg-alt border-radius-50 m-20px-b">
+                                            <i class="fa fa-users"></i>
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-b">Workers</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                        <a class="as-line-btn dark" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="text-center transition hover-top box-shadow-hover p-25px-lr p-40px-tb border-radius-5">
+                                        <div class="icon-80px d-inline-block theme-color theme-bg-alt border-radius-50 m-20px-b">
+                                            <i class="fa fa-wrench"></i>
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-b">Repairs</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                        <a class="as-line-btn dark" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="text-center transition hover-top box-shadow-hover p-25px-lr p-40px-tb border-radius-5">
+                                        <div class="icon-80px d-inline-block theme-color theme-bg-alt border-radius-50 m-20px-b">
+                                            <i class="fa fa-home"></i>
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-b">Home Builds</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                        <a class="as-line-btn dark" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="text-center transition hover-top box-shadow-hover p-25px-lr p-40px-tb border-radius-5">
+                                        <div class="icon-80px d-inline-block theme-color theme-bg-alt border-radius-50 m-20px-b">
+                                            <i class="fa fa-map-signs"></i>
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-b">Map Markers</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                        <a class="as-line-btn dark" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="text-center transition hover-top box-shadow-hover p-25px-lr p-40px-tb border-radius-5">
+                                        <div class="icon-80px d-inline-block theme-color theme-bg-alt border-radius-50 m-20px-b">
+                                            <i class="fa fa-universal-access"></i>
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-b">Conference</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                        <a class="as-line-btn dark" href="#">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="text-center transition hover-top box-shadow-hover p-25px-lr p-40px-tb border-radius-5">
+                                        <div class="icon-80px d-inline-block theme-color theme-bg-alt border-radius-50 m-20px-b">
+                                            <i class="fa fa-rocket"></i>
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-b">UpLift</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                        <a class="as-line-btn dark" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 4</h6>
+                <label class="e-sb-label" for="e_services_04"><input id="e_services_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="font-w-600 lead theme-color m-5px-b">WE AIM TO TRANSFORM YOUR ABILITIES</div>
+                                    <div class="h1 font-w-600 dark-color">OUR COURSES</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/g-9.jpg" /></a>
+                                        <div class="dark-bg p-25px">
+                                            <a href="#" class="h5 font-w-600 white-color">BODY BUILDING</a>
+                                            <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/g-10.jpg" /></a>
+                                        <div class="dark-bg p-25px">
+                                            <a href="#" class="h5 font-w-600 white-color">PILATES &amp; STRETCHING</a>
+                                            <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/g-11.jpg" /></a>
+                                        <div class="dark-bg p-25px">
+                                            <a href="#" class="h5 font-w-600 white-color">WEIGHT LOSS</a>
+                                            <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/g-12.jpg" /></a>
+                                        <div class="dark-bg p-25px">
+                                            <a href="#" class="h5 font-w-600 white-color">GYM FITNESS</a>
+                                            <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/g-13.jpg" /></a>
+                                        <div class="dark-bg p-25px">
+                                            <a href="#" class="h5 font-w-600 white-color">CYCLING</a>
+                                            <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/g-14.jpg" /></a>
+                                        <div class="dark-bg p-25px">
+                                            <a href="#" class="h5 font-w-600 white-color">CROSSFIT</a>
+                                            <p class="m-0px white-color-alt">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 5</h6>
+                <label class="e-sb-label" for="e_services_05"><input id="e_services_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h1 dark-color font-w-600">OUR SERVICES</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="border-1 p-25px-lr p-40px-tb border-color-gray text-center white-bg">
+                                        <div class="avatar-90px theme-bg d-inline-block border-radius-50">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-5.png" />
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-tb">AENEAN LACINIA</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="border-1 p-25px-lr p-40px-tb border-color-gray text-center white-bg">
+                                        <div class="avatar-90px theme-bg d-inline-block border-radius-50">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-6.png" />
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-tb">AENEAN LACINIA</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="border-1 p-25px-lr p-40px-tb border-color-gray text-center white-bg">
+                                        <div class="avatar-90px theme-bg d-inline-block border-radius-50">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-7.png" />
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-tb">AENEAN LACINIA</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="border-1 p-25px-lr p-40px-tb border-color-gray text-center white-bg">
+                                        <div class="avatar-90px theme-bg d-inline-block border-radius-50">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-8.png" />
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-tb">AENEAN LACINIA</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="border-1 p-25px-lr p-40px-tb border-color-gray text-center white-bg">
+                                        <div class="avatar-90px theme-bg d-inline-block border-radius-50">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-9.png" />
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-tb">AENEAN LACINIA</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="border-1 p-25px-lr p-40px-tb border-color-gray text-center white-bg">
+                                        <div class="avatar-90px theme-bg d-inline-block border-radius-50">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/h-icon-10.png" />
+                                        </div>
+                                        <div class="h5 dark-color font-w-600 m-15px-tb">AENEAN LACINIA</div>
+                                        <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 6</h6>
+                <label class="e-sb-label" for="e_services_06"><input id="e_services_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 text-center">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-4.png" title="" align="" />
+                                </div>
+                                <div class="col-lg-6">
+                                    <i class="fa fa-3x theme-color fa-paw"></i>
+                                    <div class="h1 font-w-700 dark-color m-10px-t m-20px-b">Our Services</div>
+                                    <p class="lead font-w-600 dark-color">Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="icon-60px theme-bg-alt text-center border-radius-5 theme-color">
+                                                    <i class="fa fa-medkit"></i>
+                                                </div>
+                                                <div class="media-body p-20px-l">
+                                                    <div class="dark-color h5 font-w-600 m-10px-b">Medical Bath</div>
+                                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="icon-60px theme-bg-alt text-center border-radius-5 theme-color">
+                                                    <i class="fa fa-bath"></i>
+                                                </div>
+                                                <div class="media-body p-20px-l">
+                                                    <div class="dark-color h5 font-w-600 m-10px-b">Bath &amp; Dry</div>
+                                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="icon-60px theme-bg-alt text-center border-radius-5 theme-color">
+                                                    <i class="fa fa-scissors"></i>
+                                                </div>
+                                                <div class="media-body p-20px-l">
+                                                    <div class="dark-color h5 font-w-600 m-10px-b">Full Grooming</div>
+                                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 7</h6>
+                <label class="e-sb-label" for="e_services_07"><input id="e_services_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row no-gutters box-shadow">
+                                <div class="col-lg-6">
+                                    <div class="d-flex flex-column justify-content-center h-100 p-50px text-center sm-p-25px white-bg">
+                                        <div class="h2 font-w-600 dark-color m-20px-b">Welcome to the Most Secure Place!</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <div class="btn-bar p-20px-t">
+                                            <a class="as-btn as-btn-theme" href="#">Admission Open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/care-6.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/care-7.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex flex-column justify-content-center h-100 p-50px text-center sm-p-25px white-bg">
+                                        <div class="h2 font-w-600 dark-color m-20px-b">Welcome to the Most Secure Place!</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <div class="btn-bar p-20px-t">
+                                            <a class="as-btn as-btn-theme" href="#">Admission Open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 8</h6>
+                <label class="e-sb-label" for="e_services_08"><input id="e_services_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp9">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/services-9.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="section" style="background-color: #f6f6ff;">
+                    <div class="container">
+                        <div class="row justify-content-center m-60px-b sm-m-45px-b">
+                            <div class="col-lg-6 text-center">
+                                <div class="h1 font-w-400 dark-color m-10px-b">The Benefits</div>
+                                <p class="m-0px font-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="text-center p-30px-lr">
+                                    <div class="avatar-90px theme-bg d-inline-block border-radius-50"><img src="http://odoo-snippets.atharvasystem.com/source/img/clic-icon-1.png" /></div>
+                                    <div class="p-20px-t">
+                                        <div class="h5 font-w-600 m-10px-b theme-color">Advanced Dentistry</div>
+                                        <p>Lorem ipsum dolor sit es amet vel consectetur placerat es metus euismod convallis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="text-center p-30px-lr">
+                                    <div class="avatar-90px theme-bg d-inline-block border-radius-50"><img src="http://odoo-snippets.atharvasystem.com/source/img/clic-icon-2.png" /></div>
+                                    <div class="p-20px-t">
+                                        <div class="h5 font-w-600 m-10px-b theme-color">Advanced Dentistry</div>
+                                        <p>Lorem ipsum dolor sit es amet vel consectetur placerat es metus euismod convallis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="text-center p-30px-lr">
+                                    <div class="avatar-90px theme-bg d-inline-block border-radius-50"><img src="http://odoo-snippets.atharvasystem.com/source/img/clic-icon-3.png" /></div>
+                                    <div class="p-20px-t">
+                                        <div class="h5 font-w-600 m-10px-b theme-color">Advanced Dentistry</div>
+                                        <p>Lorem ipsum dolor sit es amet vel consectetur placerat es metus euismod convallis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 m-15px-tb">
+                                <div class="text-center p-30px-lr">
+                                    <div class="avatar-90px theme-bg d-inline-block border-radius-50"><img src="http://odoo-snippets.atharvasystem.com/source/img/clic-icon-4.png" /></div>
+                                    <div class="p-20px-t">
+                                        <div class="h5 font-w-600 m-10px-b theme-color">Advanced Dentistry</div>
+                                        <p>Lorem ipsum dolor sit es amet vel consectetur placerat es metus euismod convallis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Services 9</h6>
+            <label class="e-sb-label" for="e_services_09"><input id="e_services_09" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background: #222">
+                        <div class="container">
+                            <div class="row border-all border-w-10">
+                                <div class="col-lg-4 hover-scale m-15px-tb">
+                                    <div class="p-20px black-bg">
+                                        <div class="font-w-600 white-color h5 m-25px-b">Cabernet Sauvignon </div>
+                                        <div class="m-20px-b">
+                                            <div class="white-color font-w-500">YEARS</div>
+                                            <span>from 2015 till 2017</span>
+                                        </div>
+                                        <div class="m-10px-b">
+                                            <div class="white-color font-w-500 m-5px-b">BOTTLE SIZES</div>
+                                            <span>750ml, 1.5 L Magnum, 3 L Double Magnum, 6 L Imperial</span>
+                                        </div>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/wine-4.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 hover-scale m-15px-tb">
+                                    <div class="p-20px black-bg">
+                                        <div class="font-w-600 white-color h5 m-25px-b">Cabernet Sauvignon </div>
+                                        <div class="m-20px-b">
+                                            <div class="white-color font-w-500">YEARS</div>
+                                            <span>from 2015 till 2017</span>
+                                        </div>
+                                        <div class="m-10px-b">
+                                            <div class="white-color font-w-500 m-5px-b">BOTTLE SIZES</div>
+                                            <span>750ml, 1.5 L Magnum, 3 L Double Magnum, 6 L Imperial</span>
+                                        </div>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/wine-4.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 hover-scale m-15px-tb">
+                                    <div class="p-20px black-bg">
+                                        <div class="font-w-600 white-color h5 m-25px-b">Cabernet Sauvignon </div>
+                                        <div class="m-20px-b">
+                                            <div class="white-color font-w-500">YEARS</div>
+                                            <span>from 2015 till 2017</span>
+                                        </div>
+                                        <div class="m-10px-b">
+                                            <div class="white-color font-w-500 m-5px-b">BOTTLE SIZES</div>
+                                            <span>750ml, 1.5 L Magnum, 3 L Double Magnum, 6 L Imperial</span>
+                                        </div>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/wine-4.jpg" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 10</h6>
+                <label class="e-sb-label" for="e_services_10"><input id="e_services_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/services-11.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="section s_parallax parallax s_parallax_is_fixed">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/ac-10.jpg'); background-position: 50% 75%;"></span>
+                    <div class="container">
+                        <div class="row m-60px-b sm-m-40px-b">
+                            <div class="col-lg-4">
+                                <div class="white-color h2 font-w-600">The Alan Academy</div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="p-30px border-1 border-color-white m-15px-tb">
+                                    <div class="avatar-60px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-icon-5.png" />
+                                    </div>
+                                    <div class="m-15px-t">
+                                        <div class="h5 m-10px-b font-w-600 white-color">Education Services</div>
+                                        <p class="white-color-alt p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        <a class="as-btn as-btn-white as-btn" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="p-30px border-1 border-color-white m-15px-tb">
+                                    <div class="avatar-60px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-icon-6.png" />
+                                    </div>
+                                    <div class="m-15px-t">
+                                        <div class="h5 m-10px-b font-w-600 white-color">International Hubs</div>
+                                        <p class="white-color-alt p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        <a class="as-btn as-btn-white as-btn" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="p-30px border-1 border-color-white m-15px-tb">
+                                    <div class="avatar-60px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-icon-7.png" />
+                                    </div>
+                                    <div class="m-15px-t">
+                                        <div class="h5 m-10px-b font-w-600 white-color">Bachelor’s and Master’s</div>
+                                        <p class="white-color-alt p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        <a class="as-btn as-btn-white as-btn" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="p-30px border-1 border-color-white m-15px-tb">
+                                    <div class="avatar-60px">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-icon-8.png" />
+                                    </div>
+                                    <div class="m-15px-t">
+                                        <div class="h5 m-10px-b font-w-600 white-color">University Life</div>
+                                        <p class="white-color-alt p-10px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        <a class="as-btn as-btn-white as-btn" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Services 11</h6>
+            <label class="e-sb-label" for="e_services_11"><input id="e_services_11" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="white-bg p-15px box-shadow">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-4.jpg" />
+                                        </div>
+                                        <div class="text-center p-20px-t  p-5px-b">
+                                            <div class="h5 m-10px-b font-w-600"><a class="dark-color" href="#">Massage Therapy</a></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="white-bg p-15px box-shadow">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-3.jpg" />
+                                        </div>
+                                        <div class="text-center p-20px-t  p-5px-b">
+                                            <div class="h5 m-10px-b font-w-600"><a class="dark-color" href="#">Oil Massage</a></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="white-bg p-15px box-shadow">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-6.jpg" />
+                                        </div>
+                                        <div class="text-center p-20px-t  p-5px-b">
+                                            <div class="h5 m-10px-b font-w-600"><a class="dark-color" href="#">Jacuzzi @ Natural Spa</a></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="white-bg p-15px box-shadow">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-5.jpg" />
+                                        </div>
+                                        <div class="text-center p-20px-t  p-5px-b">
+                                            <div class="h5 m-10px-b font-w-600"><a class="dark-color" href="#">Skin &amp; Beauty Care</a></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 12</h6>
+                <label class="e-sb-label" for="e_services_12"><input id="e_services_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp13">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-13.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h1 font-w-600 dark-color m-15px-b">Popular Procedures</div>
+                                    <p class="m-0px lead font-w-500">Where nature meets bliss</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-8.jpg" title="" alt="" />
+                                    </div>
+                                    <section class="p-30px" style="background-color: #2fbeae;">
+                                        <div class="h5 white-color font-w-600 m-15px-b">Traditional Vedic Massage</div>
+                                        <p class="m-0px m-15px-b white-color-alt">55 mins Hot Stone Massage<br /> 15 mins Head Oil Massage</p>
+                                        <a class="as-btn as-btn-white" href="#">Book Now</a>
+                                    </section>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-9.jpg" title="" alt="" />
+                                    </div>
+                                    <section class="p-30px" style="background-color: #FF508B;">
+                                        <div class="h5 white-color font-w-600 m-15px-b">Skin &amp; Beauty Care</div>
+                                        <p class="m-0px m-15px-b white-color-alt">55 mins Hot Stone Massage<br /> 15 mins Head Oil Massage</p>
+                                        <a class="as-btn as-btn-white" href="#">Book Now</a>
+                                    </section>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-10.jpg" title="" alt="" />
+                                    </div>
+                                    <section class="p-30px" style="background-color: #62c052;">
+                                        <div class="h5 white-color font-w-600 m-15px-b">Executive Reflexology</div>
+                                        <p class="m-0px m-15px-b white-color-alt">55 mins Hot Stone Massage<br /> 15 mins Head Oil Massage</p>
+                                        <a class="as-btn as-btn-white" href="#">Book Now</a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 13</h6>
+                <label class="e-sb-label" for="e_services_13"><input id="e_services_13" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp14">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-14.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section p-0px-b s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/spa-12.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="dark-color h1 font-w-600 m-15px-b">Popular Procedures</div>
+                                    <p class="m-0px lead font-w-500">Where nature meets bliss</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-end">
+                                <div class="col-lg-4">
+                                    <div class="row m-50px-b">
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="avatar-60px">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-i-1.png" />
+                                                </div>
+                                                <div class="media-body p-15px-l">
+                                                    <div class="h5 m-10px-b font-w-600 dark-color">Complete Detoxification</div>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="avatar-60px">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-i-2.png" />
+                                                </div>
+                                                <div class="media-body p-15px-l">
+                                                    <div class="h5 m-10px-b font-w-600 dark-color">Herbal &amp; Natural</div>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="avatar-60px">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-i-3.png" />
+                                                </div>
+                                                <div class="media-body p-15px-l">
+                                                    <div class="h5 m-10px-b font-w-600 dark-color">Steam Bath</div>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 md-m-15px-tb">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-11.png" />
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row m-50px-b">
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="media-body p-15px-r text-right">
+                                                    <div class="h5 m-10px-b font-w-600 dark-color">Complete Detoxification</div>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                                </div>
+                                                <div class="avatar-60px">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-i-4.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="media-body p-15px-r text-right">
+                                                    <div class="h5 m-10px-b font-w-600 dark-color">Herbal &amp; Natural</div>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                                </div>
+                                                <div class="avatar-60px">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-i-5.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="media-body p-15px-r text-right">
+                                                    <div class="h5 m-10px-b font-w-600 dark-color">Steam Bath</div>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+                                                </div>
+                                                <div class="avatar-60px">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-i-6.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 14</h6>
+                <label class="e-sb-label" for="e_services_14"><input id="e_services_14" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp15">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-15.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-40px-b sm-m-20px-b">
+                                <div class="col-lg-8 text-center">
+                                    <label class="font-w-600 lead theme-color m-0px">First Service Free</label>
+                                    <div class="h1 font-w-700 dark-color m-5px-t">Complete Service Solutions</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow">
+                                        <div class="white-bg">
+                                            <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/movers-3.jpg" /></a>
+                                        </div>
+                                        <div class="white-bg p-20px">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Best Services forever</div>
+                                            <p class="m-25px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">Call Us Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow">
+                                        <div class="white-bg">
+                                            <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/movers-4.jpg" /></a>
+                                        </div>
+                                        <div class="white-bg p-20px">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Best Services forever</div>
+                                            <p class="m-25px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">Call Us Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="box-shadow">
+                                        <div class="white-bg">
+                                            <a href="#"><img src="http://odoo-snippets.atharvasystem.com/source/img/movers-5.jpg" /></a>
+                                        </div>
+                                        <div class="white-bg p-20px">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Best Services forever</div>
+                                            <p class="m-25px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                            <a class="as-btn as-btn as-btn-theme" href="#">Call Us Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 15</h6>
+                <label class="e-sb-label" for="e_services_15"><input id="e_services_15" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp16">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-16.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-5">
+                                    <div class="h2 font-w-600 dark-color m-20px-b">Why Choose Us?</div>
+                                    <p class="font-18 font-w-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    <div class="row m-25px-t">
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="icon-50px theme-bg white-color text-center border-radius-5">
+                                                    <i class="fa fa-get-pocket"></i>
+                                                </div>
+                                                <div class="media-body m-15px-l">
+                                                    <div class="h5 font-w-600 dark-color m-0px">FREE ESTIMATE</div>
+                                                    <label class="theme-color small m-0px">ALL ORDER OVER $45</label>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="icon-50px theme-bg white-color text-center border-radius-5">
+                                                    <i class="fa fa-headphones"></i>
+                                                </div>
+                                                <div class="media-body m-15px-l">
+                                                    <div class="h5 font-w-600 dark-color m-0px">24/7 SERVICES</div>
+                                                    <label class="theme-color small m-0px">SUPPORT 24/7</label>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="media m-15px-tb">
+                                                <div class="icon-50px theme-bg white-color text-center border-radius-5">
+                                                    <i class="fa fa-money"></i>
+                                                </div>
+                                                <div class="media-body m-15px-l">
+                                                    <div class="h5 font-w-600 dark-color m-0px">FLAT RATE FEES</div>
+                                                    <label class="theme-color small m-0px">100 SECURE PAYMENT</label>
+                                                    <p class="font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-25px-t">
+                                        <a class="as-btn as-btn-dark" href="#">Call Us Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="md-m-30px-t" src="http://odoo-snippets.atharvasystem.com/source/img/movers-6.jpg" title="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Services 16</h6>
+                <label class="e-sb-label" for="e_services_16"><input id="e_services_16" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp17">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-17.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section service-snippet-1">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                <div class="p-40px-b">
+                                    <h2 class="h1 dark-color">Our Luxury Room</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="service-box-01">
+                                    <div class="img-box">
+                                        <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-58.jpg" />
+                                    </div>
+                                    <div class="typo-box">
+                                        <h5>Bright Suite</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="btn-bar">
+                                            <a class="as-btn as-btn-dark as-btn-sm" href="#">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="service-box-01">
+                                    <div class="img-box">
+                                        <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-59.jpg" />
+                                    </div>
+                                    <div class="typo-box">
+                                        <h5>Modern Home</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="btn-bar">
+                                            <a class="as-btn as-btn-dark as-btn-sm" href="#">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="service-box-01">
+                                    <div class="img-box">
+                                        <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-60.jpg" />
+                                    </div>
+                                    <div class="typo-box">
+                                        <h5>Cozy Place</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="btn-bar">
+                                            <a class="as-btn as-btn-dark as-btn-sm" href="#">Book now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </textarea>
+                <h6>Services 17</h6>
+                <label class="e-sb-label" for="e_services_17"><input id="e_services_17" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.service_temp18">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/services-18.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <section class="section screen-50 bg-cover bg-no-repeat" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-21.jpg);">
+                        </section>
+                        <section class="section" style="background-color: #000;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h6 class="white-color">WINTER IS BACK</h6>
+                                        <h3 class="h1 white-color">Are you ready for the winter?</h3>
+                                        <div class="p-15px-t">
+                                            <a class="as-btn as-btn-white" href="#">Shop now</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt euismod enim quis molestie. Phasellus vitae facilisis justo, vitae malesuada odio. Sed in nunc in nunc vestibulum porttitor.</p>
+                                    </div>
+                                </div>
+                                <div class="row p-40px-t">
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="white-bg p-10px">
+                                            <div>
+                                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/bg-23.jpg" />
+                                            </div>
+                                            <div class="p-15px text-center">
+                                                <h5 class="dark-color m-10px-b">Snowboards</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna iet am rest.</p>
+                                                <div class="p-5px-t">
+                                                    <a class="as-btn as-btn-theme" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="white-bg p-10px">
+                                            <div>
+                                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/bg-23.jpg" />
+                                            </div>
+                                            <div class="p-15px text-center">
+                                                <h5 class="dark-color m-10px-b">Snowboards</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna iet am rest.</p>
+                                                <div class="p-5px-t">
+                                                    <a class="as-btn as-btn-theme" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="white-bg p-10px">
+                                            <div>
+                                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/bg-23.jpg" />
+                                            </div>
+                                            <div class="p-15px text-center">
+                                                <h5 class="dark-color m-10px-b">Snowboards</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna iet am rest.</p>
+                                                <div class="p-5px-t">
+                                                    <a class="as-btn as-btn-theme" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 m-15px-tb">
+                                        <div class="white-bg p-10px">
+                                            <div>
+                                                <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/bg-23.jpg" />
+                                            </div>
+                                            <div class="p-15px text-center">
+                                                <h5 class="dark-color m-10px-b">Snowboards</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna iet am rest.</p>
+                                                <div class="p-5px-t">
+                                                    <a class="as-btn as-btn-theme" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </textarea>
+                <h6>Services 18</h6>
+                <label class="e-sb-label" for="e_services_18"><input id="e_services_18" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

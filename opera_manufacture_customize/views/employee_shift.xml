@@ -1,0 +1,108 @@
+<data>
+    <record id="employee_shift_form" model="ir.ui.view">
+        <field name="name">employee.shift.form</field>
+        <field name="model">employee.shift</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" string="Confirm"
+                            groups="opera_manufacture_customize.group_confirm_shift"
+                            type="object" class="oe_highlight" states="draft"/>
+                    <button name="action_set_to_draft" string="Set To Draft"
+                            groups="opera_manufacture_customize.group_set_draft_shift"
+                            type="object" states="confirm" class="oe_highlight"/>
+                    <button name="action_done" string="Done"
+                            groups="opera_manufacture_customize.group_done_shift"
+                            type="object" states="run" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,run,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="work_center_id" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="date_from" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="date_to" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="current_day" invisible="1"/>
+                            <field name="shift_assigned" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="employee_shift_line" string="Employee Shift Line">
+                            <field name="employee_shift_line_ids" attrs="{'readonly':[('state','!=','draft')]}">
+                                <tree editable="bottom">
+                                    <field name="employee_id" required="1"/>
+                                    <field name="cost_per_hour"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="employee_shift_tree" model="ir.ui.view">
+        <field name="name">employee.shift.tree</field>
+        <field name="model">employee.shift</field>
+        <!--<field name="field_parent">children_ids if_want_to_add_Childs</field>-->
+        <field name="arch" type="xml">
+            <tree>
+                <field name="work_center_id"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="employee_shift_search" model="ir.ui.view">
+        <field name="name">employee.shift.search</field>
+        <field name="model">employee.shift</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="work_center_id"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <group expand="0" string="Group By">
+                    <filter string="Work Center" name="group_work_center_id" context="{'group_by':'work_center_id'}"/>
+                    <filter string="Status" name="group_state" context="{'group_by':'state'}"/>
+                    <filter string="Date From" name="group_date_from" context="{'group_by':'date_from'}"/>
+                    <filter string="Date To" name="group_date_to" context="{'group_by':'date_to'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="employee_shift_action" model="ir.actions.act_window">
+        <field name="name">Employee Shift</field>
+        <field name="res_model">employee.shift</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="employee_shift_menu"
+              name="Employee Shift"
+              action="employee_shift_action"
+              parent="mrp.menu_mrp_configuration"
+              sequence="10"/>
+
+    <record id="action_server_action_confirm" model="ir.actions.server">
+        <field name="name">Confirm Shift</field>
+        <field name="type">ir.actions.server</field>
+        <field name="groups_id" eval="[(4, ref('opera_manufacture_customize.group_confirm_shift'))]"/>
+        <field name="binding_model_id" ref="opera_manufacture_customize.model_employee_shift" />
+        <field name="model_id" ref="opera_manufacture_customize.model_employee_shift" />
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+            records.action_confirm()
+        </field>
+    </record>
+
+</data>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+cost_variance_id,cost_variance_name,model_cost_variance,group_cost_variance,1,1,1,1
+estimate_account_id,estimate_account_name,model_estimate_account,group_cost_variance,1,1,1,1
+actual_account_id,actual_account_name,model_actual_account,group_cost_variance,1,1,1,1

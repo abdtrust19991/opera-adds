@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="view_manufacturing_order_extended_for_cancel_manufacturing_order">
+        <field name="name">mrp.production.for.cancel.order.view</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="before">
+                <field name="set_to_draft" invisible="1"/>
+            </xpath>
+            <xpath expr="//button[@name='action_cancel']" position="before">
+                <button name="action_draft" states="cancel" type="object" string="Set to Draft"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

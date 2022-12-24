@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_parallax_templates">
+
+<t t-name="theme_alan.parallax_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/parallax-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="screen-65 s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-new-collection-2.png'); background-position: 50% 75%;"></span>
+                    </section>
+                </textarea>
+                <h6>parallax</h6>
+                <label class="e-sb-label" for="e_parallax_01"><input id="e_parallax_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

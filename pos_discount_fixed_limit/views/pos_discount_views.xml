@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="pos_config_view_form_inherit_pos_discount_fixed" model="ir.ui.view">
+            <field name="name">pos.config.form.inherit.pos.discount.fixed</field>
+            <field name="model">pos.config</field>
+            <field name="inherit_id" ref="pos_discount.pos_config_view_form_inherit_pos_discount" />
+            <field name="arch" type="xml">
+                <label for="discount_pc" position="replace"/>
+                <field name="discount_pc" position="replace">
+                	<div class="row" style="margin-left:13px;">
+                        <label string="Discount %" for="discount_pc" class=" o_light_label oe_inline"/>
+                        <field name="discount_pc" class="oe_inline"/>
+                    </div>
+                    <div class="row" style="margin-left:30px;">
+                        <label string="Cash Discount" for="discount_fixed" class=" o_light_label oe_inline"/>
+                        <field name="discount_fixed" class="oe_inline"/>
+                    </div>
+                </field>
+            </field>
+        </record>
+</odoo>

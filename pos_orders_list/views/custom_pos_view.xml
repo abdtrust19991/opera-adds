@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record model="ir.ui.view" id="custom_pos_config_extended_form_view">
+			<field name="name">pos.config.form.extended.view</field>
+			<field name="model">pos.config</field>
+			<field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//div[4]" position="after">
+					<br/>
+					<h2>Display Orders in POS </h2>
+					<div class="row mt16 o_settings_container" id="session_config">
+						<div id="show_odr" class="col-xs-12 col-md-6 o_setting_box">
+							<div class="o_setting_left_pane">
+								<field name="show_order"/>
+							</div>
+							<div class="o_setting_right_pane">
+								<label for="show_order" string='Show POS Orders in POS'/>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 o_setting_box"  attrs="{'invisible': [('show_order' ,'=', False)]}">
+							<div class="o_setting_right_pane">
+								<label for="pos_session_limit" string="Session Limit Configuration "/>
+								<div class="text-muted">
+									Set session limit to load pos orders. If you have more than 1000 orders, then we recommend not to use "Load all" option.
+								</div>
+								<div class="content-group mt16">
+									<field name="pos_session_limit" attrs="{'required': [('show_order', '!=', False)]}"/>
+								</div>
+							</div>
+						</div>
+						<div id="draft_div" class="col-xs-12 col-md-6 o_setting_box"  attrs="{'invisible': [('show_order' ,'=', False)]}">
+							<div class="o_setting_left_pane">
+								<field name="show_draft"/>
+							</div>
+							<div class="o_setting_right_pane">
+								<label for="show_draft" string='Show Draft Orders'/>
+							</div>
+						</div>	
+						<div id="posted_div" class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible': [('show_order' ,'=', False)]}">
+							<div class="o_setting_left_pane">
+								<field name="show_posted"/>
+							</div>
+							<div class="o_setting_right_pane">
+								<label for="show_posted" string='Show Posted Orders'/>
+							</div>
+						</div>
+							
+					</div>
+
+					<h2>Display Barcode in Receipt </h2>
+					<div class="row mt16 o_settings_container" id="session_config">
+						<div id="barcode_div" class="col-xs-12 col-md-6 o_setting_box">
+							<div class="o_setting_left_pane">
+								<field name="show_barcode"/>
+							</div>
+							<div class="o_setting_right_pane">
+								<label for="show_barcode" string='Show Barcode in Receipt'/>
+							</div>
+						</div>		
+					</div>
+					<br/>
+				</xpath>  	
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="pos_date">
+			<field name="name">pos.order.view.date.form</field>
+			<field name="model">pos.order</field>
+			<field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='partner_id']" position="after">
+					<field name="pos_order_date"/>
+				</xpath>
+
+				<field name="pos_reference" position="after">
+					<field string="Barcode" name="barcode"/>
+				</field>
+			</field>
+		</record>
+
+	</data>
+</odoo>

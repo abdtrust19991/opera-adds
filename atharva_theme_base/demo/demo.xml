@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data noupdate="1">
+<!-- Demo eCommerce Categories: Start -->
+<record id="as_product_category_1" model="product.public.category">
+    <field name="name">Car Parts</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_2" model="product.public.category">
+    <field name="name">Chairs</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_3" model="product.public.category">
+    <field name="name">Women fashion</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_4" model="product.public.category">
+    <field name="name">Kids</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_5" model="product.public.category">
+    <field name="name">Tools &amp; Garbage</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_1"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_6" model="product.public.category">
+    <field name="name">Steering</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_1"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_7" model="product.public.category">
+    <field name="name">Wheels</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_1"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_8" model="product.public.category">
+    <field name="name">Exhaust</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_1"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_9" model="product.public.category">
+    <field name="name">Wooden</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_2"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_10" model="product.public.category">
+    <field name="name">Craft Materials</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_2"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_11" model="product.public.category">
+    <field name="name">Artwork</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_2"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_12" model="product.public.category">
+    <field name="name">Watches</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_2"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_003.jpg"/>
+</record>
+
+<record id="as_product_category_13" model="product.public.category">
+    <field name="name">Armchairs</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_2"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_14" model="product.public.category">
+    <field name="name">Home &amp; Living</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_15" model="product.public.category">
+    <field name="name">Kids</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_16" model="product.public.category">
+    <field name="name">Women</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+
+</record>
+
+<record id="as_product_category_17" model="product.public.category">
+    <field name="name">Men</field>
+    <field name="sequence">0</field>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_18" model="product.public.category">
+    <field name="name">Wearables</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_4"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_19" model="product.public.category">
+    <field name="name">Girls Clothing</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_4"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_20" model="product.public.category">
+    <field name="name">Luxury Watches</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_4"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_21" model="product.public.category">
+    <field name="name">Bedding Sets</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_5"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_22" model="product.public.category">
+    <field name="name">Bedsheets</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_5"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_23" model="product.public.category">
+    <field name="name">Blankets, Quilts and Dohars</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_5"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_24" model="product.public.category">
+    <field name="name">Carpets</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_6"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_25" model="product.public.category">
+    <field name="name">Door Mats</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_6"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_26" model="product.public.category">
+    <field name="name">Floor Mats and Dhurries</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_6"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_27" model="product.public.category">
+    <field name="name">Pillow &amp; Pillow Coves</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_5"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_28" model="product.public.category">
+    <field name="name">Casual Shirts</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_10"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_29" model="product.public.category">
+    <field name="name">Jackets</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_10"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_30" model="product.public.category">
+    <field name="name">Suits</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_10"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_31" model="product.public.category">
+    <field name="name">T-Shirts</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_10"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_32" model="product.public.category">
+    <field name="name">Dresses &amp; Jumpsuits</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_16"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_33" model="product.public.category">
+    <field name="name">Jeans &amp; Jeggings</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_16"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_34" model="product.public.category">
+    <field name="name">Sweaters</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_16"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_35" model="product.public.category">
+    <field name="name">Sweatshirts</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_16"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_36" model="product.public.category">
+    <field name="name">Jeans &amp; Trousers</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_17"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_37" model="product.public.category">
+    <field name="name">Shirts</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_17"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_38" model="product.public.category">
+    <field name="name">T-Shirts</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_17"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_39" model="product.public.category">
+    <field name="name">Track Pants</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_17"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_40" model="product.public.category">
+    <field name="name">Clothing Sets</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_19"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_41" model="product.public.category">
+    <field name="name">Dresses</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_19"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_42" model="product.public.category">
+    <field name="name">Skirts &amp; Shorts</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_19"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_43" model="product.public.category">
+    <field name="name">Tops</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_19"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+
+<record id="as_product_category_44" model="product.public.category">
+    <field name="name">Flooring</field>
+    <field name="sequence">0</field>
+    <field name="parent_id" ref="as_product_category_6"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/demo_img.jpg"/>
+</record>
+<!-- Demo eCommerce Categories: End -->
+
+<!-- Demo Products: Start -->
+<record id="as_product_template_1" model="product.template">
+    <field name="name">White Jack Chair</field>
+    <field name="list_price">47</field>
+    <field name="standard_price">10</field>
+    <field name="default_code">P-001</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_2')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_001.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_2" model="product.template">
+    <field name="name">Fastrack Smart Watch</field>
+    <field name="list_price">99</field>
+    <field name="standard_price">49</field>
+    <field name="default_code">P-002</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_12')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_002.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_3" model="product.template">
+    <field name="name">Apple Watch</field>
+    <field name="list_price">99</field>
+    <field name="standard_price">49</field>
+    <field name="default_code">P-003</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_12')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_003.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_4" model="product.template">
+    <field name="name">Whity Pillow</field>
+    <field name="list_price">39</field>
+    <field name="standard_price">29</field>
+    <field name="default_code">P-004</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_27')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_004.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_5" model="product.template">
+    <field name="name">Blue Jack Man Suits</field>
+    <field name="list_price">129</field>
+    <field name="standard_price">89</field>
+    <field name="default_code">P-005</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_17')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_005.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_6" model="product.template">
+    <field name="name">Brownie Man Jacket</field>
+    <field name="list_price">129</field>
+    <field name="standard_price">89</field>
+    <field name="default_code">P-006</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_17'),ref('as_product_category_29')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_006.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_7" model="product.template">
+    <field name="name">Black Jacket</field>
+    <field name="list_price">129</field>
+    <field name="standard_price">89</field>
+    <field name="default_code">P-007</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_17'),ref('as_product_category_29')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_007.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_8" model="product.template">
+    <field name="name">Women Brown Dress with black Jacket</field>
+    <field name="list_price">139</field>
+    <field name="standard_price">79</field>
+    <field name="default_code">P-008</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_3'),ref('as_product_category_16')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_008.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_9" model="product.template">
+    <field name="name">Red Women Dress</field>
+    <field name="list_price">139</field>
+    <field name="standard_price">79</field>
+    <field name="default_code">P-009</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_3'),ref('as_product_category_16'),ref('as_product_category_32')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_009.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_10" model="product.template">
+    <field name="name">Black Dress</field>
+    <field name="list_price">139</field>
+    <field name="standard_price">79</field>
+    <field name="default_code">P-010</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_3'),ref('as_product_category_16'),ref('as_product_category_32')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_010.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_11" model="product.template">
+    <field name="name">Blue Men Shirt</field>
+    <field name="list_price">129</field>
+    <field name="standard_price">79</field>
+    <field name="default_code">P-011</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_37'),ref('as_product_category_28'),ref('as_product_category_17')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_011.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_product_template_12" model="product.template">
+    <field name="name">Casual Shirt</field>
+    <field name="list_price">119</field>
+    <field name="standard_price">59</field>
+    <field name="default_code">P-012</field>
+    <field name="public_categ_ids" eval="[(6,0,[ref('as_product_category_37'),ref('as_product_category_28'),ref('as_product_category_17')])]"/>
+    <field name="image_1920" type="base64" file="atharva_theme_base/static/src/img/demo_image/prod_012.jpg"/>
+    <field name="website_published" eval="True"/>
+</record>
+<!-- Demo Products: End -->
+
+<!-- Demo Blog Blog: Start -->
+<record id="as_blog_blog_1" model="blog.blog">
+    <field name="name">Trending Blogs</field>
+    <field name="subtitle">Get in touch with us</field>
+</record>
+<!-- Demo Blog Blog: End -->
+<!-- Demo Blog Tags: Start -->
+<record id="as_blog_tag_1" model="blog.tag">
+    <field name="name">Fictional</field>
+</record>
+
+<record id="as_blog_tag_2" model="blog.tag">
+    <field name="name">Wildlife</field>
+</record>
+
+<record id="as_blog_tag_3" model="blog.tag">
+    <field name="name">Technical</field>
+</record>
+<!-- Demo Blog Tags: End -->
+
+<!-- Demo Blog Posts: Start -->
+<record id="as_blog_post_1" model="blog.post">
+    <field name="blog_id" ref="as_blog_blog_1"/>
+    <field name="cover_properties">{"opacity": 0.2, "resize_class": "cover container-fluid cover_full", "background-image": "url(http://odoo-snippets.atharvasystem.com/source/img/portfolio-item1.jpg)", "background-color": "oe_black"}</field>
+    <field name="name">Mas Creations Doctor Workshop highstool by Masquespacio</field>
+    <field name="subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</field>
+    <field name="tag_ids" eval="[(6, 0, [ref('as_blog_tag_1'), ref('as_blog_tag_2'), ref('as_blog_tag_3')])]"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_blog_post_2" model="blog.post">
+    <field name="blog_id" ref="as_blog_blog_1"/>
+    <field name="cover_properties">{"opacity": 0.2, "resize_class": "cover container-fluid cover_full", "background-image": "url(http://odoo-snippets.atharvasystem.com/source/img/testimonial-bg1.jpg)", "background-color": "oe_black"}</field>
+    <field name="name">AS furniture for Sonos concept store, Berlin – Germany</field>
+    <field name="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</field>
+    <field name="tag_ids" eval="[(6, 0, [ref('as_blog_tag_1'), ref('as_blog_tag_2')])]"/>
+    <field name="website_published" eval="True"/>
+</record>
+
+<record id="as_blog_post_3" model="blog.post">
+    <field name="blog_id" ref="as_blog_blog_1"/>
+    <field name="cover_properties">{"opacity": 0.2, "resize_class": "cover container cover_narrow", "background-image": "url(http://odoo-snippets.atharvasystem.com/source/img/portfolio-item2.jpg)", "background-color": "oe_black"}</field>
+    <field name="name">Steve Stool and Bench by Liqui Group</field>
+    <field name="subtitle">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</field>
+    <field name="tag_ids" eval="[(6, 0, [ref('as_blog_tag_2'), ref('as_blog_tag_3')])]"/>
+    <field name="website_published" eval="True"/>
+</record>
+<!-- Demo Blog Posts: End -->
+<!-- Demo Blog Configure: Start -->
+<record id="as_blog_configure_1" model="blog.configure">
+    <field name="name">Latest Blog</field>
+    <field name="active" eval="True"/>
+    <field name="blog_ids" eval="[(6, 0, [ref('as_blog_post_1'), ref('as_blog_post_2'), ref('as_blog_post_3')])]"/>
+</record>
+<!-- Demo Blog Configure: End -->
+
+</data>
+</odoo>

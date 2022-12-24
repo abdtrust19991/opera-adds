@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_multitab_configure_brand_form" model="ir.ui.view">
+        <field name="name">slider_brand.collection.configure.form</field>
+        <field name="model">slider_brand.collection.configure</field>
+        <field name="arch" type="xml">
+            <form string="Brand Collection Configuration">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="website_id" />
+                            <field name="theme_id"/>
+                        </group>
+                        <group>
+                            <field name="label_active"/>
+                            <field name="brand_name_active"/>
+                            <field name="brand_link_active"/>
+                            <field name="slider_layout_option_id" options="{'no_quick_create': True, 'no_create_edit' : True, 'no_open': True}"/>
+                            <field name="item_count" attrs="{'invisible': [('slider_layout_option_id', '=', 3)]}"/>
+                            <field name="auto_slider" attrs="{'invisible': [('slider_layout_option_id', '=', 3)]}"/>
+                            <field name="slider_time" attrs="{'invisible': ['|',('auto_slider', '=', False),('slider_layout_option_id', '=', 3)]}" />
+                        </group>
+                    </group>
+                    <group string="Brands">
+                        <field name="brand_ids" no_label="1">
+                            <tree editable="bottom">
+                                <field name="sequence" widget="handle"/>
+                                <field name="brand_id" required="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_multitab_configure_brand" model="ir.actions.act_window">
+        <field name="name">Brand Configuration</field>
+        <field name="res_model">slider_brand.collection.configure</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_brand_slider_type_settings"
+        name="Brand Slider Configuration"
+        parent="atharva_theme_base.menu_action_atharva_theme_base"
+        sequence="103"/>
+    <menuitem id="menu_action_multitab_configure_brand"
+        name="Brand Collection Configuration"
+        action="action_multitab_configure_brand"
+        parent="atharva_theme_base.menu_brand_slider_type_settings"
+        sequence="102"/>
+</odoo>

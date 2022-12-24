@@ -1,0 +1,4 @@
+<odoo>
+
+    <menuitem id="pos_payment_menu_categ" name="Payments" parent="point_of_sale.menu_point_root" groups="point_of_sale.group_pos_user" action="account.action_account_payments" sequence="10"/>
+</odoo>

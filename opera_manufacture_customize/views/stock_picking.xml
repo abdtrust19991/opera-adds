@@ -1,0 +1,13 @@
+<data>
+    <record id="inherit_stock_picking_form" model="ir.ui.view">
+        <field name="name">inherit.stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <!--<field name="groups_id" eval="[(4, ref(''))]"/>-->
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <field name="origin" position="after">
+                <field name="production_id" invisible="1"/>
+            </field>
+        </field>
+    </record>
+</data>

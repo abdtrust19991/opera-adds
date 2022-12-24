@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_latest_product" name="Latest Product Slider">
+        <section class="as_latest_product" data-collection_id="0" data-collection_name="NO LAYOUT SELECTED">
+            <div class="container">
+                NO LAYOUT SELECTED
+            </div>
+        </section>
+    </template>
+
+    <template id="s_latest_product_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+           <div data-js="latest_product_slider_actions" data-selector=".as_latest_product">
+                <we-button data-latest_product_slider_configure="" data-no-preview="true">Modify</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_s_latest_product_options_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_latest_product_slider/000.js"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_latest_product_slider/000.scss"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<template id="assets_for_pos_return_order" inherit_id="point_of_sale.assets">
+			<xpath expr="." position="inside">
+				<script type="text/javascript" src="/bi_pos_return_order/static/src/js/Popups/ReturnOrderPopup.js"></script>
+				<script type="text/javascript" src="/bi_pos_return_order/static/src/js/Screens/ControlButton.js"></script>
+				<script type="text/javascript" src="/bi_pos_return_order/static/src/js/Screens/POSOrdersScreen.js"></script>
+				<script type="text/javascript" src="/bi_pos_return_order/static/src/js/models.js"/>
+			</xpath>
+		</template>
+
+		<record model="ir.ui.view" id="pos_return_order">
+			<field name="name">pos.order.view.return.form</field>
+			<field name="model">pos.order</field>
+			<field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='partner_id']" position="after">
+					<field name="return_order_ref" attrs="{'invisible': [('return_order_ref', '=', False)]}"/>
+				</xpath>
+				<xpath expr="//form/sheet/notebook/page/field[@name='lines']//tree/field[@name='discount']" position="before">
+					<field name="original_line_id" invisible="1"/>
+					<field name="return_qty"  invisible="0"/>
+				</xpath>
+			</field>
+		</record>
+
+	</data>
+</odoo>

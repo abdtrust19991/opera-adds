@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<templates id="pos_orders_reprint_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+		<t t-name="ReturnOrderButton" owl="1">
+			<span class="control-button return_orders odoo-theme-color">
+				<i class="fa fa-barcode"></i>
+				<span>Return Order with Barcode</span>
+			</span>
+		</t>
+
+		<t t-name="ReturnPosOrdersScreen" t-inherit="pos_orders_list.POSOrdersScreen" t-inherit-mode="extension" owl="1">
+			<xpath expr="//tr" position="inside">
+				<th>Return-Order</th>
+			</xpath> 
+		</t>
+		
+		<t t-name="ReturnPosOrders" t-inherit="pos_orders_list.POSOrders" t-inherit-mode="extension" owl="1">
+			<xpath expr="//tr" position="inside">
+				<td class="Return-order" t-att-data-id='props.order.id' 
+					t-on-click.stop="trigger('click-returnOrder',props.order)">
+					<button class="odoo-theme-button"><i class="fa fa-sign-in"></i>  Return Order</button>
+				</td>
+			</xpath> 
+		</t>
+
+		<t t-name="TextInputPopup" t-inherit="point_of_sale.TextInputPopup" t-inherit-mode="extension" owl="1">
+			<xpath expr="//div[hasclass('footer')]" position="replace">
+				<div class="footer">
+					<div class="button confirm odoo-theme-color" t-on-click="confirm">
+						<t t-esc="props.confirmText" />
+					</div>
+					<div class="button cancel odoo-theme-color" t-on-click="cancel">
+						<t t-esc="props.cancelText" />
+					</div>
+				</div>
+			</xpath> 
+		</t>
+
+
+		<t t-name="ReturnOrderPopup" owl="1">
+			<div role="dialog" class="modal-dialog">
+				<Draggable>
+					<div class="popup" style="min-width: 50%;">
+						<header class="title drag-handle">
+							Return Products
+						</header>
+						<main class="body traceback" style="font-family: 'Lato-Reg';">
+							<table class='reorder-product-list' style='width:100%;    text-align: center;line-height: 30px;'>
+								<thead>
+									<tr class="orderline-table-head">
+										<th>Product</th>
+										<th>Ordered Qty</th>
+										<th>Remain Qty</th>
+										<th>Return Qty</th>
+									</tr>
+								</thead>
+								<tbody class='return-product-list-contents'>
+									<tr class="orderline-table" t-foreach="props.orderlines || []" t-as="item">
+										<td><t t-esc='item.product_id[1]' /></td>
+										<td><t t-esc='item.qty' /></td>
+										<td><t t-esc='item.qty - item.return_qty' /></td>
+										<td class="entered_item_qty">
+											<input type="text" style="margin: 5px;" class="input-field" t-att-line-id='item.id' t-att-qty-id='item.qty' name="qty"
+											t-att-return-qty='item.return_qty' >
+											</input>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</main>
+						<footer class="footer">
+							<div class="button cancel odoo-theme-button" t-on-click="cancel">Close</div>
+							<div class="button confirm odoo-theme-button" t-on-click="do_returnOrder">Return-Order</div>
+						</footer>
+					</div>
+				</Draggable>
+			</div>
+		</t>
+
+</templates>
+
+

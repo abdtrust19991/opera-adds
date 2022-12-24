@@ -1,0 +1,18 @@
+<data>
+    <record id="category_cost_variance" model="ir.module.category" >
+        <field name="name">Cost Variance</field>
+    </record>
+
+    <record id="group_cost_variance" model="res.groups">
+        <field name="name">Cost Variance</field>
+        <field name="category_id" ref="opera_cost_variance.category_cost_variance"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <record id="group_cost_variance_cancel" model="res.groups">
+        <field name="name">Cancel Cost Variance</field>
+        <field name="category_id" ref="opera_cost_variance.category_cost_variance"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+</data>

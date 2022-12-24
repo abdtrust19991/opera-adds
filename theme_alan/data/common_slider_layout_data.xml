@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="alan_common_slider_type_one" model="product_slider_common.options">
+            <field name="name">Slider Layout 1</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_common_slider_type_two" model="product_slider_common.options">
+            <field name="name">Slider Layout 2</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_common_slider_type_three" model="product_slider_common.options">
+            <field name="name">Slider Layout 3</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_common_slider_type_four" model="product_slider_common.options">
+            <field name="name">Slider Layout 4</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_common_slider_type_five" model="product_slider_common.options">
+            <field name="name">Grid Layout 1</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_common_slider_type_six" model="product_slider_common.options">
+            <field name="name">Grid Layout 2</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_common_slider_type_seven" model="product_slider_common.options">
+            <field name="name">Grid Layout 3</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+    </data>
+</odoo>

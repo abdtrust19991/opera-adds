@@ -1,0 +1,70 @@
+.as-btn {
+    font-size: 13px;
+    border: 2px solid ;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: none;
+    outline: none;
+    display: inline-block;
+    @include transition(cubic-bezier(0.4, 0, 1, 1) all 0.35s); 
+    background-image: linear-gradient(to right, $as-theme 0%, $as-theme  51%, darken($as-theme, 10%)  100%);
+    color: $as-white;
+    line-height: 1.5;
+    border-radius: 50px;
+    background-position: left center;
+    &:not(:disabled),
+    &:not(.disabled) {
+        &:hover {
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.26);
+            background-image: linear-gradient(to right, $as-theme 0%, $as-dark  51%, darken($as-theme, 10%)  100%);
+            color: $as-white;
+            background-position: right center;
+        }
+    }
+
+    &.btn-lg {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+    &.btn-sm {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    &.btn-secondary,
+    &.as-btn-dark {
+        color: $as-white;
+        border-color: $as-dark;
+        background-image: linear-gradient(to right, $as-dark 0%, $as-dark  51%, lighten($as-dark, 10%)  100%);
+        background-size: 200% auto;
+        background-position: left center;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:hover {
+                background-image: linear-gradient(to right, $as-dark 0%, $as-theme  51%, lighten($as-dark, 10%)  100%);
+                color: $as-white;
+                background-position: right center;
+                border-color: $as-dark;
+            }
+        }
+    }
+    &.btn-primary,
+    &.as-btn-theme {
+        color: $as-white;
+        border-color: $as-theme;
+        background-image: linear-gradient(to right, $as-theme 0%, $as-theme  51%, lighten($as-theme, 10%)  100%);
+        background-size: 200% auto;
+        background-position: left center;
+        &:not(:disabled),
+        &:not(.disabled) {            
+            &:hover {
+                background-image: linear-gradient(to right, $as-theme 0%, $as-dark  51%, lighten($as-theme, 10%)  100%);
+                color: $as-white;
+                border-color: $as-theme;
+                background-position: right center;
+            }
+        }
+    }
+
+}

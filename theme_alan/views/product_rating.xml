@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_average_rating" name="Product Rating" inherit_id="website_sale.products_item" customize_show="True" active="True">
+        <xpath expr="//h6[hasclass('o_wsale_products_item_title')]" position="before">
+            <t t-call="atharva_theme_base.shop_product_rating_st"/>
+        </xpath>
+    </template>
+</odoo>

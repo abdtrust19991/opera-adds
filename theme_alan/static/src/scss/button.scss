@@ -1,0 +1,118 @@
+.line-btn {
+    position: relative;
+    text-decoration: none !important;
+    &:after {
+        content:"";
+        position: absolute;
+        bottom: -2px;
+        left: auto;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        background: currentColor;
+        @include transition(ease all 0.35s);
+    }
+    &:hover {
+        &:after {
+            left: 0;
+            right: auto;
+            width: 0;
+        }
+    }
+    &.dark {
+        color: $as-dark;
+        &:hover {
+            color: $as-theme;
+        }
+    }
+    &.white {
+        color: rgba($as-white, 0.8);
+        &:hover {
+            color: $as-white;
+        }
+    }
+}
+
+.video-btn {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    @include transition(ease all 0.55s);
+    z-index: 1;
+    border: none;
+    font-size: 0px;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    color: transparent !important;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+        animation: pulse-border 1500ms ease-out infinite;
+        pointer-events: none;
+        z-index: -1;
+    }
+    &:before {
+        content:"";
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 20px solid currentcolor;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 9px;
+        right: 0;
+        margin: auto;
+        width: 0px;
+        height: 0px;
+    }
+    &.white {
+        background: $as-white;
+        &:after {
+            background: $as-white;
+        }
+        &:before {
+            color:$as-theme;
+        }
+    }
+    &.theme {
+        background: $as-theme;
+        &:after {
+            background: $as-theme;
+        }
+        &:before {
+            color:$as-white;
+        }
+    }
+}
+
+@keyframes pulse-border {
+  0% {
+    @include scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    @include scale(2);
+    opacity: 0;
+  }
+}
+
+
+.p-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

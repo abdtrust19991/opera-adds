@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_contact_us_templates">
+
+<t t-name="theme_alan.cont_us_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/contact_us-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section style="background-color: #f5f5f5; ">
+                        <div class="container-fluid p-0px">
+                            <div class="row no-gutters">
+                                <section class="col-lg-6 bg-cover bg-no-repeat min-h-350px bg-center-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-corp-4.png); ">
+                                </section>
+                                <div class="col-lg-6">
+                                    <div class="p-60px md-p-40px sm-p-30px">
+                                        <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                            <div class="col-lg-9 text-center">
+                                                <div class="h1 dark-color after-50px theme-after m-20px-b p-20px-b">Contact Us</div>
+                                                <span class="display-table w-50px h-1px theme-bg m-auto-all"></span>
+                                                <p class="w-600px max-w-100 display-inline-block m-30px-t">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6 m-15px-tb">
+                                                <div class="p-35px-lr p-45px-tb box-shadow white-bg border-radius-5">
+                                                    <div class="icon-40px theme-color m-15px-b">
+                                                        <i class="fa-2x fa fa-phone"></i>
+                                                    </div>
+                                                    <div class="dark-color h5 font-w-600 m-15px-b">Address</div>
+                                                    <p class="m-0px">Level 13, 2 Elizabeth St,Melbourne, Victoria 3000, USA.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 m-15px-tb">
+                                                <div class="p-35px-lr p-45px-tb box-shadow white-bg border-radius-5">
+                                                    <div class="icon-40px theme-color m-15px-b">
+                                                        <i class="fa-2x fa fa-envelope-o"></i>
+                                                    </div>
+                                                    <div class="dark-color h5 font-w-600 m-15px-b">E-mail</div>
+                                                    <p class="m-0px">info@yourdomain.com<br />support@yourdomain.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 m-15px-tb">
+                                                <div class="p-35px-lr p-45px-tb box-shadow white-bg border-radius-5">
+                                                    <div class="icon-40px theme-color m-15px-b">
+                                                        <i class="fa-2x fa fa-map-o"></i>
+                                                    </div>
+                                                    <div class="dark-color h5 font-w-600 m-15px-b">Call us</div>
+                                                    <p class="m-0px">+01 000 0000 000(USA)<br />+44 000 0000 000(UK)</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 m-15px-tb">
+                                                <div class="p-35px-lr p-45px-tb box-shadow white-bg border-radius-5">
+                                                    <div class="icon-40px theme-color m-15px-b">
+                                                        <i class="fa-2x fa fa-clock-o"></i>
+                                                    </div>
+                                                    <div class="dark-color h5 font-w-600 m-15px-b">Our office</div>
+                                                    <p class="m-0px">Monday - Friday: 8:00 - 16:00 Saturday: 8:00 - 15:00.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Contact Us 1</h6>
+                <label class="e-sb-label" for="e_contact_us_01"><input id="e_contact_us_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cont_us_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/contact_us-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section light-gray-bg-01">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label class="theme-color font-w-600">Technology expert people analysis</label>
+                                    <div class="dark-color h4 font-w-600 m-20px-b">Feel free to get in touch<br />with us any convenient way</div>
+                                    <p class="m-45px-b">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <div class="media border-bottom border-color-gray p-25px-b m-25px-b">
+                                        <div class="icon-50px white-color theme-bg text-center border-radius-5">
+                                            <i class="fa fa-map-o"></i>
+                                        </div>
+                                        <div class="p-15px-l media-body">
+                                            <div class="dark-color h5 font-w-600">Postal Address</div>
+                                            <p class="font-w-500 m-0px">301 The Greenhouse, Custard,<br /> Factory, London, E2 8DY.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media border-bottom border-color-gray p-25px-b m-25px-b">
+                                        <div class="icon-50px white-color theme-bg text-center border-radius-5">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="p-15px-l media-body">
+                                            <div class="dark-color h5 font-w-600">Business Phone</div>
+                                            <p class="font-w-500 m-0px">+01 0000 0000 000,<br /> +44 000 0000 0000</p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="icon-50px white-color theme-bg text-center border-radius-5">
+                                            <i class="fa fa-envelope-o"></i>
+                                        </div>
+                                        <div class="p-15px-l media-body">
+                                            <div class="dark-color h5 font-w-600">General Enquiries</div>
+                                            <p class="font-w-500 m-0px">no-reply@domain.com,<br /> sales@domain.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 text-center md-m-30px-t">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-contact-us.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Contact Us 2</h6>
+                <label class="e-sb-label" for="e_contact_us_02"><input id="e_contact_us_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cont_us_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/contact_us-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f5f5f5;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative box-shadow border-5 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-17.jpg" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 m-15px">
+                                            <div class="border-1 border-color-white p-20px" style="background: rgba(0,0,0,.6);">
+                                                <div class="h5 font-w-600 white-color m-15px-b">Report a stray dog</div>
+                                                <div class="white-color">call us @<br />+22 018 888 9999</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative box-shadow border-5 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-16.jpg" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 m-15px">
+                                            <div class="border-1 border-color-white p-20px" style="background: rgba(0,0,0,.6);">
+                                                <div class="h5 font-w-600 white-color m-15px-b">Want to join us?</div>
+                                                <div class="white-color">Mail us @<br />join@domain.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative box-shadow border-5 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-18.jpg" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 m-15px">
+                                            <div class="border-1 border-color-white p-20px" style="background: rgba(0,0,0,.6);">
+                                                <div class="h5 font-w-600 white-color m-15px-b">Report animal harassment</div>
+                                                <div class="white-color">24 x 7<br />1800 018 888 9999</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Contact Us 3</h6>
+                <label class="e-sb-label" for="e_contact_us_03"><input id="e_contact_us_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

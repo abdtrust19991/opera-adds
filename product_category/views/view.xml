@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="create_new_product_purchase_order_form" model="ir.ui.view">
+            <field name="name">purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//button[@name='print_quotation']" position="after">
+                    <button name="%(product_category.create_product_wizard_action)d" string="Create New Product"
+                            context="{'default_purchase_id': active_id}" type="action" states="draft"
+                            class="oe_highlight" groups="base.group_user"/>
+
+                </xpath>
+
+            </field>
+        </record>
+        of
+
+
+        <record id="add_product_attribute_size" model="product.attribute">
+            <field name="name">Size</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="add_code_variants_tree_view" model="ir.ui.view">
+            <field name="name">product.attribute.value.list</field>
+            <field name="model">product.template.attribute.line</field>
+            <field name="inherit_id" ref="product.product_template_attribute_line_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='value_ids']/tree/field[@name='name']" position="after">
+                    <field name="code"/>
+                </xpath>
+                <xpath expr="//field[@name='value_ids']/form/field[@name='name']" position="after">
+                    <field name="code"/>
+                </xpath>
+
+
+            </field>
+        </record>
+
+        <record id="product_template_form_view" model="ir.ui.view">
+            <field name="name">product.template.form.view</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="categ_id" position="after">
+                    <field name="season_id"/>
+                    <field name="country_id"/>
+                    <field name="year_id"/>
+                    <field name="activity_id"/>
+                </field>
+                <field name="company_id" position="after">
+                    <field name="item"/>
+                    <field name="color_id"/>
+                    <field name="size_id"/>
+                    <field name="year_activity" invisible="1"/>
+                </field>
+            </field>
+        </record>
+        <record id="view_product_attribute_form_inherit" model="ir.ui.view">
+            <field name="name">product.template.attribute.value.form.inherit</field>
+            <field name="model">product.template.attribute.value</field>
+            <field name="inherit_id" ref="product.product_template_attribute_value_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="code"/>
+                    <field name="display_type"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

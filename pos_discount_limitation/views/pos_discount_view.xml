@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pos_discount_limitation_tree_view" model="ir.ui.view">
+        <field name="name">pos.discount.limitation.tree</field>
+        <field name="model">pos.discount.limitation</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="group_id" context="{'is_pos_discount': True}"/>
+                <field name="pos_discount_limitation" required="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_pos_config_pos_discount" model="ir.actions.act_window">
+        <field name="name">POS Discount Limit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">pos.discount.limitation</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_pos_config_pos_discount"
+        name="Pos Discount Limit"
+        parent="point_of_sale.menu_point_config_product"
+        sequence="1"
+        action="action_pos_config_pos_discount"/>
+</odoo>

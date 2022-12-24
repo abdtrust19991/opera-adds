@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="advance_login_popup" name="Advance Login Popup" inherit_id="portal.user_sign_in" customize_show="True" active="False">
+        <xpath expr="." position="inside"/>
+    </template>
+
+    <template id="json_login_template" name="Json Login Template">
+            <form class="oe_login_form" role="form" t-attf-action="/web/login" method="post" onsubmit="this.action = '/web/login' + location.hash">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <div class="form-group field-login">
+                <label for="login">Email</label>
+                <input type="text" placeholder="Email" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autofocus="autofocus" autocapitalize="off"/>
+            </div>
+            <div class="form-group field-password">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+            </div>
+            <p class="alert alert-danger" id="errormsg" role="alert" style="display:none"></p>
+            <div t-attf-class="clearfix oe_login_buttons text-center mb-1 {{'pt-2' if form_small else 'pt-3'}}">
+                <button type="submit" class="btn btn-primary btn-block loginbtn as-btn">Log in</button>
+
+                <div class="justify-content-between mt-2 d-flex small">
+                    <span t-if="reset_password_enabled" class="resetbtn" style="cursor:pointer">Reset Password</span>
+                </div>
+                <div class="o_login_auth">
+                    <t t-if="len(providers) &gt; 0" t-call="auth_oauth.providers"/>
+                </div>
+            </div>
+        </form>
+    </template>
+
+    <template id="json_register_template" name="Json Register Template">
+        <form class="oe_signup_form" role="form" method="post" t-if="not message">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <t t-set="only_passwords" t-value="bool(token and not invalid_token)"/>
+            <div class="form-group field-login">
+                <label for="login">Your Email</label>
+                <input type="text" name="login" t-att-value="login" id="logins" class="form-control form-control-sm" autofocus="autofocus"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="form-group field-name">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" t-att-value="name" id="names" class="form-control form-control-sm" placeholder="e.g. John Doe"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+            </div>
+            <div class="form-group field-password pt-2">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="passwords" class="form-control form-control-sm"
+                    required="required" t-att-autofocus="'autofocus' if only_passwords else None"/>
+            </div>
+            <div class="form-group field-confirm_password">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm_passwords" class="form-control form-control-sm" required="required"/>
+            </div>
+            <p class="alert alert-danger" id="errors" style="display:none;" ></p>
+            <div class="text-center oe_login_buttons pt-3">
+                <button type="submit" class="btn btn-primary btn-block signupbtn as-btn"> Sign up</button>
+                <span class="btn btn-link btn-sm haveAccount">Already have an account?</span>
+                <div class="o_login_auth">
+                    <t t-if="len(providers) &gt; 0" t-call="auth_oauth.providers"/>
+                </div>
+            </div>
+        </form>
+    </template>
+
+    <template id="json_reset_template" name="Json Reset Template">
+        <div class="oe_login_form clearfix" id="msgbox" style="display:none">
+            <p class="alert alert-success" id="messager" role="status">
+            </p>
+            <span class="haveAccount" style="cursor:pointer">Back to Login</span>
+        </div>
+        <form class="oe_reset_password_form" role="form" method="post" id="reset_form">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+            <div class="form-group field-login">
+                <label for="login" class="col-form-label">Your Email</label>
+                <input type="text" name="login" t-att-value="login" id="loginr" class="form-control"
+                    autofocus="autofocus" required="required" autocapitalize="off"/>
+            </div>
+            <p class="alert alert-danger" id="errorr" style="display:none"></p>
+            <div class="clearfix oe_login_buttons">
+                <button type="submit" class="btn btn-primary btn-block resetbtnconf as-btn">Confirm</button>
+                <div class="d-flex justify-content-between align-items-center small mt-2">
+                    <span class="haveAccount" style="cursor:pointer">Back to Login</span>
+                </div>
+                <div class="o_login_auth">
+                    <t t-if="len(providers) &gt; 0" t-call="auth_oauth.providers"/>
+                </div>
+            </div>
+        </form>
+    </template>
+
+    <template id="login_pop_template" name="Log In Popup Template">
+        <!-- Modal -->
+        <div class="modal fade as-login-popup" id="loginPopTemp" tabindex="-1" role="dialog" aria-labelledby="loginPopTemp" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="nav" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Login</a>
+                            <a t-if="request.env['res.users']._get_signup_invitation_scope() == 'b2c'" class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">Register</a>
+                            <a t-if="request.env['ir.config_parameter'].sudo().get_param('auth_signup.reset_password') == 'True'" class="nav-item nav-link" id="nav-reset-tab" data-toggle="tab" href="#nav-reset" role="tab" aria-controls="nav-reset" aria-selected="false" style="display:none">Reset</a>
+                        </div>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab"></div>
+                            <div t-if="request.env['res.users']._get_signup_invitation_scope() == 'b2c'" class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab"></div>
+                            <div t-if="request.env['ir.config_parameter'].sudo().get_param('auth_signup.reset_password') == 'True'" class="tab-pane fade" id="nav-reset" role="tabpanel" aria-labelledby="nav-reset-tab"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="frontend_layout_login_popup" name="Login Popup Frontend Layout" inherit_id="web.frontend_layout">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <t t-if="request.website.viewref('theme_alan.advance_login_popup').active" t-call="theme_alan.login_pop_template"/>
+        </xpath>
+    </template>
+
+    <template id="login_extend" name="Login Classes" inherit_id="web.login">
+        <xpath expr="//div[last()]/button" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+    </template>
+    <template id="signup_extend" name="Signup Classes" inherit_id="auth_signup.signup">
+        <xpath expr="//div[last()]/button" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+    </template>
+    <template id="reset_password_extend" name="Reset Classes" inherit_id="auth_signup.reset_password">
+        <xpath expr="//div[last()]/button" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+    </template>
+
+</odoo>

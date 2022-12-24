@@ -1,0 +1,92 @@
+.as-btn {
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: none;
+    outline: none;
+    display: inline-block;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    line-height: 1.5;
+    &:not(:disabled),
+    &:not(.disabled) {
+        &:hover {
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.26) !important;
+        }
+    }
+    &:active,
+    &:focus {
+        box-shadow: none !important;
+    }
+    &.btn-lg {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+    &.btn-sm {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    &.as-btn-white {
+        background: $as-white;
+        color: $as-dark;
+        border-color: $as-white;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:hover {
+                background: $as-dark;
+                color: $as-white;
+                border-color: $as-white;
+
+            }
+        }
+    }
+
+    &.as-btn-dark {
+        background: $as-dark;
+        color: $as-white;
+        border-color: $as-dark;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:focus,
+            &:hover {
+                background: $as-theme !important;
+                color: $as-white !important;
+                border-color: $as-theme !important;
+            }
+        }
+    }
+    &.as-btn-theme {
+        background: $as-theme;
+        color: $as-white;
+        border-color: $as-theme;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:focus,
+            &:hover {
+                background: darken($as-theme, 10%) !important;
+                color: $as-white !important;
+                border-color: darken($as-theme, 10%) !important;
+            }
+        }
+    }
+    &.btn-primary {
+        background: $as-theme;
+        color: $as-white;
+        border-color: $as-theme;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:focus,
+            &:hover {
+                background: darken($as-theme, 10%) !important;
+                color: $as-white !important;
+                border-color: darken($as-theme, 10%) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<data>
+    <record id="category_employee_shift" model="ir.module.category" >
+        <field name="name">Employee Shift</field>
+    </record>
+    
+    <record id="group_confirm_shift" model="res.groups">
+        <field name="name">Confirm</field>
+        <field name="category_id" ref="opera_manufacture_customize.category_employee_shift"/>
+    </record>
+
+    <record id="group_set_draft_shift" model="res.groups">
+        <field name="name">Set To Draft</field>
+        <field name="category_id" ref="opera_manufacture_customize.category_employee_shift"/>
+    </record>
+
+    <record id="group_done_shift" model="res.groups">
+        <field name="name">Done</field>
+        <field name="category_id" ref="opera_manufacture_customize.category_employee_shift"/>
+    </record>
+
+</data>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_tabs_templates">
+
+<t t-name="theme_alan.tabs_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/tabs-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="h1 font-w-600 dark-color m-15px-b">DO MORE THAN<br /> JUST PLAYING TENNIS</div>
+                                    <p class="m-35px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    <div class="tab-style-1">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active o_default_snippet_text" id="nav_tabs_link_1" data-toggle="tab" href="#nav_tabs_content_1" role="tab" aria-controls="nav_tabs_content_1" aria-selected="true">Banquets &amp; Events</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link o_default_snippet_text" id="nav_tabs_link_2" data-toggle="tab" href="#nav_tabs_content_2" role="tab" aria-controls="nav_tabs_content_2" aria-selected="false">Classes for Adults</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link o_default_snippet_text" id="nav_tabs_link_3" data-toggle="tab" href="#nav_tabs_content_3" role="tab" aria-controls="nav_tabs_content_3" aria-selected="false">Classes for Kids</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="nav_tabs_content_1" role="tabpanel" aria-labelledby="nav_tabs_link_1">
+                                                <p class="h5 dark-color font-w-600 m-25px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav_tabs_content_2" role="tabpanel" aria-labelledby="nav_tabs_link_2">
+                                                <p class="h5 dark-color font-w-600 m-25px-b">Classes for Adults.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav_tabs_content_3" role="tabpanel" aria-labelledby="nav_tabs_link_3">
+                                                <p class="h5 dark-color font-w-600 m-25px-b">Classes for Kids.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/sport-3.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Tabs 1</h6>
+                <label class="e-sb-label" for="e_tabs_01"><input id="e_tabs_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.tabs_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/tabs-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row m-60px-b sm-m-40px-b">
+                                <div class="col-lg-4">
+                                    <div class="h2 font-w-600 dark-color">Why Choose Alan Academy?</div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="tab-style-2">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active o_default_snippet_text" id="nav_tabs_link_01" data-toggle="tab" href="#nav_tabs_content_01" role="tab" aria-controls="nav_tabs_content_01" aria-selected="true">Benefits</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link o_default_snippet_text" id="nav_tabs_link_02" data-toggle="tab" href="#nav_tabs_content_02" role="tab" aria-controls="nav_tabs_content_02" aria-selected="false">Self Development</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link o_default_snippet_text" id="nav_tabs_link_03" data-toggle="tab" href="#nav_tabs_content_03" role="tab" aria-controls="nav_tabs_content_03" aria-selected="false">Spirituality</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="nav_tabs_content_01" role="tabpanel" aria-labelledby="nav_tabs_link_01">
+                                                <div class="row">
+                                                    <div class="col-lg-5 m-15px-tb">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-7.jpg" />
+                                                    </div>
+                                                    <div class="col-lg-7 m-15px-tb">
+                                                        <div class="h4 dark-color font-w-600 m-15px-b">Why Choose Alan?</div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav_tabs_content_02" role="tabpanel" aria-labelledby="nav_tabs_link_02">
+                                                <div class="row">
+                                                    <div class="col-lg-5 m-15px-tb">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-8.jpg" />
+                                                    </div>
+                                                    <div class="col-lg-7 m-15px-tb">
+                                                        <div class="h4 dark-color font-w-600 m-15px-b">Why Choose Alan?</div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav_tabs_content_03" role="tabpanel" aria-labelledby="nav_tabs_link_03">
+                                                <div class="row">
+                                                    <div class="col-lg-5 m-15px-tb">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-9.jpg" />
+                                                    </div>
+                                                    <div class="col-lg-7 m-15px-tb">
+                                                        <div class="h4 dark-color font-w-600 m-15px-b">Why Choose Alan?</div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Tabs 2</h6>
+                <label class="e-sb-label" for="e_tabs_02"><input id="e_tabs_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

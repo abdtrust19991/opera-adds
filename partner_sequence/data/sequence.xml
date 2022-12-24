@@ -1,0 +1,20 @@
+<data >
+    <record id="customer_sequence" model="ir.sequence">
+        <field name="name">Customer</field>
+        <field name="code">customer</field>
+        <field name="prefix">CUS/</field>
+        <field name="padding">6</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="vendor_sequence" model="ir.sequence">
+        <field name="name">Vendor</field>
+        <field name="code">vendor</field>
+        <field name="prefix">VEN/</field>
+        <field name="padding">6</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</data>

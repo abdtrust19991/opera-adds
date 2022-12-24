@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="pos_orders_reprint_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+
+
+
+    <!-- POSBarcodeReturnWidget -->
+    <t t-name="POSBarcodeReturnWidget" name="POS Return Order with Barcode">
+        <div class="control-button button confirm" id="create_barcode_return"
+             style="background-color: #7f82ac; color: #fff;">
+            <i class="fa fa-barcode"></i>
+            Return Order with Barcode
+        </div>
+    </t>
+
+
+    <!-- PosBarcodePopupWidget -->
+    <t t-name="PosBarcodePopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-confirm">
+                <p class="title" style="background-color: rgb(110,200,155); color: #fff;">Return Order Barcode</p>
+
+                <div class="body">
+		     				<div class='div-container'>
+		     					<input id="entered_item_barcode" type="text" class="input-field" name="code"
+                                       style='margin-top: 15px;'></input>
+
+		                    </div>
+		                 </div>
+
+                <div class="footer" style="background-color: rgb(110,200,155); color: #fff;">
+                    <div class="button cancel" style="background-color: #0075AC; color: #fff;">
+                        Cancel
+                    </div>
+                    <div class="button confirm_return" id="apply_barcode_return_order"
+                         style="background-color: #0075AC; color: #fff;">
+                        Apply
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <!-- OrdersLine -->
+
+    <t t-name="OrdersLine">
+        <tr>
+            <td class='orders-line-name' t-att-data-id='order.id' style="cursor: pointer;"><t t-esc='order.name' /></td>
+            <td class='orders-line-ref' t-att-data-id='order.id' style="cursor: pointer;"><t t-esc='order.pos_reference' /></td>
+            <td class='orders-line-partner' t-att-data-id='order.id' style="cursor: pointer;"><t t-esc='order.partner_id[1] or ""' /></td>
+            <td class='orders-line-date' t-att-data-id='order.id' style="cursor: pointer;"><t t-esc='order.date_order' /></td>
+            <td class='orders-line-tot' t-att-data-id='order.id' style="cursor: pointer;"><t t-esc='widget.format_currency(order.amount_total)' /></td>
+            <!--<td>-->
+            <!--<button class="re-order" t-att-id='order.id' style="cursor: pointer; color: #fff; background-color: #7F82AC;"><i class="fa fa-refresh"></i> Re-Order </button>-->
+            <!--</td>-->
+            <td>
+                <button class="return-order" t-att-id='order.id'
+                        style="cursor: pointer; color: #fff; background-color: #7F82AC;"><i class='fa fa-sign-in'></i>
+                    Return Order </button>
+            </td>
+            <td>
+                <button class="print-order" t-att-id='order.id'
+                        style="cursor: pointer; color: #fff; background-color: #7F82AC;"><i class="fa fa-print"></i>
+                    Print</button>
+            </td>
+        </tr>
+    </t>
+
+    <!-- OrderDetails -->
+    <t t-name="OrderDetails">
+        <section class='client-details'>
+            <div class='client-name'>
+                <t t-esc='order.name'/>
+            </div>
+
+            <div class='edit-buttons'>
+                <div class='button edit'><i class='fa fa-pencil-square' /></div>
+            </div>
+
+            <div style="width: 100%;height: 220px;overflow: scroll;">
+            <div class='client-details-box clearfix'>
+                <div class='client-details-left'>
+                 	<div class='client-detail'>
+                        <span class='label' style="width:105px;">Order Ref</span>
+                        <span class='detail client-order_id'>
+                            <t t-esc='order.name'/>
+                        </span>
+                    </div>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Receipt Ref</span>
+                        <span class='client-type'>
+                            <t t-esc='order.pos_reference'/>
+                        </span>
+                    </div>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Customer</span>
+                        <t>
+                            <span class='detail client-label'>
+                                <t t-esc='order.partner_id[1]'/>
+                            </span>
+                        </t>
+                    </div>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Order Date</span>
+                        <t>
+                            <span class='detail client-label'>
+                                <t t-esc='order.date_order'/>
+                            </span>
+                        </t>
+                    </div>
+                </div>
+                <div class='client-details-right'>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Total</span>
+                        <t>
+                            <span class='detail client-label'>
+                                <t t-esc='order.amount_total'/>
+                            </span>
+                        </t>
+                    </div>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Company</span>
+                        <t>
+                            <span class='detail client-label'>
+                                <t t-esc='order.company_id'/>
+                            </span>
+                        </t>
+                    </div>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Status</span>
+                        <t>
+                            <span class='detail client-label'>
+                                <t t-esc='order.state'/>
+                            </span>
+                        </t>
+                    </div>
+                    <div class='client-detail'>
+                        <span class='label' style="width:105px;">Session</span>
+                        <t>
+                            <span class='detail client-label'>
+                                <t t-esc='order.session_id[1]'/>
+                            </span>
+                        </t>
+                    </div>
+                </div>
+				</div>
+			</div>
+        </section>
+    </t>
+
+    <!-- ######################################################################################################-->
+
+    <t t-name="SeeOrderDetailsPopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-confirm" style="height: 450px; width:700px">
+                <p class="title" style="background-color: #7f82ac; color: #fff;height: 10px;">Order Details</p>
+
+                <div class="body" style="height: 300px;">
+
+
+                    <t t-foreach="widget.options.order || []" t-as="item" t-att-id="item.id">
+                        <table style='width:100%'>
+                            <tr style='line-height:30px; font-size:15px'>
+                                <td style='width:20%; text-align:left'><strong>Order Ref:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['name']"/>
+                                </td>
+                                <td style='width:20%; text-align:left'><strong>Order Date:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['date_order']"/>
+                                </td>
+                            </tr>
+
+                            <tr style='line-height:30px; font-size:15px'>
+                                <td style='width:20%; text-align:left'><strong>Customer:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['partner_id'][1] or ''"/>
+                                </td>
+                                <td style='width:20%; text-align:left'><strong>Total Amount:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['amount_total']"/>
+                                </td>
+                            </tr>
+
+                            <tr style='line-height:30px; font-size:15px'>
+                                <td style='width:20%; text-align:left'><strong>Receipt Ref:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['pos_reference']"/>
+                                </td>
+                                <td style='width:20%; text-align:left'><strong>Status:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['state']"/>
+                                </td>
+                            </tr>
+                            <tr style='line-height:30px; font-size:15px'>
+                                <td style='width:20%; text-align:left'><strong>Company:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['company_id'][1]"/>
+                                </td>
+                                <td style='width:20%; text-align:left'><strong>Session:</strong>
+                                </td>
+                                <td style='width:30%; text-align:left'>
+                                    <span t-esc="item['session_id'][1]"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </t>
+                    <br/>
+                    <table style='width:100%'>
+                        <thead>
+                            <tr style="border:1px solid black; line-height:30px;">
+                                <th style='width:25%; padding-left: 10px; text-align:left'>Product</th>
+                                <th style='width:25%; padding-left: 10px; text-align:left'>Discount(%)</th>
+                                <th style='width:25%; padding-left: 10px; text-align:left'>Quantity</th>
+                                <th style='width:25%; padding-left: 10px; text-align:left'>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border:1px solid black; line-height:30px; font-size:15px;"
+                                t-foreach="widget.options.orderline || []" t-as="line1">
+                                <td style='width:25%; padding-left: 10px; text-align:left'><t t-esc='line1.product_id[1]' /></td>
+                                <td style='width:25%; padding-left: 10px; text-align:left'><t t-esc='line1.discount' /></td>
+                                <td style='width:25%; padding-left: 10px; text-align:left'><t t-esc='line1.qty' /></td>
+                                <td style='width:25%; padding-left: 10px; text-align:left'><t t-esc='line1.price_unit' /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="footer" style="background-color: #7f82ac; color: #fff;">
+
+                    <div class="button cancel" style="background-color: #E0E0E0; color: black;">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+    <!-- PosReOrderPopupWidget -->
+    <t t-name="PosReOrderPopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-confirm" style="height: 330px;">
+                <p class="title" style="background-color: rgb(110,200,155); color: #fff;">Reorder Products</p>
+
+                <div class="body" style="height: 250px;">
+		     				<div class='div-container'>
+		                        <table class='reorder-product-list'>
+		                            <thead>
+		                                <tr class="reorder_product_header">
+		                                    <th>Product</th>
+                                            <th>Reorder Qty</th>
+		                                </tr>
+		                            </thead>
+                                    <tbody class='reorder-product-list-contents'>
+		                            	<!--<t t-foreach="orderlines" t-as="orderline">-->
+                                        <tr class="reorder_product_body" t-foreach="widget.options.orderlines || []"
+                                            t-as="item">
+				                        	<td><t t-esc='item.product_id[1]' /></td>
+                                            <!--<td><t t-esc=" widget.options.orderlines" /></td>-->
+                                            <td class="entered_item_qty">
+		                                     	<input id="entered_item_qty" t-att-line-id='item.id'
+                                                       t-att-qty-id='item.qty' type="text" class="input-field"
+                                                       name="code"></input>
+		                                     </td>
+
+
+		                                </tr>
+		                            </tbody>
+		                        </table>
+		                    </div>
+		                 </div>
+
+                <div class="footer" style="background-color: rgb(110,200,155); color: #fff;">
+                    <div class="button cancel" style="background-color: #0075AC; color: #fff;">
+                        Cancel
+                    </div>
+                    <div class="button confirm" id="apply_reorder" style="background-color: #0075AC; color: #fff;">
+                        Apply
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+    <!-- PosReturnOrderPopupWidget -->
+    <t t-name="PosReturnOrderPopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-confirm" style="height: 450px; width:700px">
+                <p class="title" style="background-color: rgb(110,200,155); color: #fff;">Return Products</p>
+                <div class="body" style="height: 250px;">
+		     				<!--<div class='div-container' >-->
+                    <div class='div-container' style="height: 2500px;">
+		                        <table class='return-product-list'>
+		                            <thead>
+		                                <tr class="return_product_header">
+		                                    <th>Product</th>
+                                            <th>Return Qty</th>
+		                                </tr>
+		                            </thead>
+                                    <!--<tbody class='return-product-list-contents'>-->
+                                    <tbody>
+		                            	<!--<t t-foreach="orderlines" t-as="orderline">-->
+                                        <tr class="return_product_body" t-foreach="widget.options.orderlines || []"
+                                            t-as="item">
+				                        	<td><t t-esc='item.product_id[1]' /></td>
+                                            <!--<td><t t-esc=" widget.options.orderlines" /></td>-->
+                                            <td class="entered_item_qty">
+		                                     	<input id="entered_item_qty" t-att-line-id='item.id'
+                                                       t-att-qty-id='item.qty' t-att-nqty='item.return_qty' type="text"
+                                                       class="input-field" name="code"></input>
+		                                     </td>
+
+
+		                                </tr>
+		                            </tbody>
+		                        </table>
+		                    </div>
+		                 </div>
+
+                <div class="footer" style="background-color: rgb(110,200,155); color: #fff;">
+                    <div class="button cancel" style="background-color: #0075AC; color: #fff;">
+                        Cancel
+                    </div>
+                    <div class="button confirm" id="apply_return_order" style="background-color: #0075AC; color: #fff;">
+                        Apply
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+    <!-- Orderline WIdget -->
+    <t t-extend="Orderline">
+		    <t t-jquery=".info-list" t-operation="replace">
+
+		        <ul class="info-list">
+		            <t t-if="line.get_quantity_str() !== '1' || line.selected ">
+		                <li class="info" dir="auto">
+		                    <em>
+		                        <t t-esc="line.get_quantity_str()"/>
+		                    </em>
+                            <t t-esc="line.get_unit().name"/>
+                            at
+                            <t t-esc="widget.format_currency(line.get_unit_display_price(),'Product Price')"/>
+                            /
+                            <t t-esc="line.get_unit().name"/>
+		                </li>
+		            </t>
+                    <t t-if="line.get_discount_str() !== '0'">
+
+		                <t t-if="widget.pos.config.discount_type == 'percentage'">
+				            <li class="info" dir="auto">
+				                With a
+				                <em>
+				                    <t t-esc="line.get_discount_str()"/>%
+				                </em>
+                                discount
+				            </li>
+				        </t>
+
+                        <t t-if="widget.pos.config.discount_type == 'fixed'">
+				            <li class="info" dir="auto">
+				                With a
+				                <em>
+				                    <t t-esc="widget.format_currency(line.get_discount_str())"/>
+				                </em>
+                                discount
+				            </li>
+		                </t>
+
+		            </t>
+                    <li t-if="line.get_product().barcode" class="info">
+                           <span> Barcode : <t t-esc="line.get_product().barcode"/></span>
+                        </li>
+            	</ul>
+
+		    </t>
+		</t>
+
+
+    <t t-name="DiscountButton1">
+        <div class='control-button js_discount discount1'>
+            <i class='fa fa-tag'/>
+            Discount
+        </div>
+      </t>
+
+    <t t-extend="OrderReceipt">
+
+        <t t-jquery="t[t-esc='receipt.footer']" t-operation="replace">
+            <pre dir="rtl"
+                 style="overflow-x: auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;font-size:12px;">
+                <t t-raw="receipt.footer"/>
+            </pre>
+        </t>
+
+        <t t-jquery=".after-footer" t-operation="after">
+            <br/>
+            <img id="barcode" style="width:230px;height:90px;display:block;margin:auto;margin-top:20px;"/>
+            <br/>
+        </t>
+    </t>
+
+</templates>
+

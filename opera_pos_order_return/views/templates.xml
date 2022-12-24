@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="assets_backend_index" name="index pos ui" inherit_id="point_of_sale.index">
+            <xpath expr="//head" position="inside">
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/libs/js/jquery-barcode-last.min.js"/>
+            </xpath>
+        </template>
+
+        <!-- Add custom js for opera_pos_order_return_and_reprint -->
+        <template id="assets_for_opera_pos_order_return" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/libs/js/jquery-barcode-last.min.js"/>
+
+                <link rel="stylesheet" href="/opera_pos_order_return/static/src/css/custom.css"/>
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/models.js"/>
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/PosReturnButton.js"/>
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/OrderManagementControlPanel.js"/>
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/PosBarcodeReturnButton.js"/>
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/PosReturnOrderPopup.js"/>
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/PosBarcodePopup.js"/>
+
+            </xpath>
+
+            <xpath expr="//script[@src='/point_of_sale/static/src/js/Screens/OrderManagementScreen/OrderFetcher.js']" position="replace">
+                <script type="text/javascript" src="/opera_pos_order_return/static/src/js/OrderFetcher.js"/>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

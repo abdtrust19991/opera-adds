@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="pwa_info" name="PWA Information" inherit_id="portal.frontend_layout">
+        <xpath expr="//head" position="inside">
+            <t t-if="request.website and request.website.is_pwa_active">
+                <link rel="manifest" t-attf-href="/manifest/webmanifest/?web_id={{request.website.id}}"/>
+                <meta name="apple-mobile-web-app-capable" content="yes"/>
+                <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+                <meta name="apple-mobile-web-app-title" t-att-content="request.website.pwa_name"/>
+                <link rel="apple-touch-icon" t-att-href="website.image_url(request.website,'pwa_big_image')"/>
+                <meta name="theme-color" t-att-content="request.website.pwa_theme_color" />
+            </t>
+        </xpath>
+    </template>
+    <template id="assets_frontend" name="Frontend Asset Atharva Base" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <link href="/atharva_theme_base/static/lib/css/owl.carousel.min.css" rel="stylesheet"/>
+            <link rel="stylesheet" type="text/scss" href="/atharva_theme_base/static/src/scss/quick_cart.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/atharva_theme_base/static/src/scss/product_sticker.scss" />
+            <link rel="stylesheet" href="/atharva_theme_base/static/lib/css/magnific-popup.css" />
+            <link rel="stylesheet" href="/atharva_theme_base/static/lib/css/slick.css"/>
+        </xpath>
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/owl.carousel.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/quick_view.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/quick_cart.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/quick_load_product.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/header_menu_extend.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/custom_slider.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/search_bar_extend.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/jquery.elevateZoom-3.0.8.min.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/jquery.magnific-popup.min.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/pwa_config.js"/>
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/lazyloads.js" />
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/lazysizes.min.js" />
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/slick.min.js" />
+            <script type="text/javascript" src="/atharva_theme_base/static/src/js/product_detail.js" />
+        </xpath>
+    </template>
+    <template id="atharva_theme_base_multiselect_lib" inherit_id="website.assets_editor">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" href="/atharva_theme_base/static/lib/css/bootstrap-multiselect.css"/>
+        </xpath>
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/atharva_theme_base/static/lib/js/bootstrap-multiselect.js"/>
+        </xpath>
+    </template>
+</odoo>

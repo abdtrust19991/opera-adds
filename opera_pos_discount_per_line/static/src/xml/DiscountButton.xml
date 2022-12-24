@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="AllDiscountButton" owl="1">
+        <span class="control-button js_discount_fixed">
+            <i class="fa fa-percent"></i>
+            <span> </span>
+            <span>Discount Per Lines</span>
+        </span>
+    </t>
+
+
+</templates>

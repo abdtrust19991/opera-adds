@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="custom_footer" inherit_id="website.snippet_options">
+    <xpath expr="//div/we-select[@data-variable='footer-template']" position="inside">
+     <we-button title="custom_footer1"
+            data-customize-website-views="theme_alan.footer_layout_1,theme_alan.assets_frontend_footer1"
+            data-customize-website-variable="'custom_footer1'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-1.svg"/>
+    <we-button title="custom_footer2"
+            data-customize-website-views="theme_alan.footer_layout_2,theme_alan.assets_frontend_footer2"
+            data-customize-website-variable="'custom_footer2'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-2.svg"/>
+    <we-button title="custom_footer3"
+            data-customize-website-views="theme_alan.footer_layout_3,theme_alan.assets_frontend_footer3"
+            data-customize-website-variable="'custom_footer3'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-3.svg"/>
+    <we-button title="custom_footer4"
+            data-customize-website-views="theme_alan.footer_layout_4,theme_alan.assets_frontend_footer4"
+            data-customize-website-variable="'custom_footer4'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-4.svg"/>
+    <we-button title="custom_footer5"
+            data-customize-website-views="theme_alan.footer_layout_5,theme_alan.assets_frontend_footer5"
+            data-customize-website-variable="'custom_footer5'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-5.svg"/>
+    <we-button title="custom_footer6"
+            data-customize-website-views="theme_alan.footer_layout_6,theme_alan.assets_frontend_footer6"
+            data-customize-website-variable="'custom_footer6'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-6.svg"/>
+    <we-button title="custom_footer7"
+            data-customize-website-views="theme_alan.footer_layout_7,theme_alan.assets_frontend_footer7"
+            data-customize-website-variable="'custom_footer7'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-7.svg"/>
+    <we-button title="custom_footer8"
+            data-customize-website-views="theme_alan.footer_layout_8,theme_alan.assets_frontend_footer8"
+            data-customize-website-variable="'custom_footer8'"
+            data-img="/theme_alan/static/src/img/icon/footer-option-8.svg"/>
+    </xpath>
+</template>
+</odoo>

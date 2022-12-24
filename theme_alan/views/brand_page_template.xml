@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="get_product_brands_template" name="All Brand" inherit_id="atharva_theme_base.as_product_brands">
+        <xpath expr="//section[hasclass('as_product_brands')]" position="inside">
+            <t t-call="atharva_theme_base.product_brand_page_st"/>
+        </xpath>
+    </template>
+</odoo>

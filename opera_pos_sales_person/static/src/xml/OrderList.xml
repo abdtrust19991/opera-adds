@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderList" t-inherit="point_of_sale.OrderList" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//div[hasclass('header','customer')]" position="after">
+            <div class="header sale_person">Sale Person</div>
+        </xpath>
+
+    </t>
+
+</templates>

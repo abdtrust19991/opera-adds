@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options_shop" name="Shop Style" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='OptionsTab']/we-collapse" position="after">
+            <we-title>Customize Shop Style</we-title>
+            <we-select string="Shop Style" data-variable="custom-shop">
+                <we-button title="Custom_shop_0"
+                    data-name="button_shop0_opt"
+                    data-customize-website-views="theme_alan.custom_shop_0"
+                    data-customize-website-variable="'custom_shop0'">Default</we-button>
+                <we-button title="Custom_shop_1"
+                    data-name="button_shop1_opt"
+                    data-customize-website-views="theme_alan.custom_shop_1"
+                    data-customize-website-variable="'custom_shop1'">Shop 1</we-button>
+                <we-button title="Custom_shop_2"
+                    data-name="button_shop2_opt"
+                    data-customize-website-views="theme_alan.custom_shop_2"
+                    data-customize-website-variable="'custom_shop2'">Shop 2</we-button>
+                <we-button title="Custom_shop_3"
+                    data-name="button_shop3_opt"
+                    data-customize-website-views="theme_alan.custom_shop_3"
+                    data-customize-website-variable="'custom_shop3'">Shop 3</we-button>
+                <we-button title="Custom_shop_4"
+                    data-name="button_shop4_opt"
+                    data-customize-website-views="theme_alan.custom_shop_4"
+                    data-customize-website-variable="'custom_shop4'">Shop 4</we-button>
+            </we-select>
+            <we-select string="Toggle filter" data-variable="custom-filter">
+                <we-button title="Activate"
+                    data-name="button_shop0_opt"
+                    data-customize-website-views="theme_alan.toggle_filter_on"
+                    data-customize-website-variable="'toggle_filter_on'">Activate</we-button>
+                <we-button title="Deactivate"
+                    data-name="button_shop1_opt"
+                    data-customize-website-views="theme_alan.toggle_filter_off"
+                    data-customize-website-variable="'toggle_filter_off'">Deactivate</we-button>
+            </we-select>
+        </xpath>
+    </template>
+</odoo>

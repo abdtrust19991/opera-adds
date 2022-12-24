@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+         <template id="temp_header">
+            <div class="header" style="width:100%;">
+
+                <div style="width:100%;">
+                 <img src="/pos_daily_sales_report/static/description/logo.png" style="max-height: 80px;width:100%;"/>
+
+
+<!--                        <img t-if="res_company.logo" t-att-src="'data:image/png;base64,%s' % to_text(res_company.logo)" style="max-height: 100px;"/>-->
+                </div>
+                                <hr style="height:2px;border:none;color:#044dae ;background-color: #044dae;margin-top:0px;margin-bottom:2px"/>
+
+        </div>
+            <div class="article">
+          <t t-raw="0" />
+        </div>
+    </template>
+
+
+
+    <template id="daily_sales_doc">
+        <t t-call="web.html_container">
+            <t t-call="pos_daily_sales_report.temp_header">
+                <div class="page" dir="rtl">
+                    <br/>
+                    <table class="table table-condensed" dir="rlt">
+                         <tr height="30">
+                                <th class="text-center" colspan="2" style="text-decoration: underline;font-size:20px;color: red;font-weight: bold;">
+                                   التقرير الختامي لمبيعات نقاط البيع
+                                </th>
+                            </tr>
+                        <tr height="30">
+                                <th  colspan="2" style="font-size:16px;font-weight: bold;">
+                                  <span  style="font-size:18px;font-weight: bold;"><strong>من تاريخ </strong>&#160;<span t-esc="date_from" /> <strong>&#160;  إلى &#160;</strong><span t-esc="date_to" /></span>
+
+                                </th>
+                            </tr>
+                        <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">رقم الجلسه</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="session"/></th>
+                            </tr>
+                        <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">المستخدم</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="user.name"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">  اسم المستخدم</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="pos"/></th>
+                            </tr>
+<!--                    </table>-->
+<!--                    <br/>-->
+<!--                    <table class="table table-condensed">-->
+                        <tbody>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">اجمالي مبيعات</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="amt_sal"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">اجمالي الكمية المباعة</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="qty_sal"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">اجمالي المردودات</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="qty_rt"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">صافي الكمية</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="net_qty"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">مردودات نقدية</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="amt_rt"/></th>
+                            </tr>
+                            <t t-foreach="payments" t-as="line">
+
+                                <tr height="25">
+                                    <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="line"/></th>
+                                    <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="payments[line]"/></th>
+                                </tr>
+                            </t>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">اجمالي الشبكات</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="round(total_pay,2)"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">النقدية</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="round(cash,2)"/></th>
+                            </tr>
+                              <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">الاجمالي بدون ضريبة</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="round(total_untax,2)"/></th>
+                            </tr>
+                              <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">الضريبة</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="round(tax_amt,2)"/></th>
+                            </tr>
+                            <tr height="25">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">الاجمالي النهائي</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"><span t-esc="round(total,2)"/></th>
+                            </tr>
+                            <tr height="30">
+                                <th  style="text-align: justify; border-bottom: 1px solid #e4e4e4;">توقيع المدير</th>
+                                <th   style="text-align: justify; border-bottom: 1px solid #e4e4e4;"> </th>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

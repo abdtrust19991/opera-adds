@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="products" name="Product Details Extends AS" inherit_id="website_sale.products">
+        <xpath expr="//table/tbody/tr" position="after">
+            <tr t-if="pager['page_count'] != pager['page']['num']" class="load_next_product">
+                <td t-attf-colspan="{{ ppr }}" class="text-center">
+                    <button class="btn btn-primary js_load_product_nxt js_load_product"
+                    t-attf-page="{{ pager['page']['num'] }}"
+                    t-attf-category="{{ category.id }}"
+                    t-attf-ppg="{{ ppg }}"
+                    t-attf-max_page="{{ pager['page_count'] }}"
+                    t-attf-attrval="{{ attrib_values }}"
+                    t-attf-min_val="{{ custom_min_val }}"
+                    t-attf-max_val="{{ custom_max_val }}"
+                    t-attf-brand_ids="{{ brand_set }}"
+                    t-attf-product_order="{{ product_order }}"
+                    t-attf-search="{{ search }}"
+                    t-attf-rating="{{ rating }}"
+                    t-attf-tag_val="{{ tag_set }}"
+
+                    id="nxt">load next</button>
+                </td>
+            </tr>
+        </xpath>
+        <xpath expr="//table/tbody/tr" position="before">
+            <tr t-if="pager['page']['num'] != 1" class="load_pre_product">
+                <td t-attf-colspan="{{ ppr }}" class="text-center">
+                    <button class="btn btn-primary text-center js_load_product_pre js_load_product"
+                    t-attf-page="{{ pager['page']['num']}}"
+                    t-attf-category="{{ category.id }}"
+                    t-attf-ppg="{{ ppg }}"
+                    t-attf-max_page="{{ pager['page_count'] }}"
+                    t-attf-attrval="{{ attrib_values }}"
+                    t-attf-min_val="{{ custom_min_val }}"
+                    t-attf-max_val="{{ custom_max_val }}"
+                    t-attf-brand_ids="{{ brand_set }}"
+                    t-attf-product_order="{{ product_order }}"
+                    t-attf-search="{{ search }}"
+                    t-attf-rating="{{ rating }}"
+                    t-attf-tag_val="{{ tag_set }}"
+                    id="pre">load previous</button>
+                </td>
+            </tr>
+        </xpath>
+    </template>
+
+    <template id="ajax_product" name="Ajax Get Product">
+        <tr t-foreach="bins" t-as="tr_product">
+        <t t-foreach="tr_product" t-as="td_product">
+            <t t-if="td_product">
+                <t t-set="product" t-value="td_product['product']" />
+                <td t-att-colspan="td_product['x'] != 1 and td_product['x']"
+                    t-att-rowspan="td_product['y'] != 1 and td_product['y']"
+                    t-attf-class="oe_product"
+                    t-att-data-ribbon-id="td_product['ribbon'].id">
+                    <div t-attf-class="o_wsale_product_grid_wrapper o_wsale_product_grid_wrapper_#{td_product['x']}_#{td_product['y']}">
+                        <t t-call="website_sale.products_item">
+                            <t t-set="product_image_big" t-value="td_product['x'] + td_product['y'] &gt; 2"/>
+                        </t>
+                    </div>
+                </td>
+            </t>
+            <td t-else=""/>
+        </t>
+        </tr>
+    </template>
+</odoo>

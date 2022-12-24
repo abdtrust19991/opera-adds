@@ -1,0 +1,138 @@
+.products_pager {
+	.as-aside-filter {
+		order: -2;
+	    align-items: center;
+	    display: flex;
+	    padding-right: 10px;
+	    @include up-lg {
+	    	display: none;
+	    }
+	    @include down-md {
+	    	margin-right: auto;
+	    }
+	    button {
+		    background: $as-white;
+		    border: 1px solid $border-color;
+		    line-height: 35px;
+	    	padding: 0 14px;
+	    	outline: none;
+	    }
+	    .icon {
+	    	box-shadow: 0px 0px 0 1px $as-dark, 0px 4px 0 1px $as-dark, 0px -4px 0 1px $as-dark;
+    		width: 13px;
+		    display: inline-block;
+		    vertical-align: middle;
+		    position: relative;
+		    top: -1px;
+	    }
+	    span {
+    	    margin-left: 4px;
+		    font-weight: 500;
+		    color: $as-dark;
+		    text-transform: uppercase;
+		    font-size: 11px;
+	    }
+	}
+}
+
+
+/* ----------------------------
+	Close Aside
+-------------------------------*/
+.as-aside-filter-close {
+	position: fixed;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    @include transition(ease all 0.35s);
+    &.active {
+    	left: 300px;
+	    opacity: 1;
+	    pointer-events: auto;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: rgba(0,0,0,.5);
+	    padding-top: 100px;
+	    z-index: 9999;
+    }
+    button {
+    	border: none;
+	    padding: 0;
+	    outline: none;
+	    width: 35px;
+	    height: 35px;
+	    background: $as-white;
+	    margin: 0;
+	    position: relative;
+    }
+    .icon {
+	    width: 16px;
+	    height: 16px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+	    color: $as-dark;
+		&:after,
+		&:before {
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			background: currentColor;
+			@include rotate(45);
+		}
+		&:after {
+			height: 100%;
+			width: 2px;
+		}
+		&:before {
+			width: 100%;
+			height: 2px;
+		}
+    }
+    span {
+    	display: none;
+    }
+}
+
+
+/* Sidebar 
+------------------------------*/
+#products_grid_before {
+    @include down-lg {
+    	position: fixed;
+	    top: 0;
+	    left: -350px;
+	    bottom: 0;
+	    background: $as-white;
+	    z-index: 9999;
+	    width: 300px;
+	    max-height: 100vh;
+	    overflow-y: auto;
+	    @include transition(ease all 0.35s);
+	    padding-right: 25px;
+	    padding-top: 25px;
+	    + #products_grid {
+	        padding-left: 15px;
+	    }
+		> .btn.btn-link.d-lg-none {
+			display: none;
+		}
+		> .collapse.d-lg-block {
+			display: block;
+		}
+		&.products_grid_before_open {
+			left: 0;
+		}
+    }
+}
+
+

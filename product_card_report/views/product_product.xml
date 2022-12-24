@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+<!--        <record id="view_product_product_form_inherit" model="ir.ui.view">-->
+<!--            <field name="name">product.product.form.inherit</field>-->
+<!--            <field name="model">product.product</field>-->
+<!--            <field name="inherit_id" ref="product.product_normal_form_view"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                -->
+<!--                <xpath expr="//header" position="inside">-->
+<!--                    &lt;!&ndash; <field name="FNAME" /> &ndash;&gt;-->
+<!--                        <button name="%(product_card_report.view_product_card_report_wizard_action)d"   string="Item Value Moves" type="action" class="oe_highlight"/>-->
+<!--                </xpath>-->
+<!--                -->
+<!--            </field>-->
+<!--        </record>-->
+
+        <record id="view_product_template_form_inherit" model="ir.ui.view">
+            <field name="name">product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//header" position="inside">
+                    <!-- <field name="FNAME" /> -->
+                        <button name="%(product_card_report.view_product_card_report_wizard_action)d"   string="Item Value Moves" type="action" class="oe_highlight"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

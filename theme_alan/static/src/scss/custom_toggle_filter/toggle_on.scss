@@ -1,0 +1,65 @@
+.products_pager {
+    .as-aside-filter {
+        order: -2;
+        align-items: center;
+        display: flex;
+        padding-right: 10px;
+        @include down-md {
+            margin-right: auto;
+        }
+        button {
+            background: $as-white;
+            border: 1px solid $border-color;
+            line-height: 35px;
+            padding: 0 14px;
+            outline: none;
+        }
+        .icon {
+            box-shadow: 0px 0px 0 1px $as-dark, 0px 4px 0 1px $as-dark, 0px -4px 0 1px $as-dark;
+            width: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+        span {
+            margin-left: 4px;
+            font-weight: 500;
+            color: $as-dark;
+            text-transform: uppercase;
+            font-size: 11px;
+        }
+    }
+}
+
+/* Sidebar Toggle
+------------------------------*/
+#products_grid_before {
+	position: fixed;
+    top: 0;
+    left: -350px;
+    bottom: 0;
+    background: $as-white;
+    z-index: 9999;
+    width: 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    max-height: 100vh;
+    overflow-y: auto;
+    @include transition(ease all 0.35s);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    + #products_grid {
+        padding-left: 15px;
+    }
+	> .btn.btn-link.d-lg-none {
+		display: none;
+	}
+	> .collapse.d-lg-block {
+		display: block;
+	}
+	&.products_grid_before_open {
+		left: 0;
+	}
+
+}

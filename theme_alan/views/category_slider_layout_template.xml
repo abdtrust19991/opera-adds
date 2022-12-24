@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="alan_slider_type_one_cat_template" name="Slider Layout 1">
+        <t t-if="obj">
+            <section class="as-category-snippet as-category-snippet-1">
+                <div class="container">
+                    <div class="owl-carousel" id="as_category_slider_1">
+                        <t t-as="cat" t-foreach="obj.cat_ids">
+                            <div class="as-category-style-1">
+                                <a class="link-overlay" t-attf-href="/shop/category/#{slug(cat.cat_id)}"/>
+                                <div class="cat-img">
+                                    <img t-att-alt="cat.cat_id.name" t-att-src="website.image_url(cat.cat_id,'image_1920')" t-att-title="cat.cat_id.name"/>
+                                    <div class="cat-name">
+                                        <span t-esc="cat.cat_id.name"/>
+                                    </div>
+                                </div>
+                                <div class="cat-link">
+                                    <a class="as-btn as-btn-white" t-attf-href="/shop/category/#{slug(cat.cat_id)}">Shop Products</a>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <span>No Records Found ..!!</span>
+        </t>
+    </template>
+    <template id="alan_slider_type_five_cat_template" name="Slider Layout 2">
+        <t t-if="obj">
+            <section class="as-category-snippet as-category-snippet-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <t t-as="cat" t-foreach="obj.cat_ids">
+                            <div class="as-category-style-2">
+                                <t t-set="cat_bg_img" t-value="website.image_url(cat.cat_id,'image_1920')"/>
+                                <div class="category-snippet-box lazyload"  t-att-data-bgset="cat_bg_img">
+                                    <a class="link-overlay" t-attf-href="/shop/category/#{slug(cat.cat_id)}"/>
+                                    <div class="cat-info">
+                                        <div class="cat-name">
+                                            <span t-esc="cat.cat_id.name"/>
+                                        </div>
+                                        <div class="cat-link">
+                                            <a class="line-btn white" t-attf-href="/shop/category/#{slug(cat.cat_id)}">Shop Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <span>No Records Found ..!!</span>
+        </t>
+    </template>
+    <template id="alan_slider_type_two_cat_template" name="Slider Layout 3">
+        <t t-if="obj">
+            <section class="as-category-snippet as-category-snippet-3">
+                <div class="container-fluid">
+                    <div class="owl-carousel" id="as_category_slider_3">
+                        <t t-as="cat" t-foreach="obj.cat_ids">
+                            <div class="as-category-style-3">
+                                <t t-set="cat_bg_img" t-value="website.image_url(cat.cat_id,'image_1920')"/>
+                                <div class="category-snippet-box lazyload"  t-att-data-bgset="cat_bg_img">
+                                    <a class="link-overlay" t-attf-href="/shop/category/#{slug(cat.cat_id)}"/>
+                                    <div class="cat-info">
+                                        <div class="cat-name h1">
+                                            <span t-esc="cat.cat_id.name"/>
+                                        </div>
+                                        <div class="cat-link">
+                                            <a class="line-btn white" t-attf-href="/shop/category/#{slug(cat.cat_id)}">Shop Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <span>No Records Found ..!!</span>
+        </t>
+    </template>
+    <template id="alan_slider_type_three_cat_template" name="Slider Layout 4">
+        <t t-if="obj">
+            <section class="as-category-snippet as-category-snippet-4">
+                <div class="container-fluid">
+                    <div class="owl-carousel" id="as_category_slider_4">
+                        <t t-as="cat" t-foreach="obj.cat_ids">
+                            <div class="as-category-style-4">
+                                <t t-set="cat_bg_img" t-value="website.image_url(cat.cat_id,'image_1920')"/>
+                                <div class="category-snippet-box lazyload"  t-att-data-bgset="cat_bg_img">
+                                    <a class="link-overlay" t-attf-href="/shop/category/#{slug(cat.cat_id)}"/>
+                                    <div class="cat-info">
+                                        <div class="cat-name h1">
+                                            <span t-esc="cat.cat_id.name"/>
+                                        </div>
+                                        <div class="cat-link">
+                                            <a class="line-btn white" t-attf-href="/shop/category/#{slug(cat.cat_id)}">Shop Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <span>No Records Found ..!!</span>
+        </t>
+    </template>
+    <template id="alan_slider_type_six_cat_template" name="Slider Layout 5">
+        <t t-if="obj">
+            <section class="as-category-snippet as-category-snippet-5">
+                <div class="container">
+                    <div class="row">
+                        <t t-as="cat" t-foreach="obj.cat_ids">
+                            <div class="col-6 col-sm-4 col-md-2">
+                                <div class="as-category-style-5">
+                                    <t t-set="cat_bg_img" t-value="website.image_url(cat.cat_id,'image_1920')"/>
+                                    <div class="cat-img">
+                                        <a t-attf-href="/shop/category/#{slug(cat.cat_id)}" t-attf-style="background-image: url(#{cat_bg_img}#);"></a>
+                                    </div>
+                                    <div class="cat-name">
+                                        <a t-esc="cat.cat_id.name" t-attf-href="/shop/category/#{slug(cat.cat_id)}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <span>No Records Found ..!!</span>
+        </t>
+    </template>
+    <template id="alan_slider_type_four_cat_template" name="Slider Layout 6">
+    	<t t-if="obj">
+            <section class="as-category-snippet as-category-snippet-6">
+                <div class="container-fluid">
+                    <div class="owl-carousel" id="as_category_slider_6">
+                        <t t-as="cat" t-foreach="obj.cat_ids">
+                            <div class="as-category-style-6">
+                                <div class="cat-img">
+                                	<a class="link-overlay" t-attf-href="/shop/category/#{slug(cat.cat_id)}">
+                                    	<img t-att-alt="cat.cat_id.name" t-att-src="website.image_url(cat.cat_id,'image_1920')" t-att-title="cat.cat_id.name"/>
+                                	</a>
+                                </div>
+                                <div class="cat-text">
+                                	<div class="cat-text-in">
+	                                	<span class="cat-name" t-esc="cat.cat_id.name"/>
+	                                    <a class="as-btn as-btn-dark btn-sm" t-attf-href="/shop/category/#{slug(cat.cat_id)}">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <span>No Records Found ..!!</span>
+        </t>
+    </template>
+</odoo>

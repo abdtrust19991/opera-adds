@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Footer Layout 1 -->
+<template id="footer_layout_1" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Col -->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="footer-widget footer-widget-about">
+                                <div class="footer-logo">
+                                    <img src="/theme_alan/static/src/img/snippets/footer-logo.svg" title="" alt="" height="40" />
+                                </div>
+                                <p>One of the most powerful, amazing and flexible themes on Odoo store</p>
+                                <div class="nav footer-social-icons">
+                                    <a t-if="website.social_facebook" t-att-href="website.social_facebook">
+                                        <span class="fa fa-facebook"/>
+                                    </a>
+                                    <a t-if="website.social_twitter" t-att-href="website.social_twitter">
+                                        <span class="fa fa-twitter"/>
+                                    </a>
+                                    <a t-if="website.social_linkedin" t-att-href="website.social_linkedin">
+                                        <span class="fa fa-linkedin"/>
+                                    </a>
+                                    <a t-if="website.social_youtube" t-att-href="website.social_youtube">
+                                        <span class="fa fa-youtube-play"/>
+                                    </a>
+                                    <a t-if="website.social_github" t-att-href="website.social_github">
+                                        <span class="fa fa-github"/>
+                                    </a>
+                                    <a t-if="website.social_instagram" t-att-href="website.social_instagram">
+                                        <span class="fa fa-instagram"/>
+                                    </a>
+                                </div>
+                                <div class="f-lang pt-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Col -->
+
+                        <!-- Col -->
+                        <div class="col-md-8 col-lg-9">
+                            <div class="row">
+                                <!-- Col -->
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Navigate</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Shipping &amp; Returns</a></li>
+                                                <li><a href="#">Sitemap</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <!-- Col -->
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Categories</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">New In</a></li>
+                                                <li><a href="#">Women</a></li>
+                                                <li><a href="#">Men</a></li>
+                                                <li><a href="#">Shoes</a></li>
+                                                <li><a href="#">Bags &amp; Accessories</a></li>
+                                                <li><a href="#">Top Brands</a></li>
+                                                <li><a href="#">Special Offers</a></li>
+                                                <li><a href="#">Lookbook</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <!-- Col -->
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Useful Links</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Our Services</a></li>
+                                                <li><a href="#">How to shop</a></li>
+                                                <li><a href="#">FAQ's</a></li>
+                                                <li><a href="#">Contact us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+
+                                <!-- Col -->
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Useful Links</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Our Services</a></li>
+                                                <li><a href="#">How to shop</a></li>
+                                                <li><a href="#">FAQ's</a></li>
+                                                <li><a href="#">Contact us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Col -->
+                            </div>
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center text-md-left" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <span>Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></span>
+                        </div>
+                        <div class="col-md-6 text-center ml-md-auto">
+                            <img src="/theme_alan/static/src/img/snippets/payment.png" title="" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 2 ================-->
+<template id="footer_layout_2" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="media">
+                                <div class="icon">
+                                    <i class="fa fa-plane"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Free Shipping</h5>
+                                    <p>Free on all products</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="media">
+                                <div class="icon">
+                                    <i class="fa fa-shield"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Secured Shopping</h5>
+                                    <p>We use the best security features</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="media">
+                                <div class="icon">
+                                    <i class="fa fa-reply"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Free Returns</h5>
+                                    <p>Return for free within 30 days</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="media">
+                                <div class="icon">
+                                    <i class="fa fa-headphones"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h5>Support</h5>
+                                    <p>Effectiveand Friendly Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3 fot-col">
+                            <div class="footer-widget-title">
+                              <h6>My Account</h6>
+                            </div>
+                            <ul class="footer-widget-list">
+                                <li>
+                                    <a href="#">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shopping Cart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Custom Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 fot-col">
+                            <div class="footer-widget-title">
+                              <h6>Quick Links</h6>
+                            </div>
+                            <ul class="footer-widget-list">
+                                <li>
+                                    <a href="#">Store Location</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="#">Orders Tracking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Size Guide</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 fot-col">
+                            <div class="footer-widget-title">
+                              <h6>Information</h6>
+                            </div>
+                            <ul class="footer-widget-list">
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Search</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery Inforamtion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 fot-col">
+                            <div class="footer-widget-title">
+                              <h6>Customer Service</h6>
+                            </div>
+                            <ul class="footer-widget-list">
+                                <li>
+                                    <a href="#">Shipping Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Returns / Refunds</a>
+                                </li>
+                                <li>
+                                    <a href="#">Online Stores</a>
+                                </li>
+                                <li>
+                                    <a href="#">Refunds Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 d-flex flex-wrap justify-content-md-start justify-content-center" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <span>Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></span>
+                            <div class="f-lang pl-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center text-md-right ml-md-auto">
+                            <img src="/theme_alan/static/src/img/snippets/payment.png" title="" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 3 ================-->
+<template id="footer_layout_3" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>About Us</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Product catalog</a></li>
+                                        <li><a href="#">Contact information</a></li>
+                                        <li><a href="#">Reviews</a></li>
+                                        <li><a href="#">Jobs</a></li>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Services</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Terms of delivery</a></li>
+                                        <li><a href="#">Payment options</a></li>
+                                        <li><a href="#">Furniture assembly</a></li>
+                                        <li><a href="#">Warranty and return</a></li>
+                                        <li><a href="#">Offer</a></li>
+                                        <li><a href="#">Personal account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Customers</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Promotions and discounts</a></li>
+                                        <li><a href="#">The new directory</a></li>
+                                        <li><a href="#">Sale of goods</a></li>
+                                        <li><a href="#">Factories and brands</a></li>
+                                        <li><a href="#">Reviews and articles</a></li>
+                                        <li><a href="#">How to get discount</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Join</h6>
+                                </div>
+                                <div class="nav footer-social-icons">
+                                    <a t-if="website.social_facebook" class="facebook" t-att-href="website.social_facebook">
+                                        <span class="fa fa-facebook"/>
+                                    </a>
+                                    <a t-if="website.social_twitter" class="twitter" t-att-href="website.social_twitter">
+                                        <span class="fa fa-twitter"/>
+                                    </a>
+                                    <a t-if="website.social_linkedin" class="linkedin" t-att-href="website.social_linkedin">
+                                        <span class="fa fa-linkedin"/>
+                                    </a>
+                                    <a t-if="website.social_instagram" class="instagram" t-att-href="website.social_instagram">
+                                        <span class="fa fa-instagram"/>
+                                    </a>
+                                    <a t-if="website.social_youtube" class="youtube" t-att-href="website.social_youtube">
+                                        <span class="fa fa-youtube-play"/>
+                                    </a>
+                                    <a t-if="website.social_github" class="github" t-att-href="website.social_github">
+                                        <span class="fa fa-github"/>
+                                    </a>
+                                </div>
+                                <div class="f-lang pt-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-left" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <span>Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></span>
+                        </div>
+                        <div class="col-md-6 text-center text-md-right ml-md-auto">
+                            <img src="/theme_alan/static/src/img/snippets/payment.png" title="" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 4 ================-->
+<template id="footer_layout_4" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Information</h6>
+                                </div>
+
+                                <div class="footer-widget-address">
+                                    <p t-if="res_company.street or res_company.street2 or res_company.city or res_company.state_id or res_company.zip or res_company.country_id">
+                                        <i class="fa fa-map-o"></i>
+                                        <span t-field="res_company.street"/>
+                                        <span t-field="res_company.street2"/>
+                                        <span t-field="res_company.city"/>
+                                        <span t-field="res_company.state_id"/>
+                                        <span t-field="res_company.zip"/>
+                                        <span t-field="res_company.country_id"/>
+                                    </p>
+                                    <p t-if="res_company.email">
+                                        <i class="fa fa-envelope"></i>
+                                        <a t-att-href="'mailto: %s' %res_company.email">
+                                            <span t-field="res_company.email"/>
+                                        </a>
+                                    </p>
+                                    <p t-if="res_company.phone">
+                                        <i class="fa fa-phone"></i>
+                                        <a t-att-href="'tel: %s' %res_company.phone">
+                                            <span t-field="res_company.phone"/>
+                                        </a>
+                                    </p>
+                                    <div class="f-lang pt-3 pl-4 ml-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                        <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Account</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Delivery Information</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                                <li><a href="#">Our Brands</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Services</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Specials Offers</a></li>
+                                                <li><a href="#">Our Brands</a></li>
+                                                <li><a href="#">Shipping &amp; Returns</a></li>
+                                                <li><a href="#">Affiliates</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Info</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="#">Order History</a></li>
+                                                <li><a href="#">Wish List</a></li>
+                                                <li><a href="#">Gift Vouchers</a></li>
+                                                <li><a href="#">Specials Offers</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="nav footer-social-icons justify-content-center justify-content-md-start">
+                                <a t-if="website.social_facebook" class="facebook" t-att-href="website.social_facebook">
+                                    <span class="fa fa-facebook"/>
+                                </a>
+                                <a t-if="website.social_twitter" class="twitter" t-att-href="website.social_twitter">
+                                    <span class="fa fa-twitter"/>
+                                </a>
+                                <a t-if="website.social_linkedin" class="linkedin" t-att-href="website.social_linkedin">
+                                    <span class="fa fa-linkedin"/>
+                                </a>
+                                <a t-if="website.social_instagram" class="instagram" t-att-href="website.social_instagram">
+                                    <span class="fa fa-instagram"/>
+                                </a>
+                                <a t-if="website.social_youtube" class="youtube" t-att-href="website.social_youtube">
+                                    <span class="fa fa-youtube-play"/>
+                                </a>
+                                <a t-if="website.social_github" class="github" t-att-href="website.social_github">
+                                    <span class="fa fa-github"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-md-right text-center" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <span>Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 5 ================-->
+<template id="footer_layout_5" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>About us</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Delivery Information</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                                <li><a href="#">Our Brands</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>How can we help</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Specials Offers</a></li>
+                                                <li><a href="#">Our Brands</a></li>
+                                                <li><a href="#">Shipping &amp; Returns</a></li>
+                                                <li><a href="#">Affiliates</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Services</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">My Account</a></li>
+                                                <li><a href="#">Order History</a></li>
+                                                <li><a href="#">Wish List</a></li>
+                                                <li><a href="#">Gift Vouchers</a></li>
+                                                <li><a href="#">Specials Offers</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Shop by style</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Retro furniture</a></li>
+                                                <li><a href="#">Scandinavian furniture</a></li>
+                                                <li><a href="#">Modern furniture</a></li>
+                                                <li><a href="#">Classic Furniture</a></li>
+                                                <li><a href="#">Industrial furniture</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3 ml-auto">
+                            <div class="footer-logo">
+                                <img src="/theme_alan/static/src/img/snippets/footer-logo.svg" title="" alt="" height="40" />
+                            </div>
+                            <p class="m-0">One of the most powerful, amazing and flexible themes on Odoo store</p>
+                            <div class="footer-play-btns">
+                                <a href="#"><i class="fa fa-android"></i> Play Store</a>
+                                <a href="#"><i class="fa fa-apple"></i> App Store</a>
+                            </div>
+                            <div class="f-lang pt-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 my-3">
+                            <div class="nav footer-social-icons justify-content-center justify-content-lg-start">
+                                <a t-if="website.social_facebook" class="facebook" t-att-href="website.social_facebook">
+                                    <span class="fa fa-facebook"/>
+                                </a>
+                                <a t-if="website.social_twitter" class="twitter" t-att-href="website.social_twitter">
+                                    <span class="fa fa-twitter"/>
+                                </a>
+                                <a t-if="website.social_linkedin" class="linkedin" t-att-href="website.social_linkedin">
+                                    <span class="fa fa-linkedin"/>
+                                </a>
+                                <a t-if="website.social_instagram" class="instagram" t-att-href="website.social_instagram">
+                                    <span class="fa fa-instagram"/>
+                                </a>
+                                <a t-if="website.social_youtube" class="youtube" t-att-href="website.social_youtube">
+                                    <span class="fa fa-youtube-play"/>
+                                </a>
+                                <a t-if="website.social_github" class="github" t-att-href="website.social_github">
+                                    <span class="fa fa-github"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-3 text-center text-lg-right" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <div class="copyright">Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 6 ================-->
+<template id="footer_layout_6" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="footer-logo">
+                                <img src="/theme_alan/static/src/img/snippets/footer-logo.svg" title="" alt="" height="40" />
+                            </div>
+                            <div class="f-lang pt-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-xl-7 ml-auto">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>About</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Become affiliate</a></li>
+                                                <li><a href="#">Go unlimited</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Services</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Product</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Design systems</a></li>
+                                                <li><a href="#">Themes &amp; Templates</a></li>
+                                                <li><a href="#">Mockups</a></li>
+                                                <li><a href="#">Presentation</a></li>
+                                                <li><a href="#">Wireframe kits</a></li>
+                                                <li><a href="#">UI kits</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Legals</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">License</a></li>
+                                                <li><a href="#">Refund policy</a></li>
+                                                <li><a href="#">About</a></li>
+                                                <li><a href="#">Contacts</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="footer-widget">
+                                        <div class="footer-widget-title">
+                                            <h6>Blogs</h6>
+                                        </div>
+                                        <div class="footer-widget-list">
+                                            <ul>
+                                                <li><a href="#">Business Stories</a></li>
+                                                <li><a href="#">Digital store</a></li>
+                                                <li><a href="#">Learning</a></li>
+                                                <li><a href="#">Social Media</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 m-10px-tb text-center text-md-left" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <div class="copyright">Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></div>
+                        </div>
+                        <div class="col-md-6 m-10px-tb ml-md-auto">
+                            <div class="nav footer-social-icons justify-content-center justify-content-md-end">
+                                <a t-if="website.social_facebook" class="facebook" t-att-href="website.social_facebook">
+                                    <span class="fa fa-facebook"/>
+                                </a>
+                                <a t-if="website.social_twitter" class="twitter" t-att-href="website.social_twitter">
+                                    <span class="fa fa-twitter"/>
+                                </a>
+                                <a t-if="website.social_linkedin" class="linkedin" t-att-href="website.social_linkedin">
+                                    <span class="fa fa-linkedin"/>
+                                </a>
+                                <a t-if="website.social_instagram" class="instagram" t-att-href="website.social_instagram">
+                                    <span class="fa fa-instagram"/>
+                                </a>
+                                <a t-if="website.social_youtube" class="youtube" t-att-href="website.social_youtube">
+                                    <span class="fa fa-youtube-play"/>
+                                </a>
+                                <a t-if="website.social_github" class="github" t-att-href="website.social_github">
+                                    <span class="fa fa-github"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 7 ================-->
+<template id="footer_layout_7" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-widget footer-about-widget">
+                                <div class="footer-logo">
+                                    <img src="/theme_alan/static/src/img/snippets/footer-logo.svg" title="" alt="" height="40" />
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                <div class="btn-bar">
+                                    <a class="as-btn as-btn-theme" href="#">Ask Questions</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>About</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Become affiliate</a></li>
+                                        <li><a href="#">Go unlimited</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Product</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Design systems</a></li>
+                                        <li><a href="#">Themes &amp; Templates</a></li>
+                                        <li><a href="#">Mockups</a></li>
+                                        <li><a href="#">Presentation</a></li>
+                                        <li><a href="#">Wireframe kits</a></li>
+                                        <li><a href="#">UI kits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ml-lg-auto">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Contact</h6>
+                                </div>
+                                <div class="footer-widget-address">
+                                    <p t-if="res_company.street or res_company.street2 or res_company.city or res_company.state_id or res_company.zip or res_company.country_id">
+                                        <span t-field="res_company.street"/>
+                                        <span t-field="res_company.street2"/>
+                                        <span t-field="res_company.city"/>
+                                        <span t-field="res_company.state_id"/>
+                                        <span t-field="res_company.zip"/>
+                                        <span t-field="res_company.country_id"/>
+                                    </p>
+                                    <p t-if="res_company.email">
+                                        <a t-att-href="'mailto: %s' %res_company.email">
+                                            <span t-field="res_company.email"/>
+                                        </a>
+                                    </p>
+                                    <p t-if="res_company.phone">
+                                        <a t-att-href="'tel: %s' %res_company.phone">
+                                            <span t-field="res_company.phone"/>
+                                        </a>
+                                    </p>
+                                    <div class="f-lang pt-2" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                        <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 m-10px-tb text-center text-md-left" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <div class="copyright">Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></div>
+                        </div>
+                        <div class="col-md-6 m-10px-tb ml-md-auto">
+                            <div class="nav footer-social-icons justify-content-center justify-content-md-end">
+                                <a t-if="website.social_facebook" class="facebook" t-att-href="website.social_facebook">
+                                    <span class="fa fa-facebook"/>
+                                </a>
+                                <a t-if="website.social_twitter" class="twitter" t-att-href="website.social_twitter">
+                                    <span class="fa fa-twitter"/>
+                                </a>
+                                <a t-if="website.social_linkedin" class="linkedin" t-att-href="website.social_linkedin">
+                                    <span class="fa fa-linkedin"/>
+                                </a>
+                                <a t-if="website.social_instagram" class="instagram" t-att-href="website.social_instagram">
+                                    <span class="fa fa-instagram"/>
+                                </a>
+                                <a t-if="website.social_youtube" class="youtube" t-att-href="website.social_youtube">
+                                    <span class="fa fa-youtube-play"/>
+                                </a>
+                                <a t-if="website.social_github" class="github" t-att-href="website.social_github">
+                                    <span class="fa fa-github"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<!--================ Footer Layout 8 ================-->
+<template id="footer_layout_8" inherit_id="website.layout" active="False">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure">
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-widget footer-about-widget">
+                                <div class="footer-logo">
+                                    <img src="/theme_alan/static/src/img/snippets/footer-logo.svg" title="" alt="" height="40" />
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                <div class="nav footer-social-icons">
+                                    <a t-if="website.social_facebook" class="facebook" t-att-href="website.social_facebook">
+                                        <span class="fa fa-facebook"/>
+                                    </a>
+                                    <a t-if="website.social_twitter" class="twitter" t-att-href="website.social_twitter">
+                                        <span class="fa fa-twitter"/>
+                                    </a>
+                                    <a t-if="website.social_linkedin" class="linkedin" t-att-href="website.social_linkedin">
+                                        <span class="fa fa-linkedin"/>
+                                    </a>
+                                    <a t-if="website.social_instagram" class="instagram" t-att-href="website.social_instagram">
+                                        <span class="fa fa-instagram"/>
+                                    </a>
+                                    <a t-if="website.social_youtube" class="youtube" t-att-href="website.social_youtube">
+                                        <span class="fa fa-youtube-play"/>
+                                    </a>
+                                    <a t-if="website.social_github" class="github" t-att-href="website.social_github">
+                                        <span class="fa fa-github"/>
+                                    </a>
+                                </div>
+                                <div class="f-lang pt-3" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-if="not no_copyright" t-call="theme_alan.footer_language_section"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-2 ml-lg-auto">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>About</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Become affiliate</a></li>
+                                        <li><a href="#">Go unlimited</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-2">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Product</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Design systems</a></li>
+                                        <li><a href="#">Themes &amp; Templates</a></li>
+                                        <li><a href="#">Mockups</a></li>
+                                        <li><a href="#">Presentation</a></li>
+                                        <li><a href="#">Wireframe kits</a></li>
+                                        <li><a href="#">UI kits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-2">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Legals</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">License</a></li>
+                                        <li><a href="#">Refund policy</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contacts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-2">
+                            <div class="footer-widget">
+                                <div class="footer-widget-title">
+                                    <h6>Blogs</h6>
+                                </div>
+                                <div class="footer-widget-list">
+                                    <ul>
+                                        <li><a href="#">Business Stories</a></li>
+                                        <li><a href="#">Digital store</a></li>
+                                        <li><a href="#">Learning</a></li>
+                                        <li><a href="#">Social Media</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md m-10px-tb" t-if="res_company.street or res_company.street2 or res_company.city or res_company.state_id or res_company.zip or res_company.country_id">
+                            <div class="footer-feature media">
+                                <div class="icon">
+                                    <i class="fa fa-map-o"></i>
+                                </div>
+                                <div class="media-body">
+                                    <span t-field="res_company.street"/>
+                                    <span t-field="res_company.street2"/>
+                                    <span t-field="res_company.city"/>
+                                    <span t-field="res_company.state_id"/>
+                                    <span t-field="res_company.zip"/>
+                                    <span t-field="res_company.country_id"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md m-10px-tb" t-if="res_company.email">
+                            <div class="footer-feature media">
+                                <div class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="media-body">
+                                    <a t-att-href="'mailto: %s' %res_company.email">
+                                        <span t-field="res_company.email"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md m-10px-tb" t-if="res_company.phone">
+                            <div class="footer-feature media">
+                                <div class="icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="media-body">
+                                    <a t-att-href="'tel: %s' %res_company.phone">
+                                        <span t-field="res_company.phone"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 m-10px-tb text-center text-md-left" t-if="not no_copyright">
+                            <t t-set="no_default_copyright" t-value="True"/>
+                            <div class="copyright">Copyright &amp;copy; <i t-field="res_company.name" itemprop="name">Company name</i></div>
+                        </div>
+                        <div class="col-md-6 m-10px-tb text-center text-md-right ml-md-auto">
+                            <img src="/theme_alan/static/src/img/snippets/payment.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</template>
+
+<template id="footer_language_section" name="Footer Language Section">
+    <div class="js_language_selector dropdown">
+        <label class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="large-name d-none d-md-block"
+                t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+            <span class="sort-name d-block d-md-none"
+                t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+        </label>
+        <div class="dropdown-menu" role="menu">
+            <t t-foreach="languages" t-as="lg">
+                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                t-attf-class="js_change_lang dropdown-item #{'active' if request.lang.code==lg[0] else None}"
+                t-att-data-url_code="lg[1]">
+                    <t t-esc="lg[2].split('/').pop()"/>
+                </a>
+            </t>
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block dropdown-item" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </div>
+    </div>
+</template>
+
+<template id="remove_default_footer_copyright" inherit_id="web.frontend_layout" priority="50">
+    <xpath expr="//div[hasclass('o_footer_copyright')]" position="attributes">
+        <attribute name="t-if">not no_copyright and not no_default_copyright</attribute>
+    </xpath>
+</template>
+
+<template id="snippet_options_extend" name="template_name" inherit_id="website.snippet_options">
+    <xpath expr="//we-checkbox[@data-name='footer_copyright_opt']" position="replace">
+        <we-checkbox string="Copyright"
+            data-name="footer_copyright_opt"
+            data-customize-website-views="theme_alan.footer_no_copyright|"
+            data-no-preview="true"
+            data-reload="/"/>
+    </xpath>
+    <xpath expr="//we-checkbox[@data-dependencies='!footer_copyright_opt']" position="replace">
+        <we-checkbox string="Language Selector"
+            data-dependencies="!footer_copyright_opt"
+            data-customize-website-views="theme_alan.footer_no_copyright|portal.footer_language_selector"
+            data-no-preview="true"
+            data-reload="/"/>
+    </xpath>
+</template>
+
+<template id="footer_no_copyright" inherit_id="website.layout" name="Footer No Copyright" active="False">
+    <xpath expr="//footer" position="before">
+        <t t-set="no_copyright" t-value="True"/>
+    </xpath>
+</template>
+
+
+</odoo>

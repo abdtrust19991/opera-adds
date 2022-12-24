@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- From View of Delete Records Upto -->
+    <record id="create_product_wizard_form" model="ir.ui.view">
+        <field name="name">create.product.wizard.form.view</field>
+        <field name="model">create.product.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Delete Records Upto">
+                <!--                <p class="oe_grey">-->
+                <!--                    Delete the Records which were created before the date entered.-->
+                <!--                </p>-->
+                <group col="2" string="Product Info">
+                    <group>
+                        <field name="categ_id"/>
+                    </group>
+                    <group>
+                        <field name="prod_name"/>
+                        <field name="barcode"/>
+                    </group>
+                </group>
+                <group col="6" string="Enter Date to Determine Barcode">
+                    <field name="year" placeholder="2 digit"/>
+                    <field name="manufacture" placeholder="2 digit"/>
+                    <field name="season" placeholder="2 digit"/>
+                    <field name="activity_id" placeholder="2 digit"/>
+                    <field name="color_id" placeholder="2 digit"/>
+                    <field name="size_id" placeholder="2 digit"/>
+                    <field name="item" placeholder="3 digit"/>
+                    <field name="year_activity" invisible="1"/>
+                </group>
+
+                <group col="1" string="Enter Variants">
+
+                    <field name="attribute_line_ids" nolabel="1" context="{'show_attribute': False}">
+                        <tree string="Variants" editable="bottom">
+                            <field name="attribute_id"/>
+                            <field name="value_ids" widget="many2many_tags" options="{'no_create_edit': True}"
+                                   domain="[('attribute_id', '=', attribute_id)]"
+                                   context="{'default_attribute_id': attribute_id}"/>
+                        </tree>
+                    </field>
+                </group>
+
+                <footer>
+                    <button string='Create Records' name="create_product" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View of Delete Records Upto -->
+    <record id="create_product_wizard_action" model="ir.actions.act_window">
+        <field name="name">create product Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">create.product.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{}</field>
+    </record>
+</odoo>

@@ -1,0 +1,16 @@
+<odoo>
+
+
+    <record id="only_created_payments_id" model="res.groups">
+        <field name="name">Only Created Payments</field>
+
+    </record>
+
+     <record id="account_payment_only_create_rule" model="ir.rule">
+        <field name="name">Only Created Payment</field>
+        <field name="model_id" ref="account.model_account_payment"/>
+        <field name="groups" eval="[(4, ref('payment_restrictions.only_created_payments_id'))]"/>
+        <field name="domain_force">[('create_uid','=', user.id)]</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Product Page Product Label -->
+    <template id="as_product_page_label" inherit_id="website_sale.product" priority="23">
+        <xpath expr="//div[@id='product_details']/h1" position="before">
+            <t t-call="atharva_theme_base.product_label_st"/>
+        </xpath>
+    </template>
+    <!-- Shop Page Product Label -->
+    <template id="as_shop_product_label" name="Product Label" inherit_id="website_sale.products_item" customize_show="True" active="True" priority="23">
+        <xpath expr="//div[hasclass('oe_product_image')]" position="inside">
+            <t t-call="atharva_theme_base.shop_product_label_st"/>
+        </xpath>
+    </template>
+</odoo>

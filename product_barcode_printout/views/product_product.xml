@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="view_product_template_form_inherit" model="ir.ui.view">
+            <field name="name">product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                
+                <xpath expr="//header" position="inside">
+                    <button name="%(view_product_barcode_action)d" string="Print Label" type="action" />
+                </xpath>
+                
+            </field>
+        </record>
+    
+    </data>
+</odoo>

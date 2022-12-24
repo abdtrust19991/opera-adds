@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_our_client_templates">
+
+<t t-name="theme_alan.our_client_temp1">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/our_client-1.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="p-25px-tb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/logo-2.png" />
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/logo-3.png" />
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/logo-4.png" />
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/logo-5.png" />
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/logo-6.png" />
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/logo-7.png" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Our Client 1</h6>
+            <label class="e-sb-label" for="e_our_client_01"><input id="e_our_client_01" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_client_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_client-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-corp-1.png'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-9 text-center">
+                                    <div class="white-color h1 after-50px white-after m-30px-b p-30px-b">30.000 Users Worldwide.</div>
+                                    <p class="lead white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bran-1.png" title="" alt="" />
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bran-2.png" title="" alt="" />
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bran-3.png" title="" alt="" />
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bran-4.png" title="" alt="" />
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bran-5.png" title="" alt="" />
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-bran-1.png" title="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Client 2</h6>
+                <label class="e-sb-label" for="e_our_client_02"><input id="e_our_client_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

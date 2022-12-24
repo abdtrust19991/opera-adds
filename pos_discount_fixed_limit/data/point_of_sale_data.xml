@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    
+        <record id="product_product_consumable_disc1" model="product.product">
+            <field name="name">Discount</field>
+            <field name="standard_price">1.0</field>
+            <field name="list_price">1.0</field>
+            <field name="type">consu</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="default_code">Disc</field>
+            <field name="image_variant_1920" type="base64" file="pos_discount_fixed_limit/static/img/discount.jpg"/>
+        </record>
+
+    </data>
+</odoo>
+

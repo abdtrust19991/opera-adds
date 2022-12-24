@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!--        year   -->
+        <record id="config_size_form_view" model="ir.ui.view">
+            <field name="name">size.code.form</field>
+            <field name="model">size.code</field>
+            <field name="arch" type="xml">
+                <form string="Create Size">
+                    <sheet>
+                        <group>
+                            <field name="size"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="config_size_tree_view" model="ir.ui.view">
+            <field name="name">size.code.form</field>
+            <field name="model">size.code</field>
+            <field name="arch" type="xml">
+                <tree string="Size">
+                    <field name="size"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_product_attribute_inherit" model="ir.ui.view">
+            <field name="name">product.attribute.inherit</field>
+            <field name="model">product.attribute</field>
+            <field name="inherit_id" ref="product.product_attribute_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='value_ids']/tree/field[@name='name']" position="after">
+                    <field name="code"/>
+                </xpath>
+            </field>
+        </record>
+        <act_window id='action_size_form_view_id' res_model='size.code'
+                       name='Size' view_mode='tree,form'
+                       target='current' context='{}'
+                       domain='[]' limit='80' />
+        <!-- This Menu Item must have a parent and an action -->
+<!--        <menuitem id="menu_size_id" name="Size" parent="purchase.menu_product_in_config_purchase" groups="purchase.group_purchase_manager" action="action_size_form_view_id" sequence="10"/>-->
+
+
+
+
+    </data>
+</odoo>

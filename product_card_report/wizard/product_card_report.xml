@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="view_product_card_report_wizard_form" model="ir.ui.view">
+            <field name="name">product.card.report.wizard.form</field>
+            <field name="model">product.card.report.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+<!--                            <field name="product_id"/>-->
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="location_id"/>
+                            <field name="report_type" widget="radio"/>
+                            <!--<field name="warehouse"/>-->
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="action_print"   string="Print Report" type="object" class="oe_highlight"/>
+                        <button string="Cancel" special="cancel" class="oe_link"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_product_card_report_wizard_action" model="ir.actions.act_window">
+            <field name="name">Product Card Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.card.report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        
+<!--        <menuitem id="menu_product_card_report" name="Product Card Excel" parent="stock.menu_warehouse_report" action="view_product_card_report_wizard_action" sequence="1"/>-->
+<!--        <menuitem id="menu_product_card_report" name="Product Card Excel" parent="stock.menu_stock_root" action="view_product_card_report_wizard_action" sequence="1"/>-->
+
+    </data>
+</odoo>

@@ -1,0 +1,121 @@
+<data>
+    <record id="inherit_mrp_production_form" model="ir.ui.view">
+        <field name="name">inherit.mrp.production.form</field>
+        <field name="model">mrp.production</field>
+        <!--<field name="groups_id" eval="[(4, ref(''))]"/>-->
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_confirm']" position="after">
+                <button name="action_confirm" attrs="{'invisible': ['|',('state', '!=', 'draft'),('is_planned', '=', False)]}"
+                        string="Confirm" type="object" class="oe_highlight"/>
+                <button name="update_workorder_quantity" string="Update Workorder Quantity" type="object" class="oe_highlight"/>
+            </xpath>
+            <xpath expr="//button[@name='action_confirm']" position="attributes">
+                <attribute name="attrs">{'invisible': [('state', '!=', 'planned')]}</attribute>
+            </xpath>
+            
+            <xpath expr="//field[@name='state']" position="attributes">
+                <attribute name="statusbar_visible">draft,planned,confirmed,progress,done</attribute>
+            </xpath>
+
+<!--            <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='components']/field[@name='move_raw_ids']/tree[1]/field[@name='product_id']" position="after">-->
+<!--                <field name="location_id"/>-->
+<!--                <field name="location_dest_id"/>-->
+<!--            </xpath>-->
+            <xpath expr="//button[@name='button_plan']" position="attributes">
+                <attribute name="attrs">{'invisible': ['|', '|',
+                    ('state', 'not in', ('draft','confirmed', 'progress', 'to_close')),
+                    ('workorder_ids', '=', []), ('is_planned', '=', True)]}</attribute>
+            </xpath>
+            <xpath expr="//button[@name='button_unplan']" position="attributes">
+                <attribute name="attrs">{'invisible': ['|',('state', 'not in', ['draft', 'planned']),('is_planned', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//div[@class='o_row no-gutters d-flex']" position="replace">
+                <div class="o_row no-gutters d-flex">
+                    <div attrs="{'invisible': [('state', 'in', ['draft','planned'])]}" class="o_row">
+                        <field name="qty_producing" class="text-left" attrs="{'readonly': ['|', ('state', '=', 'cancel'), '&amp;', ('state', '=', 'done'), ('is_locked', '=', True)]}"/>
+                        /
+                    </div>
+                    <field name="product_qty" class="oe_inline text-left" attrs="{'readonly': [('state', 'not in', ['draft','planned'])], 'invisible': [('state', 'not in', ('draft', 'done'))]}"/>
+                    <button type="action" name="%(mrp.action_change_production_qty)d" context="{'default_mo_id': id}" class="oe_link oe_inline" attrs="{'invisible': ['|', ('state', 'in', ('draft', 'done','cancel')), ('id', '=', False)]}">
+                        <field name="product_qty" class="oe_inline" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    </button>
+                    <label for="product_uom_id" string="" class="oe_inline"/>
+                    <field name="product_uom_category_id" invisible="1"/>
+                    <field name="product_uom_id" options="{'no_open': True, 'no_create': True}" force_save="1" groups="uom.group_uom" attrs="{'readonly': [('state', '!=', 'draft')]}" class="oe_inline"/>
+                    <span class="text-bf">To Produce</span>
+                </div>
+            </xpath>
+
+
+            <xpath expr="//page[@name='operations']" position="after">
+                <page name="direct_labour_lines" string="Direct Labour Lines">
+                    <!-- add  context="{'default_field' : field}" to set default value -->
+                    <field name="direct_labour_line_ids">
+                        <tree editable="bottom">
+                            <!-- add  domain="[('id','=',parent.field)]" to set default domain -->
+                            <field name="workorder_id" invisible="1"/>
+                            <field name="workcenter_id"/>
+                            <field name="schedule_date"/>
+                            <field name="employee_shift_id" invisible="1"/>
+                            <field name="estimated_employee_ids" widget="many2many_tags" readonly="1"/>
+                            <field name="actual_employee_ids" widget="many2many_tags"/>
+                            <field name="total_cost_per_hour" readonly="1"/>
+                            <field name="total_estimated_cost"/>
+                            <field name="total_actual_cost"/>
+                        </tree>
+                    </field>
+                </page>
+                <page name="moh" string="MOH">
+                    <!-- add  context="{'default_field' : field}" to set default value -->
+                    <field name="overhead_cost_line_ids">
+                        <tree editable="bottom">
+                            <!-- add  domain="[('id','=',parent.field)]" to set default domain -->
+                            <field name="workcenter_id" readonly="1"/>
+                            <field name="estimated_moh_ids" widget="many2many_tags" readonly="1"/>
+                            <field name="actual_moh_ids" widget="many2many_tags"/>
+                            <field name="total_cost_per_hour"/>
+                            <field name="total_estimated_cost"/>
+                            <field name="total_actual_cost"/>
+                        </tree>
+                    </field>
+                </page>
+                <page name="direct_material" string="Direct Material" attrs="{'invisible':[('state','!=','done')]}">
+                    <!-- add  context="{'default_field' : field}" to set default value -->
+                    <field name="direct_material_ids" readonly="1">
+                        <tree editable="bottom">
+                            <!-- add  domain="[('id','=',parent.field)]" to set default domain -->
+                            <field name="product_id"/>
+                            <field name="uom_id"/>
+                            <field name="planned_qty"/>
+                            <field name="actual_qty"/>
+                            <field name="cost_per_unit"/>
+                            <field name="total_planned_cost" sum="Total"/>
+                            <field name="total_actual_cost" sum="Total"/>
+                        </tree>
+                    </field>
+                </page>
+                <page name="costing" string="Costing" attrs="{'invisible':[('state','!=','done')]}">
+                    <group style="width:33%;" string="Estimated">
+                        <field name="total_estimated_direct_material"/>
+                        <field name="total_estimated_labour"/>
+                        <field name="total_estimated_moh"/>
+                        <field name="total_estimated_cost" style="color:red;font-size:20px;"/>
+                    </group>
+                    <group style="width:33%;" string="Actual">
+                        <field name="total_actual_direct_material"/>
+                        <field name="total_actual_labour"/>
+                        <field name="total_actual_moh"/>
+                        <field name="total_actual_cost" style="color:red;font-size:20px;"/>
+                    </group>
+                    <group style="width:33%;" string="Variance">
+                        <field name="variance_direct_material"/>
+                        <field name="variance_labour"/>
+                        <field name="variance_moh"/>
+                        <field name="total_variance" style="color:red;font-size:20px;"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</data>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <template id="deal_day_2" name="Deal of the day 2">
+        <section class="section deal-of-day-snip-rounder bg-cover" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/fa-deal-day.jpg);">
+            <div class="container">
+                <div class="row justify-content-center p-100px-tb">
+                    <div class="col-lg-6">
+                        <div class="deal-text m-20-tb text-center">
+                            <div class="display-4 font-w-600 white-color after-50px white-after p-20px-b m-20px-b">SALE NOW ON</div>
+                            <p class="white-color-alt lead m-20px-t">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                            <div class="as_offer_timer"></div>
+                            <div class="p-30px-t">
+                                <a class="as-btn as-btn-white" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

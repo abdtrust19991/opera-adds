@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ======================= Header Layout 1========================= -->
+    <template id="header_layout_1" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav" position="replace">
+            <!-- Top Header -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <p class="ht-phone"><i class="fa fa-phone"></i>Call: +01 978 963 5645</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="nav">
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-col h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+
+                                <!-- Language -->
+                                <div class="h-col h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+
+                                <!-- Mobile Search -->
+                                <div class="h-col h-search">
+                                    <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                        <i class="lnr lnr-magnifier"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Header -->
+            <!-- Middle Header -->
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-6">
+                            <div class="logo" t-call="theme_alan.theme_header_logo" />
+                        </div>
+                        <div class="col-lg-4 header-search collapse" id="header_search_toggle">
+                            <t t-call="website_sale.website_sale_products_search_box">
+                                <t t-set="action" t-value="shop"/>
+                            </t>
+                        </div>
+                        <div class="col-lg-4 col-6 pl-0">
+                            <div class="nav">
+                                <t t-call="theme_alan.theme_header_cart"></t>
+                                <t t-call="theme_alan.theme_header_wishlist"></t>
+                                <!-- Sign In -->
+                                <t t-call="theme_alan.theme_header_signin"></t>
+                                <div class="h-col h-toggle">
+                                    <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Middle Header -->
+            <div class="cart_lines_popup"/>
+            <t t-call="theme_alan.submanu_navs"/>
+
+
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 2========================= -->
+    <template id="header_layout_2" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav" position="replace">
+            <!-- Top Header -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <p class="ht-phone"><i class="fa fa-phone"></i>Call: +01 978 963 5645</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="nav">
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-col h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+
+                                <!-- Language -->
+                                <div class="h-col h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+
+                                <!-- Sign In -->
+                                <t t-call="theme_alan.theme_header_signin"></t>
+
+                                <!-- Mobile Search -->
+                                <div class="h-col h-search">
+                                    <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                        <i class="lnr lnr-magnifier"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Header -->
+            <!-- Middle Header -->
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-6">
+                            <div class="logo" t-call="theme_alan.theme_header_logo" />
+                        </div>
+                        <div class="col-lg-4 ml-lg-auto header-search collapse" id="header_search_toggle">
+                            <t t-call="website_sale.website_sale_products_search_box">
+                                <t t-set="action" t-value="shop"/>
+                            </t>
+                        </div>
+                        <div class="col-lg-4 col-6 col-lg-auto pl-0">
+                            <div class="nav">
+                                <t t-call="theme_alan.theme_header_cart"></t>
+                                <t t-call="theme_alan.theme_header_wishlist"></t>
+                                <div class="h-col h-toggle">
+                                    <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Middle Header -->
+            <div class="cart_lines_popup"/>
+            <t t-call="theme_alan.submanu_navs"/>
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 3 ========================= -->
+    <template id="header_layout_3" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav[hasclass('navbar-expand')]" position="replace">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <p class="phone-no" t-if="res_company.phone">
+                                <i class="fa fa-phone"></i>
+                                <a t-att-href="'tel: %s' %res_company.phone">
+                                    <span t-field="res_company.phone"/>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="nav">
+                                <!-- Search -->
+                                <div class="h-col h-search">
+                                    <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                        <i class="lnr lnr-magnifier"></i>
+                                    </a>
+                                    <div class="header-search collapse" id="header_search_toggle">
+                                        <t t-call="website_sale.website_sale_products_search_box">
+                                                <t t-set="action" t-value="shop"/>
+                                            </t>
+                                    </div>
+                                </div>
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-col h-drop h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+                                <!-- Language -->
+                                <div class="h-col h-drop h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <!-- Logo -->
+                <div class="logo" t-call="theme_alan.theme_header_logo" />
+
+                <!-- Menu -->
+                <t t-call="theme_alan.submanu_navs"/>
+
+                <div class="header-right nav">
+                    <!-- cart -->
+                    <t t-call="theme_alan.theme_header_cart"></t>
+
+                    <!-- wishlist -->
+                    <t t-call="theme_alan.theme_header_wishlist"></t>
+
+                    <!-- Sign In -->
+                    <t t-call="theme_alan.theme_header_signin"></t>
+                    <div class="h-col h-toggle">
+                        <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_lines_popup"/>
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 3 ========================= -->
+    <template id="header_layout_4" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav[hasclass('navbar-expand')]" position="replace">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="logo" t-call="theme_alan.theme_header_logo" />
+                        </div>
+                        <div class="col">
+                            <div class="header-right">
+                                <!-- cart -->
+                                <t t-call="theme_alan.theme_header_cart"></t>
+
+                                <!-- wishlist -->
+                                <t t-call="theme_alan.theme_header_wishlist"></t>
+
+                                <!-- Sign In -->
+                                <t t-call="theme_alan.theme_header_signin"></t>
+
+                                <!-- Price and lang -->
+                                <div class="h-col h-setting">
+                                    <a class="nav-link" href="#" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="lnr lnr-cog"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <!-- Price List -->
+                                        <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                        <div class="h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                            <label>Currency</label>
+                                            <t t-call="website_sale.pricelist_list"/>
+                                        </div>
+                                        <!-- Language -->
+                                        <div class="h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                            <label>Language</label>
+                                            <t t-call="theme_alan.theme_header_lang"></t>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Toggle -->
+                                <div class="h-col h-search">
+                                    <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                        <i class="lnr lnr-magnifier"></i>
+                                    </a>
+                                </div>
+
+                                <div class="h-col h-toggle">
+                                    <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mob-h-search collapse" id="header_search_toggle">
+                                <t t-call="website_sale.website_sale_products_search_box">
+                                    <t t-set="action" t-value="shop"/>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_lines_popup"/>
+            <t t-call="theme_alan.submanu_navs"/>
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 5 ========================= -->
+    <template id="header_layout_5" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav[hasclass('navbar-expand')]" position="replace">
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo" t-call="theme_alan.theme_header_logo" />
+                    <div class="header-search">
+                        <t t-call="website_sale.website_sale_products_search_box">
+                            <t t-set="action" t-value="shop"/>
+                        </t>
+                    </div>
+                    <div class="ht-phone" t-if="res_company.phone">
+                        <a t-att-href="'tel: %s' %res_company.phone">
+                            <span t-field="res_company.phone"/>
+                        </a>
+                        <label>Call Us</label>
+                    </div>
+                    <div class="ht-right">
+                        <!-- cart -->
+                        <t t-call="theme_alan.theme_header_cart"></t>
+
+                        <!-- wishlist -->
+                        <t t-call="theme_alan.theme_header_wishlist"></t>
+
+                        <!-- Sign In -->
+                        <t t-call="theme_alan.theme_header_signin"></t>
+
+                        <!-- Price and lang -->
+                        <div class="h-col h-setting">
+                            <a class="nav-link" href="#" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="lnr lnr-cog"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <label>Currency</label>
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+                                <!-- Language -->
+                                <div class="h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <label>Language</label>
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-col h-toggle">
+                            <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <t t-call="theme_alan.submanu_navs"/>
+            <div class="cart_lines_popup"/>
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 5 ========================= -->
+    <template id="header_layout_6" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav" position="replace">
+            <!-- Top Header -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo" t-call="theme_alan.theme_header_logo" />
+
+                    <t t-call="theme_alan.submanu_navs"/>
+
+                    <div class="ht-right">
+                        <div class="h-col h-search">
+                            <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                <i class="lnr lnr-magnifier"></i>
+                            </a>
+                        </div>
+                        <!-- cart -->
+                        <t t-call="theme_alan.theme_header_cart"></t>
+
+                        <!-- wishlist -->
+                        <t t-call="theme_alan.theme_header_wishlist"></t>
+
+                        <!-- Sign In -->
+                        <t t-call="theme_alan.theme_header_signin"></t>
+
+                        <!-- Price and lang -->
+                        <div class="h-col h-setting">
+                            <a class="nav-link" href="#" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="lnr lnr-cog"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <label>Currency</label>
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+                                <!-- Language -->
+                                <div class="h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <label>Language</label>
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-search collapse" id="header_search_toggle">
+                            <t t-call="website_sale.website_sale_products_search_box">
+                                <t t-set="action" t-value="shop"/>
+                            </t>
+                        </div>
+                        <div class="h-col h-toggle">
+                            <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Header -->
+            <div class="cart_lines_popup"/>
+
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 7 ========================= -->
+    <template id="header_layout_7" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav" position="replace">
+        <div class="header-top">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 d-none d-md-block">
+                            <p class="phone-no" t-if="res_company.phone">
+                                <i class="fa fa-phone"></i>
+                                <a t-att-href="'tel: %s' %res_company.phone">
+                                    <span t-field="res_company.phone"/>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="nav">
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-col h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+                                <!-- Language -->
+                                <div class="h-col h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle-in">
+                        <div class="logo" t-call="theme_alan.theme_header_logo" />
+                        <div class="h-search">
+                            <t t-call="website_sale.website_sale_products_search_box">
+                                <t t-set="action" t-value="shop"/>
+                            </t>
+                        </div>
+                        <div class="ht-right">
+                            <!-- Sign In -->
+                            <t t-call="theme_alan.theme_header_signin"></t>
+
+                            <!-- cart -->
+                            <t t-call="theme_alan.theme_header_cart"></t>
+
+                            <!-- wishlist -->
+                            <t t-call="theme_alan.theme_header_wishlist"></t>
+                            <div class="h-col h-toggle">
+                                <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_lines_popup"/>
+            <t t-call="theme_alan.submanu_navs"/>
+        </xpath>
+    </template>
+
+    <!-- ======================= Header Layout 8 ========================= -->
+    <template id="header_layout_8" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav[hasclass('navbar-expand')]" position="replace">
+            <div class="header-top">
+                <div class="container">
+                    <div class="ht-left ht-left d-none d-lg-flex">
+                        <div class="h-col ht-phone" t-if="res_company.phone">
+                            <a t-att-href="'tel: %s' %res_company.phone">
+                                <i class="fa fa-phone"></i>  <span t-field="res_company.phone"/>
+                            </a>
+                        </div>
+                        <div class="h-col ht-email" t-if="res_company.email">
+                            <a t-att-href="'mailto: %s' %res_company.email">
+                                <i class="fa fa-envelope"></i>
+                                <span t-field="res_company.email"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ht-right">
+                        <!-- search -->
+                        <div class="h-col h-search">
+                            <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                <i class="lnr lnr-magnifier"></i>
+                            </a>
+                        </div>
+                        <!-- cart -->
+                        <t t-call="theme_alan.theme_header_cart"></t>
+
+                        <!-- wishlist -->
+                        <t t-call="theme_alan.theme_header_wishlist"></t>
+
+                        <!-- Sign In -->
+                        <t t-call="theme_alan.theme_header_signin"></t>
+
+                        <!-- Price and lang -->
+                        <div class="h-col h-setting">
+                            <a class="nav-link" href="#" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="lnr lnr-cog"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <!-- Price List -->
+                                <t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)"/>
+                                <div class="h-price" t-if="website_sale_pricelists and len(website_sale_pricelists)&gt;1">
+                                    <label>Currency</label>
+                                    <t t-call="website_sale.pricelist_list"/>
+                                </div>
+                                <!-- Language -->
+                                <div class="h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <label>Language</label>
+                                    <t t-call="theme_alan.theme_header_lang"></t>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-col h-toggle">
+                            <button class="mobile-menu-toggle" data-toggle="collapse" data-target="#top_menu_collapse">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header-search collapse" id="header_search_toggle">
+                        <t t-call="website_sale.website_sale_products_search_box">
+                            <t t-set="action" t-value="shop"/>
+                        </t>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="logo" t-call="theme_alan.theme_header_logo" />
+            </div>
+            <t t-call="theme_alan.submanu_navs"/>
+            <div class="cart_lines_popup"/>
+        </xpath>
+    </template>
+
+    <template id="header_layout_9" inherit_id="website.layout" active="False">
+        <xpath expr="//header/nav[hasclass('navbar-expand')]" position="replace">
+            <div class="header-top d-none d-lg-block">
+                <div class="container">
+
+                    <div class="logo" t-call="theme_alan.theme_header_logo" />
+
+                    <div class="header-search">
+                        <t t-call="website_sale.website_sale_products_search_box">
+                            <t t-set="action" t-value="shop"/>
+                        </t>
+                    </div>
+
+                    <div class="ht-msg">
+                        <span class="ht-icon">
+                            <img src="/theme_alan/static/src/img/shop/best-icon.svg" />
+                        </span>
+                        <span>
+                            Best Makeup website in Saudi Arabia
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle-in">
+                        <t t-call="theme_alan.submanu_navs"/>
+
+                        <div class="ht-right">
+                            <!--
+                                ====================
+                                only for Mobile
+                                ====================
+                            -->
+                                <div class="h-col-mobile h-col-mobile-toggle">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="h-mob-toggle" data-toggle="modal" data-target="#mobile_menu">
+                                        <span></span>
+                                    </button>
+                                </div>
+                                <div class="h-col-mobile h-col-mobile-logo" t-call="theme_alan.theme_header_logo" />
+
+                                <div class="h-col-mobile h-col-mobile-h-search">
+                                    <a class="nav-link collapsed" data-toggle="collapse" href="#header_search_toggle" role="button" aria-expanded="false" aria-controls="header_search_toggle">
+                                        <i class="lnr lnr-magnifier"></i>
+                                    </a>
+                                </div>
+                                <div class="header-search-mobile">
+                                    <t t-call="website_sale.website_sale_products_search_box">
+                                        <t t-set="action" t-value="shop"/>
+                                    </t>
+                                </div>
+                            <!--
+                                ====================
+                                End only for Mobile
+                                ====================
+                            -->
+
+                            <!-- Language -->
+                            <div class="h-col h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                <div class="js_language_selector dropdown">
+                                    <label class="dropdown-toggle nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="lnr lnr-earth"></i>
+                                        <span class="sort-name"
+                                            t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+                                    </label>
+                                    <div class="dropdown-menu" role="menu">
+                                        <label class="label">Language</label>
+                                        <div class="lang-lists">
+                                            <t t-foreach="languages" t-as="lg">
+                                                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                                                t-attf-class="js_change_lang #{'active' if request.lang.code==lg[0] else None}"
+                                                t-att-data-url_code="lg[1]">
+                                                    <t t-esc="lg[2].split('/').pop()"/>
+                                                </a>
+                                            </t>
+                                        </div>
+                                        <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+                                        <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                                            <i class="fa fa-plus-circle"/>
+                                            Add a language...
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sign In -->
+                            <div class="h-col h-user dropdown" groups="base.group_public" t-if="request.website.viewref('portal.user_sign_in').active">
+                                <label class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="lnr lnr-user"></i> <span>My Account</span>
+                                </label>
+                                <div class="dropdown-menu before-login">
+                                    <span t-if="request.website.viewref('theme_alan.advance_login_popup').active" class="h-link loginpop"
+                                        data-toggle="modal" data-target="#loginPopTemp" t-att-data-theme_name = "request.website.sudo().theme_id.name">
+                                        <span>Sign in</span>
+                                    </span>
+                                    <a t-else='' class="h-link" t-attf-href="/web/login">
+                                        <span>Sign in</span>
+                                    </a>
+                                    <div class="help-msg">
+                                        <a href="/web/signup">Don't Have Account ? Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-col h-user h-user-login dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                <label class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="lnr lnr-user"></i> <span>My Account</span>
+                                </label>
+                                <div class="dropdown-menu after-login" role="menu">
+                                    <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                    <a href="/my/home" role="menuitem" class="">My Account</a>
+                                    <a id="o_logout" class="" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                </div>
+                            </div>
+                            <!-- wishlist -->
+                            <t t-call="theme_alan.theme_header_wishlist"></t>
+
+                            <!-- cart -->
+                            <t t-call="theme_alan.theme_header_cart"></t>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                ====================
+                only for Mobile
+                ====================
+            -->
+            <!-- Modal -->
+            <div class="modal mobile-main-menu-modal" id="mobile_menu" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="h-col-mobile h-col-mobile-logo" t-call="theme_alan.theme_header_logo" />
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Login Link -->
+                            <div class="mob-login" groups="base.group_public" t-if="request.website.viewref('portal.user_sign_in').active">
+                                <span t-if="request.website.viewref('theme_alan.advance_login_popup').active" class="h-link loginpop"
+                                    data-toggle="modal" data-target="#loginPopTemp" t-att-data-theme_name = "request.website.sudo().theme_id.name">
+                                    <span>Sign in</span>
+                                </span>
+                                <a t-else='' class="h-link" t-attf-href="/web/login">
+                                    <span>Sign in</span>
+                                </a>
+                                <a href="/web/signup">Register</a>
+                            </div>
+                            <div class="mob-user-acc" t-ignore="true" t-if="not user_id._is_public()">
+                                <label class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                    <i class="lnr lnr-user"></i> <span>My Account</span>
+                                </label>
+                                <div class="dropdown-menu after-login" role="menu">
+                                    <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                    <a href="/my/home" role="menuitem" class="">My Account</a>
+                                    <a id="o_logout" class="" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                </div>
+                            </div>
+                            <!-- End Login Link -->
+                            <!-- Main Menu -->
+                            <t t-call="theme_alan.submanu_navs"/>
+                            <!-- End Main Menu -->
+                            <!-- Language -->
+                            <div class="h-col h-lang" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                <div class="js_language_selector dropdown">
+                                    <label class="dropdown-toggle nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                        <i class="lnr lnr-earth"></i>
+                                        <span class="sort-name"
+                                            t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+                                    </label>
+                                    <div class="dropdown-menu" role="menu">
+                                        <label class="label">Language</label>
+                                        <div class="lang-lists">
+                                            <t t-foreach="languages" t-as="lg">
+                                                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                                                t-attf-class="js_change_lang #{'active' if request.lang.code==lg[0] else None}"
+                                                t-att-data-url_code="lg[1]">
+                                                    <t t-esc="lg[2].split('/').pop()"/>
+                                                </a>
+                                            </t>
+                                        </div>
+                                        <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+                                        <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                                            <i class="fa fa-plus-circle"/>
+                                            Add a language...
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+                ====================
+                only for Mobile
+                ====================
+            -->
+            <div class="cart_lines_popup"/>
+        </xpath>
+    </template>
+
+    <!-- ======================================  comman element  ============================================== -->
+    <template id="theme_header_lang" inherit_id="portal.language_selector">
+        <xpath expr="//div" position="replace">
+            <div class="js_language_selector dropdown">
+                <label class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="large-name d-none d-md-block"
+                        t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="sort-name d-block d-md-none"
+                        t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+                </label>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                        t-attf-class="js_change_lang dropdown-item #{'active' if request.lang.code==lg[0] else None}"
+                        t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                    <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+                    <a class="d-none d-sm-block dropdown-item" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                        <i class="fa fa-plus-circle"/>
+                        Add a language...
+                    </a>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="theme_header_signin">
+        <div class="h-col h-user" groups="base.group_public" t-if="request.website.viewref('portal.user_sign_in').active">
+            <span t-if="request.website.viewref('theme_alan.advance_login_popup').active" class="h-link nav-link loginpop"
+                data-toggle="modal" data-target="#loginPopTemp" t-att-data-theme_name = "request.website.sudo().theme_id.name">
+                <i class="lnr lnr-user"></i>
+                <span>Sign in</span>
+            </span>
+            <a t-else='' class="h-link nav-link" t-attf-href="/web/login">
+                <i class="lnr lnr-user"></i>
+                <span>Sign in</span>
+            </a>
+        </div>
+        <div class="h-col h-user h-user-login dropdown" t-ignore="true" t-if="not user_id._is_public()">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <i class="lnr lnr-user"></i>
+                <span>Account</span>
+            </a>
+            <div class="dropdown-menu" role="menu">
+                <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                <a href="/my/home" role="menuitem" class="dropdown-item">My Account</a>
+                <a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+            </div>
+        </div>
+    </template>
+
+    <!-- Header Add to Cart -->
+    <template id="theme_header_cart">
+        <t t-set="website_sale_order" t-value="website.sale_get_order()" />
+        <div id="my_cart" class="h-col h-cart">
+            <t t-if="request.website.viewref('atharva_theme_base.cart_lines_popup_content').active">
+                <div class="o_wsale_my_cart nav-link my_cart_btn">
+                    <i class="lnr lnr-cart"></i>
+                    <span>My Cart</span>  <sup t-attf-class="my_cart_quantity badge badge-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />
+                </div>
+            </t>
+            <t t-else="">
+                <a href="/shop/cart" class="o_wsale_my_cart nav-link">
+                    <i class="lnr lnr-cart"></i>
+                    <span>My Cart</span>  <sup t-attf-class="my_cart_quantity badge badge-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''" />
+                </a>
+            </t>
+        </div>
+    </template>
+
+    <!-- Header Wishlist -->
+    <template id="theme_header_wishlist">
+        <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active">
+            <t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>
+            <div class="o_wsale_my_wish h-col h-wishlist">
+                <a href="/shop/wishlist" class="nav-link">
+                    <i class="lnr lnr-heart"/>
+                    <span>Wishlist</span> <sup t-attf-class="my_wish_quantity o_animate_blink badge badge-primary"><t t-esc='wishcount'/></sup>
+                </a>
+            </div>
+        </t>
+    </template>
+
+    <!-- Header logo -->
+    <template id="theme_header_logo">
+        <t t-if="request.website.viewref('website.option_header_brand_logo').active">
+            <a href="/">
+                <span t-field="website.logo" t-options="{'widget': 'image'}" t-att-alt="'Logo of %s' % website.name" t-att-title="website.name" />
+            </a>
+        </t>
+        <t t-else="">
+            <a class="te_header_before_logo navbar-brand" href="/" t-if="website"
+                t-field="website.name">My Website
+            </a>
+        </t>
+    </template>
+
+    <!-- Header Sub manu-->
+    <template id="submanu_navs" name="custom sub manu">
+        <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm as-header-navbar">
+            <div id="top_menu_container" class="container justify-content-start justify-content-lg-between">
+                <!-- Navbar Toggler -->
+                <t t-call="website.navbar_toggler">
+                    <t t-set="_toggler_class" t-value="'ml-auto'"/>
+                </t>
+                <!-- Navbar Collapse -->
+                <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
+                    <t t-call="website.navbar_nav">
+                        <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+                        <!-- Menu -->
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu">
+                                <t t-set="item_class" t-value="'nav-item'"/>
+                                <t t-set="link_class" t-value="'nav-link'"/>
+                            </t>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </nav>
+    </template>
+
+
+    <!-- Set value for not adding category dropdownlist in blog searching-->
+    <template id="blogs_nav_extends" name="Blogs Bar Template Extend As" inherit_id="website_blog.blogs_nav">
+        <xpath expr="//form[@id='o_wblog_post_search']/t" position="inside">
+            <t t-set="no_cat_listing" t-value="True"/>
+        </xpath>
+    </template>
+    <!-- Set value for not adding category dropdownlist in Search Snippet-->
+    <template id="search_snippet_extends" name="Search Snippet Extend As" inherit_id="website_sale.s_products_searchbar">
+        <xpath expr="//div[hasclass('row')]" position="before">
+            <t t-set="no_cat_listing" t-value="True"/>
+        </xpath>
+    </template>
+    <!-- Advance Searching  -->
+    <template id="advance_searching" name="Advanced Search" inherit_id="website.website_search_box">
+        <xpath expr="//input[@name='search']" position="before">
+            <t t-if="not no_cat_listing">
+            <t t-set="action" t-value="shop" />
+                <div class="nav-search-scope dropdown">
+                    <input t-if="is_subcatetgory" type="hidden" id="selectedCat" name="category" t-att-value="is_subcatetgory.id"/>
+                    <input t-elif="category" type="hidden" id="selectedCat" name="category" t-att-value="category.id"/>
+                    <input t-else="" type="hidden" id="selectedCat" name="category"/>
+                    <button class="btn dropdown-toggle" type="button" id="dropdownCatMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <t t-if="is_subcatetgory" t-esc="is_subcatetgory.name"/>
+                        <t t-elif="category" t-esc="category.name"/>
+                        <t t-else="">All</t>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownCatMenuButton" x-placement="bottom-start">
+                        <t t-if="category">
+                            <label t-if="len(category.parent_id) != 0" class="dropdown-item text-primary selected-cat" type='button' t-att-data-id="category.id"><t t-esc="category.name"/></label>
+                        </t>
+                        <label t-attf-class="dropdown-item #{'text-primary' if not category and not is_subcatetgory else ''} selected-cat" type='button' t-att-data-id="0">All</label>
+                        <t t-foreach="request.env['product.public.category'].get_all_parent_category()" t-as="cat">
+                            <label t-if="category" t-attf-class="dropdown-item #{'text-primary' if category.id == cat.id else ''} selected-cat" type='button' t-att-data-id="cat.id"><t t-esc="cat.name"/></label>
+                            <label t-else='' class="dropdown-item selected-cat" type='button' t-att-data-id="cat.id"><t t-esc="cat.name"/></label>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,312 @@
+/* Wizard
+------------------------------*/
+.wizard {
+	margin-top: 40px;
+	.progress-wizard {
+		.progress-wizard-step {
+			margin-bottom: 20px;
+			&.complete {
+				.progress-wizard-steplabel {
+					color: #39dc5e !important;
+				}
+			}
+			&.active {
+				.progress-wizard-dot {
+					background: $as-theme;
+					box-shadow:none;
+					&:after {
+						background: $as-theme;
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						border-radius: 50%;
+						animation: pulse-border 1500ms ease-out infinite;
+						pointer-events: none;
+					}
+				}
+				.progress-wizard-steplabel {
+					color: $as-dark;
+				}
+			}
+			.progress-wizard-bar {
+				background-color: #ddd;
+			}
+		}
+	}
+}
+
+@keyframes pulse-border {
+	0% {
+		@include scale(0.8);
+		opacity: 1;
+	}
+
+	100% {
+		@include scale(4);
+		opacity: 0;
+	}
+
+}
+
+
+/* Cart Table
+------------------------------*/
+.oe_cart {
+	h5 {
+		&.js_cart_lines {
+			color: $as-dark;
+		}
+	}
+}
+
+.toggle_summary_div {
+	#cart_products {
+		thead {
+			th {
+				border: none;
+	    		border-bottom: 1px solid $border-color;
+				font-weight: normal;
+	    		text-transform: uppercase;
+				font-weight: normal;
+	    		color: $as-dark;
+	    		font-weight: 500;
+	    		padding: 1rem !important;
+	    		@include down-md {
+					padding: 0.5rem !important;
+				}
+			}
+		}
+		.td-product_name {
+			strong {
+			    margin-bottom: 4px;
+			    display: inline-block;
+			    letter-spacing: 0;
+			    word-spacing: 0;
+			    font-size: 14px;
+			    color: $as-dark;
+			    text-decoration: none;
+			    font-weight: normal;
+			}
+		}
+		#order_total {
+			strong {
+				font-weight: 600;
+				color: $as-dark;
+			}
+		}
+		.td-qty {
+			text-align: center;
+		}
+	}
+}
+
+
+#cart_total {
+	color: $as-dark;
+	td.text-right {
+		text-align: left !important;
+	}
+}
+
+@include up-lg {
+	.oe_website_sale {
+		.toggle_summary_div {
+			max-width: 450px;
+		}
+	}
+}
+
+/* Common Product Table Design For all Cart page
+------------------------------------------------------------*/
+.oe_cart {
+	table {
+		thead {
+			th {
+				border: none;
+	    		border-bottom: 1px solid $border-color;
+				font-weight: normal;
+	    		text-transform: uppercase;
+				font-weight: normal;
+	    		color: $as-dark;
+	    		font-weight: 500;
+	    		padding: 1rem !important;
+	    		@include down-md {
+					padding: 0.5rem !important;
+				}
+			}
+		}
+		td,
+		th {
+			padding: 1rem;
+			@include down-md {
+				padding: 0.5rem;
+			}
+		}
+		.td-img {
+			> span {
+			    display: block;
+			    border: 1px solid $border-color;
+			    padding: 2px;
+			}
+		}
+		.td-product_name {
+			> div {
+				> a {
+				    margin-bottom: 4px;
+				    display: inline-block;
+				    letter-spacing: 0;
+				    word-spacing: 0;
+				    font-size: 14px;
+				    color: $as-dark;
+				    text-decoration: none;
+				    strong {
+				    	font-weight: normal;
+				    }
+				}
+			}
+			strong {
+			    margin-bottom: 4px;
+			    display: inline-block;
+			    letter-spacing: 0;
+			    word-spacing: 0;
+			    font-size: 14px;
+			    color: $as-dark;
+			    text-decoration: none;
+			    font-weight: normal;
+			}
+		}
+		.td-qty {
+			.css_quantity {
+				@include css_quantity;
+				@include down-md {
+					width: 50px;
+				}
+			}
+		}
+		tbody {
+			td {
+				padding: 1rem;
+				@include down-md {
+					padding: 0.5rem;
+				}
+			}
+			.td-price {
+				color: $as-dark;
+			}
+		}
+	}
+}
+
+/* My Wishlist
+------------------------------*/
+.wishlist-section {
+	padding-top: 40px;
+	> h3 {
+		color: $as-dark;
+	}
+	.table {
+		.text-left {
+			strong {
+				a {
+					color: $as-dark;
+				}
+			}
+			.o_wish_rm {
+				color: $as-dark;
+				padding: 0;
+			}
+		}
+	}
+}
+
+
+/* Portal
+------------------------------*/
+#wrapwrap {
+	&.o_portal  {
+		background: $as-white !important;
+	}
+}
+.o_portal  {
+	h3 {
+		color: $as-dark;
+	}
+	.o_portal_my_details {
+		h4 {
+			color: $as-dark;
+		}
+		address {
+			border: 1px solid $border-color;
+			padding: 25px;
+			margin-top: 10px;
+			.fa {
+				color: $as-theme;
+			}
+			[itemprop="name"] {
+				color: $as-dark;
+			}
+		}
+	}
+
+	/*quotes page*/
+	.o_portal_my_doc_table {
+		thead {
+			tr {
+				background: #ededed;
+			}
+			th {
+				text-transform: uppercase;
+				font-weight: 500;
+				color: $as-dark;
+				padding: 16px
+			}
+		}
+		tbody {
+			td {
+				padding-top: 16px !important;
+				padding-bottom: 16px !important;
+				a:not(:hover) {
+					color: $as-dark;
+				}
+			}
+		}
+	}
+	/*Quote Detsils*/
+	#sidebar_content {
+		top: 150px;
+		.card-body {
+			h2 {
+				color: $as-dark;
+			}
+		}
+		img.o_portal_contact_img {
+			min-width: 40px;
+    		min-height: 40px;
+		}
+	}
+	#quote_content {
+		.card-header {
+			h2 {
+				color: $as-dark;
+			}
+		}
+	}
+	#sales_order_table {
+		th {
+			color: $as-dark;
+		}
+		th,
+		td {
+			padding: 10px;
+		} 
+		td {
+			a:not(:hover) {
+				color: $as-dark;
+			}
+		}
+	}
+}

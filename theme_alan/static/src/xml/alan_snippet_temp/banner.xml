@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_banner_templates">
+
+<t t-name="theme_alan.banner_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-center bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bg-effect.jpg);">
+                    <div class="container">
+                        <div class="row full-screen align-items-center p-50px-tb">
+                            <div class="col-lg-6">
+                                <div class="dark-color font-w-700 h1 m-20px-b">
+                                    Professional Online<br /> Courses Platform
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-dark m-15px-r" href="#">Buy Now</a>
+                                    <a class="as-btn as-btn-dark" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 md-m-30px-t">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-corp-4.png" title="" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Banner 1</h6>
+                <label class="e-sb-label" for="e_banner_01"><input id="e_banner_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-center bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-con-1.png);">
+                        <div class="container">
+                            <div class="row screen-85 align-items-center justify-content-center p-50px-tb">
+                                <div class="col-lg-8 text-center">
+                                    <p class="font-w-600 white-color lead">Welcome to Alan Construction</p>
+                                    <div class="display-4 font-w-700 white-color">
+                                        We Build Big Things For <span class="theme-color">Our Peoples!</span>
+                                    </div>
+                                    <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                                    <div class="p-15px-t">
+                                        <a class="as-btn as-btn-white m-15px-r" href="#">Buy Now</a>
+                                        <a class="as-btn as-btn-theme" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 2</h6>
+                <label class="e-sb-label" for="e_banner_02"><input id="e_banner_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp3">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/banner-3.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="s_parallax parallax s_parallax_is_fixed">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-3.png'); background-position: 50% 75%;"></span>
+                    <div class="container">
+                        <div class="row screen-85 align-items-center justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <div class="white-color display-3 font-w-300 m-40px-b">A passionate Forward thinking Design Agency</div>
+                                <p class="white-color lead font-w-300">Graphic design | Passionate video art fan | Brand evangelist | UI/UX super hero</p>
+                                <div class="m-35px-t">
+                                    <a class="as-btn as-btn-white" href="#">Call us now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Banner 3</h6>
+            <label class="e-sb-label" for="e_banner_03"><input id="e_banner_03" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-corp-1.png);">
+                        <div class="container p-100px-t md-p-80px-t sm-p-50px-t">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="white-color display-4 font-w-300 m-30px-b">A passionate Forward thinking Design Agency</div>
+                                    <p class="white-color m-40px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                                    <a href="#" class="as-btn as-btn-white">Lear More</a>
+                                </div>
+                                <div class="col-lg-6 text-center md-m-45px-t">
+                                    <a class="video-btn white popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"> <span></span></a>
+                                </div>
+                            </div>
+                            <div class="row p-50px-t m-100px-t md-m-40px-t sm-m-0px-t">
+                                <div class="col-lg-3">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-50px white-bg-alt white-color border-radius-50 text-center">
+                                            <i class="fa fa-television color-white font-40"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h5 font-w-600">Creative</div>
+                                            <span class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing.d</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-50px white-bg-alt white-color border-radius-50 text-center">
+                                            <i class="fa fa-object-ungroup color-white font-40"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h5 font-w-600">Strategy</div>
+                                            <span class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing.d</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-50px white-bg-alt white-color border-radius-50 text-center">
+                                            <i class="fa fa-cogs color-white font-40"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h5 font-w-600">Design</div>
+                                            <span class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing.d</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="media m-15px-tb">
+                                        <div class="icon-50px white-bg-alt white-color border-radius-50 text-center">
+                                            <i class="fa fa-paint-brush color-white font-40"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="white-color h5 font-w-600">Development</div>
+                                            <span class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing.d</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 4</h6>
+                <label class="e-sb-label" for="e_banner_04"><input id="e_banner_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_alan.banner_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-5.jpg);">
+                        <div class="container">
+                            <div class="row screen-85 p-100px-tb align-items-center justify-content-center">
+                                <div class="col-md-7 text-center ">
+                                    <div class="white-color display-4 font-w-600 m-20px-b">With Alan, You Can Create Anything.</div>
+                                    <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn as-btn-white as-btn-radius" href="#">Read More</a>
+                                        <a class="as-btn as-btn-white as-btn-radius" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 5</h6>
+                <label class="e-sb-label" for="e_banner_05"><input id="e_banner_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_alan.banner_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/h-1.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container p-10-t p-15-b">
+                            <div class="row screen-85 align-items-center justify-content-center">
+                                <div class="col-lg-7 text-center">
+                                    <div class="display-4 font-w-600 white-color m-15px-b">WE CARE ABOUT YOUR HEALTH</div>
+                                    <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-white" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 6</h6>
+                <label class="e-sb-label" for="e_banner_06"><input id="e_banner_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_alan.banner_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/care-1.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row screen-85 align-items-center justify-content-center p-100px-tb">
+                                <div class="col-lg-7 text-center p-100px-b">
+                                    <div class="white-color display-4 font-w-600 m-15px-b">Committed To Care &amp; Education</div>
+                                    <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-white" href="#">Admission Open</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="top-150-up">
+                        <div class="container sectionm-m-t">
+                            <div class="row no-gutters">
+                                <div class="col-lg-4" style="background: #8612dc;">
+                                    <div class="p-40px text-center">
+                                        <div class="icon-110px d-inline-block white-bg-alt white-color border-radius-50 m-20px-b box-shadow border-5 border-white">
+                                            <span class="fa fa-book"></span>
+                                        </div>
+                                        <h5 class="white-color font-w-600 m-15px-b">Programs</h5>
+                                        <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                        <a class="as-btn btn-sm as-btn-white" href="#">More About</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4" style="background: #12b7dc;">
+                                    <div class="p-40px text-center">
+                                        <div class="icon-110px d-inline-block white-bg-alt white-color border-radius-50 m-20px-b box-shadow border-5 border-white">
+                                            <span class="fa fa fa-envelope-o"></span>
+                                        </div>
+                                        <h5 class="white-color font-w-600 m-15px-b">Certificate</h5>
+                                        <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                        <a class="as-btn btn-sm as-btn-white" href="#">More About</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4" style="background: #3845f9;">
+                                    <div class="p-40px text-center">
+                                        <div class="icon-110px d-inline-block white-bg-alt white-color border-radius-50 m-20px-b box-shadow border-5 border-white">
+                                            <span class="fa fa-print"></span>
+                                        </div>
+                                        <h5 class="white-color font-w-600 m-15px-b">Affordability</h5>
+                                        <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                                        <a class="as-btn btn-sm as-btn-white" href="#">More About</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 7</h6>
+                <label class="e-sb-label" for="e_banner_07"><input id="e_banner_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section style="background: #eee1dd;">
+                        <div class="container">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-lg-5 p-50px-tb">
+                                    <div class="h1 font-w-600 dark-color m-20px-b">Alan Gives You A Reason To Smile</div>
+                                    <p class="font-16 sm-font-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    <div class="btn-bar m-30px-t">
+                                        <a class="as-btn as-btn-dark" href="#">Book Appointment</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/cli-1.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 8</h6>
+                <label class="e-sb-label" for="e_banner_08"><input id="e_banner_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/wine-1.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row screen-85 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="white-color display-4 font-w-700 m-15px-b">
+                                        CLASSIC BRANDS
+                                    </div>
+                                    <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-white" href="#">View Features</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 9</h6>
+                <label class="e-sb-label" for="e_banner_09"><input id="e_banner_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/sport-1.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row screen-85 align-items-center p-100px-tb">
+                                <div class="col-lg-7">
+                                    <div class="display-4 dark-color font-w-700 m-25px-b">
+                                        The Lifestyle That Keeps Your Energized
+                                    </div>
+                                    <p class="color-extra-dark-gray-01 font-18 opacity9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn as-btn-dark " href="#">Book A Court</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 10</h6>
+                <label class="e-sb-label" for="e_banner_10"><input id="e_banner_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+<t t-name="theme_alan.banner_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-no-repeat bg-cover" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/movers-1.jpg);">
+                        <div class="container">
+                            <div class="row screen-85 align-items-center p-100px-tb">
+                                <div class="col-lg-6">
+                                    <label class="white-bg p-5px-tb p-15px-lr border-radius-15 font-w-500 dark-color m-15px-b small">Moving Without The Hassle</label>
+                                    <div class="font-w-700 dark-color display-4 m-15px-b">We Make It Simple</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-white" href="#">Call Us Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 11</h6>
+                <label class="e-sb-label" for="e_banner_11"><input id="e_banner_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="overflow-hidden section s_parallax parallax s_parallax_is_fixed border-bottom-1 border-color-gray border-top-1" data-scroll-background-ratio="1" data-name="Parallax">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-4.jpg'); background-position: 50% 75%;">
+                    </span>
+                    <div class="container">
+                        <div class="row screen-65 justify-content-center align-items-center">
+                            <div class="col-lg-12">
+                                <h6 class="white-bg p-10px-tb p-15px-lr dark-color m-20px-b d-inline-block">Clean Your House</h6>
+                                <h5 class="dark-color display-3 font-w-700">Like Never</h5>
+                                <h5 class="dark-color display-3 font-w-700"><span class="yellow-bg p-10px-lr p-6px-tb">Before</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Banner 12</h6>
+                <label class="e-sb-label" for="e_banner_12"><input id="e_banner_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp13">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-13.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="hero-banner-1 p-40px-tb" style="background-color: #043b34;">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-4 m-20px-tb">
+                                <div class="typo-box text-center text-lg-left">
+                                    <div class="h2 white-color font-w-500">Women</div>
+                                    <div class="display-4 white-color font-w-700">New Arrival </div>
+                                    <div class="h2 white-color font-w-600">$189.00</div>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn btn-lg as-btn-white" href="#">Browse All Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 m-20px-tb col-8">
+                                <div class="img-box">
+                                    <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-69.png" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4 m-20px-tb">
+                                <div class="typo-box text-center text-lg-right">
+                                    <div class="h2 white-color font-w-500">Summer Sale</div>
+                                    <div class="display-4 white-color font-w-700">Get 50% Off</div>
+                                    <div class="h2 white-color font-w-600">Start with $100.00</div>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn btn-lg as-btn-white" href="#">Browse All Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Banner 13</h6>
+                <label class="e-sb-label" for="e_banner_13"><input id="e_banner_13" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp14">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-14.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section bg-cover bg-no-repeat" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-44.jpg); ">
+                        <div class="container">
+                            <div class="row section">
+                                <div class="col-lg-5">
+                                    <h3 class="display-4 white-color font-w-600 m-15px-b">Check our collections</h3>
+                                    <h5 class="white-color">Final Clearance Up to 80% Off</h5>
+                                    <div class="p-15px-t">
+                                        <a class="as-btn as-btn-white" href="#">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters box-shadow-lg p-10px white-bg">
+                                <section class="p-50px-tb col-lg-4 sbs-box min-h-250 d-flex align-items-center justify-content-center bg-no-repeat bg-cover" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-9.jpg);">
+                                    <div class="sbs-tyop-wrap w-100 p-40px">
+                                        <h3 class="white-color font-w-500 m-20px-b">What's the best <br />digital radio for you</h3>
+                                        <div class="btn-bar">
+                                            <a class="as-btn as-btn-white" href="#">Explore Now</a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="p-50px-tb col-lg-4 sbs-box min-h-250 d-flex align-items-center justify-content-center bg-no-repeat bg-cover" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-10.jpg);">
+                                    <div class="sbs-tyop-wrap w-100 p-40px">
+                                        <h3 class="white-color font-w-500 m-20px-b">What's the best <br />digital radio for you</h3>
+                                        <div class="btn-bar">
+                                            <a class="as-btn as-btn-white" href="#">Explore Now</a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="p-50px-tb col-lg-4 sbs-box min-h-250 d-flex align-items-center justify-content-center bg-no-repeat bg-cover" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-11.jpg);">
+                                    <div class="sbs-tyop-wrap w-100 p-40px">
+                                        <h3 class="white-color font-w-500 m-20px-b">What's the best <br />digital radio for you</h3>
+                                        <div class="btn-bar">
+                                            <a class="as-btn as-btn-white" href="#">Explore Now</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 14</h6>
+                <label class="e-sb-label" for="e_banner_14"><input id="e_banner_14" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp15">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-15.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-46.jpg); ">
+                        <div class="container">
+                            <div class="row screen-65 align-items-center">
+                                <div class="col-lg-5">
+                                    <h3 class="display-4 white-color font-w-600 m-15px-b">Get all the good stuff</h3>
+                                    <p class="lead font-w-400 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn btn-lg as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 15</h6>
+                <label class="e-sb-label" for="e_banner_15"><input id="e_banner_15" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp16">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-16.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-47.jpg); ">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-5 white-bg">
+                                    <div class="d-flex align-items-center justify-content-center screen-65 text-center">
+                                        <div>
+                                            <h3 class="h1 theme-color font-w-600 m-15px-b">BIG</h3>
+                                            <h3 class="display-4 dark-color font-w-600 m-15px-b">INTERIOR</h3>
+                                            <h3 class="display-1 dark-color font-w-700 m-15px-b">SALE</h3>
+                                            <h3 class="h3 dark-color font-w-500 m-15px-b">Up to 50% off</h3>
+                                            <div class="p-20px-t">
+                                                <a class="as-btn btn-lg as-btn-theme" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 16</h6>
+                <label class="e-sb-label" for="e_banner_16"><input id="e_banner_16" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp17">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-17.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-48.jpg); ">
+                        <div class="container">
+                            <div class="row screen-65 align-items-center p-50px-tb">
+                                <div class="col-lg-5">
+                                    <div class="white-bg p-40px">
+                                        <h3 class="display-4 dark-color font-w-600 m-15px-b">Get all the good stuff</h3>
+                                        <p class="lead font-w-400 dark-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        <div class="p-20px-t">
+                                            <a class="as-btn btn-lg as-btn-dark" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 17</h6>
+                <label class="e-sb-label" for="e_banner_17"><input id="e_banner_17" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp18">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-18.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-49.jpg); ">
+                        <div class="container">
+                            <div class="row screen-65 align-items-center p-50px-tb">
+                                <div class="col-lg-5 offset-lg-7">
+                                    <div class="dark-bg p-40px">
+                                        <h3 class="display-4 white-color font-w-600 m-15px-b">Get all the good stuff</h3>
+                                        <p class="lead font-w-400 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                        <div class="p-20px-t">
+                                            <a class="as-btn btn-lg as-btn-white" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 18</h6>
+                <label class="e-sb-label" for="e_banner_18"><input id="e_banner_18" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp19">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-19.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-color: #4f7868; ">
+                        <div class="container">
+                            <div class="row screen-65 align-items-center p-50px-tb">
+                                <div class="col-lg-5 m-15px-tb">
+                                    <h3 class="display-3 white-color font-w-600 m-15px-b">100% original<br /> <u>coffee beans</u></h3>
+                                    <p class="lead font-w-400 white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn btn-lg as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb text-center">
+                                    <img src="https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-74.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 19</h6>
+                <label class="e-sb-label" for="e_banner_19"><input id="e_banner_19" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp20">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-20.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/bg-50.jpg); ">
+                        <div class="container">
+                            <div class="row screen-65 align-items-center p-50px-tb">
+                                <div class="col-lg-5">
+                                    <h3 class="h1 white-color font-w-500 m-15px-b">MacBook Pro</h3>
+                                    <h3 class="display-3 white-color font-w-600 m-15px-b">Power. Moves.</h3>
+                                    <p class="lead font-w-400 white-color">Starting from $1,200.</p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn btn-lg as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 20</h6>
+                <label class="e-sb-label" for="e_banner_20"><input id="e_banner_20" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.banner_temp21">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/banner-21.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(https://odoo-snippets.atharvasystem.com/source/img/v3/shop-banner-75.png); ">
+                        <div class="container">
+                            <div class="row screen-65 align-items-center p-50px-tb justify-content-center">
+                                <div class="col-lg-6 text-center">
+                                    <h3 class="display-4 dark-color font-w-600 m-15px-b">Get all the good stuff</h3>
+                                    <p class="lead font-w-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                    <div class="p-15px-t">
+                                        <a class="as-btn btn-lg as-btn-dark m-5px" href="#">Shop Now</a>
+                                        <a class="as-btn btn-lg as-btn-dark m-5px" href="#">More Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Banner 21</h6>
+                <label class="e-sb-label" for="e_banner_21"><input id="e_banner_21" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

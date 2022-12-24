@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderSummary" t-inherit="point_of_sale.OrderSummary" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('entry','total')]" position="before">
+
+            <div t-if="props.total_sale_qty" class="subentry">
+                Total Sale Qty:
+                <span class="value">
+                    <t t-esc="props.total_sale_qty"/>
+                </span>
+            </div>
+
+            <div t-if="props.total_return_qty" class="subentry">
+                Total Return Qty:
+                <span class="value">
+                    <t t-esc="props.total_return_qty"/>
+                </span>
+            </div>
+
+        </xpath>
+    </t>
+
+</templates>

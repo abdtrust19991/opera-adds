@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="payment_acquirer_hyperpay1" model="payment.acquirer">
+            <field name="name">Hyperpay Mada</field>
+            <field name="image_128" type="base64"
+                   file="payment_hyperpay_mada/static/src/img/hyperpay_icon.png"/>
+            <field name="provider">hyperpay1</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="hyperpay1_form"/>
+            <field name="pre_msg"><![CDATA[
+<p>You will be redirected to the Hyperpay payment form after clicking on the payment button.</p>]]></field>
+            <field name="hyperpay1_entity_id">dummy</field>
+            <field name="hyperpay1_authorization_bearer">dummy</field>
+            <field name="description" type="html">
+                <p>
+                    HyperPay is a robust online payment solution, driving the future of cashless payments in the region.
+                </p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fa fa-check"/>Online Payment
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-check"/>eCommerce
+                    </li>
+                    <li class="list-inline-item"><i class="fa fa-check"/>Payment Status Tracking
+                    </li>
+                </ul>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+        <xpath expr="//ul[hasclass('info-list')]/t[1]" position="before">
+            <li>
+                <t t-esc="props.line.get_product().barcode" />
+            </li>
+        </xpath>
+
+    </t>
+
+</templates>

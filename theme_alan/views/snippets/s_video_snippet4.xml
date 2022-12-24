@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="video_snippet_box_04" name="Video Box 4">
+        <section class="bg-center bg-cover bg-no-repeat" style="background-color: #eee;">
+            <div class="container">
+                <div class="row justify-content-center min-vh-65 align-items-center section">
+                    <div class="col-lg-7 text-center">
+                        <h3 class="display-4 dark-color font-w-600">START YOUR IMAGINATIONS</h3>
+                        <div class="m-20px-b">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat lignia sum quate voloriam lab il maxima que ne voluptatur aut quo ea ipissimil molor sum facculpari omniatae conse voloruptur.</p>
+                        </div>
+                        <div class="p-10px white-bg box-shadow">
+                            <div class="media_iframe_video" data-oe-expression="//www.youtube.com/embed/y4JLNPiRhr0?autoplay=0&amp;rel=0&amp;controls=0&amp;fs=0&amp;modestbranding=1">
+                                <div class="css_editable_mode_display">&amp;nbsp;</div>
+                                <div class="media_iframe_video_size">&amp;nbsp;</div>
+                                <iframe src="//www.youtube.com/embed/y4JLNPiRhr0?autoplay=0&amp;rel=0&amp;controls=0&amp;fs=0&amp;modestbranding=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                        <div class="p-40px-t">
+                            <a class="as-btn btn-lg as-btn-dark my-2" href="#">About us</a>
+                            <a class="as-btn btn-lg as-btn-dark my-2" href="#">Learn more</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

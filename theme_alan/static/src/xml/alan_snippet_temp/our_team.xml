@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_our_team_templates">
+
+<t t-name="theme_alan.our_team_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-7 text-center">
+                                    <div class="h1 dark-color after-50px theme-after font-w-400 m-20px-b p-20px-b">Meet the team</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale position-relative">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-3.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale position-relative">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-1.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale position-relative">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-2.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale position-relative">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-4.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                            </div> <!-- row -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 1</h6>
+                <label class="e-sb-label" for="e_our_team_01"><input id="e_our_team_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row m-45px-b md-m-25px-b">
+                                <div class="col-lg-7">
+                                    <div class="h1 dark-color font-w-600 m-20px-b">Meet the team</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-10px border-radius-5">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-3.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b white-bg text-center">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-10px border-radius-5">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-1.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b white-bg text-center">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-10px border-radius-5">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-2.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b white-bg text-center">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-10px border-radius-5">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-4.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b white-bg text-center">
+                                            <div class="dark-color h5 font-w-600 m-10px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                            </div> <!-- row -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 2</h6>
+                <label class="e-sb-label" for="e_our_team_02"><input id="e_our_team_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row m-30px-b">
+                                <div class="col-lg-6">
+                                    <label class="text-uppercase theme-color m-10px-b">What We Do</label>
+                                    <div class="dark-color font-w-700 h1 text-uppercase m-20px-b">Meet Our Super<br /><span class="border-bottom-1 border-color-theme font-italic">Creative</span> <span class="theme-color">Team</span></div>
+                                    <p class="font-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-opacity position-relative hover-scale">
+                                        <div class="at-team-img">
+                                            <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-8.png" title="" alt="" />
+                                        </div>
+                                        <div class="hover-opacity-in position-absolute bottom-0 w-100 white-bg-rgb p-10px text-center">
+                                            <div class="dark-color font-w-700 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="dark-color m-15px-b">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-opacity position-relative hover-scale">
+                                        <div class="at-team-img">
+                                            <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-5.png" title="" alt="" />
+                                        </div>
+                                        <div class="hover-opacity-in position-absolute bottom-0 w-100 white-bg-rgb p-10px text-center">
+                                            <div class="dark-color font-w-700 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="dark-color m-15px-b">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-opacity position-relative hover-scale">
+                                        <div class="at-team-img">
+                                            <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-6.png" title="" alt="" />
+                                        </div>
+                                        <div class="hover-opacity-in position-absolute bottom-0 w-100 white-bg-rgb p-10px text-center">
+                                            <div class="dark-color font-w-700 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="dark-color m-15px-b">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-opacity position-relative hover-scale">
+                                        <div class="at-team-img">
+                                            <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-7.png" title="" alt="" />
+                                        </div>
+                                        <div class="hover-opacity-in position-absolute bottom-0 w-100 white-bg-rgb p-10px text-center">
+                                            <div class="dark-color font-w-700 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="dark-color m-15px-b">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 3</h6>
+                <label class="e-sb-label" for="e_our_team_03"><input id="e_our_team_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-7 text-center">
+                                    <div class="h1 dark-color font-w-700 m-20px-b">Meet the team</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="position-relative hover-opacity">
+                                        <div class="hover-scale">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-3.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px hover-opacity-in-down">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="position-relative hover-opacity">
+                                        <div class="hover-scale">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-1.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px hover-opacity-in-down">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="position-relative hover-opacity">
+                                        <div class="hover-scale">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-2.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px hover-opacity-in-down">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="position-relative hover-opacity">
+                                        <div class="hover-scale">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-team-4.jpg" title="" alt="" />
+                                        </div>
+                                        <div class="p-20px white-bg text-center position-absolute bottom-0 left-0 right-0 box-shadow border-radius-5 m-10px hover-opacity-in-down">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">Jennifer Lutheran</div>
+                                            <div class="small">Media Manager</div>
+                                            <div class="nav social-icon si-30 theme radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- col -->
+                            </div> <!-- row -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 4</h6>
+                <label class="e-sb-label" for="e_our_team_04"><input id="e_our_team_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h5 font-w-500 theme-color">Lorem ipsum dolor</div>
+                                    <div class="h1 font-w-700 dark-color">TRAINERS</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/g-15.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/g-16.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/g-17.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/g-18.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 5</h6>
+                <label class="e-sb-label" for="e_our_team_05"><input id="e_our_team_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6f6;">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-7 text-center">
+                                    <div class="h1 font-w-600 dark-color">OUR MEDICAL SPECIALISTS</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-hover transition hover-top white-bg">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-15.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-hover transition hover-top white-bg">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-12.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-hover transition hover-top white-bg">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-13.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-hover transition hover-top white-bg">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-14.jpg" />
+                                        </div>
+                                        <div class="p-25px text-center">
+                                            <div class="h5 dark-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 dark radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 6</h6>
+                <label class="e-sb-label" for="e_our_team_06"><input id="e_our_team_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.our_team_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <i class="fa fa-3x theme-color fa-paw"></i>
+                                    <div class="h1 dark-color font-w-600 m-10px-t m-20px-b">Our Team</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg p-10px dark-bg hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-6.jpg" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b text-center">
+                                            <div class="h5 white-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px white-color-alt">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 white radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg p-10px dark-bg hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-9.jpg" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b text-center">
+                                            <div class="h5 white-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px white-color-alt">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 white radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg p-10px dark-bg hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-8.jpg" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b text-center">
+                                            <div class="h5 white-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px white-color-alt">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 white radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg p-10px dark-bg hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/pet-7.jpg" />
+                                        </div>
+                                        <div class="p-20px-t p-10px-b text-center">
+                                            <div class="h5 white-color font-w-600 m-5px-b">Carol Dawson</div>
+                                            <p class="m-0px white-color-alt">Gym Trainer</p>
+                                            <div class="nav social-icon si-30 white radius m-15px-t justify-content-center">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 7</h6>
+                <label class="e-sb-label" for="e_our_team_07"><input id="e_our_team_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-60px-b sm-m-45px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="dark-color h1 font-w-300 m-10px-b">Team of Professionals</div>
+                                    <p class="m-0px font-1 font-w-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg white-bg p-15px hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/cli-5.jpg" />
+                                        </div>
+                                        <div class="p-15px-t">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">John Hagensy, PhD</div>
+                                            <p class="font-w-500 m-0px p-5px-b">Professor</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            <div class="nav social-icon si-30 dark m-15px-t">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg white-bg p-15px hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/cli-6.jpg" />
+                                        </div>
+                                        <div class="p-15px-t">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">John Hagensy, PhD</div>
+                                            <p class="font-w-500 m-0px p-5px-b">Professor</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            <div class="nav social-icon si-30 dark m-15px-t">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg white-bg p-15px hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/cli-7.jpg" />
+                                        </div>
+                                        <div class="p-15px-t">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">John Hagensy, PhD</div>
+                                            <p class="font-w-500 m-0px p-5px-b">Professor</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            <div class="nav social-icon si-30 dark m-15px-t">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="box-shadow-lg white-bg p-15px hover-top">
+                                        <div class="alan-img-hover">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/cli-8.jpg" />
+                                        </div>
+                                        <div class="p-15px-t">
+                                            <div class="dark-color h5 font-w-600 m-5px-b">John Hagensy, PhD</div>
+                                            <p class="font-w-500 m-0px p-5px-b">Professor</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                            <div class="nav social-icon si-30 dark m-15px-t">
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 8</h6>
+                <label class="e-sb-label" for="e_our_team_08"><input id="e_our_team_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section p-0px-b">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-5 p-30px-b">
+                                    <div class="dark-color h1 font-w-600">Will Buoyega</div>
+                                    <p class="theme-color font-w-500">Tennis Instructor</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class="m-20px-t">
+                                        <div class="nav social-icon si-40 radius theme m-15px-t">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/sport-4.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 9</h6>
+                <label class="e-sb-label" for="e_our_team_09"><input id="e_our_team_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6f6;">
+                        <div class="container">
+                            <div class="row m-60px-b sm-m-40px-b">
+                                <div class="col-lg-4">
+                                    <div class="h2 dark-color font-w-600 m-30px-b">Finance Faculty</div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="box-shadow p-15px white-bg">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-15.jpg" />
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="p-25px-t">
+                                                    <div class="dark-color h5 font-w-600 m-5px-b">John Hagensy, PhD</div>
+                                                    <p class="small font-w-500">Professor</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                                    <div class="nav social-icon si-30 dark m-15px-t">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="box-shadow p-15px white-bg">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-12.jpg" />
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="p-25px-t">
+                                                    <div class="dark-color h5 font-w-600 m-5px-b">Carol Dawson, PhD</div>
+                                                    <p class="small font-w-500">Professor</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                                    <div class="nav social-icon si-30 dark m-15px-t">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="box-shadow p-15px white-bg">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-13.jpg" />
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="p-25px-t">
+                                                    <div class="dark-color h5 font-w-600 m-5px-b">Angelina Jones, PhD</div>
+                                                    <p class="small font-w-500">Professor</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                                    <div class="nav social-icon si-30 dark m-15px-t">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="box-shadow p-15px white-bg">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/ac-14.jpg" />
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="p-25px-t">
+                                                    <div class="dark-color h5 font-w-600 m-5px-b">Steve Cook, PhD</div>
+                                                    <p class="small font-w-500">Professor</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                                    <div class="nav social-icon si-30 dark m-15px-t">
+                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 10</h6>
+                <label class="e-sb-label" for="e_our_team_10"><input id="e_our_team_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.our_team_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/our_team-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h1 font-w-600 dark-color m-5px-b">Meet Our Team</div>
+                                    <p class="m-0px lead">Where nature meets bliss</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-radius-50">
+                                        <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/spa-team1.jpg" title="" alt="" />
+                                    </div>
+                                    <div class="text-center m-25px-t">
+                                        <div class="h5 dark-color font-w-700">Jennifer Lutheran</div>
+                                        <span>Media Manager</span>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-radius-50">
+                                        <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/spa-team2.jpg" title="" alt="" />
+                                    </div>
+                                    <div class="text-center m-25px-t">
+                                        <div class="h5 dark-color font-w-700">Jennifer Lutheran</div>
+                                        <span>Media Manager</span>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-radius-50">
+                                        <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/spa-team3.jpg" title="" alt="" />
+                                    </div>
+                                    <div class="text-center m-25px-t">
+                                        <div class="h5 dark-color font-w-700">Jennifer Lutheran</div>
+                                        <span>Media Manager</span>
+                                    </div>
+                                </div> <!-- col -->
+                                <div class="col-sm-6 col-lg-3 m-15px-tb">
+                                    <div class="hover-scale border-radius-50">
+                                        <img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/spa-team4.jpg" title="" alt="" />
+                                    </div>
+                                    <div class="text-center m-25px-t">
+                                        <div class="h5 dark-color font-w-700">Jennifer Lutheran</div>
+                                        <span>Media Manager</span>
+                                    </div>
+                                </div> <!-- col -->
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Our Team 11</h6>
+                <label class="e-sb-label" for="e_our_team_11"><input id="e_our_team_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

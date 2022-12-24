@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="video_snippet_box" name="Video Box 1">
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 m-15px-tb">
+                        <section class="min-vh-50 border-radius-10 d-flex align-items-end bg-cover bg-no-repeat" style="background-image: url(/theme_alan/static/src/img/snippets/shop-banner-47.jpg);">
+                            <div class="p-30px">
+                                <a class="video-btn white" href="#"><span></span></a>
+                                <h3 class="h2 white-color font-w-600 p-50px-t m-5px-b">Dick Grayson</h3>
+                                <p class="white-color">Chief designer and Co-founder</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 align-self-center m-auto m-15px-tb">
+                        <h2 class="dark-color font-w-600 m-20px-b">Great stories are for everyone even when only written for just one person.</h2>
+                        <p>Great stories have personality. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assists with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

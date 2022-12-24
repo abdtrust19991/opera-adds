@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_po_barcode_wizard_form" model="ir.ui.view">
+            <field name="name">product.barcode.wizard.form</field>
+            <field name="model">product.barcode.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="state" invisible="1" />
+                            <field name="quantity_to_print" attrs="{'invisible': [('state','!=', 'draft')]}"/>
+                        </group>
+
+                        <field name="line_ids" readonly="True" attrs="{'invisible': [('state','!=', 'confirmed')]}">
+                            <tree>
+                                <field name="file_name" invisible="True"/>
+                                <field name="binary_field" filename="file_name" widget="binary" readonly="True"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                    <footer>
+                        <button name="print_large_label"   string="Action" type="object" class="oe_highlight" attrs="{'invisible': [('state','!=', 'draft')]}"/>
+                        <button string="Cancel" special="cancel" class="oe_link"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_product_barcode_action" model="ir.actions.act_window">
+            <field name="name">Product Barcode</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.barcode.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

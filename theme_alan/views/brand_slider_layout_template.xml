@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="alan_slider_type_one_brand_template" name="Slider Layout 1">
+        <t t-if="obj">
+            <section class="as-brand-snippet as-brand-style-1">
+                <div class="container">
+                    <div class="section-title" t-if="obj and obj.label_active">
+                        <h3 t-field="obj.name"/>
+                    </div>
+                    <t t-if="obj and obj.brand_ids">
+                    <div class="owl-carousel as_our_brand" id="as_our_brand">
+                        <t t-foreach="obj.brand_ids" t-as="brand">
+                            <t t-if="len(brand.brand_id.website_id) == 0 or brand.brand_id.website_id.id == request.website.id ">
+                                <t t-if="obj.brand_link_active">
+                                    <div class="brand-logo-box">
+                                        <div class="brand-icon">
+                                            <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                <span class="brand_img_span">
+                                                    <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <t t-if="obj.brand_name_active">
+                                            <div class="brand-name">
+                                                <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                    <t t-esc="brand.brand_id.name"/>
+                                                </a>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="brand-logo-box">
+                                        <div class="brand-icon">
+                                            <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                        </div>
+                                        <t t-if="obj.brand_name_active">
+                                            <div class="brand-name">
+                                                <t t-esc="brand.brand_id.name"/>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    </t>
+                    <t t-else="">
+                        <span> No Brand available </span>
+                    </t>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <section class="container">
+                <span class="alert alert-info">Collection does not exist or has been deleted.</span>
+            </section>
+        </t>
+    </template>
+    <template id="alan_slider_type_three_brand_template" name="Slider Layout 2">
+        <t t-if="obj">
+            <section class="as-brand-snippet as-brand-style-2">
+                <div class="container">
+                    <div class="section-title" t-if="obj and obj.label_active">
+                        <h3 t-field="obj.name"/>
+                    </div>
+                    <t t-if="obj and obj.brand_ids">
+                    <div class="row">
+                        <t t-foreach="obj.brand_ids" t-as="brand">
+                            <t t-if="len(brand.brand_id.website_id) == 0 or brand.brand_id.website_id.id == request.website.id ">
+                                <t t-if="obj.brand_link_active">
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <div class="brand-logo-box">
+                                            <div class="brand-icon">
+                                                <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                    <span class="brand_img_span">
+                                                        <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <t t-if="obj.brand_name_active">
+                                                <div class="brand-name">
+                                                    <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                        <t t-esc="brand.brand_id.name"/>
+                                                    </a>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <div class="brand-logo-box">
+                                            <div class="brand-icon">
+                                                <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                            </div>
+                                            <t t-if="obj.brand_name_active">
+                                                <div class="brand-name">
+                                                    <t t-esc="brand.brand_id.name"/>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    </t>
+                    <t t-else="">
+                        <span class="alert alert-danger"> No Brand available </span>
+                    </t>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <section class="container">
+                <span class="alert alert-info">Collection does not exist or has been deleted.</span>
+            </section>
+        </t>
+    </template>
+    <template id="alan_slider_type_two_brand_template" name="Slider Layout 3">
+        <t t-if="obj">
+            <section class="as-brand-snippet as-brand-style-3">
+                <div class="container">
+                    <div class="section-title" t-if="obj and obj.label_active">
+                        <h3 t-field="obj.name"/>
+                    </div>
+                    <t t-if="obj and obj.brand_ids">
+                    <div class="owl-carousel as_our_brand" id="as_our_brand">
+                        <t t-foreach="obj.brand_ids" t-as="brand">
+                            <t t-if="len(brand.brand_id.website_id) == 0 or brand.brand_id.website_id.id == request.website.id ">
+                                <t t-if="obj.brand_link_active">
+                                    <div class="brand-logo-box">
+                                        <div class="brand-icon">
+                                            <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                <span class="brand_img_span">
+                                                    <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <t t-if="obj.brand_name_active">
+                                            <div class="brand-name">
+                                                <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                    <t t-esc="brand.brand_id.name"/>
+                                                </a>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="brand-logo-box">
+                                        <div class="brand-icon">
+                                            <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                        </div>
+                                        <t t-if="obj.brand_name_active">
+                                            <div class="brand-name">
+                                                <t t-esc="brand.brand_id.name"/>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    </t>
+                    <t t-else="">
+                        <span> No Brand available </span>
+                    </t>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <section class="container">
+                <span class="alert alert-info">Collection does not exist or has been deleted.</span>
+            </section>
+        </t>
+    </template>
+    <template id="alan_slider_type_four_brand_template" name="Slider Layout 4">
+        <t t-if="obj">
+            <section class="as-brand-snippet as-brand-style-4">
+                <div class="container">
+                    <div class="section-title" t-if="obj and obj.label_active">
+                        <h3 t-field="obj.name"/>
+                    </div>
+                    <t t-if="obj and obj.brand_ids">
+                    <div class="owl-carousel as_our_brand" id="as_our_brand">
+                        <t t-foreach="obj.brand_ids" t-as="brand">
+                            <t t-if="len(brand.brand_id.website_id) == 0 or brand.brand_id.website_id.id == request.website.id ">
+                                <t t-if="obj.brand_link_active">
+                                    <div class="brand-logo-box">
+                                        <div class="brand-icon">
+                                            <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                <span class="brand_img_span">
+                                                    <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <t t-if="obj.brand_name_active">
+                                            <div class="brand-name">
+                                                <a t-att-href="'/shop/brand/%s' % slug(brand.brand_id)">
+                                                    <t t-esc="brand.brand_id.name"/>
+                                                </a>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="brand-logo-box">
+                                        <div class="brand-icon">
+                                            <img t-att-alt="brand.brand_id.name" t-att-src="website.image_url(brand.brand_id,'logo','300x300')" t-att-title="brand.brand_id.name"/>
+                                        </div>
+                                        <t t-if="obj.brand_name_active">
+                                            <div class="brand-name">
+                                                <t t-esc="brand.brand_id.name"/>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                    </div>
+                    </t>
+                    <t t-else="">
+                        <span> No Brand available </span>
+                    </t>
+                </div>
+            </section>
+        </t>
+        <t t-else="">
+            <section class="container">
+                <span class="alert alert-info">Collection does not exist or has been deleted.</span>
+            </section>
+        </t>
+    </template>
+</odoo>

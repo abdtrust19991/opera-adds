@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+<!--    <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace">
+                <div>
+                    Total Taxes
+                    <span t-esc="env.pos.format_currency(receipt.total_tax)" class="pos-receipt-right-align"/>
+                </div>
+        </xpath>
+    </t>--> 
+<!--   <t t-extend="point_of_sale.OrderReceipt">-->
+<!--       <t t-jquery='t[t-if="isTaxIncluded"]' t-operation='replace'>-->
+<!--            <div>-->
+<!--                &lt;!&ndash;Total Taxes&ndash;&gt;-->
+<!--                <span t-esc="env.pos.format_currency(receipt.total_tax)" class="pos-receipt-right-align"/>-->
+<!--            </div>-->
+<!--       </t>-->
+<!--   </t>-->
+</templates>

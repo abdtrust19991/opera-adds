@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="current_user_view_account_payment_form" model="ir.ui.view">
+            <field name="name">account.payment.form</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='ref']" position="after">
+                    <field name="currant_user" invisible="1"/>
+                    <field name="user_allowed_journal_ids" invisible="1" />
+                        <field name="user_allowed_des_journal_ids" invisible="1"/>
+
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

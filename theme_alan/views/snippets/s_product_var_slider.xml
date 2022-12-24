@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_product_variant_slider" name="Product Variant Slider">
+        <section class="as_product_variant_slider" data-collection_id="0" data-collection_name="NO COLLECTION SELECTED" data-slider_type="slider_layout_1">
+            <div class="container">
+                NO COLLECTION SELECTED
+            </div>
+        </section>
+    </template>
+
+    <template id="s_product_var_slider_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-collection_id="0" data-collection_name="NO COLLECTION SELECTED" data-js="product_variant_slider_actions" data-selector=".as_product_variant_slider" data-slider_type="0" data-snippet_type="0">
+                <we-button data-no-preview="true" data-product_variant_slider_configure="">Change Collection</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_s_product_var_slider_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_product_var_slider/000.js"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_product_var_slider/000.scss"/>
+        </xpath>
+    </template>
+</odoo>

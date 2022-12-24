@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_collection_configure_form" model="ir.ui.view">
+        <field name="name">slider_temp.collection.configure.form</field>
+        <field name="model">slider_temp.collection.configure</field>
+        <field name="arch" type="xml">
+            <form string="Product Collection Configuration">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="website_id"/>
+                    </group>
+                    <group string="Choose Products">
+                        <field name="product_id" domain="['|',('website_id', '=', None),('website_id', '=', website_id)]" >
+                            <tree editable="bottom" >
+                                <field name="sequence" widget="handle"/>
+                                <field name="product_id" required="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_collection_configure" model="ir.actions.act_window">
+        <field name="name">Product Collections </field>
+        <field name="res_model">slider_temp.collection.configure</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_action_atharva_theme_base" name="Atharva Theme Configuration" parent="website.menu_website_configuration" sequence="101"/>
+    <menuitem id="menu_slider_type_settings" name="Product Sliders Configuration" parent="atharva_theme_base.menu_action_atharva_theme_base" sequence="101"/>
+    <menuitem id="menu_action_collection_configure" name="Product Collections" action="action_collection_configure" parent="atharva_theme_base.menu_slider_type_settings" sequence="102"/>
+</odoo>

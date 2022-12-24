@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="s_offer_timer_template" xml:space="preserve">
+    <t t-name="theme_alan.p_offer_timer_snippet">
+        <div class="o_technical_modal modal" role="dialog" id="offer_timer_modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Configure Offer Timer</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <i class="fa fa-times" />
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center form-group m_tab_collection_container">
+                            <label for="p_offer_timer" class="col-sm-3 m-0 control-label">Date</label>
+                            <div class="col-sm-9">
+                                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" id="timer_val" name="timer_val" />
+                                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker1').datetimepicker({
+                                    widgetParent: 'body'
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn_continue" data-dismiss="modal">Continue</button>
+                        <button type="button" class="btn btn-secondary btn_close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

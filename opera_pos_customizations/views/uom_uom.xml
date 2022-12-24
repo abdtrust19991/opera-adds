@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+         
+         <record id="view_uom_uom_form_inherit" model="ir.ui.view">
+             <field name="name">uom.uom.form.inherit</field>
+             <field name="model">uom.uom</field>
+             <field name="inherit_id" ref="uom.product_uom_form_view"/>
+             <field name="arch" type="xml">
+                 
+                 <xpath expr="//field[@name='uom_type']" position="after">
+                      <field name="disable_fraction" />
+                 </xpath>
+                 
+             </field>
+         </record>
+    
+    </data>
+</odoo>

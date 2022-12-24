@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="inherit_view_pos_invoice_auto_check_form" model="ir.ui.view">
+            <field name="name">inherit_bi_pos_invoice_auto_check</field>
+            <field name="model">pos.config</field>
+            <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='name']" position="after">
+                    <div>
+                        <label for="pos_branch_id" class=""/>
+                        <field name="pos_branch_id" required="1" class=""/>
+                    </div>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="offer_timer_body" name="Offer Timer">
+        <div class="offer_timer dt-deal-count" contentEditable="false" data-date="nan">
+            <h2>Offer Timer</h2>
+        </div>
+    </template>
+
+    <template id="s_offer_timer_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-drop-in=".as_offer_timer" data-js="offer_timer" data-selector=".offer_timer">
+                <we-button data-modify_date="" data-no-preview="true">Modify Time</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_s_offer_timer_options_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_offer_timer/000.js"/>
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_offer_timer/001.js"/>
+        </xpath>
+    </template>
+</odoo>

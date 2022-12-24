@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="theme_alan_static_snippet" name="Alan Static Snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_alan.deal_day_1" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/deal-snippet.png"/>
+            <t t-snippet="theme_alan.deal_day_2" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/deal-snippet.png"/>
+            <t t-snippet="theme_alan.deal_day_3" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/deal-snippet.png"/>
+            <t t-snippet="theme_alan.website_snippet_builder" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/html_builder-icon.png"/>
+        </xpath>
+    </template>
+    <template id="theme_alan_inner_snippet" name="Alan inner Snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_content']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_alan.offer_timer_body" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/timer-snippet.png"/>
+        </xpath>
+    </template>
+    <template id="theme_alan_dynamic_snippet" name="Alan Dynamic Snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="theme_alan.as_product_slider" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/product_dynamic_snippet.png"/>
+            <t t-snippet="theme_alan.as_product_variant_slider" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/product_dynamic_snippet.png"/>
+            <t t-snippet="theme_alan.as_best_seller" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/product_dynamic_snippet.png"/>
+            <t t-snippet="theme_alan.as_latest_product" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/product_dynamic_snippet.png"/>
+            <t t-snippet="theme_alan.as_category_product" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/product_dynamic_snippet.png"/>
+            <t t-snippet="theme_alan.as_brand_product" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/product_dynamic_snippet.png"/>
+            <t t-snippet="theme_alan.as_brand_slider" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/brand-slider.png"/>
+            <t t-snippet="theme_alan.as_cat_slider" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/cat-slider.png"/>
+            <t t-snippet="theme_alan.as_dynamic_faq_snippet" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/faq.png"/>
+            <t t-snippet="theme_alan.blog_slider" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/blogs.png"/>
+            <t t-snippet="theme_alan.as_product_banner_slider" t-thumbnail="/theme_alan/static/src/img/snippets_thumbs/sp_snippet.png"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="products_item" name="Ajax Add to cart" inherit_id="website_sale.products_add_to_cart" customize_show="True" active="False">
+        <xpath expr="//t[@t-if='product_variant_id']" position="replace">
+            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active">
+                <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+                <t t-if="product_variant_id">
+                <t t-if="product.product_variant_count > 1">
+                        <a t-att-href="product_href" role="button" class="btn btn-secondary" aria-label="Shopping cart" title="Shopping cart">
+                        <span class="fa fa-shopping-cart"/>
+                    </a>
+                </t>
+                <t t-else="">
+                    <input type="hidden" name="product-id" t-att-data-product-id="product_variant_id"/>
+                        <a href="#" role="button" class="btn btn-secondary js_cart" aria-label="Shopping cart" title="Shopping cart">
+                        <span class="fa fa-shopping-cart"/>
+                    </a>
+                </t>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="ajax_cart_button_color" name="Cart Button Color" inherit_id="atharva_theme_base.products_item" customize_show="True" active="False">
+        <xpath expr="//t[@t-if='product_variant_id']" position="replace">
+            <t t-if="request.website.viewref('atharva_theme_base.products_item').active">
+                <t t-if="product_variant_id">
+                    <t t-if="product.product_variant_count > 1">
+                        <a t-att-href="product_href" role="button" t-attf-class="btn btn-secondary #{'as-color ' if product in [line.product_id.product_tmpl_id for line in website_sale_order.website_order_line] else ''}" aria-label="Shopping cart" title="Shopping cart">
+                            <span class="fa fa-shopping-cart"/>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <input type="hidden" name="product-id" t-att-data-product-id="product_variant_id"/>
+                        <a href="#" role="button" t-attf-class="btn btn-secondary js_cart #{'as-color ' if product in [line.product_id.product_tmpl_id for line in website_sale_order.website_order_line] else ''}" aria-label="Shopping cart" title="Shopping cart">
+                            <span class="fa fa-shopping-cart"/>
+                        </a>
+                    </t>
+                </t>
+            </t>
+        </xpath>
+    </template>
+</odoo>

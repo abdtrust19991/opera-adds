@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit Form View to Modify it -->
+        <record id="plan_purchase_order_form_inherit" model="ir.ui.view">
+            <field name="name">purchase.order.form</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='currency_id']" position="after">
+                    <field name="link_plan"/>
+                    <field name="plan_id" attrs="{'invisible': [('link_plan','=', False)],'required': [('link_plan','=', True)]}"/>
+                    <!-- Add your fields or attributes here -->
+                </xpath>
+                 <xpath expr="//field[@name='order_line']/tree/field[@name='product_qty']" position="before">
+                    <field name="model_no"/>
+                    <field name="color"/>
+                    <field name="factory"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="before">
+                    <field name="barcode"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="after">
+                    <field name="categ_id"/>
+                </xpath>
+
+
+            </field>
+        </record>
+        <act_window id='action_color_form_view_id' res_model='color.code'
+                       name='Colors' view_mode='tree,form'
+                       target='current' context='{}'
+                       domain='[]' limit='80' />
+        <menuitem id="menu_color_id" name="Color" parent="purchase.menu_product_in_config_purchase" groups="purchase.group_purchase_manager" action="action_color_form_view_id" sequence="8"/>
+
+
+        <act_window id='action_factory_form_view_id' res_model='factory.code'
+                       name='Factory' view_mode='tree,form'
+                       target='current' context='{}'
+                       domain='[]' limit='80' />
+        <menuitem id="menu_factory_id" name="Factory" parent="purchase.menu_product_in_config_purchase" groups="purchase.group_purchase_manager" action="action_factory_form_view_id" sequence="8"/>
+
+
+    </data>
+</odoo>

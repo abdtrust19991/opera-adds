@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    @Author: KSOLVES India Private Limited
+    @Email: sales@ksolves.com
+-->
+
+<templates id="ks_pos_low_stock_alert.template" xml:space="preserve">
+    <t t-name="ProductItemExtension" t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//div[hasclass('product-img')]" position="before" >
+
+            <t t-if="(props.product.type == 'product' and (env.pos.config.allow_order_when_product_out_of_stock == false) and props.product.qty_available lte 0)">
+                <div class="overlay">
+                    <span class="text">Out-Of-Stock</span>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//div[hasclass('product-img')]" position="inside" >
+            <t t-if="(props.product.type == 'product' and env.pos.config.display_stock)">
+                <span t-attf-class="quantity-count {{props.product.qty_available lte env.pos.config.minimum_stock_alert ? 'warn' : 'normal'}}">
+                    <t t-esc="props.product.qty_available"/>
+                </span>
+            </t>
+        </xpath>
+        
+        <xpath expr="//article[hasclass('product')]" position="attributes" >
+            <attribute name="t-attf-class">{{props.product.type == 'product' &amp;&amp; env.pos.config.allow_order_when_product_out_of_stock == false &amp;&amp; props.product.qty_available lte 0 ? 'product pointer-none' : 'product'}}</attribute>
+        </xpath>
+
+    </t>
+</templates>

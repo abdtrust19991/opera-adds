@@ -1,0 +1,125 @@
+/* Footer Design
+-----------------------------------------*/
+#footer {
+	color: rgba(as-yiq-color($footer-color), 0.7);
+	.js_language_selector {
+		.dropdown-toggle {
+			position: relative;
+			padding-right: 15px;
+			margin: 0;
+    		cursor: pointer;
+			&:after {
+				position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    line-height: 1;
+			    height: 2px;
+			    margin: auto;
+			    right: 0;
+			}
+		}
+		.sort-name {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.footer-top {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(as-yiq-color($footer-color), 0.1);
+	p {
+		font-size: 14px;
+	}
+	.footer-widget-title{
+		h6 {
+		    font-size: 17px;
+		    font-weight: 500;
+		    margin: 0 0 10px;
+		    color: as-yiq-color($footer-color);
+		}
+	}
+
+	.footer-social-icons {
+		a {
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			border-radius: 50%;
+			margin-right: 6px; 
+			text-align: center;
+			color: $as-white;
+			background: $as-theme;
+			@include transition(ease-in-out all 0.6s);
+			display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		    text-decoration: none;
+			&:hover {
+				background: $as-dark;
+				color: $as-white;
+				@include transition(ease-in-out all 10ms);
+			}
+		}
+	}
+
+	.footer-widget {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.footer-logo {
+		margin-bottom: 20px;
+	}
+	.footer-widget-list {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+		    padding-top: 4px;
+			padding-bottom: 4px;
+			a {
+				position: relative;
+				text-decoration: none;
+				@include transition(ease-in-out all 0.6s);
+				font-weight: 400;
+				font-size: 15px;
+				color: rgba(as-yiq-color($footer-color), 0.7);
+				&:hover {
+					color: as-yiq-color($footer-color);
+				}
+				&:after {
+					content: "";
+					background: currentColor;
+					position: absolute;
+					bottom: 0;
+					left: auto;
+					right: 0;
+					width: 0px;
+					height: 1px;
+					@include transition(ease-in-out all 0.6s);
+				}
+				&:hover {
+					@include transition(ease-in-out all 10ms);
+					&:after {
+						left: auto;
+						right: 0;
+						width: 100%;
+						@include transition(ease-in-out all 10ms);
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	[class*="col-"] {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}

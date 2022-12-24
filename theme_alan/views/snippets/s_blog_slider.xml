@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="blog_slider" name="Blog Slider">
+        <section class="as-latest-blog web_blog_slider" data-blog-id="0" contentEditable="false">
+            <div class="seaction-head">
+                <h2>Blog Slider</h2>
+            </div>
+        </section>
+    </template>
+
+    <template id="blog_slider_content">
+        <div class="container" t-if="blog_slider">
+            <div class="seaction-head">
+                <t t-if="blog_slider.name">
+                    <h2 t-field="blog_slider.name" />
+                </t>
+            </div>
+            <t t-call="theme_alan.blog_slider_items" />
+        </div>
+        <div class="container" t-if="not blog_slider">
+            <div class="seaction-head">
+                <h2>Latest Blog</h2>
+            </div>
+            <div class="alrt alrt-text">
+                <p>No blogs found.!</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="blog_slider_items">
+        <div t-attf-class="tqt-blog-slide owl-carousel" t-if="blog_slider and blog_slider.blog_ids">
+            <t t-foreach="blog_slider.blog_ids" t-as="blog">
+                <div class="section-post">
+                    <a t-attf-href="/blog/#{slug(blog.blog_id)}/post/#{slug(blog)}" title="" t-if="blog.cover_properties">
+                        <t t-set="cover_property" t-value="json.loads(blog.cover_properties)" />
+                        <t t-set="getimg" t-value="cover_property.get('background-image', 'none')"/>
+                        <t t-if="getimg != 'none'">
+                            <t t-set="getimg" t-value="getimg[4:-1]"/>
+                            <t t-if="getimg[0] != '/' and getimg[0] != 'h'">
+                                <t t-set="getimg" t-value="getimg[1:-1]"/>
+                            </t>
+                        </t>
+                        <div class="section-post-media lazyload" t-att-data-bgset="getimg" t-if="blog.cover_properties"></div>
+                    </a>
+                    <div class="section-post-body">
+                        <div class="section-post-time">
+                            <span t-field="blog.write_date" />
+                        </div>
+                        <h4 class="section-post-title">
+                            <a t-attf-href="/blog/#{slug(blog.blog_id)}/post/#{slug(blog)}" t-field="blog.name"></a>
+                        </h4>
+                        <p class="section-post-excerpt" t-field="blog.subtitle"></p>
+                        <a t-attf-href="/blog/#{slug(blog.blog_id)}/post/#{slug(blog)}" title="" class="read-more">Read more</a>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </template>
+
+    <template id="s_blog_slider_options" name="Blog slider Options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="latest_blog" data-selector=".web_blog_slider">
+                <we-button data-website_blog_configure="" data-no-preview="true">Change Collection</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_s_blog_slider_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_blog_slider/000.js"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_blog_slider/000.scss"/>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="advance_salary_groups" model="ir.module.category">
+            <field name="name">Advance Salary Groups</field>
+            <field name="sequence">7</field>
+        </record>
+        <record id="advance_salary_requester" model="res.groups">
+            <field name="name">Requester</field>
+            <field name="category_id" ref="hr_advance.advance_salary_groups"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+         <record id="advance_salary_conformer" model="res.groups">
+            <field name="name">Confirmer</field>
+            <field name="category_id" ref="hr_advance.advance_salary_groups"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+         <record id="advance_salary_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="hr_advance.advance_salary_groups"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+
+
+    </data>
+</odoo>

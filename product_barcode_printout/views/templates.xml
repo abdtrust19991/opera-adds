@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="paperformat_product_format_2" model="report.paperformat">
+        <field name="name">Product Label(3.8 x 1.25)</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">38</field>
+        <field name="page_width">25</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">0</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">1</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">300</field>
+    </record>
+
+    <record id="product.report_product_template_label" model="ir.actions.report">
+        <field name="paperformat_id" ref="product_barcode_printout.paperformat_product_format_2"/>
+        <field name="report_type">qweb-pdf</field>
+        <field name="string">Product Label(3.8x1.25)</field>
+
+    </record>
+
+    <record id="product.report_product_label" model="ir.actions.report">
+        <field name="paperformat_id" ref="product_barcode_printout.paperformat_product_format_2"/>
+        <field name="report_type">qweb-pdf</field>
+        <field name="string">Product Label(3.8x1.25)</field>
+    </record>
+
+
+    <template id="report_simple_label_2" inherit_id="product.report_simple_label">
+        <xpath expr="//div" position="replace">
+            <div style="width:100%;">
+                <!--   <h5 style="color:white;margin-top:-20px;">.</h5>-->
+                <table style="width:100%;">
+                    <tbody>
+                        <tr style="">
+                            <td style="text-align: center; vertical-align: middle;" colspan="2">
+                                <strong style="font-family:Droid Arabic Kufi,Roboto !important;font-size:22px !important">
+
+                                    <span t-esc="product['display_name'][:34]  if product['display_name'] and len(product['display_name']) &gt; 34 else product['display_name']"
+                                          style="font-family:Arial,Helvetica,sans-serif;font-size: 25px;"/>
+
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr style="">
+                            <!--                            <td style="text-align: center; vertical-align: middle;margin-bottom:3px;">-->
+                            <td style="text-align: center; margin-bottom:1px;font-size: 35px !important;">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <strong>Price:</strong>
+                                        <strong t-esc="product['price']"
+                                                t-options="{'widget': 'monetary', 'display_currency': product['currency_id']}"/>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr style="width:100%;">
+                            <td style="text-align: center;">
+
+                                <!--                                <img t-if="product.barcode"-->
+                                <!--                                     t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 5000, 700)"-->
+
+                                <!--                                     style="margin-top: 1px;margin-left: -120px;margin-bottom: 1px;width:140%;height:10%;"/>-->
+                                <img t-if="product['barcode']"
+                                     t-att-src="'data:image/jpg;base64,%s' % to_text(product['barcode_image'])"
+                                     style="width:100%;height:28%;"/>
+                                <!--                                     style="margin-top: 1px;margin-left: -80px;margin-bottom: 1px;width:140%;height:7%;"/>-->
+                                <div style="background-color:white">
+                                    <strong>
+                                        <span t-esc="product['barcode']"
+                                              style="font-size: 32px;background-color:white;"/>
+                                    </strong>
+                                </div>
+                                <!--                                <span t-field="product.barcode" style="font-size: 12px;"/>-->
+
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <t t-if="page_break">
+                    <p style="page-break-after:always"/>
+                </t>
+
+            </div>
+        </xpath>
+    </template>
+
+
+    <report
+            id="purchase_order_product_label_report_2"
+            model="purchase.order"
+            report_type="qweb-pdf"
+            string="Purchase Order Labels(3.8x1.25)"
+            name="product_barcode_printout.temp_purchase_order_product_label_report_2"
+            file="product_barcode_printout.temp_purchase_order_product_label_report_2"
+            menu="False"
+    />
+
+
+    <record id="product_barcode_printout.purchase_order_product_label_report_2" model="ir.actions.report">
+        <field name="paperformat_id" ref="product_barcode_printout.paperformat_product_format_2"/>
+    </record>
+
+
+    <template id="temp_purchase_order_product_label_report_2">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-set="page_break" t-value="True"/>
+                <!--                <t t-foreach="docs" t-as="o">-->
+                <t t-foreach="order_lines" t-as="line">
+                    <t t-set="qty" t-value="int(line.product_qty)"/>
+                    <t t-set="product" t-value="line.product_id.get_product_print_data()"/>
+                    <t t-foreach="range(qty)" t-as="i">
+                        <t t-set="page_break" t-value="not page_break"/>
+                        <t t-call="product.report_simple_label">
+
+                        </t>
+                    </t>
+                </t>
+                <!--                </t>-->
+            </div>
+
+        </t>
+    </template>
+
+    <report
+            id="stock_picking_product_label_report_2"
+            model="stock.picking"
+            report_type="qweb-pdf"
+            string="Transfer Labels(3.8x1.25)"
+            name="product_barcode_printout.temp_stock_picking_product_label_report_2"
+            file="product_barcode_printout.temp_stock_picking_product_label_report_2"
+    />
+
+
+    <record id="product_barcode_printout.stock_picking_product_label_report_2" model="ir.actions.report">
+        <field name="paperformat_id" ref="product_barcode_printout.paperformat_product_format_2"/>
+    </record>
+
+
+    <template id="temp_stock_picking_product_label_report_2">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-set="page_break" t-value="True"/>
+                <t t-foreach="docs" t-as="o">
+                    <t t-foreach="o.move_ids_without_package" t-as="move">
+                        <t t-set="qty" t-value="int(move.product_uom_qty)"/>
+                        <t t-set="product" t-value="move.product_id.get_product_print_data()"/>
+                        <t t-foreach="range(qty)" t-as="i">
+                            <t t-set="page_break" t-value="not page_break"/>
+                            <t t-call="product.report_simple_label">
+
+                            </t>
+                        </t>
+                    </t>
+                </t>
+            </div>
+
+        </t>
+    </template>
+
+
+</odoo>

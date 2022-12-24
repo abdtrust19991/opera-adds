@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pos_lock_mode_pos_config_inherit" model="ir.ui.view">
+            <field name="name">pos.config.form.pos.sale</field>
+            <field name="model">pos.config</field>
+            <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+            <field name="arch" type="xml">
+                <sheet position="inside">
+                    <h2>Lock price or discount</h2>
+                    <div class="row mt16 o_settings_container" id="opera_pos_lock_price_discount">
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_price"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_price"/>
+                                <br/>
+                                <label for="price_password" attrs="{'invisible':[('lock_price', '=', False)]}"/>
+                                <field name="price_password"
+                                       attrs="{'invisible':[('lock_price', '=', False)], 'required':[('lock_price', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_discount"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_discount"/>
+                                <br/>
+                                <label for="discount_password" attrs="{'invisible':[('lock_price', '=', False)]}"/>
+                                <field name="discount_password"
+                                       attrs="{'invisible':[('lock_discount', '=', False)], 'required':[('lock_discount', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_delete"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_delete"/>
+                                <br/>
+                                <label for="delete_password" attrs="{'invisible':[('lock_delete', '=', False)]}"/>
+                                <field name="delete_password"
+                                       attrs="{'invisible':[('lock_delete', '=', False)], 'required':[('lock_delete', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_fiscal_position"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_fiscal_position"/>
+                                <br/>
+                                <label for="fiscal_position_password"
+                                       attrs="{'invisible':[('lock_fiscal_position', '=', False)]}"/>
+                                <field name="fiscal_position_password"
+                                       attrs="{'invisible':[('lock_fiscal_position', '=', False)], 'required':[('lock_fiscal_position', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_global_discount"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_global_discount"/>
+                                <br/>
+                                <label for="global_discount_password"
+                                       attrs="{'invisible':[('lock_global_discount', '=', False)]}"/>
+                                <field name="global_discount_password"
+                                       attrs="{'invisible':[('lock_global_discount', '=', False)], 'required':[('lock_global_discount', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_delete_order"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_delete_order"/>
+                                <br/>
+                                <label for="delete_order_pwd"
+                                       attrs="{'invisible':[('lock_delete_order', '=', False)]}"/>
+                                <field name="delete_order_pwd"
+                                       attrs="{'invisible':[('lock_delete_order', '=', False)], 'required':[('lock_delete_order', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_change_sign"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_change_sign"/>
+                                <br/>
+                                <label for="change_sign_pwd"
+                                       attrs="{'invisible':[('lock_change_sign', '=', False)]}"/>
+                                <field name="change_sign_pwd"
+                                       attrs="{'invisible':[('lock_change_sign', '=', False)], 'required':[('lock_change_sign', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_view_orders"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_view_orders"/>
+                                <br/>
+                                <label for="view_orders_pwd"
+                                       attrs="{'invisible':[('lock_view_orders', '=', False)]}"/>
+                                <field name="view_orders_pwd"
+                                       attrs="{'invisible':[('lock_view_orders', '=', False)], 'required':[('lock_view_orders', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="lock_pricselist"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="lock_pricselist"/>
+                                <br/>
+                                <label for="pricelist_pwd"
+                                       attrs="{'invisible':[('lock_pricselist', '=', False)]}"/>
+                                <field name="pricelist_pwd"
+                                       attrs="{'invisible':[('lock_pricselist', '=', False)], 'required':[('lock_pricselist', '=', True)]}"
+                                       password="True"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </sheet>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="deal_day_1" name="Deal of the day 1">
+        <section class="section p-0px-b" style="background-color: rgb(255 244 226);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 m-30px-tb">
+                        <div class="dark-color display-4 font-w-300 m-20px-b">Deal Of <span class="font-w-600">The Day</span></div>
+                        <p class="lead font-w-400 pr-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="as_offer_timer"></div>
+                        <div class="p-20px-t">
+                            <a class="as-btn btn-lg as-btn-theme" href="#">Shop Now</a>
+                            <a class="as-btn btn-lg as-btn-dark ml-2" href="#">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-7.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

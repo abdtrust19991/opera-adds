@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!--        year   -->
+        <record id="config_season_form_view" model="ir.ui.view">
+            <field name="name">season.code.form</field>
+            <field name="model">season.code</field>
+            <field name="arch" type="xml">
+                <form string="Create Season">
+                    <sheet>
+                        <group>
+                            <field name="season"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="config_season_tree_view" model="ir.ui.view">
+            <field name="name">season.code.form</field>
+            <field name="model">season.code</field>
+            <field name="arch" type="xml">
+                <tree string="Season">
+                    <field name="season"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+        <act_window id='action_Season_form_view_id' res_model='season.code'
+                       name='Season' view_mode='tree,form'
+                       target='current' context='{}'
+                       domain='[]' limit='80' />
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="menu_season_id" name="Season" parent="purchase.menu_product_in_config_purchase" groups="purchase.group_purchase_manager" action="action_Season_form_view_id" sequence="6"/>
+
+
+
+
+    </data>
+</odoo>

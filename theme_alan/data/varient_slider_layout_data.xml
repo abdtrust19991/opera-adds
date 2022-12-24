@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="alan_slider_type_one_variant" model="product_var_slider.options">
+            <field name="name">Slider Layout 1</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_two_variant" model="product_var_slider.options">
+            <field name="name">Slider Layout 2</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_three_variant" model="product_var_slider.options">
+            <field name="name">Slider Layout 3</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_four_variant" model="product_var_slider.options">
+            <field name="name">Slider Layout 4</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_five_variant" model="product_var_slider.options">
+            <field name="name">Grid Layout 1</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_six_variant" model="product_var_slider.options">
+            <field name="name">Grid Layout 2</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_seven_variant" model="product_var_slider.options">
+            <field name="name">Grid Layout 3</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            id="purchase_plan_xlsx"
+            model="purchase.plan"
+            string="Purchase Plan Report"
+            report_type="xlsx"
+            name="purchase_plan.plan_report_xls.xlsx"
+            file="purchase_plan.plan_report_xls.xlsx"
+            menu="False"
+            attachment_use="False"/>
+         <record id="sequence_purchase_plan" model="ir.sequence">
+            <field name="name">Purchase Plan sequence</field>
+            <field name="code">pur.plan</field>
+            <field name="prefix">Plan/%(range_year)s/</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="True" name="use_date_range"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">4</field>
+        </record>
+       <record id="purchase_plan_form_view" model="ir.ui.view">
+           <field name="name">purchase.plan.form</field>
+           <field name="model">purchase.plan</field>
+           <field name="arch" type="xml">
+               <form string="">
+                   <header>
+                       <button name="export_xls" string="Print Report" class="oe_highlight"  type="object"/>
+                       <button name="action_confirm" string="Confirm" states="draft" class="oe_highlight" type="object"/>
+                       <button name="action_close" string="Close" states="run" class="oe_highlight" type="object"/>
+
+                       <field name="state" widget="statusbar" statusbar_visible="draft,run,close"/>
+                   </header>
+                   <sheet>
+                       <div class="oe_button_box" name="button_box">
+<!--                            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">-->
+<!--                                <field name="active" widget="boolean_button" invisible="1"/>-->
+<!--                            </button>-->
+                           <button class="oe_stat_button"
+                                 name="action_open_purchase" type="object" icon="fa-bars" >
+                                <field string="Purchases" name="count_purchase" widget="statinfo"/>
+                            </button>
+                        </div>
+                       <label for="number" string="Plan Number"/>
+                    <h1>
+                        <field name="number"/>
+                    </h1>
+                       <label for="name" string="Plan Name"/>
+                    <h2>
+                        <field name="name"/>
+                    </h2>
+                       <group col="2">
+                           <field name="date"/>
+                       </group>
+                       <group colspan="2">
+                           <group col="1" string="Planing" name="plan">
+                                <field name="plan_line_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                    <tree string="Planing" editable="bottom" style="pointer-events:none;">
+                                        <field name="category_id" string="Group" required="1"/>
+                                        <field name="p_model_no" sum="Total" required="1"/>
+                                        <field name="p_qty"  sum="Total" required="1"/>
+                                        <field name="p_cost" sum="Total" required="1"/>
+                                        <field name="p_total" sum="Total"/>
+                                        <field name="plan_id" invisible="1"/>
+                                    </tree>
+                                </field>
+
+                           </group>
+                           <group col="1" string="Actual" name="actual">
+                            <field name="actual_line_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                <tree string="Actual" editable="bottom">
+                                     <field name="category_id" string="Group"/>
+                                    <field name="a_model_no" sum="Total"/>
+                                    <field name="a_qty" sum="Total"/>
+                                    <field name="a_cost" sum="Total"/>
+                                    <field name="a_total" sum="Total"/>
+                                    <field name="plan_id" invisible="1"/>
+                                </tree>
+                            </field>
+
+                           </group>
+                       </group>
+                       <group colspan="2">
+                           <group col="1" string="Difference" name="diff">
+                            <field name="diff_line_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                <tree string="Difference" editable="bottom">
+                                    <field name="category_id" string="Group"/>
+                                    <field name="dif_model" sum="Total"/>
+                                    <field name="dif_qty" sum="Total"/>
+                                    <field name="dif_total" sum="Total"/>
+                                    <field name="plan_id" invisible="1"/>
+                                </tree>
+                            </field>
+
+                           </group>
+                           <group col="1" string="Ratio" name="ratio">
+                            <field name="rat_line_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                <tree string="Ratio" editable="bottom">
+                                    <field name="category_id" string="Group"/>
+                                    <field name="rat_model" widget="Percent" />
+                                    <field name="rat_qty" widget="Percent" />
+                                    <field name="rat_total" widget="Percent" />
+                                    <field name="plan_id" invisible="1"/>
+
+<!--                                    <field name="rat_total"  widget="percentage" sum="Total"/>-->
+
+                                </tree>
+                            </field>
+
+                           </group>
+                           <group col="1" string="Receive Lines" name="ratio">
+                            <field name="recive_line_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                <tree string="Receive" editable="bottom">
+                                    <field name="category_id" string="Group"/>
+                                    <field name="a_model_no"  />
+                                    <field name="rec_qty"  />
+                                    <field name="plan_id" invisible="1"/>
+
+<!--                                    <field name="rat_total"  widget="percentage" sum="Total"/>-->
+
+                                </tree>
+                            </field>
+
+                           </group>
+                       </group>
+                       <group colspan="2">
+                           <group col="1" string="Colors" name="color">
+                            <field name="plan_color_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                <tree string="Colors" editable="bottom">
+
+                                    <field name="name" />
+                                    <field name="num" />
+                                </tree>
+                            </field>
+
+                           </group>
+                           <group col="1" string="Factories" name="factory">
+                            <field name="plan_factory_ids" nolabel="1" widget="one2many_list" mode="tree">
+                                <tree string="Factories" editable="bottom">
+                                    <field name="factory" />
+                                    <field name="amount" />
+                                    <field name="qty" />
+                                    <field name="model_qty" />
+                                    <field name="average" />
+                                    <field name="templ" invisible="1" />
+                                </tree>
+                            </field>
+
+                           </group>
+                       </group>
+<!--                        <group col="1" string="Plan Lines" >-->
+<!--                            <field name="plan_lines" nolabel="1" widget="one2many_list" mode="tree">-->
+<!--                                <tree string="Plan Lines" editable="bottom">-->
+<!--                                   <field name="product_id" string="Group"/>-->
+<!--                                    <field name="p_model_no" sum="Total"/>-->
+<!--                                    <field name="p_qty" sum="Total"/>-->
+<!--                                    <field name="p_cost" sum="Total"/>-->
+<!--                                    <field name="p_total" sum="Total"/>-->
+<!--                                    <field name="a_model_no" sum="Total"/>-->
+<!--                                    <field name="a_qty" sum="Total"/>-->
+<!--                                    <field name="a_cost" sum="Total"/>-->
+<!--                                    <field name="a_total" sum="Total"/>-->
+<!--                                    <field name="dif_qty" sum="Total"/>-->
+<!--                                    <field name="dif_total" sum="Total"/>-->
+<!--                                    <field name="rat_qty" />-->
+<!--                                    <field name="rat_total" />-->
+
+<!--                                    <field name="plan_id" invisible="1"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+
+<!--                        </group>-->
+
+
+                   </sheet>
+               </form>
+           </field>
+       </record>
+        <record id="purchase_plan_list_view" model="ir.ui.view">
+            <field name="name">purchase.plan.list</field>
+            <field name="model">purchase.plan</field>
+            <field name="arch" type="xml">
+                <tree string="Purchase Plan">
+                    <field name="name"/>
+                    <field name="number"/>
+                     <field name="date"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_purchase_plan" model="ir.actions.act_window">
+            <field name="name">Purchase Plan</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.plan</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="purchase_plan_categ" name="Purchase Plan" parent="purchase.menu_purchase_root" sequence="3" groups="purchase.group_purchase_manager"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="menu_action_purchase_plan" name="Plans" parent="purchase_plan_categ" action="action_purchase_plan" sequence="5"/>
+
+
+
+        <record id="purchase_plan_line_list_view" model="ir.ui.view">
+            <field name="name">purchase.plan.line.list</field>
+            <field name="model">purchase.plan.line</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="category_id" string="Group"/>
+                    <field name="p_model_no" sum="Total"/>
+                    <field name="p_qty"  sum="Total"/>
+                    <field name="p_cost" sum="Total"/>
+                    <field name="p_total" sum="Total"/>
+                    <field name="a_model_no" sum="Total"/>
+                    <field name="a_qty" sum="Total"/>
+                    <field name="a_cost" sum="Total"/>
+                    <field name="a_total" sum="Total"/>
+                    <field name="dif_model" sum="Total"/>
+                    <field name="dif_qty" sum="Total"/>
+                    <field name="dif_total" sum="Total"/>
+                    <field name="rat_model" widget="Percent" sum="Total"/>
+                    <field name="rat_qty" widget="Percent" />
+                    <field name="rat_total" widget="Percent" />
+                    <field name="plan_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_purchase_plan_line" model="ir.actions.act_window">
+            <field name="name">Purchase Plan Line</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">purchase.plan.line</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+        <!-- This Menu Item Must have a parent -->
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="menu_action_purchase_plan_line" name="Plans Lines" parent="purchase_plan_categ" action="action_purchase_plan_line" sequence="6"/>
+
+    </data>
+</odoo>

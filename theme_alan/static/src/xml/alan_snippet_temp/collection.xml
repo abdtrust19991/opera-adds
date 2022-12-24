@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_collection_templates">
+
+<t t-name="theme_alan.collection_temp1">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/collections-1.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="p-50px-tb" style="background: #f1f1f1;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7">
+                                        <div class="border-10 border-color-white white-bg box-shadow hover-scale">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-1.png" title="" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="cat-snippet-3 left slide-hover box-shadow w-100 w-lg-auto">
+                                            <div class="h2 dark-color font-w-300 text-uppercase m-15px-b slide-hover-in theme-after">STYLE AND CONFORT</div>
+                                            <p class="font-w-300">JUST SIT BACK AND ENJOY THE VIEW</p>
+                                            <div class="p-10px-t">
+                                                <a href="#" class="as-btn as-btn-dark"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-lg-n5">
+                            <div class="col-lg-12">
+                                <div class="row align-items-center top">
+                                    <div class="col-lg-5 text-right">
+                                        <div class="cat-snippet-3 right slide-hover box-shadow w-100 w-lg-auto">
+                                            <div class="h2 dark-color font-w-300 text-uppercase m-15px-b slide-hover-in theme-after">STYLE AND CONFORT</div>
+                                            <p class="font-w-300">JUST SIT BACK AND ENJOY THE VIEW</p>
+                                            <div class="p-10px-t">
+                                                <a href="#" class="as-btn as-btn-dark"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="border-10 border-color-white white-bg box-shadow hover-scale">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-2.png" title="" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Collection 1</h6>
+            <label class="e-sb-label" for="e_collections_01"><input id="e_collections_01" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section bg-no-repeat bg-cover bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-info-bg.png);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="slide-hover">
+                                        <div class="font-w-300 h1 dark-color m-25px-b">
+                                            GET OUR CATALOGUE
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    <div class="p-15px-t">
+                                        <a href="#" class="as-btn as-btn-dark"> Shop Now </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 2</h6>
+                <label class="e-sb-label" for="e_collections_02"><input id="e_collections_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp3">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/collections-3.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="alan-collection-static-snippet-01 black-bg">
+                    <div class="container-fluid p-0px">
+                        <div class="row screen-85 no-gutters">
+                            <section class="col-lg-6 bg-no-repeat bg-cover bg-center-center text-center text-lg-right" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-lamp-collection-1.jpg);">
+                                <div class="d-flex flex-column justify-content-center h-100 cat-snippet-4 left">
+                                    <h2 class="display-3 white-color font-w-700">Lamp Living<br />Collections</h2>
+                                    <p class="h5 white-color-alt">LAMPS START WITH $45.00</p>
+                                </div>
+                            </section>
+                            <div class="col-lg-6 text-center">
+                                <div class="d-flex align-items-center h-100">
+                                    <div class="border-1 border-color-dark d-inline-block ml-auto mr-auto m-25px-tb">
+                                        <div class="img">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-lamp-collection-pro-1.jpg" title="" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="border-top-1 border-color-dark p-25px">
+                                            <p class="h5 font-w-700 white-color m-25px-b">Only $45.00</p>
+                                            <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Collection 3</h6>
+            <label class="e-sb-label" for="e_collections_03"><input id="e_collections_03" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="alan-collection-static-snippet-01 black-bg">
+                        <div class="container-fluid p-0px">
+                            <div class="row screen-85 no-gutters">
+                                <div class="col-lg-6 text-center">
+                                    <div class="d-flex align-items-center h-100">
+                                        <div class="border-1 border-color-dark d-inline-block ml-auto mr-auto m-25px-tb">
+                                            <div class="img">
+                                                <a href="#">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-lamp-collection-pro-1.jpg" title="" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="border-top-1 border-color-dark p-25px">
+                                                <p class="h5 font-w-700 white-color m-25px-b">Only $45.00</p>
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <section class="col-lg-6 bg-no-repeat bg-cover bg-center-center text-center text-lg-left" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-lamp-collection-1.jpg);">
+                                    <div class="d-flex flex-column justify-content-center h-100 cat-snippet-4 right">
+                                        <h2 class="display-3 white-color font-w-700">Lamp Living<br />Collections</h2>
+                                        <p class="h5 white-color-alt">LAMPS START WITH $45.00</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 4</h6>
+                <label class="e-sb-label" for="e_collections_04"><input id="e_collections_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="hover-scale">
+                                        <div class="p-30px text-center">
+                                            <h2 class="dark-color h5 m-15px-b">NEW ARRIVAL 2018</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                            <div class="p-5px-t">
+                                                <a class="as-line-btn dark-color" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-3col-1.png" title="" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 md-m-50px-t">
+                                    <div class="hover-scale">
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-3col-2.png" title="" alt="" />
+                                        </div>
+                                        <div class="p-30px text-center">
+                                            <h2 class="dark-color h5 m-15px-b">NEW ARRIVAL 2018</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                            <div class="p-5px-t">
+                                                <a class="as-line-btn dark-color" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="hover-scale">
+                                        <div class="p-30px text-center">
+                                            <h2 class="dark-color h5 m-15px-b">NEW ARRIVAL 2018</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                                            <div class="p-5px-t">
+                                                <a class="as-line-btn dark-color" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-3col-3.png" title="" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 5</h6>
+                <label class="e-sb-label" for="e_collections_05"><input id="e_collections_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container container-large">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center hover-scale no-gutters">
+                                        <div class="col-lg-7">
+                                            <div class="overflow-hidden">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-women.png" title="" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="ml-lg-n5">
+                                                <h2 class="h5 dark-color m-15px-b">WOMEN COLLECTIONS</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                <div class="btn-bar">
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">SHOP NOW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row align-items-center hover-scale">
+                                        <div class="col-lg-7">
+                                            <div class="alan-img-hover">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-collection-men.png" title="" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="ml-lg-n5">
+                                                <h2 class="h5 dark-color m-15px-b">MEN COLLECTIONS</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                <div class="btn-bar">
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">SHOP NOW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 6</h6>
+                <label class="e-sb-label" for="e_collections_06"><input id="e_collections_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-collection-bg-banner.png'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row p-100px-tb">
+                                <div class="col-lg-12">
+                                    <h2 class="h1 font-w-600 m-20px-b white-color m-0px">SEE OUR COLLECTIONS</h2>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-white" href="#">MORE COLLECTIONS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 7</h6>
+                <label class="e-sb-label" for="e_collections_07"><input id="e_collections_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb sm-p-30px-tb">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="position-relative md-m-30px-b hover-scale">
+                                                <section class="overflow-hidden" style="background: #e0e0e0;">
+                                                    <a href="#">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-6.png" />
+                                                    </a>
+                                                </section>
+                                                <div class="position-absolute top-0 left-0 p-15px">
+                                                    <div class="dark-color h5 m-15px-b">New Arrival</div>
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="position-relative md-m-30px-b hover-scale">
+                                                <section class="overflow-hidden" style="background: #e0e0e0;">
+                                                    <a href="#">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-4.png" />
+                                                    </a>
+                                                </section>
+                                                <div class="position-absolute top-0 left-0 p-15px">
+                                                    <div class="dark-color h5 m-15px-b">Man Collections</div>
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 m-30px-t">
+                                            <div class="position-relative md-m-30px-b hover-scale">
+                                                <section class="overflow-hidden" style="background: #e0e0e0;">
+                                                    <a href="#">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-1.png" />
+                                                    </a>
+                                                </section>
+                                                <div class="position-absolute top-0 left-0 p-15px">
+                                                    <div class="dark-color h5 m-15px-b">Man Collections</div>
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-12 m-30px-b">
+                                            <div class="position-relative md-m-30px-b hover-scale">
+                                                <section class="overflow-hidden" style="background: #e0e0e0;">
+                                                    <a href="#">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-5.png" />
+                                                    </a>
+                                                </section>
+                                                <div class="position-absolute top-0 left-0 p-15px">
+                                                    <div class="dark-color h5 m-15px-b">Upcoming Sales</div>
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="position-relative md-m-30px-b hover-scale">
+                                                <section class="overflow-hidden" style="background: #e0e0e0;">
+                                                    <a href="#">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-3.png" />
+                                                    </a>
+                                                </section>
+                                                <div class="position-absolute top-0 left-0 p-15px">
+                                                    <div class="dark-color h5 m-15px-b">50% Off</div>
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="position-relative md-m-30px-b hover-scale">
+                                                <section class="overflow-hidden" style="background: #e0e0e0;">
+                                                    <a href="#">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-col-2.png" />
+                                                    </a>
+                                                </section>
+                                                <div class="position-absolute top-0 left-0 p-15px">
+                                                    <div class="dark-color h5 m-15px-b">Start With 10$</div>
+                                                    <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 8</h6>
+                <label class="e-sb-label" for="e_collections_08"><input id="e_collections_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/collections-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-15px-tb p-15px-lr">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fur-5.png" />
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute top-0 left-0 p-25px">
+                                            <div class="dark-color h4 font-w-600 m-15px-b">Start With 10$</div>
+                                            <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fur-4.png" />
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute top-0 left-0 p-25px">
+                                            <div class="dark-color h4 font-w-600 m-15px-b">Start With 10$</div>
+                                            <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fur-3.png" />
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute top-0 left-0 p-25px">
+                                            <div class="dark-color h4 font-w-600 m-15px-b">Start With 10$</div>
+                                            <a class="as-btn as-btn-dark btn-sm" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Collection 9</h6>
+                <label class="e-sb-label" for="e_collections_09"><input id="e_collections_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.collection_temp10">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/collections-10.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="p-15px-tb p-15px-lr">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 m-15px-tb">
+                                <section class="d-flex justify-content-center flex-column min-h-350px bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/fa-col-1.jpg);">
+                                    <div class="p-25px">
+                                        <label class="font-w-600 dark-color m-0px">EXTRA</label>
+                                        <div class="font-w-800 dark-color h1 m-20px-b">20% OFF</div>
+                                        <a class="as-btn as-btn-dark as-btn dark" href="#">Shop Now</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-4 m-15px-tb">
+                                <section class="d-flex justify-content-center flex-column min-h-350px bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/fa-col-2.jpg);">
+                                    <div class="p-25px">
+                                        <label class="font-w-600 dark-color m-0px">NEW</label>
+                                        <div class="font-w-800 dark-color h1 m-20px-b">KID'S WEAR</div>
+                                        <a class="as-btn as-btn-dark as-btn dark" href="#">Shop Now</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-4 m-15px-tb">
+                                <section class="d-flex justify-content-center flex-column min-h-350px bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/fa-col-3.jpg);">
+                                    <div class="p-25px">
+                                        <label class="font-w-600 dark-color m-0px">NEW</label>
+                                        <div class="font-w-800 dark-color h1 m-20px-b">COLLECTIONS</div>
+                                        <a class="as-btn as-btn-dark as-btn dark" href="#">Shop Now</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Collection 10</h6>
+            <label class="e-sb-label" for="e_collections_10"><input id="e_collections_10" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+
+</templates>

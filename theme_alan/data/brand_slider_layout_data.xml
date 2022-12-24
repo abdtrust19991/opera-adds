@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="alan_slider_type_one_brand" model="brand_slider.options">
+            <field name="name">Slider Layout 1</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_two_brand" model="brand_slider.options">
+            <field name="name">Slider Layout 2</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+        <record id="alan_slider_type_three_brand" model="brand_slider.options">
+            <field name="name">Grid Layout 1</field>
+            <field name="theme_id" ref="base.module_theme_alan"/>
+        </record>
+    </data>
+</odoo>

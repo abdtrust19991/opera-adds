@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+employee_shift_id,employee_shift_name,model_employee_shift,,1,1,1,1
+employee_shift_line_id,employee_shift_line_name,model_employee_shift_line,,1,1,1,1
+direct_labour_line_id,direct_labour_line_name,model_direct_labour_line,,1,1,1,1
+workcenter_overhead_cost_line_id,workcenter_overhead_cost_line_name,model_workcenter_overhead_cost_line,,1,1,1,1
+mrp_overhead_cost_line_id,mrp_overhead_cost_line_name,model_mrp_overhead_cost_line,,1,1,1,1
+direct_material_id,direct_material_name,model_direct_material,,1,1,1,1

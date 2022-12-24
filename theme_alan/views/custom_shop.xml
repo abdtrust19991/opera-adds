@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_shop_0" name="custom_shop_0" inherit_id="website.assets_frontend" active="True" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_shop/shop0.scss"/>
+        </xpath>
+    </template>
+    <template id="custom_shop_1" name="custom_shop_1" inherit_id="website.assets_frontend" active="False" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_shop/shop1.scss"/>
+        </xpath>
+    </template>
+    <template id="custom_shop_2" name="custom_shop_2" inherit_id="website.assets_frontend" active="False" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_shop/shop2.scss"/>
+        </xpath>
+    </template>
+    <template id="custom_shop_3" name="custom_shop_3" inherit_id="website.assets_frontend" active="False" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_shop/shop3.scss"/>
+        </xpath>
+    </template>
+    <template id="custom_shop_4" name="custom_shop_4" inherit_id="website.assets_frontend" active="False" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_shop/shop4.scss"/>
+        </xpath>
+    </template>
+
+     <template id="toggle_filter_on" name="Toggle Filter On" inherit_id="website.assets_frontend" active="False" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_toggle_filter/toggle_on.scss"/>
+        </xpath>
+    </template>
+    <template id="toggle_filter_off" name="Toggle Filter Off" inherit_id="website.assets_frontend" active="True" priority="17">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/custom_toggle_filter/toggle_off.scss"/>
+        </xpath>
+    </template>
+</odoo>

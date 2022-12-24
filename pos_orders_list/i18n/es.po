@@ -1,0 +1,329 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* pos_orders_list
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-18 08:17+0000\n"
+"PO-Revision-Date: 2020-03-18 08:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_orders_list
+#: selection:pos.config,pos_session_limit:0
+msgid " Load last 5 Session's Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.pos_date
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:26
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:215
+#, python-format
+msgid "Cancel"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:85
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:174
+#, python-format
+msgid "Cancelled"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:178
+#, python-format
+msgid "Company:"
+msgstr "compañía"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:53
+#, python-format
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:147
+#, python-format
+msgid "Customer:"
+msgstr "Cliente"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:196
+#, python-format
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: pos_orders_list
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Display Barcode in Receipt"
+msgstr ""
+
+#. module: pos_orders_list
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Display Orders in POS"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:81
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:170
+#, python-format
+msgid "Draft/New"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:82
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:171
+#, python-format
+msgid "Invoiced"
+msgstr ""
+
+#. module: pos_orders_list
+#: selection:pos.config,pos_session_limit:0
+msgid "Load all Session's Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: selection:pos.config,pos_session_limit:0
+msgid "Load last 3 Session's Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_order__pos_order_date
+msgid "Oder Date"
+msgstr ""
+
+#. module: pos_orders_list
+#: selection:pos.config,pos_session_limit:0
+msgid "Only Current Day Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: selection:pos.config,pos_session_limit:0
+msgid "Only Current Session's Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_order__barcode
+msgid "Order Barcode"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_order__barcode_img
+msgid "Order Barcode Image"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:54
+#, python-format
+msgid "Order Date"
+msgstr "Fecha del Pedido"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:139
+#, python-format
+msgid "Order Date:"
+msgstr "Fecha del Pedido"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:126
+#, python-format
+msgid "Order Details"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:51
+#, python-format
+msgid "Order Ref"
+msgstr "Referencia de Orden"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:134
+#, python-format
+msgid "Order Ref:"
+msgstr "Referencia de Orden"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:11
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:106
+#, python-format
+msgid "Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:83
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:172
+#, python-format
+msgid "Paid"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model,name:pos_orders_list.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración del TPV"
+
+#. module: pos_orders_list
+#: model:ir.model,name:pos_orders_list.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Pedidos del TPV"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:84
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:173
+#, python-format
+msgid "Posted"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:198
+#, python-format
+msgid "Price"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:195
+#, python-format
+msgid "Product"
+msgstr "Producto"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:197
+#, python-format
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:52
+#, python-format
+msgid "Receipt Ref"
+msgstr "Numero de Pedido"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:162
+#, python-format
+msgid "Receipt Ref:"
+msgstr "Numero de Pedido"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:31
+#, python-format
+msgid "Search Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Session Limit Configuration"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_config__pos_session_limit
+msgid "Session limit"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:183
+#, python-format
+msgid "Session:"
+msgstr "sesión"
+
+#. module: pos_orders_list
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Set session limit to load pos orders. If you have more than 1000 orders, then we recommend not to use \"Load all\" option."
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_config__show_barcode
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Show Barcode in Receipt"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_config__show_draft
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Show Draft Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_config__show_order
+msgid "Show Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Show POS Orders in POS"
+msgstr ""
+
+#. module: pos_orders_list
+#: model:ir.model.fields,field_description:pos_orders_list.field_pos_config__show_posted
+#: model_terms:ir.ui.view,arch_db:pos_orders_list.custom_pos_config_extended_form_view
+msgid "Show Posted Orders"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:56
+#, python-format
+msgid "State"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:167
+#, python-format
+msgid "Status:"
+msgstr "Estatus"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:55
+#, python-format
+msgid "Total"
+msgstr ""
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:154
+#, python-format
+msgid "Total Amount:"
+msgstr "Monto Total"
+
+#. module: pos_orders_list
+#. openerp-web
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:96
+#: code:addons/pos_orders_list/static/src/xml/pos_orders_list.xml:117
+#, python-format
+msgid "View Orders"
+msgstr "Ver Pedidos"
+

@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_category_templates">
+
+<t t-name="theme_alan.category_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section cat-snippet-1" style="background-color: #f3f3f3">
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-5">
+                                    <div class="m-30px-b">
+                                        <h3 class="dark-color font-w-600">Shop By Categories</h3>
+                                    </div>
+                                    <div class="cs-box">
+                                        <div class="img">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-chair-col-1.png" />
+                                        </div>
+                                        <div class="text">
+                                            <a class="as-btn as-btn-black" href="#">Furniture</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="cs-box">
+                                        <div class="img">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-chair-col-2.png" />
+                                        </div>
+                                        <div class="text">
+                                            <a class="as-btn as-btn-black" href="#">Lights</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="cs-box">
+                                        <div class="img">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-chair-col-3.png" />
+                                        </div>
+                                        <div class="text">
+                                            <a class="as-btn as-btn-black" href="#">Kitchen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="cs-box">
+                                        <div class="img">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-chair-col-4.png" />
+                                        </div>
+                                        <div class="text">
+                                            <a class="as-btn as-btn-black" href="#">Show Piece </a>
+                                        </div>
+                                    </div>
+                                    <div class="white-bg p-20px text-center m-30px-t">
+                                        <a class="as-btn as-btn-dark" href="#">View All Products <i class="fa fa-arrow-right m-5px-l"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 1</h6>
+                <label class="e-sb-label" for="e_category_01"><input id="e_category_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="cat-snippet-2">
+                        <div class="container-fluid">
+                            <div class="row no-gutters">
+                                <section class="col-lg-6 bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-col-1.png);">
+                                    <div class="cs-box">
+                                        <div class="p-45px md-p-15px">
+                                            <div class="dark-color h4 font-w-600">BEST COLLECTIONS OF THE MONTH</div>
+                                            <div class="btn-bar m-20px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- col -->
+                                <section class="col-lg-3 bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-col-2.png);">
+                                    <div class="cs-box">
+                                        <div class="p-45px md-p-15px">
+                                            <div class="dark-color h4 font-w-600">SALE OF THE WEEK</div>
+                                            <div class="btn-bar m-20px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- col -->
+                                <section class="col-lg-3 bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-col-3.png);">
+                                    <div class="cs-box">
+                                        <div class="p-45px md-p-15px">
+                                            <div class="dark-color h4 font-w-600">PRODUCT OF THE MONTH</div>
+                                            <div class="btn-bar m-20px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- col -->
+                                <section class="col-lg-3 bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-col-4.png);">
+                                    <div class="cs-box">
+                                        <div class="p-45px md-p-15px">
+                                            <div class="dark-color h4 font-w-600">SALE OF THE WEEK</div>
+                                            <div class="btn-bar m-20px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- col -->
+                                <section class="col-lg-3 bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-col-5.png);">
+                                    <div class="cs-box">
+                                        <div class="p-45px md-p-15px">
+                                            <div class="dark-color h4 font-w-600">PRODUCT OF THE MONTH</div>
+                                            <div class="btn-bar m-20px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- col -->
+                                <section class="col-lg-6 bg-cover bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-bag-col-6.png);">
+                                    <div class="cs-box">
+                                        <div class="p-45px md-p-15px">
+                                            <div class="dark-color h4 font-w-600">BEST COLLECTIONS OF THE MONTH</div>
+                                            <div class="btn-bar m-20px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- col -->
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 2</h6>
+                <label class="e-sb-label" for="e_category_02"><input id="e_category_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-35px-b md-m-20px-b">
+                                <div class="col-lg-12 text-center">
+                                    <div class="font-w-600 h3 dark-color">
+                                        OUR LATEST COLLECTIONS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="border-1 border-color-gray m-15px-tb">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-new-collection-5.png" />
+                                        </div>
+                                        <div class="p-20px">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">
+                                                New Collections
+                                            </div>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud.</p>
+                                            <div class="m-20px-t">
+                                                <a class="as-btn as-btn-black as-btn" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <div class="col-lg-4">
+                                    <div class="border-1 border-color-gray m-15px-tb">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-new-collection-6.png" />
+                                        </div>
+                                        <div class="p-20px">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">
+                                                New Collections
+                                            </div>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud.</p>
+                                            <div class="m-20px-t">
+                                                <a class="as-btn as-btn-black as-btn" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <div class="col-lg-4">
+                                    <div class="border-1 border-color-gray m-15px-tb">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-new-collection-7.png" />
+                                        </div>
+                                        <div class="p-20px">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">
+                                                New Collections
+                                            </div>
+                                            <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod quis nostrud.</p>
+                                            <div class="m-20px-t">
+                                                <a class="as-btn as-btn-black as-btn" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 3</h6>
+                <label class="e-sb-label" for="e_category_03"><input id="e_category_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-25px-tb">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 md-m-30px-b">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-1.png" />
+                                        </a>
+                                        <div class="position-absolute top-0 left-0 m-30px sm-m-10px p-20px-lr p-15px-tb">
+                                            <a class="as-btn as-btn-white align-top text-uppercase" href="#">New Collections</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="position-relative hover-scale m-25px-b">
+                                                <a href="#">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-2.png" />
+                                                </a>
+                                                <div class="position-absolute top-0 left-0 m-30px sm-m-10px p-20px-lr p-15px-tb">
+                                                    <a class="as-btn as-btn-white align-top text-uppercase" href="#">Upcoming Sales</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 sm-m-25px-b">
+                                            <div class="position-relative hover-scale">
+                                                <a href="#">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-3.png" />
+                                                </a>
+                                                <div class="position-absolute top-0 left-0 m-30px sm-m-10px p-20px-lr p-15px-tb">
+                                                    <a class="as-btn as-btn-white align-top text-uppercase" href="#">50% Sale</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="position-relative hover-scale">
+                                                <a href="#">
+                                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-4.png" />
+                                                </a>
+                                                <div class="position-absolute top-0 left-0 m-30px sm-m-10px p-20px-lr p-15px-tb">
+                                                    <a class="as-btn as-btn-white align-top text-uppercase" href="#">New Arrival 2018</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 4</h6>
+                <label class="e-sb-label" for="e_category_04"><input id="e_category_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+
+</t>
+<t t-name="theme_alan.category_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <div class="container-fluid p-0px">
+                            <div class="row no-gutters">
+                                <div class="col-lg-6">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#"><img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-5.png" /></a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 text-center m-50px-b">
+                                            <div class="white-bg dark-color p-15px-lr p-10px-tb d-inline-block h4 font-w-600">New Collections 2018</div>
+                                            <div class="m-10px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <div class="col-lg-6">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#"><img class="w-100" src="http://odoo-snippets.atharvasystem.com/source/img/alan-fashion-collection-6.png" /></a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 text-center m-50px-b">
+                                            <div class="white-bg dark-color p-15px-lr p-10px-tb d-inline-block h4 font-w-600">New Collections 2018</div>
+                                            <div class="m-10px-t">
+                                                <a href="#" class="as-btn as-btn-white"> Shop Now </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 5</h6>
+                <label class="e-sb-label" for="e_category_05"><input id="e_category_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-jwl-03.jpg" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 p-20px text-center">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">New In Trend</div>
+                                            <a class="as-btn as-btn-dark btn-sm" href="#">Discover Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-jwl-04.jpg" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 p-20px text-center">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">New In Trend</div>
+                                            <a class="as-btn as-btn-dark btn-sm" href="#">Discover Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-jwl-05.jpg" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 p-20px text-center">
+                                            <div class="h5 font-w-600 dark-color m-10px-b">New In Trend</div>
+                                            <a class="as-btn as-btn-dark btn-sm" href="#">Discover Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 6</h6>
+                <label class="e-sb-label" for="e_category_06"><input id="e_category_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="alan-collection-static-snippet-10">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-wine-shop3.png" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 p-20px">
+                                            <div class="h5 white-color">New In Trend</div>
+                                            <a class="as-btn as-btn-white btn-sm" href="#">More Collections</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-wine-shop4.png" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 p-20px">
+                                            <div class="h5 white-color">New In Trend</div>
+                                            <a class="as-btn as-btn-white btn-sm" href="#">More Collections</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-wine-shop5.png" />
+                                        </a>
+                                        <div class="position-absolute bottom-0 left-0 right-0 p-20px">
+                                            <div class="h5 white-color">New In Trend</div>
+                                            <a class="as-btn as-btn-white btn-sm" href="#">More Collections</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 7</h6>
+                <label class="e-sb-label" for="e_category_07"><input id="e_category_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="alan-collection-static-snippet-11">
+                        <div class="container-fluid p-0px">
+                            <div class="row no-gutters">
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/fa-col-5.jpg" />
+                                        </div>
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center h-100 w-100">
+                                            <div class="text-right sm-p-20px-r p-50px-r">
+                                                <label class="white-color font-w-600 m-0px text-uppercase">Striped cotton</label>
+                                                <div class="font-w-600 h2 white-color text-uppercase">Striped cotton</div>
+                                                <div class="font-w-700 white-color h1 m-20px-b">80% OFF</div>
+                                                <a class="as-btn as-btn-white" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="position-relative hover-scale">
+                                        <div>
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/fa-col-6.jpg" />
+                                        </div>
+                                        <div class="position-absolute all-0 d-flex flex-column justify-content-center h-100 w-100">
+                                            <div class="text-left sm-p-20px-l p-50px-l">
+                                                <label class="white-color font-w-600 m-0px text-uppercase">Striped cotton</label>
+                                                <div class="font-w-600 h2 white-color text-uppercase">Striped cotton</div>
+                                                <div class="font-w-700 white-color h1 m-20px-b">80% OFF</div>
+                                                <a class="as-btn as-btn-white" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 8</h6>
+                <label class="e-sb-label" for="e_category_08"><input id="e_category_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb">
+                        <div class="container">
+                            <div class="row justify-content-center m-40px-b">
+                                <div class="col-lg-8 text-center">
+                                    <h4 class="dark-color after-50px font-w-600 theme-after p-15px-b m-15px-b">EXPLORE OUR FURNITURE RANGE</h4>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f1.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f2.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f3.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f4.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f5.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f6.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center m-35px-t">
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f7.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f8.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f9.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f10.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f11.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3 col-md-2 col-lg-auto text-center m-15px-tb">
+                                    <div class="p-15px-lr hover-scale">
+                                        <div class="avatar-60px d-inline-block">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/f12.png" />
+                                            </a>
+                                        </div>
+                                        <div class="m-5px-t">
+                                            <a href="#" class="dark-color font-w-400">Home Decor</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 9</h6>
+                <label class="e-sb-label" for="e_category_09"><input id="e_category_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-30px-tb cat-snippet-2" style="background-color: #f1f1f1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 m-15px-tb">
+                                    <div class="hover-scale cs-box position-relative">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-1.jpg" />
+                                        </a>
+                                        <div class="position-absolute top-0 left-0 p-15px">
+                                            <h5 class="dark-color font-w-700 white-bg p-10px-tb p-15px-lr">Top Collections</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 m-15px-tb">
+                                    <div class="hover-scale cs-box position-relative">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-2.jpg" />
+                                        </a>
+                                        <div class="position-absolute top-0 left-0 p-15px">
+                                            <h5 class="dark-color font-w-700 white-bg p-10px-tb p-15px-lr">50% OFF</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 m-15px-tb">
+                                    <div class="hover-scale cs-box position-relative">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-3.jpg" />
+                                        </a>
+                                        <div class="position-absolute top-0 left-0 p-15px">
+                                            <h5 class="dark-color font-w-700 white-bg p-10px-tb p-15px-lr">Pattern Design</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 10</h6>
+                <label class="e-sb-label" for="e_category_10"><input id="e_category_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-60px-tb" style="background-color: #f1f1f1">
+                        <div class="container">
+                            <div class="row justify-content-center m-20px-b">
+                                <div class="col-lg-8 text-center">
+                                    <h4 class="dark-color after-50px font-w-600 theme-after p-15px-b m-15px-b">EXPLORE OUR FURNITURE RANGE</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-5.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">SOFAS</a>
+                                            </h5>
+                                            <label class="m-0px">1659+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-6.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">QUEEN SIZE BED</a>
+                                            </h5>
+                                            <label class="m-0px">500+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-7.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">HUTCH DESKS</a>
+                                            </h5>
+                                            <label class="m-0px">650+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-14.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">MODULAR FURNITURE</a>
+                                            </h5>
+                                            <label class="m-0px">159+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-15.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">ROOM FURNITURE</a>
+                                            </h5>
+                                            <label class="m-0px">659+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-16.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">SIDE TABLES</a>
+                                            </h5>
+                                            <label class="m-0px">999+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-17.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">STUDY TABLES</a>
+                                            </h5>
+                                            <label class="m-0px">800+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg p-5px border-radius-5">
+                                        <div class="hover-scale">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-18.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="text-center p-10px-tb">
+                                            <h5>
+                                                <a class="dark-color font-w-600" href="#">BOOKSHELF</a>
+                                            </h5>
+                                            <label class="m-0px">950+ Products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 11</h6>
+                <label class="e-sb-label" for="e_category_11"><input id="e_category_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-60px-tb" style="background-color: #f1f1f1">
+                        <div class="container">
+                            <div class="row justify-content-center m-20px-b">
+                                <div class="col-lg-8 text-center">
+                                    <h4 class="dark-color after-50px font-w-600 theme-after p-15px-b m-15px-b">FEATURED COLLECTION</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-11.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center p-10px-tb">
+                                        <h6 class="m-0px p-5px-b">COLLECTIONS</h6>
+                                        <h5>
+                                            <a class="dark-color font-w-600" href="#">THE AREIL COLLECTIONS</a>
+                                        </h5>
+                                        <label class="m-0px">Explore Our Furniture Range</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-12.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center p-10px-tb">
+                                        <h6 class="m-0px p-5px-b">COLLECTIONS</h6>
+                                        <h5>
+                                            <a class="dark-color font-w-600" href="#">THE VERONA COLLECTIONS</a>
+                                        </h5>
+                                        <label class="m-0px">Explore Our Furniture Range</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 12</h6>
+                <label class="e-sb-label" for="e_category_12"><input id="e_category_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp13">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-13.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-60px-tb">
+                        <div class="container">
+                            <div class="row justify-content-center m-20px-b">
+                                <div class="col-lg-8 text-center">
+                                    <h4 class="dark-color after-50px font-w-600 theme-after p-15px-b m-15px-b">FEATURED COLLECTION</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-9.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center p-10px-tb">
+                                        <h5>
+                                            <a class="dark-color font-w-600" href="#">THE RAPID COLLECTIONS</a>
+                                        </h5>
+                                        <label class="m-0px">Explore Our Furniture Range</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-8.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center p-10px-tb">
+                                        <h5>
+                                            <a class="dark-color font-w-600" href="#">THE ARIEL COLLECTIONS</a>
+                                        </h5>
+                                        <label class="m-0px">Explore Our Furniture Range</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 m-15px-tb">
+                                    <div class="hover-scale">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-10.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-center p-10px-tb">
+                                        <h5>
+                                            <a class="dark-color font-w-600" href="#">THE STUDIO COLLECTIONS</a>
+                                        </h5>
+                                        <label class="m-0px">Explore Our Furniture Range</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 13</h6>
+                <label class="e-sb-label" for="e_category_13"><input id="e_category_13" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp14">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-14.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb" style="background-color: #f1f1f1;">
+                        <div class="container">
+                            <div class="row justify-content-center m-20px-b">
+                                <div class="col-lg-8 text-center">
+                                    <h4 class="dark-color after-50px font-w-600 theme-after p-15px-b m-15px-b">WHAT WE HAVE IN STORE FOR YOU</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3 m-15px-tb">
+                                    <div>
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-19.jpg" />
+                                    </div>
+                                    <div class="white-bg p-20px">
+                                        <label class="font-w-600 theme-after after-50px p-5px-b m-15px-b dark-color">FURNITURE</label>
+                                        <ul class="list-type1 theme">
+                                            <li><a href="#" class="dark-color">Sofas</a></li>
+                                            <li><a href="#" class="dark-color">Seating</a></li>
+                                            <li><a href="#" class="dark-color">Chairs</a></li>
+                                            <li><a href="#" class="dark-color">Tables</a></li>
+                                            <li><a href="#" class="dark-color">Cabinetry</a></li>
+                                            <li><a href="#" class="dark-color">Dining &amp; Bar</a></li>
+                                            <li><a href="#" class="dark-color">Beds</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3 m-15px-tb">
+                                    <div class="white-bg p-20px">
+                                        <label class="font-w-600 theme-after after-50px p-5px-b m-15px-b dark-color">FURNITURE</label>
+                                        <ul class="list-type1 theme">
+                                            <li><a href="#" class="dark-color">Sofas</a></li>
+                                            <li><a href="#" class="dark-color">Seating</a></li>
+                                            <li><a href="#" class="dark-color">Chairs</a></li>
+                                            <li><a href="#" class="dark-color">Tables</a></li>
+                                            <li><a href="#" class="dark-color">Cabinetry</a></li>
+                                            <li><a href="#" class="dark-color">Dining &amp; Bar</a></li>
+                                            <li><a href="#" class="dark-color">Beds</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-20.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3 m-15px-tb">
+                                    <div>
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-22.jpg" />
+                                    </div>
+                                    <div class="white-bg p-20px">
+                                        <label class="font-w-600 theme-after after-50px p-5px-b m-15px-b dark-color">HOME DECOR</label>
+                                        <ul class="list-type1 theme">
+                                            <li><a href="#" class="dark-color">Sofas</a></li>
+                                            <li><a href="#" class="dark-color">Seating</a></li>
+                                            <li><a href="#" class="dark-color">Chairs</a></li>
+                                            <li><a href="#" class="dark-color">Tables</a></li>
+                                            <li><a href="#" class="dark-color">Cabinetry</a></li>
+                                            <li><a href="#" class="dark-color">Dining &amp; Bar</a></li>
+                                            <li><a href="#" class="dark-color">Beds</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3 m-15px-tb">
+                                    <div class="white-bg p-20px">
+                                        <label class="font-w-600 theme-after after-50px p-5px-b m-15px-b dark-color">DINING DECOR</label>
+                                        <ul class="list-type1 theme">
+                                            <li><a href="#" class="dark-color">Sofas</a></li>
+                                            <li><a href="#" class="dark-color">Seating</a></li>
+                                            <li><a href="#" class="dark-color">Chairs</a></li>
+                                            <li><a href="#" class="dark-color">Tables</a></li>
+                                            <li><a href="#" class="dark-color">Cabinetry</a></li>
+                                            <li><a href="#" class="dark-color">Dining &amp; Bar</a></li>
+                                            <li><a href="#" class="dark-color">Beds</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-cat-21.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 14</h6>
+                <label class="e-sb-label" for="e_category_14"><input id="e_category_14" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp15">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-15.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <div class="seaction-head">
+                                        <h2>
+                                            Monthly Offer
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-6 m-20px-tb">
+                                    <div class="hover-shine border-radius-50 hover-top box-shadow-lg border-10 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-2.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="white-bg mt-n4 p-20px m-20px-lr position-relative border-radius-5 text-center box-shadow">
+                                        <div class="h5 font-w-700 dark-color m-0px">#top Collections</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 m-20px-tb">
+                                    <div class="hover-shine border-radius-50 hover-top box-shadow-lg border-10 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-3.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="white-bg mt-n4 p-20px m-20px-lr position-relative border-radius-5 text-center box-shadow">
+                                        <div class="h5 font-w-700 dark-color m-0px">#top Collections</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 m-20px-tb">
+                                    <div class="hover-shine border-radius-50 hover-top box-shadow-lg border-10 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-4.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="white-bg mt-n4 p-20px m-20px-lr position-relative border-radius-5 text-center box-shadow">
+                                        <div class="h5 font-w-700 dark-color m-0px">#top Collections</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6 m-20px-tb">
+                                    <div class="hover-shine border-radius-50 hover-top box-shadow-lg border-10 border-color-white">
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-5.jpg" />
+                                        </a>
+                                    </div>
+                                    <div class="white-bg mt-n4 p-20px m-20px-lr position-relative border-radius-5 text-center box-shadow">
+                                        <div class="h5 font-w-700 dark-color m-0px">#top Collections</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 15</h6>
+                <label class="e-sb-label" for="e_category_15"><input id="e_category_15" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.category_temp16">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/category-16.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-30px-t">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-2 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-20px text-center h-100">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/cat1-1.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="p-10px-t"><a class="dark-color" href="#">Rounded</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-20px text-center h-100">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/cat1-2.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="p-10px-t"><a class="dark-color" href="#">Cat Eye</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-20px text-center h-100">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/cat1-3.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="p-10px-t"><a class="dark-color" href="#">Rectangle</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-20px text-center h-100">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/cat1-4.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="p-10px-t"><a class="dark-color" href="#">Semi-Rimless</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-20px text-center h-100">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/cat1-5.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="p-10px-t"><a class="dark-color" href="#">Rimiless</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 m-15px-tb">
+                                    <div class="hover-scale border-1 border-color-gray p-20px text-center h-100">
+                                        <div class="overflow-hidden">
+                                            <a href="#">
+                                                <img src="http://odoo-snippets.atharvasystem.com/source/img/cat1-6.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="p-10px-t"><a class="dark-color" href="#">Square</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Category 16</h6>
+                <label class="e-sb-label" for="e_category_16"><input id="e_category_16" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

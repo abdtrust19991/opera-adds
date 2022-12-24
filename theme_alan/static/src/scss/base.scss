@@ -1,0 +1,103 @@
+
+@media (min-width: 1400px){
+	.container {
+	    max-width: $container;
+	}
+}
+
+@include up-lg {
+	.o_container_small {
+		max-width: 720px;
+	}
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.blockquote {
+	color: $as-theme;
+	border-left: 2px solid #eaedf2;
+	padding-left: 1rem;
+}
+
+/* Font wight
+--------------------*/
+@for $i from 1 through 9 {
+  .font-w-#{$i * 100} {
+    font-weight: #{$i * 100}
+  }
+}
+
+
+.section-title {
+	text-align: center;
+	padding-bottom: 30px;
+	h3 {
+		margin: 0;
+		padding: 0 0 20px;
+		position: relative;
+		font-size: 25px;
+		font-weight: 600;
+		color: $as-dark;
+		&:after {
+			content: "";
+			width: 50px;
+			height: 3px;
+			background: $as-theme;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+}
+
+.o_product_feature_panel {
+	background: $as-white;
+	color: $as-dark;
+	border: none;
+	left: 60px;
+	right: auto;
+	bottom: 90px;
+	padding: 10px 6px;
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 0;
+	-webkit-transform: none;
+	transform: none;
+}
+
+/* edit product Slider popup
+----------------------------------------*/
+.o_product_slider_config_details {
+	#multiselect {
+		+ .btn-group {
+			width: 100%;
+    		text-align: left;
+		}
+	}
+	button.multiselect {
+	    width: 100%;
+	    border: 1px solid #ddd;
+	    text-align: left;
+	}
+	.multiselect-container {
+		margin: 0;
+		padding: 10px 0;
+		max-height: 250px;
+		overflow-y: auto;
+		width: 320px;
+		> li {
+			a {
+				display: block;
+				color: #777;
+			}
+			label {
+				padding: 3px 12px;
+			    width: 100%;
+			}
+		}
+	}
+}

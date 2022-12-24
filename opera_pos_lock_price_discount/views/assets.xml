@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="opera_pos_lock_price_discount_assets" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/PasswordInputPopupWidget.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/SetFiscalPositionButton.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/OrderManagementButton.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/NumpadWidget.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/SetPricelistButton.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/TicketScreen.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/DiscountButton.js"></script>
+<!--                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/HeaderLockButton.js"></script>-->
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/NumberBuffer.js"></script>
+                <script type="text/javascript" src="/opera_pos_lock_price_discount/static/src/js/LoginScreen.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

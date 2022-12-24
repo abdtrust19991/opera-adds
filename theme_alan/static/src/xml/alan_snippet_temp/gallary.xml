@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_gallary_templates">
+
+<t t-name="theme_alan.gallery_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/gallery-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <div class="container-fluid p-0px">
+                            <div class="row no-gutters">
+                                <div class="col-lg-3">
+                                    <div class="hover-scale"><img src="http://odoo-snippets.atharvasystem.com/source/img/pet-10.jpg" /></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="hover-scale"><img src="http://odoo-snippets.atharvasystem.com/source/img/pet-12.jpg" /></div>
+                                    <div class="hover-scale"><img src="http://odoo-snippets.atharvasystem.com/source/img/pet-13.jpg" /></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="hover-scale"><img src="http://odoo-snippets.atharvasystem.com/source/img/pet-11.jpg" /></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="hover-scale"><img src="http://odoo-snippets.atharvasystem.com/source/img/pet-14.jpg" /></div>
+                                    <div class="hover-scale"><img src="http://odoo-snippets.atharvasystem.com/source/img/pet-15.jpg" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Gallery</h6>
+                <label class="e-sb-label" for="e_gallery_01"><input id="e_gallery_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

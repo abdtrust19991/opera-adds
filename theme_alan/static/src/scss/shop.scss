@@ -1,0 +1,338 @@
+tr.load_next_product {
+	opacity: 0;
+}
+tr.load_pre_product {
+	display: none !important;
+}
+
+
+/* Product Label
+------------------------------*/
+.as-ribbon-wrpa {
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+	.ribbon-style-1 {
+		position: relative;
+        top: -6px;
+		left: 6px;
+	    &:after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			right: -6px;
+			border-bottom: 6px solid $as-dark;
+			border-right: 6px solid transparent;
+	    }
+	    span {
+    	    background-color: $as-theme;
+    	    color: $as-white;
+	        padding: 5px 12px;
+		    position: relative;
+		    display: inline-block;
+		    vertical-align: top;
+		    text-align: center;
+		    font-weight: 500;
+		    box-shadow: 3px 3px 5px 0 rgba($as-black, 0.8);
+		    font-size: 12px;
+		    line-height: 1;
+	    }
+	}
+
+	.ribbon-style-2 {
+		position: relative;
+		top: 10px;
+		left: 10px;
+		padding: 1px;
+		border-radius: 40px;
+	    background-color: $as-theme;
+	    span {
+			padding: 3px 7px 3px 15px;
+			position: relative;
+			display: flex;
+			text-align: center;
+			font-weight: 500;
+			font-size: 12px;
+			border: 1px dashed currentColor;
+			border-radius: 40px;
+			line-height: 1;
+		    color: $as-white;
+		    &:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 6px;
+				bottom: 0;
+				margin: auto;
+				width: 4px;
+				height: 4px;
+				background: currentColor;
+				border-radius: 50%;
+		    }
+	    }
+	}
+	.ribbon-style-3 {
+		position: relative;
+	    top: 10px;
+	    left: 10px;
+	    z-index: 1;
+	    box-shadow: -3px 2px 4px 0 rgba(0, 0, 0, 0.1);
+	    color: $as-theme;
+	    &:before,
+	    &:after {
+	    	content: "";
+    		position: absolute;
+    		width: 10px;
+    		right: -2px;
+    		z-index: -1;
+    		background: currentColor;
+	    }
+	    &:before {
+	    	top: 0;
+	    	bottom: 0;
+	    	@include transform(skew(-33deg, 0deg));
+	    }
+	    &:after {
+	    	bottom: 0;
+	    	top: 0;
+	    	@include transform(skew(33deg, 0deg));
+	    }
+	    span {
+	    	background-color: $as-theme;
+	    	color: $as-white;
+		    display: flex;
+		    text-align: center;
+		    font-weight: 500;
+		    font-size: 12px;
+		    line-height: 23px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    position: relative;
+		    text-transform: uppercase;
+	    }
+	}
+	.ribbon-style-4 {
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    z-index: 1;
+	    overflow: hidden;
+	    width: 100px;
+	    height: 100px;
+	    span {
+	    	background-color: $as-theme;
+		    color: $as-white;
+		    display: inline-block;
+		    text-align: center;
+		    font-weight: 500;
+		    font-size: 12px;
+		    line-height: 28px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    text-transform: uppercase;
+		    @include rotate(-45);
+		    width: 140px;
+		    box-shadow: -3px 2px 4px 0 rgba(0, 0, 0, 0.37);
+		    position: relative;
+		    top: 24px;
+		    left: -32px;
+	    }
+	}
+	.ribbon-style-5 {
+	    span {
+	    	background-color: $as-theme;
+		    color: $as-white;
+		    position: relative;
+		    padding: 6px 15px 6px 5px;
+		    display: inline-block;
+		    margin: 10px 0 0 -7px;
+		    font-weight: 500;
+		    font-size: 12px;
+		    .owl-item & {
+		    	margin-left: 5px;
+		    }
+		    i {
+		    	margin-right: 5px;
+		    }
+		    &:after {
+	    	    content: "";
+			    position: absolute;
+			    top: -6px;
+			    left: 0;
+			    border-bottom: 6px solid $as-dark;
+			    border-left: 6px solid transparent;
+			    .owl-item & {
+			    	display: none;
+			    }
+		    }
+	    }
+	}
+}
+
+
+/* Responsive Sidebar
+------------------------------*/
+#products_grid_before {
+    @include down-lg {
+    	position: fixed;
+	    top: 0;
+	    left: -350px;
+	    bottom: 0;
+	    background: $as-white;
+	    z-index: 9999;
+	    width: 300px;
+	    max-height: 100vh;
+	    overflow-y: auto;
+	    @include transition(ease all 0.35s);
+	    padding-right: 25px;
+	    padding-top: 25px;
+	    + #products_grid {
+	        padding-left: 15px;
+	    }
+		> .btn.btn-link.d-lg-none {
+			display: none;
+		}
+		> .collapse.d-lg-block {
+			display: block;
+		}
+		&.products_grid_before_open {
+			left: 0;
+		}
+    }
+}
+
+
+/* ----------------------------
+	Close Aside
+-------------------------------*/
+.as-aside-filter-close {
+	position: fixed;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    @include transition(ease all 0.35s);
+    &.active {
+    	left: 300px;
+	    opacity: 1;
+	    pointer-events: auto;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    background: rgba(0,0,0,.5);
+	    padding-top: 100px;
+	    z-index: 9999;
+    }
+    button {
+    	border: none;
+	    padding: 0;
+	    outline: none;
+	    width: 35px;
+	    height: 35px;
+	    background: $as-white;
+	    margin: 0;
+	    position: relative;
+    }
+    .icon {
+	    width: 16px;
+	    height: 16px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+	    color: $as-dark;
+		&:after,
+		&:before {
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			background: currentColor;
+			@include rotate(45);
+		}
+		&:after {
+			height: 100%;
+			width: 2px;
+		}
+		&:before {
+			width: 100%;
+			height: 2px;
+		}
+    }
+    span {
+    	display: none;
+    }
+}
+
+
+
+/* ----------------------------
+	similar Products
+-------------------------------*/
+.as-similar-product-list {
+	padding: 20px;
+	.media {
+		position: relative;
+	    border: 1px solid #eee;
+		padding: 6px;
+		@include transition(ease all 0.35s);
+		.link-overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+		&:hover {
+			box-shadow: $as-shadow;
+		}
+		+ .media {
+			margin-top: 20px;
+		}
+		.sim-pro-img {
+		    width: 100px;
+		}
+		.media-body {
+			padding-left: 12px;
+			.brand-name {
+				padding: 2px 8px;
+				background: $as-theme;
+				font-size: 10px;
+				line-height: normal;
+				font-weight: 500;
+				border-radius: 30px;
+				margin: 0;
+				color: $as-white;
+			}
+			h4 {
+				font-size: 16px;
+				margin: 4px 0 6px;
+			}
+		}
+	}
+
+}
+
+
+/* Attributes count
+-------------------------*/
+#wsale_products_attributes_collapse {
+	.nav-item {
+		.css_attribute_color {
+			+ span {
+			    display: inline-flex;
+				width: calc(100% - 37px);
+				span {
+					margin-left: auto;
+					font-size: 12px;
+				}
+			}
+		}
+	} 
+}

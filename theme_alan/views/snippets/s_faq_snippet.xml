@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="dynamic_faq_snippet" name="Dynamic FAQ Snippet">
+        <div class="container">
+            <h3 class="">Frequently Asked Question</h3>
+        </div>
+        <section class="as_faq_slider" style="display:none;">
+            <div class="container">
+                <t t-set="faqs" t-value="request.env['website'].sudo().get_website_faq_list()"/>
+                <t t-if="faqs">
+                    <div class="faq-slider-items">
+                        <div id="accordion">
+                            <t t-foreach="faqs" t-as="question">
+                                <div class="faq-col">
+                                    <div class="faq-label" t-att-id="'heading%s' % question.id">
+                                        <a href="#" data-toggle="collapse"  t-att-data-target="'#collapse%s' % question.id" aria-expanded="true" t-att-aria-controls="'collapse%s' % question.id">
+                                            <t t-esc="question.question"/>
+                                        </a>
+                                    </div>
+                                    <div t-att-id="'collapse%s' % question.id" class="collapse" t-att-aria-labelledby="'heading%s' % question.id" data-parent="#accordion">
+                                        <div class="faq-desc">
+                                            <t t-raw="question.answer"/>
+                                        </div>
+                                    </div>
+                              </div>
+                            </t>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </section>
+    </template>
+
+    <template id="as_dynamic_faq_snippet" name="Dynamic FAQ Content" inherit_id="atharva_theme_base.as_dynamic_faq_container">
+        <xpath expr="//section[hasclass('as_dynamic_faq_content')]" position="inside">
+            <t t-call="theme_alan.dynamic_faq_snippet"/>
+        </xpath>
+    </template>
+
+    <template id="assets_dynamic_faq_snippet_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_faq_snippet/000.js"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_faq_snippet/000.scss"/>
+        </xpath>
+    </template>
+</odoo>

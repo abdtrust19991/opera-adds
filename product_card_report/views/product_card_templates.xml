@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <template id="product_card_report_layout" name="Report layout">&lt;!DOCTYPE html&gt;
+            <html>
+                <head>
+                    <meta charset="utf-8"/>
+                    <title>
+                        <t t-esc="'Product Card Report'"/>
+                    </title>
+                    <t t-call-assets="web.assets_common" t-js="false"/>
+                    <t t-call-assets="web.report_assets_common" t-js="false"/>
+                    <t t-call-assets="web.assets_common" t-css="false"/>
+                    <t t-call-assets="web.report_assets_common" t-css="false"/>
+                </head>
+                <body>
+                    <div id="wrapwrap">
+                        <main t-att-class="'container-fluid'">
+                            <t t-raw="0"/>
+                        </main>
+                    </div>
+                </body>
+            </html>
+        </template>
+
+        <template id="product_card_tmp_report">
+            <t t-call="product_card_report.product_card_report_layout">
+                <div class="text-center">
+                    <h2 class="text-center">Product Card For Product</h2>
+                    <h2 class="text-center">
+                        <t t-esc="product_name"/>
+                    </h2>
+                    <t t-if="date_from">
+                        <div>
+                            <span>التاريخ من:</span>
+                            <t t-esc="date_from"/>
+                        </div>
+                    </t>
+                    <t t-if="date_to">
+                        <div>
+                            <span>التاريخ الى:</span>
+                            <t t-esc="date_to"/>
+                        </div>
+                    </t>
+                    <t t-if="location">
+                        <div>
+                            <span>مخزن:</span>
+                            <t t-esc="location"/>
+                        </div>
+                    </t>
+
+                    <style>
+                        @media print {
+                        a[href]:after {
+                        display: none;
+                        visibility: hidden;
+                        }
+                        }
+
+                        table {
+                        table-layout: auto;
+                        border-collapse: collapse;
+                        width: 100%;
+                        }
+                        table td {
+                        border: 1px solid black;
+                        padding: 5px;
+                        }
+                        table th {
+                        border: 1px solid black;
+                        }
+
+                    </style>
+
+                    <table class="">
+                        <head>
+                            <tr>
+                                <th rowspan="2">تاريخ</th>
+                                <th rowspan="2">رقم الأذن</th>
+                                <th rowspan="2">مرجع الأذن</th>
+                                <th rowspan="2">اسم المورد/العميل</th>
+                                <th rowspan="2">من مخزن</th>
+                                <th rowspan="2">الى مخزن</th>
+                                <th>وارد</th>
+                                <th>منصرف</th>
+                                <th>رصيد</th>
+                            </tr>
+                            <tr>
+                                <th>كمية</th>
+                                <th>كمية</th>
+                                <th >كمية</th>
+                            </tr>
+                        </head>
+                        <tr t-foreach="data[0]" t-as="o">
+                            <td>
+                                <t t-esc="o['date']"/>
+                            </td>
+                            <td>
+                                <t t-if="o.get('url_ref')">
+                                    <a t-att-href="o['url_ref']">
+                                        <t t-esc="o['ref']"/>
+                                    </a>
+                                </t>
+                                <t t-else="">
+                                    <t t-esc="o['ref']"/>
+                                </t>
+                            </td>
+                            <td>
+                                <t t-if="o.get('url_order_ref')">
+                                    <a t-att-href="o['url_order_ref']">
+                                        <t t-esc="o['order_ref']"/>
+                                    </a>
+                                </t>
+                                <t t-else="">
+                                    <t t-esc="o['order_ref']"/>
+                                </t>
+                            </td>
+                            <td>
+                                <t t-esc="o['partner']"/>
+                            </td>
+                            <td>
+                                <t t-esc="o['from']"/>
+                            </td>
+                            <td>
+                                <t t-esc="o['to']"/>
+                            </td>
+                            <td>
+                                <t t-esc="round(o['qty_in'] or 0,2)"/>
+                            </td>
+                            <td>
+                                <t t-esc="round(o['qty_out'] or 0,2)"/>
+                            </td>
+                            <td>
+                                <t t-esc="round(o['qty_balance'] or 0,2)"/>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="assets_for_pos_order_loyalty_2" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/opera_pos_sales_person/static/src/js/sale_person.js"/>
+                <script type="text/javascript" src="/opera_pos_sales_person/static/src/js/ProductScreen.js"/>
+                <!--<script type="text/javascript" src="/opera_pos_sales_person/static/src/js/sales_person.js"/>-->
+
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

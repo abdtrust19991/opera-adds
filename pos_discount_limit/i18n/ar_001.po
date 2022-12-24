@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_discount_limit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-24 08:09+0000\n"
+"PO-Revision-Date: 2020-12-24 09:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: pos_discount_limit
+#: model:ir.model.fields,field_description:pos_discount_limit.field_pos_config__discount_pc_limit
+msgid "Discount Limit (%) "
+msgstr "تقيد الخصم (%) "
+
+#. module: pos_discount_limit
+#: model_terms:ir.ui.view,arch_db:pos_discount_limit.pos_config_view_form_inherit_pos_discount
+msgid "Discount limit %"
+msgstr "تقيد الخصم %"
+
+#. module: pos_discount_limit
+#: model:ir.model.fields,help:pos_discount_limit.field_pos_config__discount_pc_limit
+msgid "Discount percentage limit"
+msgstr "تقيد نسبة الخصم"
+
+#. module: pos_discount_limit
+#: code:addons/pos_discount_limit/models/models.py:0
+#, python-format
+msgid "Discount rate should be positive"
+msgstr "يجب أن تكون نسبة الخصم موجبة"
+
+#. module: pos_discount_limit
+#: model:ir.model.fields,field_description:pos_discount_limit.field_pos_config__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: pos_discount_limit
+#. openerp-web
+#: code:addons/pos_discount_limit/static/src/js/DiscountButton.js:0
+#, python-format
+msgid "Exceeded discount limit"
+msgstr "تم تجاوز حد الخصم"
+
+#. module: pos_discount_limit
+#: model:ir.model.fields,field_description:pos_discount_limit.field_pos_config__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: pos_discount_limit
+#: model:ir.model.fields,field_description:pos_discount_limit.field_pos_config____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: pos_discount_limit
+#: model:ir.model,name:pos_discount_limit.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "إعدادات نقطة البيع"
+
+#. module: pos_discount_limit
+#. openerp-web
+#: code:addons/pos_discount_limit/static/src/js/DiscountButton.js:0
+#, python-format
+msgid "You have exceeded the specified discount limit %s%%."
+msgstr "لقد تجاوزت حد الخصم المحدد %s%%."

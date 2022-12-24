@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="deal_day_3" name="Deal of the day 3">
+        <section class="section" style="background-color: #f8f9fa;">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="m-15px-tb col-lg-5">
+                        <div class="p-50px-r md-p-0px-r">
+                            <div class="display-4 dark-color font-w-700 m-20px-b after-50px dark-after p-20px-b">Deals Of The Day</div>
+                            <p class="lead font-w-400">Lorem ipsum dolor sit amet, eam viris essent dissentiet at, nec falli percipit petentium ut. Delenit molestie sententiae ea his....</p>
+                            <div class="as_offer_timer">
+                            </div>
+                            <div class="p-30px-t">
+                                <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-15px-tb">
+                        <div class="hover-shine">
+                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-6.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

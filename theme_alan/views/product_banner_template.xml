@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_product_banner_slider_front_template" name="Prodoct Banner Slider">
+        <div class="owl-carousel owl-theme prod_banner_carousel_list">
+            <t t-foreach="products" t-as="product">
+                <t t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                    <t t-set="bg_img" t-value="website.image_url(product,'product_banner')"/>
+                    <!-- <div class="owl-slide d-flex align-items-center cover" t-attf-style="background-image: url(#{bg_img}#);"> -->
+                    <div class="owl-slide">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div t-attf-class="col-md-6 my-3 order-#{'0' if pos == '0' else '1'}">
+                                    <t t-set="combination" t-value="product.sudo()._get_first_possible_combination()"/>
+                                    <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                    <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                    <t t-set="additional_title" t-value="product.name" />
+                                    <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale as-single-procut-snippet">
+                                        <div id="product_details">
+                                            <t t-if="prod_label == '1'">
+                                                <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active">
+                                                    <t t-if="product.pro_label_line_ids">
+                                                        <t t-foreach="product.pro_label_line_ids" t-as="rec">
+                                                            <t t-if="rec.website_id.id == website.id">
+                                                                <div class="as-ribbon-tag">
+                                                                    <span t-attf-style="background-color:#{rec.label.label_color};color:#{rec.label.label_text_color}"> <i class="fa fa-tag"></i> <t t-esc="rec.label.name" /></span>
+                                                                </div>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                            <h2 itemprop="name" t-field="product.name">Product Name</h2>
+
+                                            <t t-if="prod_rating == '1'">
+                                                <t t-if="request.website.viewref('website_sale.product_comment').active">
+                                                    <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                    <div class="prod_rating">
+                                                        <t t-set="curr_rate" t-value="0" />
+                                                        <t t-set="half_flag" t-value="0" />
+                                                        <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                            <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                            <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                <i class="fa fa-star" />
+                                                            </t>
+                                                            <t t-else="">
+                                                                <t t-if="rating_avg_val % 1 > 0.01 and half_flag == 0">
+                                                                    <i class="fa fa-star-half-o" />
+                                                                    <t t-set="half_flag" t-value="1" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <i class="fa fa-star-o" />
+                                                                </t>
+                                                            </t>
+                                                        </t>
+                                                        <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                    </div>
+                                                </t>
+                                            </t>
+                                            <span itemprop="url" style="display:none;" t-esc="product.website_url"/>
+                                            <div class="short-desc">
+                                                <p t-field="product.description_sale" placeholder="A short description that will also appear on documents." />
+                                                <div id="product_attributes_simple">
+                                                    <hr t-if="sum([(1 if len(l.value_ids)==1 else 0) for l in product.attribute_line_ids])"/>
+                                                    <p class="text-muted">
+                                                        <t t-set="single_value_attributes" t-value="product.valid_product_template_attribute_line_ids._prepare_single_value_for_display()"/>
+                                                        <t t-foreach="single_value_attributes" t-as="attribute">
+                                                            <span t-field="attribute.name"/>:
+                                                            <t t-foreach="single_value_attributes[attribute]" t-as="ptal">
+                                                                <span t-field="ptal.product_template_value_ids._only_active().name"/><t t-if="not ptal_last">, </t>
+                                                            </t>
+                                                            <br/>
+                                                        </t>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                <div class="js_product js_main_product">
+                                                    <t t-placeholder="select">
+                                                        <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                                        <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+                                                        <t t-if="combination" t-call="sale.variants">
+                                                            <t t-set="ul_class" t-value="'flex-column'" />
+                                                            <t t-set="parent_combination" t-value="None" />
+                                                        </t>
+                                                        <t t-else="">
+                                                            <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}"/>
+                                                        </t>
+                                                    </t>
+                                                    <t t-call="website_sale.product_price" />
+                                                    <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
+                                                    <a t-if="add_to_cart == '1'" role="button" id="add_to_cart" class="btn btn-primary btn-lg as-btn js_check_product a-submit d-block d-sm-inline-block" href="#"><i class="fa fa-shopping-cart"/> Add to Cart</a>
+
+                                                    <a t-if="buy_btn == '1'" role="button" id="buy_now" class="btn btn-outline-primary btn-lg as-btn d-block d-sm-inline-block" href="#"><i class="fa fa-bolt"/> Buy Now</a>
+                                                    <div id="product_option_block"/>
+                                                </div>
+                                            </form>
+                                            <p t-elif="not product.active" class="alert alert-warning">This product is no longer available.</p>
+                                            <p t-else="" class="alert alert-warning">This product has no valid combination.</p>
+                                            <div class="more-info">
+                                                <a t-attf-href="/shop/product/#{slug(product)}"><i class="fa fa-info"></i> More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-3">
+                                    <div class="product-img">
+                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </div>
+    </template>
+</odoo>

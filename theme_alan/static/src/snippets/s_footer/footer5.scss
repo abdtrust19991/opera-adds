@@ -1,0 +1,118 @@
+#footer {
+	.js_language_selector {
+		.dropdown-toggle {
+			position: relative;
+			padding-right: 15px;
+			margin: 0;
+    		cursor: pointer;
+			&:after {
+				position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    line-height: 1;
+			    height: 2px;
+			    margin: auto;
+			    right: 0;
+			}
+		}
+		.sort-name {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.footer-top {
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-size: 14px;
+	.footer-widget {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.footer-widget-title {
+		margin-bottom: 20px;
+		h6 {
+			font-size: 16px;
+			font-weight: 600;
+			color: as-yiq-color($footer-color);
+			margin: 0;
+		}
+	}
+	.footer-widget-list {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			padding: 6px 0; 
+		}
+		a {
+			color: rgba(as-yiq-color($footer-color), 0.7);
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 400;
+			&:hover {
+				color: as-yiq-color($footer-color);
+			}
+		}
+	}
+	.footer-logo {
+		padding-bottom: 20px;
+	}
+	.footer-play-btns {
+		padding-top: 15px;
+		a {
+			background: $as-dark;
+			border: 1px solid $as-white;
+			color: $as-white;
+			text-decoration: none;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 8px 12px;
+			border-radius: 3px;
+			@include transition(ease-in-out all 0.2s);
+			.fa {
+				margin-right: 8px;
+			}
+			&:hover {
+				background: $as-theme;
+				border-color: $as-white;
+				color: $as-white;
+			}
+			+ a {
+				margin-left: 8px;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid rgba(as-yiq-color($footer-color), 0.1);
+	font-size: 14px;
+	.footer-social-icons {
+		a {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 50%;
+			margin-right: 6px; 
+			text-align: center;
+			color: $as-white;
+			background: $as-theme;
+			@include transition(ease-in-out all 0.6s);
+			display: inline-flex;
+		    align-items: center;
+		    justify-content: center;
+		    text-decoration: none;
+			&:hover {
+				background: $as-dark;
+				color: $as-white;
+				@include transition(ease-in-out all 10ms);
+			}
+		}
+	}
+}

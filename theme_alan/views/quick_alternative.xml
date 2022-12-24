@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="quick_view_alternative" name="Similar Products" inherit_id="website_sale.products_item" customize_show="True" active="False">
+    <xpath expr="//div[hasclass('oe_product_image')]" position="inside">
+        <a class="btn o_alter_view" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id" title="Similar Products" type="button">
+            <i class="fa fa-search"/> <span>VIEW SIMILAR</span>
+        </a>
+    </xpath>
+</template>
+
+<template id="quick_alter_prod_template" name="Quick Alternative Product Template">
+    <div class="m_c_fixed m_c_close"></div>
+    <div class="m_c_box as-similar-product-box">
+        <div class="min-cart-head">
+            <h5>Similar Products</h5>
+            <button class="close m_c_close">
+                <i class="ti-close" />
+            </button>
+        </div>
+        <div t-if="not products" class="mini_cart_empty">
+            <img src="/atharva_theme_base/static/src/img/shop/empty-cart.svg" />
+            <p>No Similar Product Found!</p>
+        </div>
+        <div t-else="" class="as-similar-product-list">
+                <t t-foreach="products" t-as="product">
+                    <t t-set="combination_info"
+                    t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                    <div class="media">
+                        <a class="link-overlay" target='_blank' t-attf-href="/shop/product/#{slug(product)}"/>
+                        <div class="sim-pro-img">
+                            <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                        </div>
+                        <div class="media-body">
+                            <label class="brand-name"><t t-esc="product.product_brand_id.name"/></label>
+                            <h4><t t-esc="product.name"/></h4>
+                            <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                            </div>
+                        </div>
+                    </div>
+                </t>
+        </div>
+    </div>
+</template>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <template id="hyperpay1_form">
+            <div>
+                <script src="https://test.oppwa.com/v1/paymentWidgets.js?checkoutId={check_out_id}"></script>
+                <input type="hidden" name="data_set" t-att-data-action-url="shopperResultUrl" data-remove-me=""/>
+                <input type="hidden" name="entityId" t-att-value="entityId"/>
+                <input type="hidden" name="merchantTransactionId" t-att-value="merchantTransactionId"/>
+                <input type="hidden" name="check_out_id" t-att-value="check_out_id"/>
+                <input type="hidden" name="hyperpay_return" t-att-value="hyperpay_return"/>
+                <input type="hidden" name="Authorization" t-att-value="Authorization"/>
+                <input type="hidden" name="amount" t-att-value="amount"/>
+                <input type="hidden" name="currency" value="currency"/>
+                <input type="hidden" name="paymentBrand" t-att-value="paymentBrand"/>
+                <input type="hidden" name="paymentType" t-att-value="paymentType"/>
+                <input t-if="shopperResultUrl" type="hidden" name='shopperResultUrl'
+                       t-att-value="shopperResultUrl"/>
+            </div>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_view_inherit_product" model="ir.ui.view">
+        <field name="name">product.template.view.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="product_sticker_page" string="Product Sticker">
+                    <field name="product_sticker_ids">
+                        <tree>                            
+                            <field name="sticker_type"/>
+                            <field name="name"/>
+                            <field name="image" widget="image" options='{"preview_image": "image", "size": [50,50]}'/>
+                            <field name="position"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_sticker_view_form" model="ir.ui.view">
+        <field name="name">product.sticker.view.form</field>
+        <field name="model">product.sticker</field>
+        <field name="arch" type="xml">
+        <form string="Product Sticker Form">
+            <sheet>                
+                <group string="Create Product Sticker">                    
+                    <group>
+                        <field name="sticker_type"/>
+                        <field name="name"/>
+                        <field name="position"/>
+                        <field name="sticker_text" attrs="{'invisible':[('sticker_type','=','image')], 'required': [('sticker_type', '=', 'html')]}" />                    
+                        <field name="font_size" attrs="{'invisible':[('sticker_type','=','image')], 'required': [('sticker_type', '=', 'html')]}" />
+                        <field name="bg_color" attrs="{'invisible':[('sticker_type','=','image')], 'required': [('sticker_type', '=', 'html')]}"  widget="color" />                    
+                        <field name="text_color" attrs="{'invisible':[('sticker_type','=','image')], 'required': [('sticker_type', '=', 'html')]}"  widget="color" />
+                        <field name="shape" attrs="{'invisible':[('sticker_type','=','image')], 'required': [('sticker_type', '=', 'html')]}" />
+                        <field name="rotate" attrs="{'invisible':[('sticker_type','=','image')]}" />
+                        <field name="cut_corner" />
+                    </group>                    
+                    <group>                        
+                        <field name="image" widget="image" class="oe_avatar" attrs="{'invisible':[('sticker_type','=','html')], 'required': [('sticker_type', '=', 'image')]}"/>
+                        <field name="height" />
+                        <field name="width" />
+                        <field name="top" />
+                        <field name="bottom" />
+                        <field name="left" />
+                        <field name="right" />                            
+                    </group>
+                </group>
+            </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="product_sticker_view_tree" model="ir.ui.view">
+        <field name="name">product.sticker.view.tree</field>
+        <field name="model">product.sticker</field>
+        <field name="arch" type="xml">
+            <tree string="Product Sticker List">                                
+                <field name="name"/>            
+                <field name="sticker_type"/>
+                <field name="position"/>                                 
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_product_sticker">
+        <field name="name">Product Sticker</field>
+        <field name="res_model">product.sticker</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_empty_folder">
+                No Sticker Available!
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="product_sticker_menu"
+        name="Product Sticker"
+        action="action_product_sticker"
+        parent="website_sale.menu_catalog"/>                    
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="image_zoomer" name="Theme Alan Zoomer" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <script t-if="request.website.viewref('website_sale.product_picture_magnify').active" type="text/javascript" src="/theme_alan/static/src/js/image_zoomer.js"/>
+        </xpath>
+    </template>
+</odoo>

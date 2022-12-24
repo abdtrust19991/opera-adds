@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="OrderWidget" t-inherit="point_of_sale.OrderWidget" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//OrderSummary" position="attributes">
+            <attribute name="total_sale_qty">state.total_sale_qty</attribute>
+            <attribute name="total_return_qty">state.total_return_qty</attribute>
+        </xpath>
+
+    </t>
+
+</templates>

@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="theme_alan.builder_block">
+        <div class="snippets_collection" id="builder">
+            <div class="edit-snippet-builder-box">
+                <div class="row">
+                    <div class="col-md-2">
+                            <ul class="e-sb-tab">
+                                <li>
+                                    <label data-tag="e_home_pages" class="e-sb-active">Home Pages</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_slider">Slider</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_banner">Banner</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_shop_banner">Shop Banner</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_about">About</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_services">Services</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_feature">Feature</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_portfolio">Portfolio</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_price_table">Price Table</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_our_team">Our Team</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_our_client">Our Client</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_testimonial">Testimonial</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_category">Category</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_collections">Collections</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_contact_us">Contact Us</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_cta">Call To Action</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_promotion">Promotion</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_parallax">Parallax</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_afq">AFQ's</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_gallery">Gallery</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_tabs">Tabs</label>
+                                </li>
+                                <li>
+                                    <label data-tag="e_video_popup">Video Popup</label>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="e-sb-tab-content">
+                            <!-- Slider tab -->
+                            <div id="e_home_pages" class="e-sb-tab--content">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_10"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_11"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_12"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_13"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_14"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_15"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_16"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_17"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_18"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_19"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_20"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_21"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_22"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_23"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_24"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_25"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_26"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_27"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_28"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_29"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_30"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_31"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_32"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_33"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.homepage_34"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Slider tab -->
+                            <!-- Slider tab -->
+                            <div id="e_slider" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp1"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp2"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp3"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp4"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp5"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp6"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp7"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp8"/>
+                                    <!-- end col -->
+
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp9"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp10"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp11"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp13"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp14"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp15"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp16"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp17"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp18"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp19"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp20"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp21"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp22"/>
+                                    <!-- end col -->
+
+                                    <!-- New -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp23"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp24"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp25"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp26"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp27"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp28"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp29"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp30"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp31"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp32"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp33"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp34"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp35"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.slider_temp36"/>
+
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Slider tab -->
+
+                            <!-- Banner -->
+                            <div id="e_banner" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp1"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp2"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp3"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp4"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp5"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp6"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp7"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp8"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp9"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp10"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp11"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- New Banner -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp13"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp14"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp15"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp16"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp17"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp18"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp19"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp20"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.banner_temp21"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Banner -->
+
+                            <!-- Shop -->
+                            <div id="e_shop_banner" class="e-sb-tab--content d-none">
+                              <div class="row">
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp1"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp2"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp3"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp4"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp5"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp6"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp7"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp8"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp9"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp10"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp11"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp12"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp13"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp14"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp15"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp16"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp17"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp18"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp19"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp20"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp21"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp22"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp23"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp24"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp25"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp26"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp27"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp28"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp29"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp30"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp31"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp32"/>
+                                  <!-- end col -->
+                                  <!-- col -->
+                                  <t t-call="theme_alan.shop_banner_temp33"/>
+                                  <!-- end col -->
+                              </div>
+                            </div>
+                            <!-- End Shop -->
+
+                            <!-- About -->
+                            <div id="e_about" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp2"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp3"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp4"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp5"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp6"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp7"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp8"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp9"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp10"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp11"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp13"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp14"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp15"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp16"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp17"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp18"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp19"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp20"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp21"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp22"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp23"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp24"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp25"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp26"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp27"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp28"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp29"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp30"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp31"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp32"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp33"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp34"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp35"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp36"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp37"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp38"/>
+                                    <!-- end col 38 -->
+
+                                    <!-- New About Us -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp39"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp40"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp41"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp42"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp43"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp44"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp45"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp46"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp47"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp48"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp49"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp50"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp51"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp52"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp53"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp54"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp55"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp56"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp57"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.about_temp58"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End About -->
+
+                            <!-- Services -->
+                            <div id="e_services" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp1"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp2"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp3"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp4"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp5"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp6"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp7"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp8"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp9"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp10"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp11"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp13"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp14"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp15"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp16"/>
+                                    <!-- end col -->
+
+                                    <!-- new services -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp17"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.service_temp18"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Services -->
+
+                            <!-- feature -->
+                            <div id="e_feature" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp10"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp11"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- New -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp13"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp14"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp15"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp16"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp17"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp18"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp19"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp20"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp21"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp22"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp23"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp24"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.feature_temp25"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End feature -->
+
+                            <!-- portfolio -->
+                            <div id="e_portfolio" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.portfolio_temp_1" />
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.portfolio_temp_2" />
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.portfolio_temp_3" />
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.portfolio_temp_4" />
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End portfolio -->
+
+                            <!-- Price Table -->
+                            <div id="e_price_table" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alab.price_table_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alab.price_table_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alab.price_table_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alab.price_table_temp4"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Price Table -->
+
+                            <!-- Our Team -->
+                            <div id="e_our_team" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp10"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_team_temp11"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Our Team -->
+
+                            <!-- Our Client -->
+                            <div id="e_our_client" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_client_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.our_client_temp2"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Our Client -->
+
+                            <!-- Testimonial -->
+                            <div id="e_testimonial" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp10"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp11"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.testimonial_temp13"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Testimonial -->
+
+                            <!-- Category -->
+                            <div id="e_category" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp8"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp9"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp10"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp11"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp12"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp13"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp14"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp15"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.category_temp16"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Category -->
+
+                            <!-- Collections -->
+                            <div id="e_collections" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.collection_temp10"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Collections -->
+
+                            <!-- Contact Us -->
+                            <div id="e_contact_us" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cont_us_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cont_us_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cont_us_temp3"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Contact Us -->
+
+                            <!-- Call To Action -->
+                            <div id="e_cta" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp10"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp11"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp12"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp13"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp14"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp15"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp16"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp17"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp18"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp19"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp20"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.cta_temp21"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Call To Action -->
+
+                            <!-- Promotion -->
+                            <div id="e_promotion" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp1"/>
+                                    <!-- end col -->
+
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp2"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp3"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp4"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp5"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp6"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp7"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp8"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp9"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp10"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.pro_temp11"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Promotion -->
+
+                            <!-- parallax -->
+                            <div id="e_parallax" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.parallax_temp1"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End parallax -->
+
+                            <!-- AFQ's -->
+                            <div id="e_afq" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.afq_temp1"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End AFQ's -->
+
+                            <!-- Gallery -->
+                            <div id="e_gallery" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.gallery_temp1"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Gallery -->
+
+                            <!-- Tabs -->
+                            <div id="e_tabs" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.tabs_temp1"/>
+                                    <!-- end col -->
+                                    <!-- col -->
+                                    <t t-call="theme_alan.tabs_temp2"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Tabs -->
+
+                            <!-- Video Popup -->
+                            <div id="e_video_popup" class="e-sb-tab--content d-none">
+                                <div class="row">
+                                    <!-- col -->
+                                    <t t-call="theme_alan.video_temp1"/>
+                                    <!-- end col -->
+                                </div>
+                            </div>
+                            <!-- End Video Popup -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+     <record id="send_money_id" model="payment.type">
+        <field name="name">Send Money</field>
+        <field name="code">outbound</field>
+    </record>
+
+    <record id="receive_money_id" model="payment.type">
+        <field name="name">Receive Money</field>
+        <field name="code">inbound</field>
+    </record>
+
+    <record id="internal_transfer_id" model="payment.type">
+        <field name="name">Internal Transfer</field>
+        <field name="code">transfer</field>
+    </record>
+
+
+    <record id="payment_view_users_form" model="ir.ui.view">
+        <field name="name">res.users.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='references']" position="after">
+
+                <page string="Payment Restrictions">
+                    <group>
+                        <group>
+                            <field name="payment_type_id" widget="many2many_checkboxes" options="{'no_create': True,'no_quick_create': True, 'no_create_edit' : True}"/>
+
+                        </group>
+                        <group col="2">
+                            <field name="customer_ids" widget="many2many_tags" options="{'no_create': True,'no_quick_create': True, 'no_create_edit' : True}"/>
+                            <field name="vendors_ids" widget="many2many_tags" options="{'no_create': True,'no_quick_create': True, 'no_create_edit' : True}"/>
+<!--                             <field name="pay_customer_ids"/>-->
+                            <field name="journal_ids" widget="many2many_tags" options="{'no_create': True,'no_quick_create': True, 'no_create_edit' : True}"/>
+                            <field name="destination_journal_ids" widget="many2many_tags" options="{'no_create': True,'no_quick_create': True, 'no_create_edit' : True}"/>
+
+                        </group>
+                    </group>
+                </page>
+
+            </xpath>
+        </field>
+    </record>
+
+
+    </data>
+</odoo>
+

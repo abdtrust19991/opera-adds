@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--  Product Slider Layout-->
+    <template id="alan_slider_type_one_template" name="Slider Layout 1">
+        <section class="as-product-slider-snippet as-product-slider-style-1" t-if="collections">
+            <div class="container">
+                <!-- Display Product Collecions -->
+                <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title ">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <!-- Owl carousel -->
+                        <!-- Product data -->
+                        <div class="as-product-carousel owl-carousel">
+                            <!-- Loop Start -->
+                                <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                                <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="as-product-style-1" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination"
+                                           t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info"
+                                           t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant"
+                                           t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token"
+                                               t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id"
+                                               t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id"
+                                               name="product_template_id"
+                                               t-att-value="product.id"/>
+                                            <div class="as-product-thumb">
+                                            <t t-if="for_preview == 'true'">
+                                                <div class="as-ribbon-wrpa">
+                                                    <div class="ribbon-style-1">
+                                                        <span t-attf-style="background-color:blue; color:white">
+                                                            Label
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                            </t>
+                                            <t t-else="">
+                                                <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                    <t t-if="product.pro_label_line_ids">
+                                                        <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                            <t t-if="labels.website_id.id == website.id">
+                                                                <t t-call="atharva_theme_base.as_label_layout"/>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                                <t t-if="for_preview == 'true'">
+                                                    <a class="asp-img">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+                                                    <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+
+                                                <div class="as-btn-action">
+                                                    <t t-if="pro_wishlist == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button type="button" role="button" class="btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                    <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button type="button" role="button" class="btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                    <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                    <t t-if="pro_compare == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                                <a class="btn o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="btn d-none d-md-inline-block o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="as-product-info">
+                                                <!-- Start Product Rating -->
+                                                <t t-if="pro_ratting == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                                <div class="prod_rating">
+                                                                    <t t-set="curr_rate" t-value="0" />
+                                                                    <t t-set="half_flag" t-value="0" />
+                                                                    <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                        <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                        <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                            <i class="fa fa-star" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                                <i class="fa fa-star-half-o" />
+                                                                                <t t-set="half_flag" t-value="1" />
+                                                                            </t>
+                                                                            <t t-else="">
+                                                                                <i class="fa fa-star-o" />
+                                                                            </t>
+                                                                        </t>
+                                                                    </t>
+                                                                    <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                             </div>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.as_average_rating').active">
+                                                                <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                                <div class="prod_rating">
+                                                                    <t t-set="curr_rate" t-value="0" />
+                                                                    <t t-set="half_flag" t-value="0" />
+                                                                    <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                        <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                        <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                            <i class="fa fa-star" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                                <i class="fa fa-star-half-o" />
+                                                                                <t t-set="half_flag" t-value="1" />
+                                                                            </t>
+                                                                            <t t-else="">
+                                                                                <i class="fa fa-star-o" />
+                                                                            </t>
+                                                                        </t>
+                                                                    </t>
+                                                                    <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                                </div>
+                                                            </t>
+                                                        </t>
+                                                </t>
+                                                <!-- End Product Rating -->
+
+                                                <div class="as-product-title">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                                <div class="as-product-action">
+                                                    <!-- Button here -->
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+                                                    <t t-if="add_to_cart == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#" role="button" class="as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"/> <span>Add to Cart</span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#" role="button" class="as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"/> <span>Add to Cart</span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                    <t t-if="quick_view == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                            title="Quick View"
+                                                            class="o_quick_view"
+                                                            t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye" /> <span>Quick View</span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                title="Quick View"
+                                                                class="o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye" /> <span>Quick View</span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                    </form>
+                                </div>
+                                </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="alan_slider_type_two_template" name="Slider Layout 5">
+        <section class="as-product-slider-snippet as-product-slider-style-5 " t-if="collections">
+            <div class="container">
+                 <!-- Display Product Collecions -->
+                 <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <!-- Owl carousel -->
+                        <!-- Product data -->
+                        <div class="as-product-carousel owl-carousel">
+                            <!-- Loop Start -->
+                            <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                            <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="as-product-style-5" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination"
+                                           t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info"
+                                           t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant"
+                                           t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token"
+                                               t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id"
+                                               t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id"
+                                               name="product_template_id"
+                                               t-att-value="product.id"/>
+                                            <div class="as-product-thumb">
+                                                <t t-if="for_preview == 'true'">
+                                                    <div class="as-ribbon-wrpa">
+                                                       <div class="ribbon-style-1">
+                                                            <span t-attf-style="background-color:blue; color:white">
+                                                                Label
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                        <t t-if="product.pro_label_line_ids">
+                                                            <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                                <t t-if="labels.website_id.id == website.id">
+                                                                    <t t-call="atharva_theme_base.as_label_layout"/>
+                                                                </t>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+
+                                                <t t-if="for_preview == 'true'">
+                                                    <a class="asp-img">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+                                                    <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+
+                                                <div class="as-btn-action">
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+                                                    <t t-if="add_to_cart == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#"
+                                                                role="button"
+                                                                class="btn as-btn-cart a-submit"
+                                                                aria-label="Shopping cart"
+                                                                title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"/>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#"
+                                                                    role="button"
+                                                                    class="btn as-btn-cart a-submit"
+                                                                    aria-label="Shopping cart"
+                                                                    title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"/>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+
+                                                    </t>
+                                                    <t t-if="quick_view == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                                title="Quick View"
+                                                                class="btn o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye" />
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                    title="Quick View"
+                                                                    class="btn o_quick_view"
+                                                                    t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye" />
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                    <t t-if="pro_wishlist == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                            <button
+                                                                type="button"
+                                                                role="button"
+                                                                class="btn o_add_wishlist"
+                                                                t-att-disabled="in_wish or None"
+                                                                title="Add to Wishlist"
+                                                                t-att-data-product-template-id="product.id"
+                                                                t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                data-action="o_wishlist">
+                                                                <span class="fa fa-heart-o" role="img" aria-label="Add to wishlist"></span>
+                                                            </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button
+                                                                    type="button"
+                                                                    role="button"
+                                                                    class="btn o_add_wishlist"
+                                                                    t-att-disabled="in_wish or None"
+                                                                    title="Add to Wishlist"
+                                                                    t-att-data-product-template-id="product.id"
+                                                                    t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                    data-action="o_wishlist">
+                                                                    <span class="fa fa-heart-o" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                    <t t-if="pro_compare == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a class="btn o_add_compare"
+                                                                title="Compare"
+                                                                t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                data-action="o_comparelist">
+                                                                <span class="fa fa-balance-scale"></span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="d-none d-md-inline-block btn o_add_compare"
+                                                                    title="Compare"
+                                                                    t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                    data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="as-product-info">
+                                                <div class="as-product-title">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+                                                <!-- Start Product Rating -->
+                                                <t t-if="pro_ratting == 'true'">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                        <div class="prod_rating">
+                                                            <t t-set="curr_rate" t-value="0" />
+                                                            <t t-set="half_flag" t-value="0" />
+                                                            <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                    <i class="fa fa-star" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                        <i class="fa fa-star-half-o" />
+                                                                        <t t-set="half_flag" t-value="1" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <i class="fa fa-star-o" />
+                                                                    </t>
+                                                                </t>
+                                                            </t>
+                                                            <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                        </div>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <t t-if="request.website.viewref('theme_alan.as_average_rating').active">
+                                                            <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                            <div class="prod_rating">
+                                                                <t t-set="curr_rate" t-value="0" />
+                                                                <t t-set="half_flag" t-value="0" />
+                                                                <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                    <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                    <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                        <i class="fa fa-star" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                            <i class="fa fa-star-half-o" />
+                                                                            <t t-set="half_flag" t-value="1" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <i class="fa fa-star-o" />
+                                                                        </t>
+                                                                    </t>
+                                                                </t>
+                                                                <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                            </div>
+                                                        </t>
+
+                                                    </t>
+
+                                                </t>
+                                                <!-- End Product Rating -->
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </form>
+                                </div>
+                            </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="alan_slider_type_three_template" name="Slider Layout 6">
+        <section class="as-product-slider-snippet as-product-slider-style-6 " t-if="collections">
+            <div class="container">
+                 <!-- Display Product Collecions -->
+                 <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <!-- Owl carousel -->
+                        <!-- Product data -->
+                        <div class="as-product-carousel owl-carousel">
+                            <!-- Loop Start -->
+                            <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                            <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="as-product-style-6" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination"
+                                           t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info"
+                                           t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant"
+                                           t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token"
+                                               t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id"
+                                               t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id"
+                                               name="product_template_id"
+                                               t-att-value="product.id"/>
+                                            <div class="as-product-thumb">
+
+                                            <t t-if="for_preview == 'true'">
+                                                <div class="as-ribbon-wrpa">
+                                                    <div class="ribbon-style-1">
+                                                        <span t-attf-style="background-color:blue; color:white">
+                                                            Label
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                            </t>
+                                            <t t-else="">
+                                                <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                    <t t-if="product.pro_label_line_ids">
+                                                        <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                            <t t-if="labels.website_id.id == website.id">
+                                                                <t t-call="atharva_theme_base.as_label_layout"/>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                            <t t-if="for_preview == 'true'">
+                                                <a class="asp-img">
+                                                    <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                </a>
+                                            </t>
+                                            <t t-else="">
+                                                <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                    <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                </a>
+                                            </t>
+
+                                                <div class="as-btn-action">
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+                                                    <t t-if="pro_wishlist == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                            <button
+                                                                type="button"
+                                                                role="button"
+                                                                class="btn o_add_wishlist"
+                                                                t-att-disabled="in_wish or None"
+                                                                title="Add to Wishlist"
+                                                                t-att-data-product-template-id="product.id"
+                                                                t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                data-action="o_wishlist">
+                                                                <span class="fa fa-heart-o" role="img" aria-label="Add to wishlist"></span>
+                                                            </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button
+                                                                    type="button"
+                                                                    role="button"
+                                                                    class="btn o_add_wishlist"
+                                                                    t-att-disabled="in_wish or None"
+                                                                    title="Add to Wishlist"
+                                                                    t-att-data-product-template-id="product.id"
+                                                                    t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                    data-action="o_wishlist">
+                                                                    <span class="fa fa-heart-o" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="pro_compare == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a class="btn o_add_compare"
+                                                                title="Compare"
+                                                                t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                data-action="o_comparelist">
+                                                                <span class="fa fa-balance-scale"></span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="d-none d-md-inline-block btn o_add_compare"
+                                                                    title="Compare"
+                                                                    t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                    data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="quick_view == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                                title="Quick View"
+                                                                class="btn o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye" />
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                    title="Quick View"
+                                                                    class="btn o_quick_view"
+                                                                    t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye" />
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="as-product-info">
+                                                <div class="as-product-title">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+                                                <!-- Start Product Rating -->
+                                                <t t-if="pro_ratting == 'true'">
+
+                                                    <t t-if="for_preview == 'true'">
+                                                        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                        <div class="prod_rating">
+                                                            <t t-set="curr_rate" t-value="0" />
+                                                            <t t-set="half_flag" t-value="0" />
+                                                            <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                    <i class="fa fa-star" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                        <i class="fa fa-star-half-o" />
+                                                                        <t t-set="half_flag" t-value="1" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <i class="fa fa-star-o" />
+                                                                    </t>
+                                                                </t>
+                                                            </t>
+                                                            <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                        </div>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <t t-if="request.website.viewref('theme_alan.as_average_rating').active">
+                                                            <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                            <div class="prod_rating">
+                                                                <t t-set="curr_rate" t-value="0" />
+                                                                <t t-set="half_flag" t-value="0" />
+                                                                <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                    <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                    <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                        <i class="fa fa-star" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                            <i class="fa fa-star-half-o" />
+                                                                            <t t-set="half_flag" t-value="1" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <i class="fa fa-star-o" />
+                                                                        </t>
+                                                                    </t>
+                                                                </t>
+                                                                <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                            </div>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <!-- End Product Rating -->
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+
+                                                <t t-if="add_to_cart == 'true'">
+                                                    <div class="as-product-cart">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#"
+                                                                role="button"
+                                                                class="btn as-btn-cart"
+                                                                aria-label="Shopping cart"
+                                                                title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"/>
+                                                                Add to cart
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#"
+                                                                    role="button"
+                                                                    class="btn as-btn-cart a-submit"
+                                                                    aria-label="Shopping cart"
+                                                                    title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"/>
+                                                                    Add to cart
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                    </form>
+                                </div>
+                            </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="alan_slider_type_four_template" name="Slider Layout 7">
+        <section class="as-product-slider-snippet as-product-slider-style-7 " t-if="collections">
+            <div class="container">
+                 <!-- Display Product Collecions -->
+                 <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <!-- Owl carousel -->
+                        <!-- Product data -->
+                        <div class="as-product-carousel owl-carousel">
+                            <!-- Loop Start -->
+                            <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                            <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="as-product-style-7" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination"
+                                           t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info"
+                                           t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant"
+                                           t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token"
+                                               t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id"
+                                               t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id"
+                                               name="product_template_id"
+                                               t-att-value="product.id"/>
+                                            <div class="as-product-thumb">
+
+                                                <t t-if="for_preview == 'true'">
+                                                    <div class="as-ribbon-wrpa">
+                                                        <div class="ribbon-style-1">
+                                                            <span t-attf-style="background-color:blue; color:white">
+                                                                Label
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                        <t t-if="product.pro_label_line_ids">
+                                                            <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                                <t t-if="labels.website_id.id == website.id">
+                                                                    <t t-call="atharva_theme_base.as_label_layout"/>
+                                                                </t>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <t t-if="for_preview == 'true'">
+                                                    <a class="asp-img">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+                                                    <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+
+                                                <div class="as-btn-action">
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+                                                    <t t-if="add_to_cart == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#"
+                                                                role="button"
+                                                                class="btn as-btn-cart a-submit"
+                                                                aria-label="Shopping cart"
+                                                                title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"/>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#"
+                                                                    role="button"
+                                                                    class="btn as-btn-cart a-submit"
+                                                                    aria-label="Shopping cart"
+                                                                    title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"/>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="quick_view == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                                title="Quick View"
+                                                                class="btn o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye" />
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                    title="Quick View"
+                                                                    class="btn o_quick_view"
+                                                                    t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye" />
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="pro_wishlist == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                            <button
+                                                                type="button"
+                                                                role="button"
+                                                                class="btn o_add_wishlist"
+                                                                t-att-disabled="in_wish or None"
+                                                                title="Add to Wishlist"
+                                                                t-att-data-product-template-id="product.id"
+                                                                t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                data-action="o_wishlist">
+                                                                <span class="fa fa-heart-o" role="img" aria-label="Add to wishlist"></span>
+                                                            </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button
+                                                                    type="button"
+                                                                    role="button"
+                                                                    class="btn o_add_wishlist"
+                                                                    t-att-disabled="in_wish or None"
+                                                                    title="Add to Wishlist"
+                                                                    t-att-data-product-template-id="product.id"
+                                                                    t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                    data-action="o_wishlist">
+                                                                    <span class="fa fa-heart-o" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+
+                                                    </t>
+
+                                                    <t t-if="pro_compare == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a class="btn o_add_compare"
+                                                                title="Compare"
+                                                                t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                data-action="o_comparelist">
+                                                                <span class="fa fa-balance-scale"></span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="d-none d-md-inline-block btn o_add_compare"
+                                                                    title="Compare"
+                                                                    t-att-data-product-product-id="product.product_variant_ids[0].id"
+                                                                    data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="as-product-info">
+                                                <div class="as-product-title">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+                                                <!-- Start Product Rating -->
+                                                <t t-if="pro_ratting == 'true'">
+
+                                                    <t t-if="for_preview == 'true'">
+                                                        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                        <div class="prod_rating">
+                                                            <t t-set="curr_rate" t-value="0" />
+                                                            <t t-set="half_flag" t-value="0" />
+                                                            <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                    <i class="fa fa-star" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                        <i class="fa fa-star-half-o" />
+                                                                        <t t-set="half_flag" t-value="1" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <i class="fa fa-star-o" />
+                                                                    </t>
+                                                                </t>
+                                                            </t>
+                                                            <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                        </div>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <t t-if="request.website.viewref('theme_alan.as_average_rating').active">
+                                                            <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                            <div class="prod_rating">
+                                                                <t t-set="curr_rate" t-value="0" />
+                                                                <t t-set="half_flag" t-value="0" />
+                                                                <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                    <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                    <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                        <i class="fa fa-star" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                            <i class="fa fa-star-half-o" />
+                                                                            <t t-set="half_flag" t-value="1" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <i class="fa fa-star-o" />
+                                                                        </t>
+                                                                    </t>
+                                                                </t>
+                                                                <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                            </div>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <!-- End Product Rating -->
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </form>
+                                </div>
+                            </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--
+    ========================
+    ** Product Grid Layout
+    ========================
+    -->
+
+    <template id="alan_slider_type_five_template" name="Grid Layout 2">
+        <section class="as-product-slider-snippet as-product-slider-style-2" t-if="collections">
+            <div class="container">
+                <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <div class="row">
+                            <!-- Loop start -->
+                            <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                            <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="col-md-6 col-lg-4 col-xl-3" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination" t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant" t-value="product.env['product.product'].sudo().browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id"/>
+                                        <div class="as-product-style-2">
+                                            <div class="as-product-thumb">
+
+                                            <t t-if="for_preview == 'true'">
+                                                <div class="as-ribbon-wrpa">
+                                                    <div class="ribbon-style-1">
+                                                        <span t-attf-style="background-color:blue; color:white">
+                                                            Label
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                            </t>
+                                            <t t-else="">
+                                                <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                    <t t-if="product.pro_label_line_ids">
+                                                        <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                            <t t-if="labels.website_id.id == website.id">
+                                                                <t t-call="atharva_theme_base.as_label_layout"/>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                                <t t-if="for_preview == 'true'">
+                                                    <a class="asp-img">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+                                                    <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+
+                                            </div>
+                                            <div class="as-product-info">
+                                                <div class="as-product-title">
+                                                <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                                <div class="as-cart-action">
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+                                                    <t t-if="add_to_cart == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#" role="button" class="btn as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#" role="button" class="btn as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="quick_view == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                            title="Quick View"
+                                                            class="btn o_quick_view"
+                                                            t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                title="Quick View"
+                                                                class="btn o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                    <t t-if="pro_wishlist == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                            <button type="button" role="button" class="btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                            </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button type="button" role="button" class="btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                    <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="pro_compare == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a class="btn o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                <span class="fa fa-balance-scale"></span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="btn d-none d-md-inline-block o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="alan_slider_type_six_template" name="Grid Layout 3">
+        <section class="as-product-slider-snippet as-product-slider-style-3" t-if="collections">
+            <div class="container">
+                <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <div class="row no-gutters">
+                            <!-- Loop start -->
+                            <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                            <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="col-6 col-md-4 col-lg-3" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination" t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id"/>
+                                        <div class="as-product-style-3">
+                                            <div class="as-product-thumb">
+                                            <t t-if="for_preview == 'true'">
+                                                <div class="as-ribbon-wrpa">
+                                                    <div class="ribbon-style-1">
+                                                        <span t-attf-style="background-color:blue; color:white">
+                                                            Label
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                            </t>
+                                            <t t-else="">
+                                                <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                    <t t-if="product.pro_label_line_ids">
+                                                        <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                            <t t-if="labels.website_id.id == website.id">
+                                                                <t t-call="atharva_theme_base.as_label_layout"/>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                                <t t-if="for_preview == 'true'">
+                                                    <a class="asp-img">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+                                                <t t-else="">
+                                                    <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                        <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                    </a>
+                                                </t>
+
+                                                <div class="as-cart-action">
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+
+                                                    <t t-if="add_to_cart == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#" role="button" class="as-p-btn as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"></i>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#" role="button" class="as-p-btn as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"></i>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="quick_view == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                            title="Quick View"
+                                                            class="as-p-btn o_quick_view"
+                                                            t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                title="Quick View"
+                                                                class="as-p-btn o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+
+                                                    </t>
+
+                                                    <t t-if="pro_wishlist == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                            <button type="button" role="button" class="as-p-btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                            </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button type="button" role="button" class="as-p-btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                    <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+
+                                                    </t>
+
+                                                    <t t-if="pro_compare == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a class="as-p-btn o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                <span class="fa fa-balance-scale"></span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="as-p-btn d-none d-md-inline-block o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="as-product-info">
+                                                <div class="as-product-title">
+                                                <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+                                                <!-- Start Product Rating -->
+                                                <t t-if="pro_ratting == 'true'">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                        <div class="prod_rating">
+                                                            <t t-set="curr_rate" t-value="0" />
+                                                            <t t-set="half_flag" t-value="0" />
+                                                            <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                    <i class="fa fa-star" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                        <i class="fa fa-star-half-o" />
+                                                                        <t t-set="half_flag" t-value="1" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <i class="fa fa-star-o" />
+                                                                    </t>
+                                                                </t>
+                                                            </t>
+                                                            <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                        </div>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <t t-if="request.website.viewref('theme_alan.as_average_rating').active">
+                                                            <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                            <div class="prod_rating">
+                                                                <t t-set="curr_rate" t-value="0" />
+                                                                <t t-set="half_flag" t-value="0" />
+                                                                <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                    <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                    <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                        <i class="fa fa-star" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                            <i class="fa fa-star-half-o" />
+                                                                            <t t-set="half_flag" t-value="1" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <i class="fa fa-star-o" />
+                                                                        </t>
+                                                                    </t>
+                                                                </t>
+                                                                <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                            </div>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <!-- End Product Rating -->
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="alan_slider_type_seven_template" name="Grid Layout 4">
+        <section class="as-product-slider-snippet as-product-slider-style-4" t-if="collections">
+            <div class="container">
+                 <t t-if="check_default and len(col_list) &gt; 1">
+                    <div class="as-product-tab-filter">
+                        <ul>
+                            <t t-foreach="col_list"
+                                t-as="val_id" t-if="len(col_list) > 1">
+                                <t t-if="val_id.active">
+                                    <li class="as_collection_change" t-att-data-id="val_id.id">
+                                        <t t-esc="val_id.name"/>
+                                    </li>
+                                </t>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+                <t t-else="">
+                    <div class="as-product-tab-title">
+                        <h4>
+                            <t t-foreach="col_list" t-as="val_id">
+                                <t t-if="val_id.active">
+                                    <t t-esc="val_id.name"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+                </t>
+
+                <div class="as_data_container as-product-tab-content">
+                    <div class="as_collection_data as-product-tab" t-att-filter-id="active_collection_data">
+                        <div class="row">
+                            <!-- Loop start -->
+                            <t t-set="col_obj" t-value="request.env['slider_temp.collection.configure'].browse(int(active_collection_data))" />
+                            <t t-foreach="col_obj.product_id.product_id" t-as="product">
+                                <div class="col-6 col-md-4 col-lg-3" t-if="product and product.sudo().sale_ok == True and product.sudo().is_published == True">
+                                    <form action="/shop/cart/update" method="post">
+                                        <t t-set="combination" t-value="product.sudo()._get_first_possible_combination()"/>
+                                        <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                                        <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+                                        <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id"/>
+                                        <div class="as-product-style-4">
+                                            <div class="as-product-thumb">
+                                            <t t-if="for_preview == 'true'">
+                                                <div class="as-ribbon-wrpa">
+                                                    <div class="ribbon-style-1">
+                                                        <span t-attf-style="background-color:blue; color:white">
+                                                            Label
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- <t t-if="product.pro_label_line_ids">
+                                                    <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                        <t t-if="labels.website_id.id == website.id">
+                                                            <t t-call="atharva_theme_base.as_label_layout"/>
+                                                        </t>
+                                                    </t>
+                                                </t> -->
+                                            </t>
+                                            <t t-else="">
+                                                <t t-if="request.website.viewref('theme_alan.as_shop_product_label').active and pro_ribbon == 'true'">
+                                                    <t t-if="product.pro_label_line_ids">
+                                                        <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                                                            <t t-if="labels.website_id.id == website.id">
+                                                                <t t-call="atharva_theme_base.as_label_layout"/>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </t>
+                                             <t t-if="for_preview == 'true'">
+                                                <a class="asp-img">
+                                                    <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                </a>
+                                            </t>
+                                            <t t-else="">
+                                                <a class="asp-img" t-attf-href="/shop/product/#{slug(product)}">
+                                                    <img t-att-src="website.image_url(product, 'image_512')" title="" alt="" />
+                                                </a>
+                                            </t>
+                                                <div class="as-cart-action">
+                                                    <t t-if="pro_ribbon == 'true'">
+                                                    </t>
+                                                    <t t-if="pro_wishlist == 'true'">
+
+                                                        <t t-if="for_preview == 'true'">
+                                                            <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                            <button type="button" role="button" class="as-p-btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                            </button>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active and product.product_variant_ids">
+                                                                <t t-set="in_wish" t-value="product._is_in_wishlist()" />
+                                                                <button type="button" role="button" class="as-p-btn o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_wishlist">
+                                                                    <span class="fa fa-heart" role="img" aria-label="Add to wishlist"></span>
+                                                                </button>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                            <div class="as-product-info">
+                                                <div class="as-product-action">
+                                                    <t t-if="quick_view == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a type="button"
+                                                            title="Quick View"
+                                                            class="as-p-btn o_quick_view"
+                                                            t-att-data-product_template_id="product.id">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('theme_alan.quick_view').active and product.product_variant_ids">
+                                                                <a type="button"
+                                                                title="Quick View"
+                                                                class="as-p-btn o_quick_view"
+                                                                t-att-data-product_template_id="product.id">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+
+                                                    </t>
+
+                                                    <t t-if="add_to_cart == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a href="#" role="button" class="as-p-btn as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                <i class="fa fa-shopping-cart"></i> <span>Add to cart</span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale.products_add_to_cart').active and product.product_variant_ids">
+                                                                <a href="#" role="button" class="as-p-btn as-btn-cart a-submit" aria-label="Shopping cart" title="Shopping cart">
+                                                                    <i class="fa fa-shopping-cart"></i> <span>Add to cart</span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+
+                                                    <t t-if="pro_compare == 'true'">
+                                                        <t t-if="for_preview == 'true'">
+                                                            <a class="as-p-btn o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                <span class="fa fa-balance-scale"></span>
+                                                            </a>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-if="request.website.viewref('website_sale_comparison.add_to_compare').active and product.product_variant_ids">
+                                                                <a class="as-p-btn d-none d-md-inline-block o_add_compare" title="Compare" t-att-data-product-product-id="product.product_variant_ids[0].id" data-action="o_comparelist">
+                                                                    <span class="fa fa-balance-scale"></span>
+                                                                </a>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </div>
+                                                <div class="as-product-title">
+                                                <t t-if="for_preview == 'true'">
+                                                        <a href="#">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <a t-attf-href="/shop/product/#{slug(product)}">
+                                                            <t t-esc="product.name" />
+                                                        </a>
+
+                                                    </t>
+                                                </div>
+                                                <!-- Start Product Rating -->
+                                                <t t-if="pro_ratting == 'true'">
+                                                    <t t-if="for_preview == 'true'">
+                                                        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                        <div class="prod_rating">
+                                                            <t t-set="curr_rate" t-value="0" />
+                                                            <t t-set="half_flag" t-value="0" />
+                                                            <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                    <i class="fa fa-star" />
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                        <i class="fa fa-star-half-o" />
+                                                                        <t t-set="half_flag" t-value="1" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <i class="fa fa-star-o" />
+                                                                    </t>
+                                                                </t>
+                                                            </t>
+                                                            <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                        </div>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <t t-if="request.website.viewref('theme_alan.as_average_rating').active">
+                                                            <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+                                                            <div class="prod_rating">
+                                                                <t t-set="curr_rate" t-value="0" />
+                                                                <t t-set="half_flag" t-value="0" />
+                                                                <t t-foreach="range(0, 5)" t-as="each_rate">
+                                                                    <t t-set="curr_rate" t-value="curr_rate + 1" />
+                                                                    <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                                                                        <i class="fa fa-star" />
+                                                                    </t>
+                                                                    <t t-else="">
+                                                                        <t t-if="rating_avg_val % 1 == 0.5 and half_flag == 0">
+                                                                            <i class="fa fa-star-half-o" />
+                                                                            <t t-set="half_flag" t-value="1" />
+                                                                        </t>
+                                                                        <t t-else="">
+                                                                            <i class="fa fa-star-o" />
+                                                                        </t>
+                                                                    </t>
+                                                                </t>
+                                                                <span t-esc="str(rating_avg_val) + ' / 5'" />
+                                                            </div>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <!-- End Product Rating -->
+                                                <div class="as-product-price">
+                                                    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                                                        <b>
+                                                            <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                            <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                                            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </t>
+                            <!-- Loop End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

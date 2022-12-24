@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+<!--        year   -->
+        <record id="config_year_form_view" model="ir.ui.view">
+            <field name="name">year.code.form</field>
+            <field name="model">year.code</field>
+            <field name="arch" type="xml">
+                <form string="Create Year">
+                    <sheet>
+                        <group>
+                            <field name="year"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="config_year_tree_view" model="ir.ui.view">
+            <field name="name">year.code.form</field>
+            <field name="model">year.code</field>
+            <field name="arch" type="xml">
+                <tree string="Year">
+                    <field name="year"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+        <act_window id='action_year_form_view_id' res_model='year.code'
+                       name='Years' view_mode='tree,form'
+                       target='current' context='{}'
+                       domain='[]' limit='80' />
+        <menuitem id="menu_your_id" name="Year" parent="purchase.menu_product_in_config_purchase" groups="purchase.group_purchase_manager" action="action_year_form_view_id" sequence="5"/>
+
+
+
+
+    </data>
+</odoo>

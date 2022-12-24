@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="product_share_links" name="Share Links" inherit_id="website_sale.product" active="True" customize_show="True">
+    <xpath expr="//div[hasclass('js_product')]" position="inside">
+        <t t-call="atharva_theme_base.product_share_st"/>
+    </xpath>
+</template>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="multi_image_default" name="Multi Image Default" inherit_id="website.assets_frontend" active="True" priority="20">
+        <xpath expr="." position="inside"/>
+    </template>
+
+    <template id="multi_image_vertical_slider" name="Multi Image Vertical Slider" inherit_id="website.assets_frontend" active="False" priority="20">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/theme_alan/static/src/js/vertical_slider.js"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/vertical_slider.scss"/>
+        </xpath>
+    </template>
+
+    <template id="multi_image_horizontal_slider" name="Multi Image Horizontal Slider" inherit_id="website.assets_frontend" active="False" priority="20">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/theme_alan/static/src/js/horizontal_slider.js"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/scss/horizontal_slider.scss"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_options_multislider" name="Custom multi image slider" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='OptionsTab']//we-select[@data-variable='custom-buttom']" position="after">
+            <we-title>Multi Image Slider</we-title>
+            <we-select string="Multi Image Slider" data-variable="custom-multi-image-slider" data-no-preview="true">
+                <we-button title="Custom_multi_image_0" data-name="Custom_multi_image_opt_0" data-customize-website-views="theme_alan.multi_image_default" data-customize-website-variable="'Custom_multi_image_o'">Default</we-button>
+                <we-button title="Custom_multi_image_1" data-name="Custom_multi_image_opt_1" data-customize-website-views="theme_alan.multi_image_vertical_slider" data-customize-website-variable="'Custom_multi_image_1'">Vertical Slider</we-button>
+                <we-button title="Custom_multi_image_2" data-name="Custom_multi_image_opt_2" data-customize-website-views="theme_alan.multi_image_horizontal_slider" data-customize-website-variable="'Custom_multi_image_2'">Horizontal Slider</we-button>
+            </we-select>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,79 @@
+.as-latest-blog {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.seaction-head {
+	    text-align: center;
+		padding-bottom: 30px;
+		h2 {
+			margin: 0;
+			padding: 0 0 20px;
+			position: relative;
+			font-size: 25px;
+			font-weight: 600;
+			color: $as-dark;
+			&:after {
+				content: "";
+				width: 50px;
+				height: 3px;
+				background: $as-theme;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+	}
+	.section-post {
+		position: relative;
+		.section-post-media {
+			width: 100%;
+		    height: 260px;
+		    background-size: cover;
+		}
+		.section-post-body {
+			background: $as-white;
+			margin: -30px 22px 18px;
+			padding: 15px;
+			box-shadow: 0 0px 12px -3px rgba(7, 10, 25, 0.2);
+		}
+		.section-post-time {
+			font-size: 12px;
+		    margin: 10px 0 6px;
+		    color: $as-theme;
+		}
+		.section-post-title {
+			margin: 0 0 10px;
+			color: $as-dark;
+			font-weight: 600;
+			max-width: 100%;
+			display: inline-block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			vertical-align: top;
+			a {
+				color: $as-dark;
+			}
+		}
+		.section-post-excerpt {
+			min-height: 63px;
+			font-size: 14px;
+			margin-bottom: 20px;
+			display: -webkit-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+		.read-more {
+			font-size: 14px;
+			text-transform: uppercase;
+			color: $as-theme;
+			font-weight: 600;
+			&:hover {
+				color: $as-dark;
+			}
+		}
+	}
+}

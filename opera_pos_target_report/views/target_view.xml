@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pos_target_form_id" model="ir.ui.view">
+        <field name="name">pos.target.form</field>
+        <field name="model">pos.target</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" string="Target Name"/>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                        <div name="options_active" />
+                    </div>
+                    <group col="4">
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                    <group col="1">
+                        <field name="target_line_ids"  nolabel="1" widget="one2many_list" mode="tree" context="{'default_target_id':active_id}">
+                            <tree string="Target Lines" editable="bottom">
+                                <field name="pos_config_id"/>
+                                <field name="amount"/>
+                                <field name="start_date" invisible="1"/>
+                                <field name="end_date" invisible="1"/>
+                                <field name="target_id" invisible="1"/>
+                            </tree>
+                        </field>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+        <record id="pos_target_tree" model="ir.ui.view">
+            <field name="name">pos.target.tree</field>
+            <field name="model">pos.target</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_pos_target" model="ir.actions.act_window">
+            <field name="name">POS Target</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pos.target</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="menu_pos_target" name="POS Target" parent="point_of_sale.menu_point_config_product" action="action_pos_target" sequence="5"/>
+
+
+    </data>
+</odoo>

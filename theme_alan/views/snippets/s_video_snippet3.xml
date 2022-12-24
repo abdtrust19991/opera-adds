@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="video_snippet_box_03" name="Video Box 3">
+        <section class="bg-center bg-cover bg-no-repeat" style="background-image: url(/theme_alan/static/src/img/snippets/bg-28.jpg);">
+            <div class="container">
+                <div class="row justify-content-center min-vh-65 align-items-center section">
+                    <div class="col-lg-6 text-center">
+                        <div class="p-30px-b"><a class="video-btn white" href="#"><span></span></a></div>
+                        <h3 class="display-4 white-color font-w-600">START YOUR IMAGINATIONS</h3>
+                        <div class="white-color">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat lignia sum quate voloriam lab il maxima que ne voluptatur aut quo ea ipissimil molor sum facculpari omniatae conse voloruptur.</p>
+                        </div>
+                        <div class="p-10px-t">
+                            <a class="as-btn btn-lg as-btn-white my-2" href="#">About us</a>
+                            <a class="as-btn btn-lg as-btn-white my-2" href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

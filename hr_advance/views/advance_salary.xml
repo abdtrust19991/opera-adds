@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <data noupdate="1">
+        <record id="sequence_advance" model="ir.sequence">
+            <field name="name">Advance Salary</field>
+            <field name="code">adv.sel</field>
+            <field name="prefix">ADV/</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+     </data>
+    <data>
+
+        <record id="advance_salary_form_view" model="ir.ui.view">
+            <field name="name">advance.salary.form</field>
+            <field name="model">advance.salary</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <header>
+
+                        <button name="action_confirm" states="draft" type="object" string="Confirm" class="oe_highlight" groups="hr_advance.advance_salary_conformer,hr_advance.advance_salary_manager"/>
+                        <button name="action_cancel" states="draft" type="object" string="Cancel" class="oe_highlight" />
+                           <button name="%(hr_advance.actiom_pay_wizard)d" states="confirm" type="action" string="Payment" context="{'default_advance_id': active_id}" groups="hr_advance.advance_salary_manager" class="oe_highlight" />
+                           <button name="%(hr_advance.actiom_close_advance_wizard)d" type="action" string="Close Advance" context="{'default_advance_id': active_id}" class="oe_highlight" groups="hr_advance.advance_salary_manager" attrs="{'invisible': ['|',('on_salary','=',True),('state','!=','paid')]}"/>
+                           <field name="state" widget="statusbar" statusbar_visible="draft,confirm,paid,close,cancel"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box" attrs="{'invisible': [('count_journal', '=', 0)]}">
+                            <button class="oe_stat_button"
+                                 name="action_open_order" type="object" icon="fa-bars" >
+                                <field string="Journal Entries" name="count_journal" widget="statinfo"/>
+                            </button>
+<!--                            <button class="oe_stat_button"-->
+<!--                                 name="action_open_payment" type="object" icon="fa-bars" >-->
+<!--                                <field string="Payments" name="count_payment" widget="statinfo"/>-->
+<!--                            </button>-->
+                         </div>
+                            <div class="oe_title" attrs="{'invisible': [('name','=',False)]}">
+                                <label for="name" string="Number" class="oe_edit_only" />
+                                <h1>
+                                    <field name="name" readonly="1" />
+                                </h1>
+                            </div>
+                        <group col="4">
+
+                            <field name="employee_id" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="advance_type" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="create_date" readonly="1" attrs="{'invisible': [('create_date','=',False)]}"/>
+                            <field name="post_date" readonly="1"  attrs="{'invisible': [('post_date','=',False)]}"/>
+                            <field name="company_id" invisible="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="currency_id" invisible="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+
+                            <field name="amount" required="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            <field name="remaining"/>
+                            <field name="paid_amount"/>
+                            <field name="is_close" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="on_salary" attrs="{'readonly': [('state','!=','draft')]}"/>
+                        </group>
+                        <group col="4">
+                            <field name="num_install" attrs="{'invisible': [('on_salary','=',False)],'required': [('on_salary', '=', True)],'readonly': [('state','!=','draft')]}"/>
+                            <field name="install_value" attrs="{'invisible': [('on_salary','=',False)],'required': [('on_salary', '=', True)],'readonly': [('state','!=','draft')]}"/>
+                            <field name="due_date" attrs="{'invisible': [('on_salary','=',False)],'required': [('on_salary', '=', True)],'readonly': [('state','!=','draft')]}"/>
+                            <field name="payment_date" attrs="{'invisible': [('state','not in',['paid','close'])]}"/>
+                            <field name="close_date" attrs="{'invisible': [('state','!=','close')]}"/>
+                        </group>
+                        <group col="1" string="Installment Line" attrs="{'invisible': [('on_salary','=',False)]}">
+                            <field name="installment_ids" readonly="1" nolabel="1" widget="one2many_list" mode="tree,kanban">
+                                <tree string="Invoice Lines" editable="bottom">
+                                    <field name="amount"/>
+                                    <field name="due_date"/>
+                                    <field name="is_post"/>
+                                    <field name="advance_id" invisible="1"/>
+                                    <field name="employee_id" invisible="1"/>
+                                </tree>
+                            </field>
+
+                        </group>
+                    </sheet>
+                     <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+
+                </form>
+            </field>
+        </record>
+        <record id="advance_salary_tree_view" model="ir.ui.view">
+            <field name="name">advance.salary.tree</field>
+            <field name="model">advance.salary</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="advance_type"/>
+                    <field name="create_date"/>
+                    <field name="post_date"/>
+                    <field name="amount" sum="Total" />
+                    <field name="remaining" sum="Total"/>
+                    <field name="on_salary"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+        <record id="advance_salary_filter" model="ir.ui.view">
+        <field name="name">advance.salary.search</field>
+        <field name="model">advance.salary</field>
+        <field name="arch" type="xml">
+            <search string="Search Advance Salary">
+                <field name="name"/>
+<!--                <field name="employee_id"/>-->
+<!--                <field name="journal_id" />-->
+<!--                <filter string="State Draft" name="draft" domain="[('state','=','draft')]"/>-->
+<!--                <filter string="State Paid" name="paid" domain="[('state','=','paid')]"/>-->
+<!--                <filter string="State Close" name="close" domain="[('state','=','close')]"/>-->
+<!--                <filter string="State Confirm" name="open" domain="[('state','=','confirm')]"/>-->
+
+
+<!--                <separator/>-->
+
+<!--               <group expand="0" string="Group By">-->
+<!--                    <filter string="Employee"  context="{'group_by':'employee_id'}"/>-->
+<!--                    <filter string="Journal" context="{'group_by':'journal_id'}"/>-->
+<!--                    <filter string="State"  context="{'group_by':'state'}"/>-->
+
+<!--                </group>-->
+
+            </search>
+        </field>
+    </record>
+
+
+
+        <record id="advance_salary_action_id" model="ir.actions.act_window">
+            <field name="name">Advance Salary</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">advance.salary</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+        <record id="payment_advance_action_server" model="ir.actions.server">
+            <field name="name">Close Advances</field>
+            <field name="type">ir.actions.server</field>
+            <field name="model_id" ref="model_advance_salary"/>
+            <field name="binding_model_id" ref="model_advance_salary"/>
+            <field name="state">code</field>
+            <field name="code">
+if records:
+    action = records.action_close_advances(records)
+            </field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+         <menuitem id="menu_loans_id" name="Advance Salary"
+
+                           web_icon="hr_advance,static/description/icon2.png"
+
+                   sequence="5"/>
+        <menuitem id="advance_salary_categ_id" name="Advance Salary" parent="menu_loans_id" action="advance_salary_action_id" sequence="5"/>
+    </data>
+</odoo>

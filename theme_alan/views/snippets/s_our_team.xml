@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <template id="our_team_snippet" name="Our team">
+        <section class="section" style="background-color: #f9feff;">
+            <div class="container">
+                <div class="row justify-content-center m-30px-b">
+                    <div class="col-lg-6 text-center">
+                        <div class="h1 dark-color font-w-600">Our Team</div>
+                        <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 m-15px-tb">
+                        <div class="box-shadow-hover white-bg rounded">
+                            <div>
+                                <img src="/theme_alan/static/src/img/snippets/bg-41.jpg" />
+                            </div>
+                            <div class="p-20px text-center">
+                                <h5 class="dark-color font-w-600">Jessy Blacklet</h5>
+                                <div>Designer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 m-15px-tb">
+                        <div class="box-shadow-hover white-bg rounded">
+                            <div>
+                                <img src="/theme_alan/static/src/img/snippets/bg-41.jpg" />
+                            </div>
+                            <div class="p-20px text-center">
+                                <h5 class="dark-color font-w-600">Jessy Blacklet</h5>
+                                <div>Designer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 m-15px-tb">
+                        <div class="box-shadow-hover white-bg rounded">
+                            <div>
+                                <img src="/theme_alan/static/src/img/snippets/bg-41.jpg" />
+                            </div>
+                            <div class="p-20px text-center">
+                                <h5 class="dark-color font-w-600">Jessy Blacklet</h5>
+                                <div>Designer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 m-15px-tb">
+                        <div class="box-shadow-hover white-bg rounded">
+                            <div>
+                                <img src="/theme_alan/static/src/img/snippets/bg-41.jpg" />
+                            </div>
+                            <div class="p-20px text-center">
+                                <h5 class="dark-color font-w-600">Jessy Blacklet</h5>
+                                <div>Designer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_product_banner_slider" name="Product Banner Slider">
+        <section class="as_product_banner_slider as-product-banner-snippet" data-sp_id='0' data-add_to_cart='0' data-buy_btn='0' data-prod_rating='0' data-prob_label='0' data-sp_name='NO PRODUCT SELECTED' data-pos='0'>
+            <h2>NO PRODUCT SELECTED</h2>
+        </section>
+    </template>
+
+    <template id="s_product_banner_slider_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-sp_id="0" data-add_to_cart='0' data-buy_btn='0' data-prod_rating='0' data-prob_label='0' data-sp_name='NO PRODUCT SELECTED' data-js="product_banner_actions" data-selector=".as_product_banner_slider" data-pos='left'>
+                <we-button data-no-preview="true" data-product_banner_configure="">Change Product</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_s_product_banner_slider_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_product_banner/000.js"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <!-- <script type="text/javascript" src="/theme_alan/static/src/snippets/s_product_banner/000.scss"/> -->
+        </xpath>
+    </template>
+</odoo>

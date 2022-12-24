@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="special_product_templates" xml:space="preserve">
+    <t t-name="theme_alan.product_banner_popup_template">
+    <div class="p_slider_panel o_technical_modal modal fade dialog_box_popup product-slider-info" id="special_prod_modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="m-0"><t t-esc="title"/></h4>
+                    <button class="close" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"/>
+                    </button>
+                </div>
+             <div class="o_product_slider_panel_content modal-body">
+                <div class="o_product_slider_config_details">
+                    <form class="form-horizontal container-fluid" role="form">
+                        <div class="row align-items-center form-group ">
+                            <label class="col-sm-3 m-0 control-label" for="search_product"><t t-esc="find_product"/>:</label>
+                            <div class="col-sm-7">
+                                <select id="search_product" name="product_name" placeholder="Search Product..." multiple="multiple">
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                        </div>
+
+                         <div class="row form-group">
+                            <label class="col-sm-3 m-0 control-label" for="quick-opt">
+                                <t t-esc="optional_btn"/>:
+                            </label>
+
+                            <div class="col-sm-9">
+                                <div class="row align-items-center form-group add_to_cart">
+                                    <div class="col-sm-9">
+                                        <input id="add_to_cart" name="add_to_cart" type="checkbox"/>
+                                        <label class="control-label m-0px" for="add_to_cart">Add to Cart?</label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center form-group pro_buy_btn">
+                                    <div class="col-sm-9">
+                                        <input id="pro_buy_btn" name="pro_buy_btn" type="checkbox"/>
+                                        <label class="control-label m-0px" for="pro_buy_btn">Buy Button?</label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center form-group pro_rating">
+                                    <div class="col-sm-9">
+                                        <input id="pro_rating" name="pro_rating" type="checkbox"/>
+                                        <label class="control-label m-0px" for="pro_rating">Rating?</label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center form-group pro_label">
+                                    <div class="col-sm-9">
+                                        <input id="pro_label" name="pro_label" type="checkbox"/>
+                                        <label class="control-label m-0px" for="pro_label">Product Label?</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                         <div class="row form-group">
+                            <label class="col-sm-3 m-0 control-label" for="quick-opt">
+                                <t t-esc="snp_pos"/>:
+                            </label>
+
+                            <div class="col-sm-9">
+                                <div class="row align-items-center form-group pos_left">
+                                    <div class="col-sm-9">
+                                        <input id="pos_left" name="pos_snippet" type="radio" value="0"/>
+                                        <label class="control-label m-0px" for="pos_left">Left</label>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center form-group pos_right">
+                                    <div class="col-sm-9">
+                                        <input id="pos_right" name="pos_snippet" type="radio" value="1"/>
+                                        <label class="control-label m-0px" for="pos_right">Right</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn_close" data-dismiss="modal" type="button"><t t-esc="close"/></button>
+                <button class="btn btn-primary submit_btn" data-dismiss="modal" type="button"><t t-esc="apply"/></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </t>
+</templates>

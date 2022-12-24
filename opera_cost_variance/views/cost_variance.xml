@@ -1,0 +1,100 @@
+<data>
+    <record id="cost_variance_form" model="ir.ui.view">
+        <field name="name">cost.variance.form</field>
+        <field name="model">cost.variance</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="run" string="Run" type="object" class="oe_highlight" states="draft"/>
+                    <button name="confirm" string="Create Account Moves" type="object" class="oe_highlight" states="run"/>
+                    <button name="set_draft" string="Set Draft" type="object" class="oe_highlight" states="cancel"/>
+                    <button name="action_cancel" string="Cancel" type="object" states="draft,run,confirm" class="oe_highlight"/>
+                    <button name="post" string="Post Account Moves" type="object" class="oe_highlight" states="confirm"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,run,confirm,posted"/>
+                </header>
+                <sheet>
+                    <div name="button_box" class="oe_button_box" attrs="{'invisible': [('move_ids_count', '&lt;=', 0)]}">
+                        <button class="oe_stat_button" type="object"
+                                name="action_view_account_moves" icon="fa-book">
+                            <field name="move_ids_count" string="Cost Variance" widget="statinfo"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" string="Name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="Name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <label for="date_start" string="Period"/>
+                            <div>
+                                <field name="date_start" class="oe_inline" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <span> to </span>
+                                <field name="date_stop" class="oe_inline" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </div>
+<!--                            <field name="frequency"/>-->
+                        </group>
+                        <group>
+                            <field name="journal_id" string="Journal" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="analytic_account_id" invisible="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="analytic_tag_ids" widget="many2many_tags" invisible="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                    </group>
+
+                    <group>
+                        <group string="Actual Accounts">
+                            <field name="actual_account_ids" readonly="1" colspan="4" nolabel="1">
+                                <tree>
+                                    <field name="account_id"/>
+                                    <field name="balance"/>
+                                </tree>
+                            </field>
+                        </group>
+                        <group string="Estimated Accounts">
+                            <field name="estimate_account_ids" readonly="1" colspan="4" nolabel="1">
+                                <tree>
+                                    <field name="account_id"/>
+                                    <field name="balance"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="cost_variance_tree" model="ir.ui.view">
+        <field name="name">cost.variance.tree</field>
+        <field name="model">cost.variance</field>
+        <!--<field name="field_parent">children_ids if_want_to_add_Childs</field>-->
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date_start"/>
+                <field name="date_stop"/>
+                <field name="frequency"/>
+                <field name="journal_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="cost_variance_action" model="ir.actions.act_window">
+        <field name="name">Cost Variance</field>
+        <field name="res_model">cost.variance</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="cost_variance_menu"
+              name="Cost Variance"
+              action="cost_variance_action"
+              parent="account.menu_finance_entries"
+              sequence="12"
+    />
+</data>

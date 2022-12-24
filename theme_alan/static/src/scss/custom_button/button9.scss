@@ -1,0 +1,75 @@
+.as-btn {
+    font-size: 13px;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: none;
+    outline: none;
+    display: inline-block;
+    @include transition(cubic-bezier(0.4, 0, 1, 1) all 0.35s); 
+    line-height: 1.5;
+    border-radius: 3px;
+    color: $as-white;
+    background-image: linear-gradient(to right, $as-theme 0%, darken($as-theme, 10%)  51%, $as-theme  100%);
+    background-size: 200% auto;
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        border: 1px dashed currentColor;
+        opacity:0;
+        @include transition(cubic-bezier(0.4, 0, 1, 1) all 0.35s); 
+    }
+    &:not(:disabled),
+    &:not(.disabled) {
+        &:hover {
+            color: $as-white;
+            background-position: right center;
+            &:after {
+                opacity:1;
+            }
+        }
+    }
+
+    &.btn-lg {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+    &.btn-sm {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    &.btn-secondary,
+    &.as-btn-dark {
+        color: $as-white;
+        background-image: linear-gradient(to right, $as-dark 0%, darken($as-dark, 10%)  51%, $as-dark  100%);
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:hover {
+                background-image: linear-gradient(to right, $as-dark 0%, $as-dark  51%, lighten($as-dark, 10%)  100%);
+                color: $as-white;
+                background-position: right center;
+            }
+        }
+    }
+    &.btn-primary,
+    &.as-btn-theme {
+         color: $as-white;
+        background-image: linear-gradient(to right, $as-theme 0%, themeen($as-theme, 10%)  51%, $as-theme  100%);
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:hover {
+                background-image: linear-gradient(to right, $as-theme 0%, $as-theme  51%, lighten($as-theme, 10%)  100%);
+                color: $as-white;
+                background-position: right center;
+            }
+        }
+    }
+}

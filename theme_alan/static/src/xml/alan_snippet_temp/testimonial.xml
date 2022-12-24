@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_testimonial_templates">
+
+<t t-name="theme_alan.testimonial_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="alan-testimonial-v12-1" class="s_carousel s_carousel_default carousel slide oe_snippet_body" data-ride="carousel" style="background-color: #000;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#alan-testimonial-v12-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#alan-testimonial-v12-1" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row slider align-items-center justify-content-center p-80px-t p-60px-b">
+                                        <div class="col-lg-6 text-center">
+                                            <div class="m-20px-b"><i class="fa fa-quote-right white-color fa-2x"></i></div>
+                                            <p class="m-0px white-color-alt lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="white-color h4 m-0px p-30px-t">Martin Luthar, CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row slider align-items-center justify-content-center p-80px-t p-60px-b">
+                                        <div class="col-lg-6 text-center">
+                                            <div class="m-20px-b"><i class="fa fa-quote-right white-color fa-2x"></i></div>
+                                            <p class="m-0px white-color-alt lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="white-color h4 m-0px p-30px-t">Martin Luthar, CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 1</h6>
+                <label class="e-sb-label" for="e_testimonial_01"><input id="e_testimonial_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-8 text-center">
+                                    <div class="h1 after-50px theme-after font-w-500 dark-color m-30px-b p-30px-b">Over 10,000 customers</div>
+                                    <p class="lead m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-20px-lr p-35px-tb border-radius-5 box-shadow">
+                                        <div class="p-15px-b theme-color"><i class="fa fa-2x fa-quote-left"></i></div>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600 p-5px-t text-right">- Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-20px-lr p-35px-tb border-radius-5 box-shadow">
+                                        <div class="p-15px-b theme-color"><i class="fa fa-2x fa-quote-left"></i></div>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600 p-5px-t text-right">- Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-20px-lr p-35px-tb border-radius-5 box-shadow">
+                                        <div class="p-15px-b theme-color"><i class="fa fa-2x fa-quote-left"></i></div>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600 p-5px-t text-right">- Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-20px-lr p-35px-tb border-radius-5 box-shadow">
+                                        <div class="p-15px-b theme-color"><i class="fa fa-2x fa-quote-left"></i></div>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600 p-5px-t text-right">- Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-20px-lr p-35px-tb border-radius-5 box-shadow">
+                                        <div class="p-15px-b theme-color"><i class="fa fa-2x fa-quote-left"></i></div>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600 p-5px-t text-right">- Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-20px-lr p-35px-tb border-radius-5 box-shadow">
+                                        <div class="p-15px-b theme-color"><i class="fa fa-2x fa-quote-left"></i></div>
+                                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600 p-5px-t text-right">- Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 2</h6>
+                <label class="e-sb-label" for="e_testimonial_02"><input id="e_testimonial_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp3">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/testimonial-3.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="section" style="background-color: #f6f6f6;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="p-20px text-center">
+                                    <div class="theme-color p-20px-b"><i class="fa fa-3x fa-quote-left"></i></div>
+                                    <p class="lead font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="dark-color font-w-600 p-10px-t">Jennifer Lutheran</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="p-20px text-center">
+                                    <div class="theme-color p-20px-b"><i class="fa fa-3x fa-quote-left"></i></div>
+                                    <p class="lead font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="dark-color font-w-600 p-10px-t">Jennifer Lutheran</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="p-20px text-center">
+                                    <div class="theme-color p-20px-b"><i class="fa fa-3x fa-quote-left"></i></div>
+                                    <p class="lead font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="dark-color font-w-600 p-10px-t">Jennifer Lutheran</div>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div>
+                </section>
+            </textarea>
+            <h6>Testimonial 3</h6>
+            <label class="e-sb-label" for="e_testimonial_03"><input id="e_testimonial_03" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section theme-bg">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="p-20px text-center">
+                                        <div class="white-color p-20px-b"><i class="fa fa-3x fa-quote-left"></i></div>
+                                        <p class="white-color lead font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                                        <div class="white-color h5 font-w-600 p-10px-t">Jennifer Lutheran</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 4</h6>
+                <label class="e-sb-label" for="e_testimonial_04"><input id="e_testimonial_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b md-m-25px-b">
+                                <div class="col-lg-9 text-center">
+                                    <div class="h1 dark-color after-50px theme-after font-w-400 m-30px-b p-30px-b">What They Said.</div>
+                                    <span class="display-table w-50px h-1px theme-bg m-auto-all"></span>
+                                    <p class="lead m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="m-15px-tb border-1 border-color-gray p-20px">
+                                        <div class="dark-color border-bottom-1 border-color-gray p-15px-b m-15px-b h5 font-w-600">
+                                            Best Support
+                                        </div>
+                                        <div class="theme-color m-10px-b"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600">Dustin</div>
+                                        <div class="small">CEO, Alan</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="m-15px-tb border-1 border-color-gray p-20px">
+                                        <div class="dark-color border-bottom-1 border-color-gray p-15px-b m-15px-b h5 font-w-600">
+                                            Best Support
+                                        </div>
+                                        <div class="theme-color m-10px-b"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600">Dustin</div>
+                                        <div class="small">CEO, Alan</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="m-15px-tb border-1 border-color-gray p-20px">
+                                        <div class="dark-color border-bottom-1 border-color-gray p-15px-b m-15px-b h5 font-w-600">
+                                            Best Support
+                                        </div>
+                                        <div class="theme-color m-10px-b"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600">Dustin</div>
+                                        <div class="small">CEO, Alan</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="m-15px-tb border-1 border-color-gray p-20px">
+                                        <div class="dark-color border-bottom-1 border-color-gray p-15px-b m-15px-b h5 font-w-600">
+                                            Best Support
+                                        </div>
+                                        <div class="theme-color m-10px-b"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600">Dustin</div>
+                                        <div class="small">CEO, Alan</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="m-15px-tb border-1 border-color-gray p-20px">
+                                        <div class="dark-color border-bottom-1 border-color-gray p-15px-b m-15px-b h5 font-w-600">
+                                            Best Support
+                                        </div>
+                                        <div class="theme-color m-10px-b"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600">Dustin</div>
+                                        <div class="small">CEO, Alan</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="m-15px-tb border-1 border-color-gray p-20px">
+                                        <div class="dark-color border-bottom-1 border-color-gray p-15px-b m-15px-b h5 font-w-600">
+                                            Best Support
+                                        </div>
+                                        <div class="theme-color m-10px-b"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i></div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="dark-color font-w-600">Dustin</div>
+                                        <div class="small">CEO, Alan</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 5</h6>
+                <label class="e-sb-label" for="e_testimonial_05"><input id="e_testimonial_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section bg-center bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-dot-bg.png);">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div id="testiminail_slider_2" class="s_carousel s_carousel_default carousel slide oe_snippet_body carousel-dots-dark" data-ride="carousel">
+                                        <ol class="carousel-indicators light">
+                                            <li data-target="#testiminail_slider_2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#testiminail_slider_2" data-slide-to="1"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="p-30px text-center m-30px-b">
+                                                    <div class="avatar-100px d-inline-block border-radius-50 box-shadow">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/team-1.png" />
+                                                    </div>
+                                                    <div class="lead m-30px-tb">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    </div>
+                                                    <div class="h5 font-w-600 dark-color">Will Bayers / <span class="font-13">CEO, Steady</span></div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="carousel-item">
+                                                <div class="p-30px text-center m-30px-b">
+                                                    <div class="avatar-100px d-inline-block border-radius-50 box-shadow">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/team-1.png" />
+                                                    </div>
+                                                    <div class="lead m-30px-tb">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    </div>
+                                                    <div class="h5 font-w-600 dark-color">Will Bayers / <span class="font-13">CEO, Steady</span></div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 6</h6>
+                <label class="e-sb-label" for="e_testimonial_06"><input id="e_testimonial_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section light-gray-bg">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h5 theme-color">FITNESS EXPERT</div>
+                                    <div class="dark-color h1 font-w-700">CLIENT TESTIMONIALS</div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="white-bg box-shadow-hover hover-top">
+                                        <div class="p-25px">
+                                            <div class="icon-70px theme-bg-alt theme-color text-center border-radius-5 m-25px-b">
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <p class="m-0px lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="p-25px-lr p-15px-tb border-top-1 border-color-gray">
+                                            <p class="dark-color font-w-600 m-0px">Martin Luthar, Expert</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="white-bg box-shadow-hover hover-top">
+                                        <div class="p-25px">
+                                            <div class="icon-70px theme-bg-alt theme-color text-center border-radius-5 m-25px-b">
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <p class="m-0px lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="p-25px-lr p-15px-tb border-top-1 border-color-gray">
+                                            <p class="dark-color font-w-600 m-0px">Martin Luthar, Expert</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="white-bg box-shadow-hover hover-top">
+                                        <div class="p-25px">
+                                            <div class="icon-70px theme-bg-alt theme-color text-center border-radius-5 m-25px-b">
+                                                <i class="fa fa-quote-right"></i>
+                                            </div>
+                                            <p class="m-0px lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="p-25px-lr p-15px-tb border-top-1 border-color-gray">
+                                            <p class="dark-color font-w-600 m-0px">Martin Luthar, Expert</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 7</h6>
+                <label class="e-sb-label" for="e_testimonial_07"><input id="e_testimonial_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section p-0px-b" style="background-color: #f6f6f6;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5">
+                                    <div class="box-shadow white-bg card p-50px-tb p-30px-lr">
+                                        <div id="health_testimonial_v12_1" class="s_carousel s_carousel_default carousel slide oe_snippet_body carousel-dots-left carousel-dots-dark" data-ride="carousel">
+                                            <ol class="carousel-indicators light">
+                                                <li data-target="#health_testimonial_v12_1" data-slide-to="0" class="active"></li>
+                                                <li data-target="#health_testimonial_v12_1" data-slide-to="1"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active p-40px-b text-center">
+                                                    <div class="theme-color m-20px-b"><i class="fa fa-3x fa-quote-right"></i></div>
+                                                    <p class="m-0px m-30px-b font-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <p class="font-w-600 h5 dark-color m-0px m-10px-tb">Martin Luthar, CEO</p>
+                                                </div>
+                                                <!-- item -->
+                                                <div class="carousel-item p-40px-b text-center">
+                                                    <div class="theme-color m-20px-b"><i class="fa fa-3x fa-quote-right"></i></div>
+                                                    <p class="m-0px m-30px-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <p class="font-w-600 h5 dark-color m-0px m-10px-tb">Martin Luthar, CEO</p>
+                                                </div>
+                                                <!-- item -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/h-2.png" title="" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 8</h6>
+                <label class="e-sb-label" for="e_testimonial_08"><input id="e_testimonial_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section id="ahealth_testimonial_v12_2" class="s_carousel s_carousel_default carousel slide oe_snippet_body carousel-dots-dark" data-ride="carousel" style="background-color: #f6f6f6;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#ahealth_testimonial_v12_2" data-slide-to="0" class="active"></li>
+                            <li data-target="#ahealth_testimonial_v12_2" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row slider align-items-center justify-content-center p-80px-tb">
+                                        <div class="col-lg-6 text-center">
+                                            <div class="m-20px-b"><i class="fa fa-quote-right dark-color fa-2x"></i></div>
+                                            <p class="m-0px lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="dark-color h4 m-0px p-30px-t">Martin Luthar, CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row slider align-items-center justify-content-center p-80px-tb">
+                                        <div class="col-lg-6 text-center">
+                                            <div class="m-20px-b"><i class="fa fa-quote-right dark-color fa-2x"></i></div>
+                                            <p class="m-0px lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="dark-color h4 m-0px p-30px-t">Martin Luthar, CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 9</h6>
+                <label class="e-sb-label" for="e_testimonial_09"><input id="e_testimonial_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp10">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/testimonial-10.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="p-80px-tb s_parallax parallax s_parallax_is_fixed">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/wine-5.jpg'); background-position: 50% 75%;"></span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 p-10-tb sm-p-0px-tb">
+                                <div class="m-30px-b icon-70px theme-bg white-color text-center border-radius-5">
+                                    <span class="fa fa-quote-left"></span>
+                                </div>
+                                <div class="lead white-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                <div class="theme-color h5 m-35px-t">DAVIT HOVHANI</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Testimonial 10</h6>
+            <label class="e-sb-label" for="e_testimonial_10"><input id="e_testimonial_10" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-80px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/spa-13.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div id="testiminail_slider_3" class="s_carousel s_carousel_default carousel slide oe_snippet_body carousel-dots-dark" data-ride="carousel">
+                                        <ol class="carousel-indicators light">
+                                            <li data-target="#testiminail_slider_3" data-slide-to="0" class="active"></li>
+                                            <li data-target="#testiminail_slider_3" data-slide-to="1"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="p-30px text-center m-30px-b">
+                                                    <div class="avatar-100px d-inline-block border-radius-50 box-shadow">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/team-2.png" />
+                                                    </div>
+                                                    <div class="lead m-30px-tb">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    </div>
+                                                    <div class="h5 font-w-600 dark-color">Will Bayers / <span class="font-13">CEO, Steady</span></div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div class="carousel-item">
+                                                <div class="p-30px text-center m-30px-b">
+                                                    <div class="avatar-100px d-inline-block border-radius-50 box-shadow">
+                                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/team-3.png" />
+                                                    </div>
+                                                    <div class="lead m-30px-tb">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                                    </div>
+                                                    <div class="h5 font-w-600 dark-color">Will Bayers / <span class="font-13">CEO, Steady</span></div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 11</h6>
+                <label class="e-sb-label" for="e_testimonial_11"><input id="e_testimonial_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section light-gray-bg">
+                        <div class="container">
+                            <div class="row justify-content-center m-40px-b sm-m-20px-b">
+                                <div class="col-lg-6 text-center">
+                                    <label class="font-w-600 h5 theme-color">Testimonials</label>
+                                    <div class="h1 font-w-600 dark-color">What Customers Say?</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="p-20px-lr text-center">
+                                        <div class="avatar-90px border-radius-50 d-inline-block">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/round1.jpg" />
+                                        </div>
+                                        <div class="m-15px-t">
+                                            <div class="dark-color font-w-600 h5 m-10px-b">Will Byers</div>
+                                            <p class="font-18 font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="p-20px-lr text-center">
+                                        <div class="avatar-90px border-radius-50 d-inline-block">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/round1.jpg" />
+                                        </div>
+                                        <div class="m-15px-t">
+                                            <div class="dark-color font-w-600 h5 m-10px-b">Will Byers</div>
+                                            <p class="font-18 font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb">
+                                    <div class="p-20px-lr text-center">
+                                        <div class="avatar-90px border-radius-50 d-inline-block">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/round1.jpg" />
+                                        </div>
+                                        <div class="m-15px-t">
+                                            <div class="dark-color font-w-600 h5 m-10px-b">Will Byers</div>
+                                            <p class="font-18 font-italic m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 12</h6>
+                <label class="e-sb-label" for="e_testimonial_12"><input id="e_testimonial_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.testimonial_temp13">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/testimonial-13.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section bg-cover bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-13.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="h2 font-w-600 white-color">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD.</p>
+                                <p class="lead font-w-600 p-10px-t">Martin Garrix / User</p>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Testimonial 13</h6>
+                <label class="e-sb-label" for="e_testimonial_13"><input id="e_testimonial_13" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

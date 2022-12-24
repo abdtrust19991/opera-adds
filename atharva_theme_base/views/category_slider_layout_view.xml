@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="custom_category_form_view" model="ir.ui.view">
+        <field name="name">category.form.view</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+        <field name="arch" type="xml">
+             <xpath expr="//field[@name='sequence']" position="after">
+                 <field name="enable_category_slider"/>
+             </xpath>
+        </field>
+    </record>
+    <record id="view_multitab_configure_cat_form" model="ir.ui.view">
+        <field name="name">slider_cat.collection.configure.form</field>
+        <field name="model">slider_cat.collection.configure</field>
+        <field name="arch" type="xml">
+            <form string="Category Collection Configuration">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="website_id" />
+                            <field name="theme_id"/>
+                            <field name="slider_layout_option_id" options="{'no_quick_create': True, 'no_create_edit' : True, 'no_open': True}"/>
+                        </group>
+                    </group>
+                    <group string="Categories">
+                        <field name="cat_ids" no_label="1">
+                            <tree editable="bottom">
+                                <field name="sequence" widget="handle"/>
+                                <field name="cat_id" required="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_multitab_configure_cat" model="ir.actions.act_window">
+        <field name="name">Category Configuration</field>
+        <field name="res_model">slider_cat.collection.configure</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        id="menu_cat_slider_type_settings"
+        name="Category Slider Configuration"
+        parent="atharva_theme_base.menu_action_atharva_theme_base"
+        sequence="104"/>
+    <menuitem id="menu_action_multitab_configure_cat"
+        name="Category Collection Configuration"
+        action="action_multitab_configure_cat"
+        parent="atharva_theme_base.menu_cat_slider_type_settings"
+        sequence="103"/>
+</odoo>

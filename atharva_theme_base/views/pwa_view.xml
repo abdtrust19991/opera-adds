@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_pwa" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.pwa</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='webmaster_settings']" position="after">
+
+                <h2>Atharva Progressive Web Application</h2>
+
+                 <div class="row mt16 o_settings_container" >
+                    <div class="col-12 col-lg-6 o_setting_box" >
+                        <div class="o_setting_left_pane">
+                            <field name="is_pwa_active"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="is_pwa_active"/>
+                            <div class="text-muted">
+                                Active Progressive Web Application
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt16 o_settings_container" attrs="{'invisible': [('is_pwa_active', '=', False)]}">
+                   <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group" attrs="{'invisible': [('is_pwa_active', '=', False)]}">
+                                <label string="Name" for="pwa_name"/>
+                                <span class="fa fa-lg fa-globe" title="PWA name"/>
+                                <div class="text-muted">
+                                    It is used in a display name in application pop-up
+                                </div>
+                                <div class="mt8">
+                                    <field name="pwa_name" attrs="{'required': [('is_pwa_active', '=', True)]}" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                                <label string="Short name" for="pwa_short_name"/>
+                                <span class="fa fa-lg fa-globe" title="PWA short name"/>
+                                <div class="text-muted">
+                                    It is used in a display shortcut name in application pop-up
+                                </div>
+                                <div class="mt8">
+                                    <field name="pwa_short_name" attrs="{'required': [('is_pwa_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                                <label string="Theme Color" for="pwa_theme_color"/>
+                                <span class="fa fa-lg fa-globe" title="PWA theme color"/>
+                                <div class="text-muted">
+                                    It is used to customize color of your PWA
+                                </div>
+                                <div class="mt8">
+                                    <field name="pwa_theme_color" widget="color" attrs="{'required': [('is_pwa_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                                <label string="Background Color" for="pwa_bg_color"/>
+                                <span class="fa fa-lg fa-globe" title="PWA background color"/>
+                                <div class="text-muted">
+                                    It is used to customize background color of your PWA
+                                </div>
+                                <div class="mt8">
+                                    <field name="pwa_bg_color" widget="color" attrs="{'required': [('is_pwa_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                                <label string="Description" for="pwa_description"/>
+                                <span class="fa fa-lg fa-globe" title="PWA description"/>
+                                <div class="text-muted">
+                                    It is used to add description for PWA
+                                </div>
+                                <div class="mt8">
+                                    <field name="pwa_description" attrs="{'required': [('is_pwa_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                                <label string="Icon" for="pwa_big_image"/>
+                                <span class="fa fa-lg fa-globe" title="PWA icon"/>
+                                <div class="text-muted">
+                                    Pixels of icon must be (512x512) as well as icon type should be of PNG Format
+                                </div>
+                                <div class="mt8">
+                                    <field name="pwa_big_image" widget="image" attrs="{'required': [('is_pwa_active', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </xpath>
+        </field>
+    </record>
+</odoo>

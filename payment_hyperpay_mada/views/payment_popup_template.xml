@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <template id="payment_hyperpay1_card" priority="30">
+        <head></head>
+        <body style="background-color:#f6f6f5;">
+            <form t-att-action="return_url" class="paymentWidgets">
+                MASTER AMEX VISA MADA
+            </form>
+        </body>
+        <script t-att-src="'https://test.oppwa.com/v1/paymentWidgets.js?checkoutId=%s' %(check_out_id)"></script>
+    </template>
+
+</odoo>

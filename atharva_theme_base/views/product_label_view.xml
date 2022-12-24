@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="as_product_label_view" model="ir.ui.view">
+        <field name="name">as_product_label</field>
+        <field name="model">as.product_label</field>
+        <field name="arch" type="xml">
+            <form>
+                <div class="o_website_sale_image_modal_container">
+                    <group>
+                        <field name="name"/>
+                        <field name="label_color" widget="color"/>
+                        <field name="label_text_color" widget="color"/>
+                        <field name="label_option" class="web_label_style d-block" widget="radio"/>
+                    </group>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="custom_product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.product.website.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='website_ribbon_id']" position="after">
+                 <field name="pro_label_line_ids" widget="one2many_list" context="{'show_attribute': False}">
+                        <tree string="Labels" editable="bottom">
+                            <field name="website_id"/>
+                            <field name="label"/>
+                        </tree>
+                 </field>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<data>
+    <record id="inherit_stock_location_form" model="ir.ui.view">
+        <field name="name">inherit.stock.location.form</field>
+        <field name="model">stock.location</field>
+        <!--<field name="groups_id" eval="[(4, ref(''))]"/>-->
+        <field name="inherit_id" ref="stock.view_location_form"/>
+        <field name="arch" type="xml">
+            <field name="return_location" position="after">
+                <field name="stock_request_location"/>
+                <field name="partner_id"/>
+            </field>
+        </field>
+    </record>
+</data>

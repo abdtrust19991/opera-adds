@@ -1,0 +1,13 @@
+<data>
+    <record id="inherit_stock_location_route_form" model="ir.ui.view">
+        <field name="name">inherit.stock.location.route.form</field>
+        <field name="model">stock.location.route</field>
+        <!--<field name="groups_id" eval="[(4, ref(''))]"/>-->
+        <field name="inherit_id" ref="stock.stock_location_route_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='warehouse_ids']" position="after">
+                <field name="stock_request_order_Lines"/>
+            </xpath>
+        </field>
+    </record>
+</data>

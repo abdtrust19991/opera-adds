@@ -1,0 +1,387 @@
+.as_brand_slider {
+	.seaction-head {
+		display: none;
+	    text-align: center;
+	    padding: 30px 0;
+	    border: 1px dashed #ddd;
+	    margin: 20px 0;
+	    .editor_enable & {
+	    	display: block;
+	    }
+	    h2 {
+	    	font-size: 20px;
+    		color: $as-dark;
+	    }
+	}
+}
+
+/* Slider Snippet
+---------------------------------------*/
+.as-brand-style-1 {
+	border-bottom: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+	.owl-carousel {
+		.owl-nav {
+			button {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 20px;
+				height: 40px;
+				text-align: center;
+				background: $as-dark;
+				outline: none;
+				span {
+					width: 10px;
+					height: 10px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					margin: auto;
+					@include rotate(45);
+				}
+				&.owl-prev {
+					span {
+						border-bottom: 1px solid $as-white;
+    					border-left: 1px solid $as-white;
+    					left: 5px;
+					}
+				}
+				&.owl-next {
+					right: 0;
+					span {
+						border-top: 1px solid $as-white;
+    					border-right: 1px solid $as-white;
+    					right: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
+	.brand-logo-box {
+		border-right: 1px solid #dedede;
+	}
+	.owl-item {
+		&:first-child {
+			.brand-logo-box {
+				border-left: 1px solid #dedede;
+			}
+		}
+	}
+	.brand-icon {
+		position: relative;
+		height: 110px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			max-width: 150px;
+			max-height: 90%;
+			width: auto;
+		}
+	}
+	.brand-name {
+		padding: 10px 0;
+		text-align: center;
+		a {
+			font-size: 15px;
+			font-weight: 600;
+			color: $as-dark;
+			text-decoration: none;
+			&:hover {
+				color: $as-theme;
+			}
+		}
+	}
+}
+
+/* Grid Snippet
+---------------------------------------*/
+.as-brand-style-2 {
+	padding: 40px 0 25px;
+	.section-title {
+		padding-bottom: 25px;
+	}
+	.brand-logo-box {
+		background: $as-white;
+	    text-align: center;
+	    border: 2px solid #dedede;
+	    border-radius: 5px;
+	    margin: 15px 0;
+	    padding: 5%;
+	    @include transition(ease all 0.35s);
+	    &:hover {
+	    	border: 2px solid $as-theme;
+	    }
+	}
+	.brand-name {
+		padding: 10px 0;
+		text-align: center;
+		a {
+			font-size: 15px;
+			font-weight: 600;
+			color: $as-dark;
+			text-decoration: none;
+			&:hover {
+				color: $as-theme;
+			}
+		}
+	}
+}
+
+/* Brand Option 3
+---------------------------------------*/
+.as-brand-style-3 {
+	.brand-logo-box {
+	    position: relative;
+		padding: 10px 20px;
+		.brand-name {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include transition(ease all 0.35s);
+			opacity: 0;
+			a {
+				background: $as-dark;
+				padding: 10px 20px;
+				color: $as-white;
+				@include transition(ease all 0.35s); 
+				margin-top: -10px;
+				text-decoration: none;
+				&:hover {
+					background: $as-theme;
+					color: $as-white;
+				}
+			}
+		}
+		&:hover {
+			.brand-name {
+				opacity: 1;
+				a {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+/* Brand Option 4
+---------------------------------------*/
+.as-brand-style-4 {
+	.brand-logo-box {
+	    position: relative;
+		padding: 10px 5px;
+	}
+	.brand-icon {
+		border: 1px solid #eee;
+		padding: 10px;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0px 0px 12px -3px rgba(0,0,0,.2);
+	}
+	.brand-name {
+	    margin: -10px 15px 10px;
+	    background: #fff;
+	    border: 1px solid #eee;
+	    padding: 5px 10px;
+	    border-radius: 10px;
+	    overflow: hidden;
+	    box-shadow: 0px 0px 12px -3px rgba(0,0,0,.2);
+	    text-align: center;
+	    position: relative;
+	    a {
+	    	color: $as-dark;
+	    	text-decoration: none;
+	    }
+	}
+}
+
+
+/* Brand Page
+-----------------------------------*/
+.as-brand-page {
+	.as-bp-brand-details {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background: #f4f3f8;
+		.br-img {
+			background-color: $as-white;
+			box-shadow: $box-shadow-lg;
+			span {
+			    width: 120px;
+			    height: 120px;
+			    overflow: hidden;
+			    border: 2px solid $as-theme;
+			    display: inline-block;
+			    vertical-align: top;
+			    border-radius: 5px;
+			    position: relative;
+			    img {
+			    	position: absolute;
+			    	top: 0;
+			    	left: 0;
+			    	right: 0;
+			    	bottom: 0;
+			    	margin: auto;
+			    	max-width: 100%;
+			    	max-height: 100%;
+			    }
+			}
+		}
+		.media-body {
+			padding-left: 25px;
+			h3 {
+				font-weight: 500;
+				font-size: 20px;
+				color: $as-dark;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.as-brand-product {
+	border: 1px solid $border-color;
+	margin-bottom: 30px;
+	.pro-img  {
+		position: relative;
+		&:after {
+			content:"";
+			padding-bottom: 100%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	.pro-info {
+		padding: 20px 10px;
+		text-align: center;
+		h6 {
+			margin: 0;
+			font-weight: 500;
+			font-size: 14px;
+			a {
+				color: $as-dark;
+				text-decoration: none;
+			    display: inline-block;
+			    vertical-align: top;
+			    max-width: 100%;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    white-space: nowrap;
+			}
+		}
+	}
+}
+
+
+/* All Brand 
+-----------------------------------*/
+.brands-section {
+	background: #f8f9ff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.brands-search {
+	    padding: 20px;
+		margin-bottom: 40px;
+		background: $as-white;
+		box-shadow: $as-shadow;
+		display: flex;
+		align-items: center;
+		@include down-md {
+			flex-direction: column;
+		}
+		h3 {
+			font-weight: 600;
+			font-size: 22px;
+		}
+		.form-horizontal {
+			margin-left: auto;
+			@include down-md {
+				margin: 20px auto 0;
+			}
+		}
+		.input-group {
+			@include up-md {
+		        max-width: 100%;
+			    width: 400px;
+		    }
+		    .form-control {
+			    height: 45px;
+			    border-radius: 30px 0px 0 30px !important;
+			    padding: 0 20px;
+			}
+			.btn {
+			    width: 60px;
+				border-radius: 0 30px 30px 0 !important;
+			}
+		}
+	}
+}
+.brands-list {
+	.brand-col {
+		border: 1px solid #eee;
+		margin-bottom: 16px;
+		position: relative;
+		box-shadow: $as-shadow;
+		background: $as-white;
+		.brd-img {
+			position: relative;
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 100%;
+				padding-bottom: 60%;
+				vertical-align: top;
+			}
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				max-width: 80%;
+				max-height: 80%;
+			}
+		}
+		.brand-info {
+			padding: 10px;
+    		border-top: 1px solid #eee;
+    		.brand-name {
+				width: 100%;
+				display: inline-block;
+				font-size: 16px;
+				font-weight: 600;
+				color: #000;
+				margin-bottom: 0;
+				vertical-align: top;
+    		}
+    		.brand-counte {
+    			font-size: 12px;
+    		}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_afq_templates">
+
+<t t-name="theme_alan.afq_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/afq-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-50px-b">
+                                <div class="col-lg-8 text-center">
+                                    <p class="h5 font-w-300 m-20px-b theme-color">FAQ's</p>
+                                    <div class="h2 font-w-500 dark-color m-30px-b">
+                                        Frequently Asked Questions
+                                    </div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                            </div> <!-- row -->
+                            <div class="row">
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="font-2 font-w-500 dark-color m-10px-b">How can I install/upgrade Dummy Content?</div>
+                                    <p class="m-0px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="font-2 font-w-500 dark-color m-10px-b">Dummy Content won't install...</div>
+                                    <p class="m-0px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="font-2 font-w-500 dark-color m-10px-b">HoHow can I uninstall Dummy Content?</div>
+                                    <p class="m-0px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="font-2 font-w-500 dark-color m-10px-b">What are the minimum requirements?</div>
+                                    <p class="m-0px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="font-2 font-w-500 dark-color m-10px-b">Where can I download earlier versions?</div>
+                                    <p class="m-0px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                                </div>
+                                <div class="col-lg-6 m-15px-tb">
+                                    <div class="font-2 font-w-500 dark-color m-10px-b">How can I downgrade to an earlier version of Dummy Content?</div>
+                                    <p class="m-0px">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>AFQ's</h6>
+                <label class="e-sb-label" for="e_afq_01"><input id="e_afq_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="pwa_main_events" name="PWA Main Events">
+        <t t-set="sw_script">
+            'use strict';
+            var base_cache_ver = 'base-cache-1';
+            var assets = ['/','/offline/page'];
+            self.addEventListener('install', function(event) {
+                self.skipWaiting();
+                event.waitUntil(
+                    caches.open(base_cache_ver).then(cache =>{
+                        cache.addAll(assets);
+                    })
+                )
+            });
+            self.addEventListener('activate', function(event) {
+                event.waitUntil(
+                    caches.keys().then(function(keys) {
+                        return Promise.all(keys.map(function(key) {
+                            if (key !== base_cache_ver) {
+                                return caches.delete(key);
+                            }
+                        }));
+                    })
+                );
+            });
+            self.addEventListener('fetch', function(event) {
+                event.respondWith(
+                    fetch(event.request).then(function (response) {
+                        return response;
+                    })
+                    .catch(error => {
+                        return caches.match('/offline/page');
+                }));
+            });
+        </t>
+        <t t-raw="sw_script"/>
+    </template>
+
+    <template id="service_worker" name="PWA Service Worker">
+        <t t-call="atharva_theme_base.pwa_main_events" />
+    </template>
+
+    <template id="offline_pwa" name="Offline PWA">
+        <h2>Please Turn On Your Internet Connection!</h2>
+    </template>
+</odoo>

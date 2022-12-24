@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="close_advances_form_id" model="ir.ui.view">
+            <field name="name">close.advances.form</field>
+            <field name="model">close.advances</field>
+            <field name="arch" type="xml">
+                <form string="Close">
+                    <sheet>
+                        <group col="4">
+                            <field name="journal_id"/>
+                            <field name="remaining"/>
+                            <field name="company_id"  invisible="1"/>
+
+                        </group>
+                        <group>
+                            <field name="advance_ids"  invisible="1"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="close_advances" string="Close Advances" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="actiom_close_advances_wizard" model="ir.actions.act_window">
+            <field name="name">Close Advance</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">close.advances</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'default_advance_ids': [(4, records, None)]}</field>
+
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="point_of_sale.template" xml:space="preserve">
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+
+        <xpath expr="//div[hasclass('pos-receipt')]" position="attributes">
+            <attribute name="style">font-weight: bold;</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('pos-receipt')]/br[8]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[7]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[6]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[5]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[4]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[3]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[2]" position="replace" />
+        <xpath expr="//div[hasclass('pos-receipt')]/br[1]" position="replace" />
+
+        <xpath expr="//t[@t-foreach='receipt.paymentlines']" position="replace"/>
+        <xpath expr="//div[hasclass('receipt-change')]" position="replace"/>
+<!--        <xpath expr="//div[hasclass('pos-receipt-order-data')]" position="replace"/>  disabled by ARRIOUACH-->
+        <xpath expr="//div[hasclass('pos-receipt-amount')]" position="replace"/>
+
+<!--        <xpath expr="//t[@t-if='isTaxIncluded']/div" position="replace" />-->
+
+        <xpath expr="//t[@t-if='receipt.company.logo']" position="replace">
+            <img class="pos-receipt-logo" src="/opera_pos_receipt/static/src/img/opera_logo.jpeg" alt="Logo"/>
+            <span class="pos-receipt-logo">فاتورة ضريبية مبسطة</span>
+        </xpath>
+        <xpath expr="//t[@t-if='!receipt.company.logo']" position="replace">
+        </xpath>
+        <xpath expr="//div[hasclass('pos-receipt-contact')]" position="replace">
+            <div class="pos-receipt-contact">
+                <t t-if="receipt.company.contact_address">
+                    <div><t t-esc="receipt.company.contact_address" /></div>
+                </t>
+                <t t-if="receipt.company.vat">
+    <!--                <div><t t-esc="receipt.company.vat_label"/>:<t t-esc="receipt.company.vat" /></div>-->
+                    <div>الرقم الضريبي:<t t-esc="receipt.company.vat" /></div>
+                </t>
+                <t t-if="receipt.company.phone">
+    <!--                <div>Tel:<t t-esc="receipt.company.phone" /></div>-->
+                    <div>هاتف:<t t-esc="receipt.company.phone" /></div>
+                </t>
+
+                <t t-if="receipt.company.email">
+                    <div><t t-esc="receipt.company.email" /></div>
+                </t>
+                <t t-if="receipt.company.website">
+                    <div><t t-esc="receipt.company.website" /></div>
+                </t>
+                <t t-if="receipt.shop">
+                    <div>معرض:<t t-esc="receipt.shop" /></div>
+                </t>
+<!--                <br/>-->
+    <!--            <t t-if="receipt.header_html">-->
+    <!--                <t t-raw="receipt.header_html" />-->
+    <!--            </t>-->
+    <!--            <t t-if="!receipt.header_html and receipt.header">-->
+    <!--                <div><t t-esc="receipt.header" /></div>-->
+    <!--            </t>-->
+
+                <br/>
+                <img src="/opera_pos_receipt/static/src/img/qr_opera.jpeg" alt="QR"/>
+                <br/>
+                <t t-if="receipt.cashier">
+                        <div dir="auto">كاشير:<t t-esc="receipt.cashier" /></div>
+                </t>
+                <div><t t-esc="receipt.name" /></div>
+                <div><t t-esc="receipt.date.localestring" /></div>
+            </div>
+
+        </xpath>
+
+        <xpath expr="//div[3]" position="replace"/>
+        <xpath expr="//div[hasclass('orderlines')]" position="replace">
+
+            <div dir="rtl" class="orderlines">
+                <table class='receipt-orderlines' style="width:100%;">
+                    <colgroup>
+                        <col width='50%' />
+                        <col width='15%' />
+                        <col width='15%' />
+                        <col width='20%' />
+                    </colgroup>
+                    <tr style="border-bottom: 2px dashed black;">
+                        <th style='text-align:right'>الصنف</th>
+                        <th style='text-align:right'>الكمية</th>
+                        <th style='text-align:right'>السعر</th>
+                        <th style='text-align:right' >الاجمالي</th>
+                    </tr>
+                    <tr t-foreach="orderlines" t-as="orderline" t-key="orderline.id" style="margin-bottom:2px;">
+                        <td style='text-align:right'>
+                            <t t-esc="orderline.get_product().display_name"/>
+                            <div>
+                                <t t-esc="orderline.get_product().barcode"/>
+                            </div>
+
+                        </td>
+                        <td style='text-align:center'>
+<!--                            <t t-esc="orderline.get_quantity_str_with_unit()"/>-->
+                            <t t-esc="Math.round(orderline.get_quantity()* 100)/100"/>
+                            <t t-if="orderline.display_discount_policy() == 'without_discount'">
+                                <div t-if="orderline.get_all_discount()">
+                                    <t t-esc="orderline.get_all_discount()"/> %
+                                </div>
+                            </t>
+                        </td>
+                        <td style='text-align:center'>
+                            <t t-set="discount" t-value="orderline.get_all_discount()" />
+                            <t t-if="orderline.display_discount_policy() == 'without_discount'">
+                                <div t-if="discount &amp;&amp; discount != 100 ">
+    <!--                                <t  t-esc="orderline.get_unit_price()"/>-->
+                                    <t  t-esc="orderline.get_lst_price()"/>
+                                </div>
+                            </t>
+<!--                            <t t-esc="Math.round( orderline.get_unit_price() * ( 1- discount/100) * 100)/100"/>-->
+                            <t t-esc="Math.round( orderline.get_lst_price() * ( 1- discount/100) * 100)/100"/>
+
+                        </td>
+
+                        <td style='text-align:left' >
+                            <t t-esc="env.pos.format_currency_no_symbol(orderline.get_price_with_tax())"/>
+                        </td>
+                    </tr>
+                </table>
+<!--                <br/>-->
+                <div style="border-top: 2px dashed;margin-top:10px;margin-bottom:10px;"></div>
+                <div style="text-align: right;">
+                    <div t-if="receipt.total_sale_qty" dir="auto">اجمالي الكمية :<span t-esc="receipt.total_sale_qty" class="pos-receipt-left-align"/></div>
+                    <div t-if="receipt.total_return_qty" dir="auto">اجمالي الكمية المرتجعة :<span t-esc="receipt.total_return_qty" class="pos-receipt-left-align"/></div>
+                    <div dir="auto">الاجمالي شامل الضرائب :<span t-esc="env.pos.format_currency(receipt.total_with_tax)" class="pos-receipt-left-align"/></div>
+                    <div dir="auto">الاجمالي بدون الضرائب :<span t-esc="env.pos.format_currency(receipt.total_without_tax)" class="pos-receipt-left-align"/></div>
+                    <div dir="auto">اجمالي الضرائب :<span t-esc="env.pos.format_currency(receipt.total_tax)" class="pos-receipt-left-align"/></div>
+                    <div dir="auto">اجمالي تخفيضات الاصناف :<span t-esc="env.pos.format_currency(receipt.total_discount)" class="pos-receipt-left-align"/></div>
+                    <div dir="auto">التخفيض الكلي :<span t-esc="env.pos.format_currency(receipt.global_discount)" class="pos-receipt-left-align"/></div>
+                    <div dir="auto">اجمالي التخفيضات :<span t-esc="env.pos.format_currency(receipt.all_discount)" class="pos-receipt-left-align"/></div>
+                </div>
+                <div dir="auto" style="text-align: center;">
+                    <t t-foreach="receipt.paymentlines" t-as="line" t-key="line.cid">
+                        <div>
+                            <t t-esc="line.name" />
+                            <span t-esc="env.pos.format_currency(line.amount)" class="pos-receipt-left-align"/>
+<!--                            <span t-esc="env.pos.format_currency_no_symbol(line.amount)" class="pos-receipt-left-align"/>-->
+                        </div>
+                    </t>
+                </div>
+                <div class="pos-receipt-amount receipt-change" dir="auto">
+                     الباقي :
+                    <span t-esc="env.pos.format_currency(receipt.change)" class="pos-receipt-left-align"/>
+                </div>
+                <div dir="auto" style="text-align:center;">
+                     البائع :
+                    <span t-esc="receipt.sale_person_code" />
+                </div>
+                <div dir="auto" t-if="receipt.client" style="text-align:center;">
+                     العميل :
+                    <span t-esc="receipt.client.name" />
+                </div>
+
+<!--                <div style="border-top: 2px dashed;margin-top:10px;">-->
+                <div style="margin-top:10px;">
+                    <img id="barcode" t-att-barcode="receipt.barcode" style="width:230px;height:90px;display:block;margin:auto;margin-top:20px;"/>
+                    <script >
+<!--            var barcode =-->
+<!--                    <span t-esc="receipt.barcode" />-->
+                        JsBarcode("#barcode", $('#barcode').attr('barcode'), {
+                        format: "EAN13",
+                        displayValue: true,
+                        fontSize: 25
+                        })
+                    </script>
+<!--                    <br/>-->
+<!--                    <br/>-->
+                </div>
+
+            </div>
+
+
+        </xpath>
+
+        <!-- QR Code-->
+<!--        <xpath expr="//div[hasclass('pos-receipt-order-data')]" position="before">-->
+<!--            <div t-attf-id="qrcode_container">-->
+<!--                <div id="qrcode"></div>-->
+<!--                &lt;!&ndash;<script type="text/javascript"> new QRCode(document.getElementById("qrcode_id"), qr_data);</script>&ndash;&gt;-->
+<!--                <script type="text/javascript">-->
+<!--                    var qr_data ="-->
+<!--                    Seller : <t t-esc="receipt.company.name"/>;-->
+<!--                    Invoice_No : <t t-esc="receipt.name"/>;-->
+<!--                    Date : <t t-esc="receipt.date.localestring"/>;-->
+<!--                    Total_Vat : <t t-esc="env.pos.format_currency(receipt.total_tax)"/>;-->
+<!--                    Total_Amount_Due : <t t-esc="env.pos.format_currency(receipt.total_with_tax)"/>;-->
+<!--                    Vat_No :<t t-esc="receipt.company.vat"/><t>ؘ</t>";-->
+<!--                    //console.log('1-',qr_data);-->
+
+<!--                    var qrcode = new QRCode('qrcode' , {-->
+<!--                    text: qr_data,-->
+<!--                    width: 160,-->
+<!--                    height: 160,-->
+<!--                    colorDark : "#000000",-->
+<!--                    colorLight : "#ffffff",-->
+<!--                    correctLevel : QRCode.CorrectLevel.H-->
+<!--                    });-->
+<!--                    console.log(qr_data);-->
+<!--                    qrcode.makeCode(qr_data);-->
+
+<!--                    $("#qrcode > img").css({"margin":"20px auto"});-->
+<!--                </script>-->
+<!--            </div>-->
+<!--       </xpath>-->
+        <xpath expr="//div[@class='pos-receipt-order-data']" position="before">
+            <div>
+                <div style="margin:15px; text-align: center; padding:0 20%;">
+                    <span id="qr_data" t-esc="receipt.qr_code" style="display: NONE;"/>
+                    <div id="qrcode" style="text-align: center;"></div>
+                    <script type="text/javascript">
+                        var  qrData = document.getElementById("qr_data").innerHTML;
+                        new QRCode(document.getElementById("qrcode"), {"text": qrData ,width:120, height:120, correctLevel : QRCode.CorrectLevel.H});
+                    </script>
+                </div>
+            </div>
+        </xpath>
+<!--            <div>-->
+<!--                <t>-->
+<!--                    <t><span style="text-align:left">TOTAL</span></t>-->
+<!--                    <span t-esc="env.pos.format_currency(receipt.total_with_tax)" class="pos-receipt-right-align"/>-->
+<!--                </t>-->
+<!--                </div>-->
+<!--            <t t-foreach="receipt.paymentlines" t-as="line" t-key="line.cid">-->
+<!--                <div>-->
+<!--                    <t t-esc="line.name" />-->
+<!--                    <span t-esc="env.pos.format_currency_no_symbol(line.amount)" class="pos-receipt-right-align"/>-->
+<!--                </div>-->
+<!--            </t>-->
+<!--            <div>-->
+<!--                <t>-->
+<!--                    <t><span style="text-align:left">Change</span></t>-->
+<!--                    <span t-esc="env.pos.format_currency(receipt.change)" class="pos-receipt-right-align"/>-->
+<!--                </t>-->
+<!--            </div>-->
+
+
+        <xpath expr="//t[@t-if='receipt.total_discount']" position="replace"/>
+        <xpath expr="//t[@t-if='isTaxIncluded']" position="replace"/>
+        <xpath expr="//t[@t-if='!isTaxIncluded']" position="replace"/>
+    </t>
+</templates>

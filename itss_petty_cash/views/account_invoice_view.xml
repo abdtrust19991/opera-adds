@@ -1,0 +1,24 @@
+<odoo>
+    <!-- Inherit Form View to Modify it -->
+    <record id="invoice_supplier_form_petty_cash" model="ir.ui.view">
+        <field name="name">account.invoice.supplier.form.petty.cash</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+<!---->
+            <xpath expr="//header" position="inside">
+                 <button name="petty_inv_pay" type="object" string="Pay with Petty Cash" class="oe_highlight"
+                        attrs="{'invisible': ['|',('move_type', '!=', 'in_invoice'),('state', '!=', 'posted')]}"
+                        groups="account.group_account_manager"/>
+                <!-- Add your fields or attributes here -->
+            </xpath>
+<!---->
+            <xpath expr="//field[@name='invoice_incoterm_id']" position="after">
+                <field name="employee_id"
+                       attrs="{'invisible': [('move_type', '!=', 'in_invoice')]}"
+                />
+            </xpath>
+<!---->
+        </field>
+    </record>
+</odoo>

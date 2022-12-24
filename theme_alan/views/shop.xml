@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Product image size -->
+    <template id="as_products_item" inherit_id="website_sale.products_item">
+        <xpath expr="//a[@t-att-href='product_href']" position="replace">
+            <t t-call="atharva_theme_base.as_product_item_st"/>
+        </xpath>
+        <xpath expr="//form/span[last()]" position="replace"/>
+
+    </template>
+
+    <!-- Default Pricelist hide -->
+    <template id="products_alan" inherit_id="website_sale.products">
+        <xpath expr="//div[hasclass('products_pager')][1]/t[@t-call='website_sale.pricelist_list']" position="replace"/>
+        <xpath expr="//div[hasclass('products_pager')][1]/t[@t-call='website_sale.search']" position="replace"/>
+    </template>
+
+    <!-- Product Listing -->
+    <template id="products_listing_as" inherit_id="website_sale.products">
+        <!-- Attributes sidebar show -->
+        <xpath expr="//div[hasclass('products_pager')][1]" position="inside">
+            <t t-call="atharva_theme_base.attr_sidebar_show_st"/>
+        </xpath>
+        <!-- Attributes sidebar Hide -->
+        <xpath expr="//div[hasclass('products_pager')][1]" position="after">
+            <t t-call="atharva_theme_base.attr_sidebar_hide_st"/>
+        </xpath>
+    </template>
+
+    <template id="products_categories_alan" inherit_id="website_sale.products_categories" name="e-Commerce Categories">
+        <xpath expr="//div[@id='wsale_products_categories_collapse']/ul[hasclass('flex-column')]" position="before">
+            <t t-call="atharva_theme_base.prod_cat_st"/>
+        </xpath>
+    </template>
+    <!-- Product Attributes -->
+    <template id="products_attributes_as" name="Product Attributes" inherit_id="website_sale.products_attributes" >
+        <xpath expr="//ul/t/li[hasclass('nav-item')]" position="replace">
+            <t t-call="atharva_theme_base.product_attribute_as_st"/>
+        </xpath>
+    </template>
+
+    <template id="products_brand_filter_as" name="Brand Filter" inherit_id="website_sale.products_attributes" customize_show="True" active="False">
+        <xpath expr="//form/ul" position="inside">
+            <t t-call="atharva_theme_base.product_brand_att_st"/>
+        </xpath>
+    </template>
+
+    <template id="pricefilter_product" name="Price Range Filter" inherit_id="website_sale.products_attributes" customize_show="True" active="False">
+        <xpath expr="//form[hasclass('js_attributes')]" position="after">
+            <t t-call="atharva_theme_base.price_filter_st"/>
+        </xpath>
+        <xpath expr="//form[hasclass('js_attributes')]" position="inside">
+            <t t-call="atharva_theme_base.min_max_st"/>
+            <t t-call="atharva_theme_base.prod_tag_st"/>
+        </xpath>
+    </template>
+
+    <template id="rating_filter" name="Rating Filter" inherit_id="website_sale.products_attributes" customize_show="True" active="False">
+        <xpath expr="//form/ul" position="inside">
+            <t t-call="atharva_theme_base.rating_filter_st"/>
+        </xpath>
+    </template>
+
+    <!-- Buttons -->
+    <template id="as_product_buy_now" inherit_id="website_sale.product_buy_now">
+        <xpath expr="//a[@id='buy_now']" position="attributes">
+            <attribute name="class" separator=" " add="as-btn as-btn-dark"/>
+        </xpath>
+    </template>
+
+    <template id="as_cart" inherit_id="website_sale.cart">
+        <xpath expr="//div[hasclass('oe_cart')]//a[hasclass('btn-secondary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//div[hasclass('oe_cart')]//a[hasclass('btn-primary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+    </template>
+
+    <template id="as_short_cart_summary" inherit_id="website_sale.short_cart_summary">
+        <xpath expr="//div[hasclass('card-body')]//a[hasclass('btn-secondary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+    </template>
+
+    <template id="as_payment" inherit_id="website_sale.payment">
+        <xpath expr="//t[@t-set='submit_class']" position="replace">
+            <t t-set="submit_class" t-value="'btn btn-primary as-btn'"/>
+        </xpath>
+        <xpath expr="//t[@t-set='back_button_class']" position="replace">
+            <t t-set="back_button_class" t-value="'btn btn-secondary as-btn'"/>
+        </xpath>
+    </template>
+
+    <template id="as_reduction_code" inherit_id="website_sale.reduction_code">
+        <xpath expr="//a[hasclass('show_coupon')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn as-btn-theme"/>
+        </xpath>
+    </template>
+
+    <template id="product_tags_icon" name="Products Tags" inherit_id="website_sale.products_item" customize_show="True" active="False">
+        <xpath expr="//div[hasclass('product_price')]" position="after">
+            <div class="as-pro-tags" t-if="product.product_tags_ids">
+                <t t-foreach="product.product_tags_ids" t-as="tag">
+                    <span t-esc="tag.name"/>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="product_tags" inherit_id="website_sale.products" name="Product Tags Filter" customize_show="True" active="False">
+        <xpath expr="//div[@id='products_grid_before']" position="before">
+            <t t-set="enable_left_column" t-value="True"/>
+        </xpath>
+        <xpath expr="//div[@id='products_grid_before']" position="inside">
+            <t t-call="atharva_theme_base.product_tags_st"/>
+        </xpath>
+    </template>
+
+    <template id="as_sale_order_portal_template" inherit_id="sale.sale_order_portal_template">
+        <xpath expr="//li[hasclass('list-group-item')]//a[1][hasclass('btn-primary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//li[hasclass('list-group-item')]//a[@id='o_sale_portal_paynow']" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_download_pdf')]//a[hasclass('o_download_btn')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//div[hasclass('o_download_pdf')]//a[hasclass('o_print_btn')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//t[@t-if='sale_order.has_to_be_signed(True)']//a[hasclass('btn-primary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//t[@t-if='sale_order.has_to_be_signed(True)']//a[hasclass('btn-secondary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+        <xpath expr="//t[@t-if='sale_order.has_to_be_signed(True)']//a[hasclass('btn-danger')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn"/>
+        </xpath>
+    </template>
+
+    <template id="address" name="Add Classes" inherit_id="website_sale.address">
+        <xpath expr="//div[hasclass('oe_cart')]/div/t/h2/a" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+        <xpath expr="//a[hasclass('a-submit-loading')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+        <xpath expr="//div[hasclass('justify-content-between')]/a" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+    </template>
+    <template id="contactus_form_extend_one" name="Contact Classes One" inherit_id="website_form.s_website_form">
+        <xpath expr="//div[hasclass('s_website_form_submit')]/a" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+    </template>
+    <template id="contactus_form_extend_two" name="Contact Classes Two" inherit_id="website_form.contactus_form">
+        <xpath expr="//div[hasclass('s_website_form_submit')]/a" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+    </template>
+    <template id="checkout_extends" name="CheckOut Classes" inherit_id="website_sale.checkout">
+        <xpath expr="//div[hasclass('all_shipping')]//a[hasclass('a-submit')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+        <xpath expr="//div[hasclass('justify-content-between')]/a" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+        <xpath expr="//div[hasclass('justify-content-between')]/a[hasclass('btn-primary')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+    </template>
+    <template id="product_wishlist_extend" name="Wishlist Add Classes" inherit_id="website_sale_wishlist.product_wishlist">
+        <xpath expr="//button[hasclass('o_wish_add')]" position="attributes">
+            <attribute name="class" separator=" " add="as-btn" />
+        </xpath>
+    </template>
+
+    <!-- End Buttons -->
+</odoo>

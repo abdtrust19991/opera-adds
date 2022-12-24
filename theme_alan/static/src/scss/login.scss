@@ -1,0 +1,57 @@
+header {
+	.loginpop {
+		cursor: pointer;
+	}
+}
+
+.as-login-popup {
+	.modal-content {
+		border: none;
+    	border-radius: 0;
+	}
+	.modal-body {
+		padding: 0;
+	}
+	.modal-dialog {
+		max-width: 400px;
+	}
+	.tab-content {
+		.tab-pane {
+			padding: 0 35px;
+		}
+	}
+	form {
+		width: 100%;
+		max-width: 100%;
+	}
+	.form-group {
+		label {
+			color: $as-dark;
+			font-weight: 600;
+		}
+		.form-control {
+			border-radius: 0;
+			height: calc(1.7em + 0.75rem + 2px);
+		}
+	}
+	.nav {
+		.nav-link {
+		    flex-basis: 0;
+		    flex-grow: 1;
+		    max-width: 100%;
+			background: #ededed !important;
+			color: $as-dark !important;
+			padding: 15px 10px !important;
+			height: inherit !important;
+			font-size: 14px !important;
+			text-transform: uppercase !important;
+			border-bottom: 2px solid $as-theme !important;
+			font-weight: 600 !important;
+			text-align: center;
+			&.active {
+			    border-bottom-color: transparent !important;
+				background: $as-white !important;
+			}
+		}
+	}
+}

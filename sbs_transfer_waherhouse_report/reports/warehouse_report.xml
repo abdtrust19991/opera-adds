@@ -1,0 +1,145 @@
+<odoo>
+    <report
+            id="trans_report_wahrehouse"
+            model="stock.picking"
+            string="Transfer Report"
+            name="sbs_transfer_waherhouse_report.sbs_report_wahrehouse_view"
+            file="sbs_transfer_waherhouse_report.trans_report_wahrehouse"
+            report_type="qweb-pdf"/>
+
+    <template id="sbs_report_wahrehouse_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <!--<t t-call="web.external_layout">-->
+                    <div class="page"
+                         style="font-size: 12pt;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;">
+                        <div class="row justify-content-end mb16">
+                            <div class="col-4" name="left_box">
+                                <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)"
+                                     style="width:300px;height:50px;" alt="Barcode"/>
+                            </div>
+                        </div>
+                        <table style="width:100%; border-collapse: separate; border-spacing: 0pt;">
+                            <tr>
+                                <td colspan="3" style="font-size:large; text-align: right">
+                                    <span>مكان المورد:</span>
+                                    <span t-esc="o.location_id.name"/>
+
+                                    <br/>
+                                    <span>الوجهه:</span>
+                                    <span t-esc="o.location_dest_id.name"/>
+
+                                    <br/>
+                                    <span>شحن بواسطه:</span>
+                                    <span t-esc="o.carrier_id.name"/>
+                                    <br/>
+                                    <span>رقم التتبع:</span>
+                                    <span t-esc="o.follow_number"/>
+
+                                </td>
+                                <td colspan="3" style="font-size:large; text-align: right">
+                                    <span>نوع العمليه:</span>
+                                    <span t-esc="o.picking_type_id.name"/>
+                                    <br/>
+                                    <span>رقم التحويل:</span>
+                                    <span t-esc="o.name"/>
+                                    <br/>
+                                    <span>نوع التحويل الداخلى:</span>
+                                    <span t-esc="o.picking_type_id.code"/>
+                                    <br/>
+                                    <span>التاريخ:</span>
+                                    <span t-esc="o.scheduled_date"/>
+
+                                </td>
+
+                            </tr>
+                        </table>
+                        <table style="width:100%; margin-top:2pt; border-spacing: 0pt; border-collapse: separate; text-align: center;"
+                               class="table table-bordered">
+                            <tr style="background-color: #B42592; color: white;">
+                                <!--DF1F99-->
+                                <td>م</td>
+                                <td>رقم المنتج</td>
+                                <td>اسم المنتج</td>
+                                <td>الكميه</td>
+                                <td>الوحده</td>
+                                <td>الدفعه</td>
+                            </tr>
+                            <tbody>
+
+                                <t t-set="i" t-value="0"/>
+                                <t t-set="sum10" t-value="0"/>
+                                <t t-foreach="o.move_line_ids_without_package" t-as="line">
+                                    <t t-set="i" t-value="i+1"/>
+                                    <t t-set="sum10" t-value="sum10+line.qty_done"/>
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="i"/>
+
+                                        </td>
+                                        <td>
+                                            <span t-esc="line.product_id.barcode"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="line.product_id.name"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="'%.0f'%(line.qty_done)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="line.product_id.uom_id.name"/>
+                                        </td>
+
+                                        <td>
+                                            <span t-esc="line.lot_id.name"/>
+                                        </td>
+                                    </tr>
+
+                                </t>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td>
+                                        <span t-esc="sum10"/>
+                                    </td>
+                                    <td colspan="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <table style="width:100%; margin-top:30pt;">
+                            <tr>
+                                <td style="width: 100%; background-color: #69A090; color: white; text-align: right">توقيع المرسل</td>
+                                <td></td>
+                                <td style="width: 100%; background-color: #69A090; color: white; text-align: center">توقيع المستلم</td>
+                                <td></td>
+
+                            </tr>
+                            <br/>
+                            <tr>
+                                <td colspan="2">
+                                    <span style="height:25pt; width:100%; display: inline-block; background-color: #F5F8E5;"></span>
+                                </td>
+                                <!--<td></td>-->
+                                <td colspan="2">
+                                    <span style="height:25pt; width:100%; display: inline-block; background-color: #F5F8E5;"></span>
+                                </td>
+                                <!--<td></td>-->
+                            </tr>
+                        </table>
+
+                        <span></span>
+                        <!--<span>توقيع المستلم</span>-->
+
+
+                    </div>
+                </t>
+            </t>
+        </t>
+
+
+    </template>
+
+</odoo>

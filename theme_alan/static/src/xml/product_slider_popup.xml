@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="product_slider_templates" xml:space="preserve">
+    <t t-name="theme_alan.p_slider_popup_template">
+        <div class="p_slider_panel o_technical_modal modal fade dialog_box_popup product-slider-info" id="product_slider_modal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="m-0">Configure Product Slider</h4>
+                        <button class="close" data-dismiss="modal" type="button">
+                            <i class="fa fa-times"/>
+                        </button>
+                    </div>
+                    <div class="o_product_slider_panel_content modal-body">
+                        <div class="o_product_slider_config_details">
+                            <form class="form-horizontal container-fluid" role="form">
+                                <div class="row align-items-center form-group product_collection_container">
+                                    <label class="col-sm-3 m-0 control-label" for="product_collection">Product Collections:</label>
+                                    <div class="col-sm-9">
+                                        <select
+                                            class="form-control"
+                                            name="pro_collection"
+                                            multiple="multiple"
+                                            id="multiselect">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group align-items-center">
+                                    <label class="col-sm-3 m-0 control-label" for="display_type">Display Style: </label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control" id="display_type" name="display_type">
+                                            <option value="grid">Grid</option>
+                                            <option value="slider">Slider</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group align-items-center">
+                                    <label class="col-sm-3 m-0 control-label" for="slider_type">Choose Style: </label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control" id="slider_type" name="slider_type"/>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center form-group prod_count">
+                                    <label class="col-sm-3 m-0 control-label" for="product-count">No of Products per Row:
+                                    </label>
+                                    <div class="col-sm-9 row no-gutters align-items-center">
+                                        <input class="form-range" min="1" max="6" id="prod-count" name="prod-count" placeholder="Enter Count" type="range" style="width: 245px;" />
+                                        <span id="prod_count_val" class="pl-3">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group align-items-center for_slider_only">
+                                    <label class="col-sm-3 m-0 control-label" for="slider_type">Auto slider: </label>
+                                    <div class="col-sm-1">
+                                        <input id="prod-auto" name="prod-auto" type="checkbox"/>
+                                    </div>
+                                    <div class="w-100 mb-2"></div>
+                                    <label class="col-sm-3 m-0 control-label slider_time" for="slider_type">Slide Timer(sec) : </label>
+                                    <div class="col-sm-8 slider_time row align-items-center no-gutters">
+                                        <input  type="range" min="1" max="10" class="form-control col-5" id="slider_time" name="slider-time" placeholder="Enter Second" style="width: 245px;" />
+                                        <span id="slider_time_val" class="pl-3">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <label class="col-sm-3 m-0 control-label" for="quick-opt">
+                                        Quick Option:
+                                    </label>
+
+                                    <div class="col-sm-9">
+                                        <div class="nav">
+                                            <div class="as-edit-popup-action add_to_cart">
+                                                <input id="add_to_cart" name="add_to_cart" type="checkbox"/>
+                                                <span class="fa fa-shopping-cart"></span>
+                                                <label class="control-label m-0px" for="add_to_cart">Cart</label>
+                                            </div>
+                                            <div class="as-edit-popup-action quick_view">
+                                                <input id="quick_view" name="quick_view" type="checkbox"/>
+                                                <span class="fa fa-eye"></span>
+                                                <label class="control-label m-0px" for="quick_view">Quick View</label>
+                                            </div>
+                                            <div class="as-edit-popup-action pro_compare">
+                                                <input id="pro_compare" name="pro_compare" type="checkbox"/>
+                                                <span class="fa fa-balance-scale"></span>
+                                                <label class="control-label m-0px" for="pro_compare">Compare</label>
+                                            </div>
+                                            <div class="as-edit-popup-action pro_wishlist">
+                                                <input id="pro_wishlist" name="pro_wishlist" type="checkbox"/>
+                                                <span class="fa fa-heart"></span>
+                                                <label class="control-label m-0px" for="pro_wishlist">Wishlist</label>
+                                            </div>
+                                            <div class="as-edit-popup-action  pro_ribbon">
+                                                <input id="pro_ribbon" name="pro_ribbon" type="checkbox"/>
+                                                <span class="fa fa-tags"></span>
+                                                <label class="control-label m-0px" for="pro_ribbon">Product Label</label>
+                                            </div>
+                                            <div class="as-edit-popup-action pro_ratting">
+                                                <input id="pro_ratting" name="pro_ratting" type="checkbox"/>
+                                                <span class="fa fa-star"></span>
+                                                <label class="control-label m-0px" for="pro_ratting">Ratting</label>
+                                            </div>
+                                            <div class="as-edit-popup-action is_infinite">
+                                                <input id="is_infinite" name="is_infinite" type="checkbox"/>
+                                                <span class="fa fa-spinner"></span>
+                                                <label class="control-label m-0px" for="is_infinite">Infinity Slider</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p_slider_sample_view">
+                                    <!-- <img class="snip_sample_img border" src="/theme_alan/static/src/img/snippets/product_slider/slider_layout_1.png"/> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary btn_close" data-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-primary btn_apply" data-dismiss="modal" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

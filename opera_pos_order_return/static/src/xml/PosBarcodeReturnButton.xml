@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="BarcodeReturnButton" owl="1">
+        <div class="control-button button confirm" style="background-color: #7f82ac; color: #fff;" t-on-click="onClick">
+            <i class="fa fa-barcode"></i>
+            Return Order with Barcode
+        </div>
+    </t>
+
+</templates>

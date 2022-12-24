@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_plan_group_manger,purchase.plan.group,model_purchase_plan,purchase.group_purchase_manager,1,1,1,1
+access_purchase_plan_line,purchase_plan_line,model_purchase_plan_line,purchase.group_purchase_manager,1,1,1,1
+access_purchase_plan_line_group_manger,purchase.plan.line.group,model_purchase_plan_line,purchase.group_purchase_manager,1,1,1,1
+access_purchase_color_group_manger,purchase.color.group,model_color_code,purchase.group_purchase_manager,1,1,1,1
+access_purchase_factory_group_manger,purchase.factory.group,model_factory_code,purchase.group_purchase_manager,1,1,1,1
+access_purchase_plan_factory_group_manger,purchase.factory.group,model_plan_factory_line,purchase.group_purchase_manager,1,1,1,1
+access_purchase_plan_color_group_manger,purchase.factory.group,model_plan_color_line,purchase.group_purchase_manager,1,1,1,1
+

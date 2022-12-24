@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="opera_pos_customizations_assets" inherit_id="point_of_sale.assets">
+            <xpath expr="." position="inside">
+
+                <script type="text/javascript" src="/opera_pos_customizations/static/src/js/models.js"></script>
+                <script type="text/javascript" src="/opera_pos_customizations/static/src/js/OrderWidget.js"></script>
+                <script type="text/javascript" src="/opera_pos_customizations/static/src/js/AbstractReceiptScreen.js"></script>
+                <script type="text/javascript" src="/opera_pos_customizations/static/src/js/ClientDetailsEdit.js"></script>
+                <script type="text/javascript" src="/opera_pos_customizations/static/src/js/NumpadWidget.js"></script>
+                <script type="text/javascript" src="/opera_pos_customizations/static/src/js/PaymentScreen.js"></script>
+
+            </xpath>
+        </template>
+    </data>
+</odoo>

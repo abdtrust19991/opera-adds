@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="snippet_options_image_optimization_widgets_extend" name="Image Optimizatiin Extend" inherit_id="web_editor.snippet_options_image_optimization_widgets">
+    <xpath expr="." position="inside">
+        <we-row string="Add Hotspot">
+                <we-button class="add_img_hotspot"><i class="fa fa-fw fa-circle"/></we-button>
+        </we-row>
+    </xpath>
+</template>
+
+<template id="img_hotspot_template" name="Image Dynamic Popover Template">
+    <div t-if='product' t-attf-class="hp-media {{cls}}">
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <div class='hp-img'><img t-att-src='request.website.image_url(product, "image_1920")' alt='Image'/></div>
+        <div class='hp-media-body'>
+            <h3 class='hp-title'><t t-esc="product.name"/></h3>
+            <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+                <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+            </div>
+            <a t-att-href="product.website_url" t-attf-class='as-btn as-btn-theme btn-sm'>Shop now</a>
+        </div>
+    </div>
+    <div class="hp-norecord" t-else="">
+        <h3>No Product Selected</h3>
+    </div>
+</template>
+
+<template id="s_img_hotspots_options" inherit_id="website.snippet_options">
+    <xpath expr="." position="inside">
+        <div data-js="img_hotspots_slider_actions" data-selector="section .row > p.hs_icon ">
+            <we-row>
+                <we-select class="hs_types" string="Type">
+                    <we-button data-name="static_hs" data-select-class="static_type">Static</we-button>
+                    <we-button data-name="dynamic_hs" data-select-class="dynamic_type">Dynamic</we-button>
+                </we-select>
+                <we-button class="add_preview" data-dependencies="static_hs">
+                <i class="fa fa-fw fa-eye"/>
+                </we-button>
+            </we-row>
+            <we-row>
+                <we-select string="On Click" data-attribute-name="dy_type" data-dependencies="dynamic_hs">
+                    <we-button class="pop_tpy" data-name="dy_po" data-select-data-attribute="popover">Popover</we-button>
+                    <we-button class="modal_tpy" data-name="dy_mod"  data-select-data-attribute="modal">Modal</we-button>
+                </we-select>
+                <we-button class="add_product" data-dependencies="dynamic_hs">
+                <i class="fa fa-fw fa-shopping-cart"/>
+                </we-button>
+            </we-row>
+            <we-select string="Theme" data-attribute-name="po_theme" data-dependencies="static_hs">
+                <we-button data-select-data-attribute="light_thm">Light</we-button>
+                <we-button data-select-data-attribute="dark_thm">Dark</we-button>
+            </we-select>
+            <we-select string="Style" data-attribute-name="po_style" data-dependencies="static_hs,dy_po,dy_mod">
+                <we-button class="style_icon" data-select-data-attribute="st1">Style-1</we-button>
+                <we-button class="style_icon" data-select-data-attribute="st2">Style-2</we-button>
+                <we-button class="style_icon" data-select-data-attribute="st3">Style-3</we-button>
+            </we-select>
+            <we-input string="Main Title" placeholder="Title" data-select-data-attribute="Title" data-attribute-name="po_title" class="o_we_large_input main_title" data-dependencies="static_hs" data-no-preview="true"/>
+            <we-input string="Short Description" placeholder="Description" data-select-data-attribute="Description" data-attribute-name="po_desc" class="o_we_large_input short_desc" data-dependencies="static_hs" data-no-preview="true"/>
+            <we-input string="Button Text" placeholder="Ex: Show Now" data-select-data-attribute="Show Now" data-attribute-name="po_btxt" class="o_we_large_input btn_txt" data-dependencies="static_hs" data-no-preview="true"/>
+            <we-input string="Redirect Url" data-select-data-attribute="/" class="o_we_large_input redirect_url" data-attribute-name="po_bturl" data-dependencies="static_hs" data-no-preview="true"/>
+            <we-row string="Image">
+                <we-button class="imagebox" data-dependencies="static_hs" data-no-preview="true">
+                    <i class="fa fa-fw fa-camera"/>
+                </we-button>
+            </we-row>
+            <we-range string="Left-Right"
+                    data-no-preview="true"
+                    data-select-data-attribute=""
+                    data-attribute-default-value="50"
+                    data-attribute-name="pos_left"
+                    class="pos_left"
+                    data-min="0"
+                    data-max="100"
+                    data-step="1"/>
+            <we-range string="Top-Bottom"
+                    data-no-preview="true"
+                    data-select-data-attribute=""
+                    data-attribute-name="pos_top"
+                    class="pos_top"
+                    data-attribute-default-value="50"
+                    data-min="0"
+                    data-max="100"
+                    data-step="1"/>
+        </div>
+    </xpath>
+</template>
+
+<template id="assets_snippet_s_img_hotspot_options_000" inherit_id="website.assets_frontend">
+    <xpath expr="//script[last()]" position="after">
+        <script type="text/javascript" src="/theme_alan/static/src/snippets/s_img_hotspot/000.js"/>
+    </xpath>
+    <xpath expr="//link[last()]" position="after">
+        <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_img_hotspot/000.scss"/>
+    </xpath>
+</template>
+
+</odoo>

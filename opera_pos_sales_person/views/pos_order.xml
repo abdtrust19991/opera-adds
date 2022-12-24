@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="view_pos_order_form_inherit" model="ir.ui.view">
+            <field name="name">pos.order.form.inherit</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='pos_reference']" position="after">
+                     <field name="sale_person_code" readonly="True"/>
+                     <field name="sale_person_id" readonly="True"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="view_pos_order_tree_inherit" model="ir.ui.view">
+            <field name="name">pos.order.tree.inherit</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='pos_reference']" position="after">
+                     <field name="sale_person_id" />
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="view_pos_order_search_inherit" model="ir.ui.view">
+            <field name="name">pos.order.search.inherit</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_order_filter"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//filter[@name='session']" position="replace">
+                    <filter string="Responsible" name="responsible" domain="[]" context="{'group_by':'user_id'}"/>
+                    <filter string="Salesperson" name="salesman" domain="[]" context="{'group_by':'sale_person_id'}"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_pos_branch_form" model="ir.ui.view">
+            <field name="name">pos.branch.form</field>
+            <field name="model">pos.branch</field>
+            <field name="arch" type="xml">
+                <form string="Branches" create="true" duplicate="true" edit="true" delete="true">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_pos_branch_tree" model="ir.ui.view">
+            <field name="name">pos.branch.tree</field>
+            <field name="model">pos.branch</field>
+            <field name="arch" type="xml">
+                <tree create="true" duplicate="true" edit="true" delete="true">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_pos_branch_action" model="ir.actions.act_window">
+            <field name="name">Branches</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pos.branch</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem id="menu_pos_branches" name="Branches" parent="point_of_sale.menu_point_of_sale"
+                  action="view_pos_branch_action" sequence="100"/>
+
+    </data>
+</odoo>

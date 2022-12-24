@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_product_quick_view_holder" name="Quick View Holder">
+        <div class="as_quick_view_detail"/>
+    </template>
+    <template id="as_dynamic_faq_container" name="Dynamic FAQ Holder">
+        <section class="as_dynamic_faq_content"/>
+    </template>
+    <template id="as_product_brands" name="Product Brand">
+        <section class="as_product_brands"/>
+    </template>
+    <template id="as_html_content_tabs" name="Product Tabs">
+        <section class="product-details-tabs">
+            <div class="container">
+                <!-- Tab Nav -->
+                <ul id="as_product_tabs" class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"
+                        t-if="product.website_description or request.env.user._is_admin()">
+                        <a class="nav-link  active show"
+                           id="nav_tabs_link_1"
+                           data-toggle="tab"
+                           itemprop="description"
+                           href="#nav_tabs_content_1"
+                           role="tab"
+                           aria-controls="nav_tabs_content_1"
+                           aria-selected="true">Description
+                        </a>
+                    </li>
+                    <t t-if="request.website.viewref('website_sale_comparison.product_attributes_body').active">
+                    <t t-set="categories"
+                       t-value="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()"/>
+                    <t t-if="categories">
+                        <li class="nav-item specification_products_tab">
+                            <a class="nav-link"
+                               id="nav_tabs_link_2"
+                               data-toggle="tab"
+                               href="#nav_tabs_content_2"
+                               role="tab"
+                               aria-controls="nav_tabs_content_2"
+                               aria-selected="false">Specification
+                            </a>
+                        </li>
+                    </t>
+                    </t>
+                    <t t-if="request.website.viewref('website_sale.product_comment').active">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               id="nav_tabs_link_3"
+                               data-toggle="tab"
+                               href="#nav_tabs_content_3"
+                               role="tab"
+                               aria-controls="nav_tabs_content_3"
+                               aria-selected="false">Reviews
+                            </a>
+                        </li>
+                    </t>
+                    <t t-foreach="product.pro_tab_ids" t-as="tab">
+                        <t t-if="request.env['product.tab.line'].getTab(website.id,tab.website_ids.ids)">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   t-att-id="'nav_tabs_link_%s_%s' % (product.id, tab.id)"
+                                   data-toggle="tab"
+                                   t-att-href="'#nav_tabs_content_%s_%s' % (product.id, tab.id)"
+                                   role="tab"
+                                   t-att-aria-controls="'nav_tabs_content_%s_%s' % (product.id, tab.id)"
+                                   aria-selected="false">
+                                    <div t-field="tab.tab_name"
+                                         class="oe_structure"/>
+                                </a>
+                            </li>
+                        </t>
+                    </t>
+                </ul>
+
+                <!-- End Tab Nav -->
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active"
+                         id="nav_tabs_content_1"
+                         role="tabpanel"
+                         aria-labelledby="nav_tabs_link_1">
+                        <div itemprop="description" t-field="product.website_description"
+                             class="oe_structure"
+                             id="product_full_description"/>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="nav_tabs_content_2"
+                         role="tabpanel"
+                         aria-labelledby="nav_tabs_link_2">
+                        <div class="product-specifications" id="product_full_spec">
+                            <t t-set="categories"
+                               t-value="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()"/>
+                            <t t-if="categories">
+                                <h3 class="text-center mb32">Specifications for
+                                    <t t-esc="product.name"/>
+                                </h3>
+                                <div class="row">
+                                    <div class='col-lg-12' id='product_specifications'>
+                                        <table class='table table-striped table-sm table-hover'>
+                                            <t t-foreach="categories" t-as="category">
+                                                <t t-if="len(categories) > 1">
+                                                    <tr class="clickable" data-toggle="collapse"
+                                                        t-att-data-target="'.o_ws_category_%d' % category.id">
+                                                        <th class="text-left" t-att-colspan="2">
+                                                            <span t-if="category" t-field="category.name"/>
+                                                            <span t-else="">Uncategorized</span>
+                                                        </th>
+                                                    </tr>
+                                                </t>
+                                                <tr t-foreach="categories[category].filtered(lambda l: len(l.value_ids) > 1)"
+                                                    t-as="ptal"
+                                                    t-att-class="'collapse show o_ws_category_%d' % category.id">
+                                                    <td>
+                                                        <span t-field="ptal.attribute_id.name"/>
+                                                    </td>
+                                                    <td>
+                                                        <t t-foreach="ptal.value_ids" t-as="pav">
+                                                            <span t-field="pav.name"/>
+                                                            <t t-if="not pav_last">or</t>
+                                                        </t>
+                                                    </td>
+                                                </tr>
+                                                <t t-set="single_value_attributes"
+                                                   t-value="categories[category]._prepare_single_value_for_display()"/>
+                                                <tr t-foreach="single_value_attributes" t-as="attribute"
+                                                    t-att-class="'collapse show o_ws_category_%d' % category.id">
+                                                    <td>
+                                                        <span t-field="attribute.name"/>
+                                                    </td>
+                                                    <td>
+                                                        <t t-foreach="single_value_attributes[attribute]"
+                                                           t-as="ptal">
+                                                            <span t-field="ptal.product_template_value_ids._only_active().name"/>
+                                                            <t t-if="not ptal_last">,</t>
+                                                        </t>
+                                                    </td>
+                                                </tr>
+                                            </t>
+                                        </table>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <t t-if="request.website.viewref('website_sale.product_comment').active">
+                        <div class="tab-pane fade o_not_editable"
+                             id="nav_tabs_content_3"
+                             role="tabpanel"
+                             aria-labelledby="nav_tabs_link_3">
+                            <div class="o_shop_discussion_rating oe_overlay_options o_not_editable">
+                                <t t-call="portal.message_thread">
+                                    <t t-set="object" t-value="product"/>
+                                    <t t-set="display_rating" t-value="True"/>
+                                </t>
+                            </div>
+                        </div>
+                    </t>
+                    <t t-foreach="product.pro_tab_ids" t-as="tab">
+                        <t t-if="request.env['product.tab.line'].getTab(website.id,tab.website_ids.ids)">
+                            <div class="tab-pane fade"
+                                 t-att-id="'nav_tabs_content_%s_%s' % (product.id, tab.id)"
+                                 role="tabpanel"
+                                 t-att-aria-labelledby="'nav_tabs_link_%s_%s' % (product.id, tab.id)">
+                                <div t-field="tab.tab_content"
+                                     class="oe_structure"/>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+                <!-- End Tab Content -->
+            </div>
+        </section>
+    </template>
+    <!-- Product Brand Page Sub Template START -->
+    <template id="product_brand_page_st" name="Product Brand Page">
+        <t t-call="website.layout">
+            <div class="as-brand-page">
+                <div class="as-bp-brand-details">
+                    <div class="container">
+                        <div class="media">
+                            <div class="br-img">
+                                <span itemprop="image" t-field="brand.logo" t-options="{'widget':'image', 'resize':'300x300', 'alt-field':'brand.name'}"/>
+                            </div>
+                            <div class="media-body">
+                                <h3 t-field="brand.name"/>
+                                <t t-if="brand.brand_description">
+                                    <p t-field="brand.brand_description"/>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oe_structure mt16 brand-description" itemprop="description" t-field="brand.description"/>
+                <div class="as-brand-product-list">
+                    <div class="container">
+                        <div class="row">
+                            <t t-as="product" t-foreach="products">
+                                <div class="col-6 col-md-4 col-lg-3">
+                                    <div class="as-brand-product">
+                                        <div class="pro-img">
+                                            <a t-att-href="'/shop/product/%s' % slug(product)">
+                                                <span t-field="product.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_1024' if product_image_big else 'image_512'}"/>
+                                            </a>
+                                        </div>
+                                        <div class="pro-info">
+                                            <h6>
+                                                <a t-att-href="'/shop/product/%s' % slug(product)">
+                                                    <t t-esc="product.name"/>
+                                                </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                            <t t-if="not products">
+                                <div class="text-center text-muted oe_structure">
+                                    <h3>No products in this brand ...</h3>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+    <!-- Product Brand Page Sub Template END-->
+    <!-- Product Detail Page Sub Template START -->
+    <template id="as_alternative_and_accessory_product" name="Related Products">
+        <div class="recommended_product_slider_main container">
+            <div class="row">
+                <t t-if="request.website.viewref('website_sale.recommended_products').active">
+                <div class="col-lg-6 as-alternative-product" t-if="product.alternative_product_ids">
+                    <div class="seaction-head">
+                        <h3 class="">Alternative Products</h3>
+                    </div>
+                    <div class="owl-carousel" id="as_alternative">
+                        <t t-foreach="product.alternative_product_ids" t-as="alt_product">
+                            <div class="as-alt-product">
+                                <t t-set="combination_info" t-value="alt_product._get_combination_info()"/>
+                                <t t-set="product_variant" t-value="alt_product.env['product.product'].browse(combination_info['product_id'])"/>
+                                <div class="pro-img" t-if="product_variant" t-field="product_variant.image_512" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'o_alternative_product' }" />
+                                <div class="pro-img" t-else="" t-field="alt_product.image_512" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'o_alternative_product' }" />
+                                <div class="pro-info">
+                                    <h6>
+                                        <a t-att-href="alt_product.website_url" style="display: block">
+                                            <span t-att-title="alt_product.name" t-field="alt_product.name" class="o_text_overflow" style="display: block;" />
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+                </t>
+            </div>
+        </div>
+    </template>
+
+    <template id="accessories_products" name="Accessory Products" inherit_id="atharva_theme_base.as_alternative_and_accessory_product" customize_show="True" active="True">
+        <xpath expr="//div[hasclass('row')]" position="inside">
+        <!--****** Accesories Products ******-->
+            <div class="col-lg-6 as-accessory-product" t-if="product.accessory_product_ids">
+                <div class="seaction-head">
+                    <h3>Accessory Products</h3>
+                </div>
+                <div class="accessory_product owl-carousel" id="as_accessory_product">
+                    <t t-foreach="product.accessory_product_ids" t-as="ace_product">
+                        <div class="as-alt-product">
+                            <div class="pro-img" t-field="ace_product.image_512" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'o_accessory_product' }" />
+                            <div class="pro-info">
+                                <h6>
+                                    <a t-att-href="ace_product.website_url" style="display: block">
+                                        <span t-att-title="ace_product.name" t-field="ace_product.name" class="o_text_overflow" style="display: block;" />
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="product_rating_st" name="Product Rating ST">
+        <t t-if="request.website.viewref('website_sale.product_comment').active">
+        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100" />
+        <div class="prod_rating">
+            <t t-set="curr_rate" t-value="0" />
+            <t t-set="half_flag" t-value="0" />
+            <t t-foreach="range(0, 5)" t-as="each_rate">
+                <t t-set="curr_rate" t-value="curr_rate + 1" />
+                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                    <i class="fa fa-star" />
+                </t>
+                <t t-else="">
+                    <t t-if="rating_avg_val % 1 > 0.01 and half_flag == 0">
+                        <i class="fa fa-star-half-o" />
+                        <t t-set="half_flag" t-value="1" />
+                    </t>
+                    <t t-else="">
+                        <i class="fa fa-star-o" />
+                    </t>
+                </t>
+            </t>
+            <span t-esc="str(rating_avg_val) + ' / 5'" />
+        </div>
+        </t>
+    </template>
+
+    <template id="as_product_brand_container">
+        <t t-if="product.product_brand_id.logo or product.product_brand_id.brand_description">
+            <div class="as-pd-brand" t-if="product.product_brand_id and product.product_brand_id.website_id.id == request.website.id or not product.product_brand_id.website_id.id">
+                <div class="as-pd-brand-logo" t-if="product.product_brand_id.logo"
+                     t-field="product.product_brand_id.logo"
+                     t-options="{'widget': 'image','class':'te_product_brand_img'}"/>
+                <div class="as-pd-brand-desc">
+                    <p t-if="product.product_brand_id.brand_description"
+                       t-field="product.product_brand_id.brand_description"/>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="product_brand_st" name="Product Brand ST">
+        <t t-if="request.website.viewref('atharva_theme_base.as_product_brand_container').active">
+            <t t-call="atharva_theme_base.as_product_brand_container"/>
+        </t>
+    </template>
+
+    <template id="as_stick_product_detail">
+        <t t-if="product">
+            <div class="as-product-sticky-cart as_prod_sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 left">
+                            <div class="media">
+                                <div class="prod_img">
+                                    <img t-att-src="'/web/image/product.template/%s/image_256' % product.id"
+                                         class="img img-fluid rounded" alt="Product Image"/>
+                                </div>
+                                <div class="media-body">
+                                    <h6 itemprop="name" t-field="product.name" class="te_product_name"/>
+                                    <t t-call="website_sale.product_price"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <div class="as_add_cart">
+                                <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <div class="js_product js_main_product">
+                                        <t t-placeholder="select">
+                                            <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+                                            <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id"/>
+                                        </t>
+                                        <t t-set="buy_now_show"
+                                           t-value="request.website.viewref('website_sale.product_buy_now').active"/>
+                                        <a role="button" id="add_to_cart_cp_btn"
+                                           class="as-btn as-btn-theme" href="#">
+                                            <i class="fa fa-shopping-cart"/>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <t t-if="buy_now_show">
+                                            <a role="button" id="buy_now_cp_btn"
+                                               class="as-btn as-btn-dark"
+                                               href="#">
+                                                <i class="fa fa-bolt"/>
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </t>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="product_sticky_st" name="Product Sticky ST">
+        <t t-set="sticky_product_details" t-value="request.website.viewref('atharva_theme_base.as_stick_product_detail').active"/>
+        <t t-if="sticky_product_details">
+            <t t-call="atharva_theme_base.as_stick_product_detail"/>
+        </t>
+    </template>
+
+    <template id="product_breadcrumb_st" name="Product Breadcrumb">
+        <section class="product-breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a t-att-href="keep(category=0)">Products</a>
+                    </li>
+                    <li t-if="category" class="breadcrumb-item">
+                        <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)"
+                        t-field="category.name"/>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <span t-field="product.name"/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </template>
+
+    <template id="product_share_st" name="Producr Share ST">
+        <div t-field="product.name" id="product_name" style="display:none;"/>
+        <div t-field="product.description_sale" id="product_desc" style="display:none;"/>
+        <div t-field="product.image_1920" id="product_img" style="display:none;"/>
+        <div class="product_share">
+            <h6 class="text-uppercase font-weight-bold">Share this product</h6>
+            <a href="#" aria-label="Facebook" title="Share on Facebook" t-attf-class="o_facebook"><i class="fa fa-facebook-square text-facebook"/></a>
+            <a href="#" aria-label="Twitter" title="Share on Twitter" t-attf-class="o_twitter"><i class="fa fa-twitter text-twitter" aria-label="Twitter" title="Twitter"/></a>
+            <a href="#" aria-label="LinkedIn" title="Share on LinkedIn" t-attf-class="o_linkedin"><i class="fa fa-linkedin text-linkedin" aria-label="LinkedIn" title="LinkedIn"/></a>
+            <a href="#" aria-label="Pinterest" title="Share on Pinterest" t-attf-class="o_pinterest"><i class="fa fa-pinterest text-pinterest" aria-label="pinterest" title="pinterest"/></a>
+            <a href="#" aria-label="envelope" title="Share on envelope" t-attf-class="o_mail"><i class="fa fa-envelope text-envelope" aria-label="o_mail" title="o_mail"/></a>
+        </div>
+    </template>
+
+    <template id="custom_product_detail_st" name="Custom Product Detail ST">
+        <div id="product_full_specification_accessory_n_alternative">
+            <t t-if="product">
+                <t t-call="atharva_theme_base.as_html_content_tabs"/>
+                <t t-call="atharva_theme_base.as_alternative_and_accessory_product"/>
+            </t>
+        </div>
+    </template>
+
+    <template id="product_description_st" name="Product Description ST">
+        <div class="o_not_editable">
+            <p t-field="product.description_sale" class="as-pro-desc"/>
+        </div>
+    </template>
+    <!-- Product Detail Page Sub Template END-->
+
+    <!-- Product Label Sub Template START -->
+    <template id="product_label_st" name="Product Label ">
+        <t t-set="get_temp_id" t-value="request.website.sudo().theme_id.name + '.as_shop_product_label'"/>
+        <t t-if="request.website.viewref(get_temp_id).active">
+            <t t-if="product.pro_label_line_ids">
+                <t t-foreach="product.pro_label_line_ids" t-as="rec">
+                    <t t-if="rec.website_id.id == website.id">
+                        <div class="as-ribbon-tag">
+                            <span t-attf-style="background-color:#{rec.label.label_color};color:#{rec.label.label_text_color}"> <i class="fa fa-tag"></i> <t t-esc="rec.label.name" /></span>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="shop_product_label_st" name="Shop Product Label">
+        <t t-if="product.pro_label_line_ids">
+            <t t-as="labels" t-foreach="product.pro_label_line_ids">
+                <t t-if="labels.website_id.id == website.id">
+                    <t t-call="atharva_theme_base.as_label_layout"/>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- Product Label Layouts -->
+    <template id="as_label_layout">
+        <div class="as-ribbon-wrpa">
+            <div class="ribbon-style-1" t-att-id="labels.label.label_option" t-if="labels.label.label_option == 'option_1'">
+                <span t-attf-style="background-color:#{labels.label.label_color}; color:#{labels.label.label_text_color}" t-field="labels.label.name"/>
+            </div>
+
+            <div class="ribbon-style-2" t-att-id="labels.label.label_option" t-attf-style="background-color:#{labels.label.label_color}" t-if="labels.label.label_option == 'option_2'">
+                <span t-attf-style="background-color:#{labels.label.label_color}; color:#{labels.label.label_text_color}" t-field="labels.label.name"/>
+            </div>
+
+            <div class="ribbon-style-3" t-att-id="labels.label.label_option" t-attf-style="color:#{labels.label.label_color}" t-if="labels.label.label_option == 'option_3'">
+                <span t-attf-style="background-color:#{labels.label.label_color}; color:#{labels.label.label_text_color}" t-field="labels.label.name"/>
+            </div>
+
+            <div class="ribbon-style-4" t-att-id="labels.label.label_option" t-if="labels.label.label_option == 'option_4'">
+                <span t-attf-style="background-color:#{labels.label.label_color} ; color:#{labels.label.label_text_color}" t-field="labels.label.name"/>
+            </div>
+            <div class="ribbon-style-5" t-att-id="labels.label.label_option" t-if="labels.label.label_option == 'option_5'">
+                <span t-attf-style="background-color:#{labels.label.label_color} ; color:#{labels.label.label_text_color}"><i class="fa fa-tag"/> <t t-esc="labels.label.name" /></span>
+            </div>
+        </div>
+    </template>
+    <!-- Product Label Sub Template End -->
+
+    <!--Shop Page Rating Sub Template START -->
+    <template id="shop_product_rating_st" name="Shop Product Rating ST">
+        <div t-set="rating_avg_val" t-value="round(product.sudo().rating_get_stats().get('avg') / 1 * 100) / 100"/>
+        <div class="prod_rating">
+            <t t-set="curr_rate" t-value="0"/>
+            <t t-set="half_flag" t-value="0"/>
+            <t t-as="each_rate" t-foreach="range(0, 5)">
+                <t t-set="curr_rate" t-value="curr_rate + 1"/>
+                <t t-if="curr_rate &lt;= int(rating_avg_val // 1)">
+                    <i class="fa fa-star"/>
+                </t>
+                <t t-else="">
+                    <t t-if="rating_avg_val % 1 == 0.01 and half_flag == 0">
+                        <i class="fa fa-star-half-o"/>
+                        <t t-set="half_flag" t-value="1"/>
+                    </t>
+                    <t t-else="">
+                        <i class="fa fa-star-o"/>
+                    </t>
+                </t>
+            </t>
+            <span t-esc="str(rating_avg_val) + ' / 5'"/>
+        </div>
+    </template>
+    <!--Shop Page Rating Sub Template END-->
+
+    <!-- Shop Page Sub Template START -->
+    <template id="as_product_item_st" name="Product Item ST">
+        <t t-set="bg_color" t-value="td_product['ribbon']['bg_color'] or ''"/>
+        <t t-set="text_color" t-value="td_product['ribbon']['text_color']"/>
+        <t t-set="bg_class" t-value="td_product['ribbon']['html_class']"/>
+        <a class="d-block h-100" itemprop="url" t-att-href="product_href">
+            <span class="d-flex h-100 justify-content-center align-items-center" t-field="product.image_512" t-options="{'widget': 'image', 'preview_image': 'image_1024' if product_image_big else 'image_512'}"/>
+            <span t-attf-class="o_ribbon #{bg_class}" t-attf-style="#{text_color and ('color: %s; ' % text_color)}#{bg_color and 'background-color:' + bg_color}" t-raw="td_product['ribbon']['html'] or ''"/>
+        </a>
+    </template>
+
+    <template id="attr_sidebar_show_st" name="Attr Show ST">
+        <t t-if="(request.website.viewref('website_sale.products_categories').active) or (request.website.viewref('website_sale.products_attributes').active)">
+            <div class="as-aside-filter">
+                <button class="as_aside_filter_open">
+                    <i class="icon"/>
+                    <span>Filters</span>
+                </button>
+            </div>
+        </t>
+    </template>
+
+    <template id="attr_sidebar_hide_st" name="Attr Hide ST">
+        <div class="as-aside-filter-close">
+            <button class="as_aside_filter_close">
+                <i class="icon"/>
+                <span>Filter</span>
+            </button>
+        </div>
+    </template>
+
+    <template id="prod_cat_st" name="Product Cat ST">
+        <div class="as-category-title">
+            <span>Product Category</span>
+            <i class="icon"/>
+        </div>
+    </template>
+
+    <template id="product_attribute_as_st" name="Product Attributes">
+
+        <li class="nav-item" t-if="a.value_ids and len(a.value_ids) &gt; 1">
+
+            <t t-set="attr_section_open" t-value="False"/>
+            <t t-as="v" t-foreach="a.value_ids">
+                <t t-if="v.id in attrib_set">
+                    <t t-set="attr_section_open" t-value="True"/>
+                </t>
+            </t>
+            <div class="as_attribute_name as-collapse-widget">
+                <span t-field="a.name"/>
+                <i class="icon"/>
+                <t t-if="attr_section_open">
+                    <span class="clear_filter as_clear_variant" t-att-data-attr_id="a.id">
+                        <i class="fa fa-times"/>
+                        <span>Clear</span>
+                    </span>
+                </t>
+            </div>
+            <t t-if="a.display_type == 'select'">
+                <select name="attrib" t-attf-class="form-control nav nav-pills flex-column #{'as_f_open' if attr_section_open else 'as_f_close'}">
+                    <option value=""/>
+                    <t t-as="v" t-foreach="a.value_ids">
+                        <option t-if="v.id not in hide_attr_value" t-att-selected="v.id in attrib_set" t-att-value="'%s-%s' % (a.id,v.id)" >
+                            <t t-if="v.id in attr_value_count">
+                                <span><t t-esc="v.name"/> <span t-esc="'(%s)' %(str(attr_value_count[v.id]),)" /> </span>
+                            </t>
+                            <t t-else="">
+                                <span><t t-esc="v.name"/></span>
+                            </t>
+                        </option>
+                    </t>
+                </select>
+            </t>
+            <t t-if="a.display_type == 'radio'">
+                <ul t-attf-class="nav nav-pills flex-column #{'as_f_open' if attr_section_open else 'as_f_close'}">
+                    <t t-as="v" t-foreach="a.value_ids">
+                        <li t-if="v.id not in hide_attr_value" class="nav-item">
+                            <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if v.id in attrib_set else ''}">
+                                <input name="attrib" t-att-checked="'checked' if v.id in attrib_set else None" t-att-value="'%s-%s' % (a.id,v.id)" type="checkbox"/>
+                                <t t-if="v.id in attr_value_count">
+                                    <span style="font-weight: normal">
+                                        <t t-esc="v.name"/> <span t-esc="'(%s)' %(str(attr_value_count[v.id]),)" />
+                                    </span>
+                                </t>
+                                <t t-else="">
+                                    <span style="font-weight: normal" t-field="v.name"/>
+                                </t>
+                            </label>
+                        </li>
+                    </t>
+                </ul>
+            </t>
+            <t t-if="a.display_type == 'color'">
+                <ul t-attf-class="nav nav-pills flex-column #{'as_f_open' if attr_section_open else 'as_f_close'}">
+                    <t t-as="v" t-foreach="a.value_ids">
+                        <li t-if="v.id not in hide_attr_value" class="nav-item">
+                            <label t-attf-class="css_attribute_color #{'active' if v.id in attrib_set else ''}" t-attf-style="background-color:#{ v.name}">
+                                <input name="attrib" t-att-checked="'checked' if v.id in attrib_set else None" t-att-title="v.name" t-att-value="'%s-%s' % (a.id,v.id)" type="checkbox"/>
+                            </label>
+                            <t t-if="v.id in attr_value_count">
+                                <span>
+                                    <t t-esc="v.name"/> <span t-esc="'(%s)' %(str(attr_value_count[v.id]),)" />
+                                </span>
+                            </t>
+                            <t t-else="">
+                                <span t-esc="v.name"/>
+                            </t>
+                        </li>
+                    </t>
+                </ul>
+            </t>
+        </li>
+    </template>
+
+    <template id="product_brand_att_st" name="Product Attributes">
+        <t t-if="brands">
+            <t t-set="attr_section_open" t-value="False"/>
+            <t t-as="brand" t-foreach="brands">
+                <t t-if="brand.id in brand_set">
+                    <t t-set="attr_section_open" t-value="True"/>
+                </t>
+            </t>
+            <li class="nav-item">
+                <div id="brand_name">
+                    <div class="as_attribute_name as-collapse-widget">
+                        <span>Brand</span>
+                        <i class="icon"/>
+                        <t t-if="attr_section_open">
+                            <span class="clear_filter as_clear_variant">
+                                <i class="fa fa-times"/>
+                                <span>Clear</span>
+                            </span>
+                        </t>
+                    </div>
+                </div>
+                <ul t-attf-class="nav nav-pills flex-column pro_brand #{'as_f_open' if attr_section_open else 'as_f_close'}">
+                    <t t-as="brand" t-foreach="brands">
+                        <li class="nav-item">
+                            <label style="margin: 0 20px;" t-attf-class="nav-link#{' active' if brand.id in brand_set else ''}">
+                                <input name="brand" t-att-checked="'checked' if brand.id in brand_set else None" t-att-value="'%s-%s' % (brand.name,brand.id)" type="checkbox"/>
+                                <t t-if="brand.id in brand_count">
+                                    <span style="font-weight: normal">
+                                        <t t-esc="brand.name"/> <span t-esc="'(%s)' %(str(brand_count[brand.id]),)" />
+                                    </span>
+                                </t>
+                                <t t-else="">
+                                    <span style="font-weight: normal" t-esc="brand.name"/>
+                                </t>
+                            </label>
+                        </li>
+                    </t>
+                </ul>
+            </li>
+        </t>
+    </template>
+
+    <template id="price_filter_st" name="Price Filter ST">
+        <div class="slider-price-filter">
+            <div t-attf-class="div_class_price_filter_heading spf-title as-collapse-widget #{'open' if custom_min_val != 0 and custom_max_val != 0 else ''}">
+                <span class="refined-by-attr">Price</span>
+                <i class="icon"/>
+            </div>
+
+            <div t-attf-class="form_class price_filter_main spf-box #{'hide_price_section' if custom_min_val == 0 and custom_max_val == 0 else 'show_price_section'}">
+
+                <div data-role="rangeslider">
+                    <t t-set="custom_min_val" t-value="custom_min_val or min_val"/>
+                    <t t-set="custom_max_val" t-value="custom_max_val or max_val"/>
+                    <div id="slider-range">
+                        <input class="span2" data-provide="slider" data-slider-step="1" id="price_filter_input" name="price_filter" t-att-data-slider-max="ceil(max_val)" t-att-data-slider-min="floor(min_val)" t-att-data-slider-value="[custom_min_val,custom_max_val]" t-att-data-value="custom_min_val,custom_max_val" type="text" value=""/>
+                    </div>
+                    <div class="spf-action" id="priceform">
+                        <div class="price_filter_details">
+                            <span class="text_min_val" t-esc="round(custom_min_val)"/>
+                            <span>&amp;nbsp;-&amp;nbsp;</span>
+                            <span class="text_max_val" t-esc="round(custom_max_val)"/>
+                        </div>
+                        <button class="apply_price_filter">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="min_max_st" name="Min Max ST">
+        <input id="min_val" name="min_val" t-att-value="custom_min_val" type="hidden"/>
+        <input id="max_val" name="max_val" t-att-value="custom_max_val" type="hidden"/>
+    </template>
+    <template id="prod_tag_st" name="Prod Tags ST">
+        <t t-if="tag_list" t-foreach="tag_list" t-as="v">
+            <input type="hidden" name="tags" t-att-value="v" />
+        </t>
+    </template>
+
+    <template id="rating_filter_st" name="Rating Filter ST">
+        <li t-if='len(hide_rating) != hide_rating_len' class="nav-item">
+            <t t-if="rating">
+                <t t-set="attr_section_opens" t-value="True"/>
+            </t>
+            <div id="rating_name">
+                <div class="as_attribute_name as-collapse-widget">
+                    <span>Rating</span>
+                    <i class="icon"/>
+                    <t t-if="attr_section_opens">
+                        <span class="clear_filter as_clear_variant">
+                            <i class="fa fa-times"/>
+                            <span>Clear</span>
+                        </span>
+                    </t>
+                </div>
+            </div>
+            <ul t-attf-class="nav nav-pills flex-column pro_rating #{'as_f_open' if attr_section_opens else 'as_f_close'}">
+                <t t-if="rating">
+                    <li class="nav-item">
+                        <label t-attf-class="nav-link active">
+                            <input type="checkbox" name="rating" t-att-value="rating" t-att-checked="True"/>
+                            <t t-if="int(rating) in rating_count">
+                                <span><t t-esc="rating"/> stars &amp; Up <span t-esc="'(%s)' %(str(rating_count[int(rating)]),)" /></span>
+                            </t>
+                            <t t-else="">
+                                <span><t t-esc="rating"/> stars &amp; Up </span>
+                            </t>
+                        </label>
+                    </li>
+                </t>
+                <t t-else="">
+                    <t t-as="rat" t-foreach="[4,3,2,1]">
+                        <t t-if="rat not in hide_rating">
+                            <li class="nav-item">
+                                <label t-attf-class="nav-link#{' active' if rating == str(rat) else ''}">
+                                    <input type="checkbox" name="rating" t-att-value="rat" t-att-checked="'checked' if rating == str(rat) else None"/>
+                                    <t t-if="rat in rating_count">
+                                        <span><t t-esc="rat"/> stars &amp; Up <span t-esc="'(%s)' %(str(rating_count[rat]),)" /></span>
+                                    </t>
+                                    <t t-else="">
+                                        <span><t t-esc="rat"/> stars &amp; Up </span>
+                                    </t>
+                                </label>
+                            </li>
+                        </t>
+                    </t>
+                </t>
+            </ul>
+        </li>
+    </template>
+    <!-- Shop Page Sub Template END -->
+
+    <template id="product_image_gallary_st" name="Product Image Gallary ST">
+        <div class="carousel-inner h-100">
+            <t t-foreach="product_images" t-as="product_image">
+                <div t-attf-class="carousel-item h-100#{' active' if product_image_first else ''}">
+                    <t t-if="product_image._name == 'product.image' and product_image.embed_code">
+                        <a t-att-href="product_image.video_url" class="video-gallery-tag">
+                            <div class="d-flex align-items-center justify-content-center h-100 embed-responsive embed-responsive-16by9">
+                                <t t-raw="product_image.embed_code"/>
+                            </div>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <a t-att-href="website.image_url(product_image, 'image_1024')" class="img-gallery-tag">
+                            <div t-field="product_image.image_1920" class="d-flex align-items-center justify-content-center h-100" t-options='{"widget": "image", "preview_image": "image_1024", "class": "product_detail_img mh-100", "alt-field": "name", "zoom": product_image.can_image_1024_be_zoomed and "image_1920"}'/>
+                        </a>
+                    </t>
+                </div>
+            </t>
+        </div>
+    </template>
+
+    <template id="shop_product_carousel_st" name="Shop Product Carousel St">
+        <t t-set="vertical_slider" t-value="request.website.sudo().theme_id.name + '.multi_image_vertical_slider'"/>
+        <t t-set="horizontal_slider" t-value="request.website.sudo().theme_id.name + '.multi_image_horizontal_slider'"/>
+        <t t-if="request.website.viewref(vertical_slider).active or request.website.viewref(horizontal_slider).active">
+            <div t-ignore="True" class="thumb-slide-box d-none d-md-block text-center">
+                <div t-if="len(product_images) > 1" class="thumbnails-slides" id="thumbs-sliders"
+                    t-att-data-vertical="request.website.viewref(vertical_slider).active"
+                    t-att-data-horizontal="request.website.viewref(horizontal_slider).active"
+                    t-att-data-total_img="len(product_images)">
+                    <t t-foreach="product_images" t-as="product_image" >
+                        <div contenteditable="False" t-attf-class="{{'thumb-active' if product_image_first else ''}}">
+                            <div t-attf-class="{{'active' if product_image_first else ''}}" data-target="#o-carousel-product" t-att-data-slide-to="str(product_image_index)"
+                                t-field="product_image.image_128" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_contain", "alt-field": "name"}'/>
+                            <i t-if="product_image._name == 'product.image' and product_image.embed_code" class="fa fa-play o_product_video_thumb"/>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+        <t t-else="">
+            <div t-ignore="True" class="d-none d-md-block text-center">
+                <ol t-if="len(product_images) > 1" class="carousel-indicators d-inline-block position-static mx-auto my-0 p-1 text-left">
+                    <t t-foreach="product_images" t-as="product_image"><li t-attf-class="d-inline-block m-1 align-top {{'active' if product_image_first else ''}}" data-target="#o-carousel-product" t-att-data-slide-to="str(product_image_index)">
+                        <div t-field="product_image.image_128" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_contain", "alt-field": "name"}'/>
+                        <i t-if="product_image._name == 'product.image' and product_image.embed_code" class="fa fa-2x fa-play-circle-o o_product_video_thumb"/>
+                    </li></t>
+                </ol>
+            </div>
+        </t>
+    </template>
+
+
+    <template id="product_tags_st" name="Product Tags ST">
+        <form t-if="tags and len(hide_tag) != hide_tag_len" class="js_product_tags">
+            <t t-if="attrib_list" t-foreach="attrib_list" t-as="vals">
+                <input type="hidden" name="attrib" t-att-value="vals" />
+            </t>
+            <input t-if="sel_brand"  type="hidden" name="brand" t-att-value="sel_brand" />
+            <input t-if="rating" type="hidden" name="rating" t-att-value="rating" />
+            <input t-if="catgeory" type="hidden" name="category" t-att-value="catgeory" />
+            <input t-if="search" type="hidden" name="search" t-att-value="search" />
+            <input t-if="custom_min_val != 0" type="hidden" name="min_val" t-att-value="custom_min_val" />
+            <input t-if="custom_max_val != 0" type="hidden" name="max_val" t-att-value="custom_max_val" />
+            <t t-set="attr_section_open" t-value="False"/>
+            <t t-as="t" t-foreach="tags">
+                <t t-if="t.id in tag_set">
+                    <t t-set="attr_section_open" t-value="True"/>
+                </t>
+            </t>
+            <div id="tags_name">
+                <div t-attf-class="as-collapse-widget tag-open-close #{'open' if attr_section_open else ''}">
+                    <span>Product Tags</span>
+                    <i class="icon"/>
+                    <span class="as_clear_variant" t-if="tag_set">
+                        <a t-att-href="keep('/shop/' , tags='')">
+                            <i class="fa fa-times"></i>
+                            <span>Clear</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <ul t-attf-class="nav nav-pills flex-column tag-item #{'show_tag_section' if attr_section_open else 'hide_tag_section'}" >
+                <t t-foreach="tags" t-as="tag">
+                    <t t-if="tag.id not in hide_tag">
+                        <li class="nav-item">
+                            <label t-attf-class="nav-link#{' active' if tag.id in tag_set else ''}">
+                                <input type="checkbox"
+                                name="tags"
+                                t-att-value="'%s-%s' % (tag.name,tag.id)"
+                                t-att-checked="'checked' if tag.id in tag_set else None"/>
+                                <t t-if="tag.id in tag_count">
+                                    <span style="font-weight: normal">
+                                        <t t-esc="tag.name"/> <span t-esc="'(%s)' %(str(tag_count[tag.id]),)" />
+                                    </span>
+                                </t>
+                                <t t-else="">
+                                    <span style="font-weight: normal" t-esc="tag.name"/>
+                                </t>
+                            </label>
+                        </li>
+                    </t>
+                </t>
+            </ul>
+        </form>
+    </template>
+
+    <!-- Product Quick View Sub Template START -->
+    <template id="product_qv_detail_st" name="Product Quick View ST">
+        <t t-if="product">
+            <t t-set="combination" t-value="product._get_first_possible_combination()"/>
+            <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+            <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
+            <div class="quick-wrap">
+                <button class="qv_close">
+                    <span/>
+                </button>
+                <div class="js_sale quick-wrap-in" itemscope="itemscope" itemtype="http://schema.org/Product">
+                    <div class="container oe_website_sale" id="product_detail">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-7 as-product-photos">
+                                <!-- Product Slider -->
+                                <div class="product-img-box">
+                                    <t t-set="product_images" t-value="product_variant._get_images() if product_variant else product._get_images()"/>
+                                    <div class="carousel slide" data-interval="0" data-ride="carousel" id="o-carousel-product">
+                                        <div class="carousel-outer position-relative">
+                                            <div class="carousel-inner h-100">
+                                                <t t-as="product_image" t-foreach="product_images">
+                                                    <div t-attf-class="carousel-item h-100#{' active' if product_image_first else ''}">
+                                                        <div class="d-flex align-items-center justify-content-center h-100 embed-responsive embed-responsive-16by9" t-if="product_image._name == 'product.image' and product_image.embed_code">
+                                                            <t t-raw="product_image.embed_code"/>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center h-100" t-else="" t-field="product_image.image_1920" t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;preview_image&quot;: &quot;image_1024&quot;, &quot;class&quot;: &quot;product_detail_img mh-100&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: product_image.can_image_1024_be_zoomed and &quot;image_1920&quot;}"/>
+                                                    </div>
+                                                </t>
+                                            </div>
+                                            <t t-if="len(product_images) &gt;1">
+                                                <a class="carousel-control-prev" data-slide="prev" href="#o-carousel-product" role="button">
+                                                    <span aria-label="Previous" class="ti-angle-left" role="img" title="Previous"/>
+                                                </a>
+                                                <a class="carousel-control-next" data-slide="next" href="#o-carousel-product" role="button">
+                                                    <span aria-label="Next" class="ti-angle-right" role="img" title="Next"/>
+                                                </a>
+                                            </t>
+                                            <t t-call="atharva_theme_base.shop_product_carousel_st"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End -->
+                            </div>
+                            <div class="col-md-6 col-xl-5" id="product_details">
+                                <t t-set="get_temp_id" t-value="request.website.sudo().theme_id.name + '.as_shop_product_label'"/>
+                                <t t-if="request.website.viewref(get_temp_id).active">
+                                    <t t-if="product.pro_label_line_ids">
+                                        <t t-foreach="product.pro_label_line_ids" t-as="rec">
+                                            <t t-if="rec.website_id.id == website.id">
+                                                <div class="as-ribbon-tag">
+                                                    <span t-attf-style="background-color:#{rec.label.label_color};color:#{rec.label.label_text_color}"> <i class="fa fa-tag"></i> <t t-esc="rec.label.name" /></span>
+                                                </div>
+                                            </t>
+                                        </t>
+                                    </t>
+                                </t>
+                                <!-- Product Description -->
+                                <h2 itemprop="name" t-field="product.name">Product Name</h2>
+                                <span itemprop="url" style="display:none;" t-esc="product.website_url"/>
+                                <form action="/shop/cart/update" method="POST" t-if="product._is_add_to_cart_possible()">
+                                    <input name="csrf_token" t-att-value="request.csrf_token()" type="hidden"/>
+                                    <div class="js_product js_main_product">
+                                        <div class="pro-desc" t-if="product.description_sale">
+                                            <p t-field="product.description_sale"/>
+                                        </div>
+                                        <t t-placeholder="select">
+                                            <input class="product_id" name="product_id" t-att-value="product_variant.id" type="hidden"/>
+                                            <input class="product_template_id" name="product_template_id" t-att-value="product.id" type="hidden"/>
+                                            <t t-call="sale.variants" t-if="combination">
+                                                <t t-set="ul_class" t-value="'flex-column'"/>
+                                                <t t-set="parent_combination" t-value="None"/>
+                                            </t>
+                                            <t t-else="">
+                                                <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}"/>
+                                            </t>
+                                        </t>
+                                        <t t-call="website_sale.product_price"/>
+                                        <p class="css_not_available_msg alert alert-warning" t-if="True">This combination does not exist.</p>
+                                        <div class="css_quantity input-group" contenteditable="false">
+                                            <div class="input-group-prepend">
+                                                <a aria-label="Remove one" class="btn btn-secondary js_add_cart_json" t-attf-href="#" title="Remove one">
+                                                    <i class="fa fa-minus"/>
+                                                </a>
+                                            </div>
+                                            <input class="form-control quantity" data-min="1" name="add_qty" t-att-value="add_qty or 1" type="text"/>
+                                            <div class="input-group-append">
+                                                <a aria-label="Add one" class="btn btn-secondary float_left js_add_cart_json" t-attf-href="#" title="Add one">
+                                                    <i class="fa fa-plus"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="as-btn btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#" id="add_to_cart" role="button">
+                                            <i class="fa fa-shopping-cart"/>Add to Cart</a>
+                                    </div>
+                                </form>
+                                <p class="alert alert-warning" t-elif="not product.active">This product is no longer available.</p>
+                                <p class="alert alert-warning" t-else="">This product has no valid combination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+        <t t-if="error">
+            <div class="quick-cover-overlay"/>
+            <div class="quick-wrap">
+                <div class="quick-wrap-in">
+                    <button class="qv_close">
+                        <span/>
+                    </button>
+                    <div class="alert alert-warning m-4" t-esc="error"/>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="add_qv_cover_st" name="Add Cover QV ST">
+        <div class="quick_cover"/>
+    </template>
+
+    <template id="add_quick_add_to_cover_st" name="Add Quick Add To Cart Cover">
+        <div class="quick_cart_base"/>
+    </template>
+    <template id="cart_btn_sts" name="Cart Btn St">
+        <t t-if="request.website.viewref('theme_alan.quick_add_to_cart').active">
+            <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product ajax_add_cart quick-add-to-cart-active as-btn d-block d-sm-inline-block" href="#"><i class="fa fa-shopping-cart"/> Add to Cart</a>
+        </t>
+        <t t-else="">
+            <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt16 js_check_product a-submit as-btn d-block d-sm-inline-block" href="#"><i class="fa fa-shopping-cart"/> Add to Cart</a>
+        </t>
+    </template>
+
+    <template id="qv_icon_st" name="Quick View ST">
+        <a class="btn o_quick_view" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id" title="Quick View" type="button">
+            <span class="fa fa-eye"/>
+        </a>
+    </template>
+    <!-- Product Quick View Sub Template END -->
+    <template id="product_count_on_filter" inherit_id="website_sale.products_attributes" name="Show Product Count" customize_show="True" active="False">
+        <xpath expr="." position="inside"/>
+    </template>
+
+    <template id="hide_no_match_attr" inherit_id="website_sale.products_attributes" name="Hide No Product Attribute" customize_show="True" active="False" >
+        <xpath expr="." position="inside"/>
+    </template>
+
+</odoo>
+

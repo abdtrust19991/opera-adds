@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_promotion.templates">
+
+<t t-name="theme_alan.pro_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <div class="container">
+                            <section class="p-60px sm-p-20px bg-cover bg-center bg-no-repeat" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-jwl-02.jpg);">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 text-center">
+                                        <div class="white-bg p-40px d-inline-block">
+                                            <div class="h5 font-w-500 dark-color m-15px-b">New In Trend On This Week Only/- </div>
+                                            <div class="font-w-600 h1 dark-color">Buy 1 Get 1 Free</div>
+                                            <div class="m-20px-t">
+                                                <a class="as-line-btn dark" href="#">Discover Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 1</h6>
+                <label class="e-sb-label" for="e_promotion_01"><input id="e_promotion_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-80px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/fa-col-4.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="p-100px-tb">
+                                        <label class="font-w-600 dark-color h5">NEW SUMMER</label>
+                                        <div class="display-3 dark-color font-w-800 p-25px-b">COLLECTIONS</div>
+                                        <a class="as-btn as-btn-dark" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 2</h6>
+                <label class="e-sb-label" for="e_promotion_02"><input id="e_promotion_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp3">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/promotion-3.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 m-15px-tb">
+                            <section class="min-h-250px bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-10.jpg);">
+                                <div class="p-20px">
+                                    <h6 class="white-color">Get up to</h6>
+                                    <div class="h1 white-color font-w-700">50% Off</div>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 m-15px-tb">
+                            <section class="min-h-250px bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-11.jpg);">
+                                <div class="p-20px">
+                                    <h6 class="white-color">Get up to</h6>
+                                    <div class="h1 white-color font-w-700">50% Off</div>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </textarea>
+            <h6>Promotion 3</h6>
+            <label class="e-sb-label" for="e_promotion_03"><input id="e_promotion_03" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                        <div class="container">
+                            <section class="section bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-12.jpg);">
+                                <div class="row p-20px-tb">
+                                    <div class="col-lg-12 m-15px-tb text-center">
+                                        <div class="p-20px">
+                                            <h6 class="white-color">Latest Sport Shoes</h6>
+                                            <div class="h1 white-color font-w-700">Just Keep Running</div>
+                                            <div class="p-5px-t">
+                                                <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 4</h6>
+                <label class="e-sb-label" for="e_promotion_04"><input id="e_promotion_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp5">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/promotion-5.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="p-50px-tb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="position-relative hover-shine hovers hover-scale">
+                                <div>
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-7.jpg" />
+                                </div>
+                                <div class="position-absolute top-0 left-0 p-20px">
+                                    <h6 class="font-w-600 text-small white-color">Top 10 Tips</h6>
+                                    <h3 class="white-color h5 font-w-600">How to clean?</h3>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn as-btn as-btn-theme" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="position-relative hover-shine hovers hover-scale">
+                                <div>
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-8.jpg" />
+                                </div>
+                                <div class="position-absolute top-0 left-0 p-20px">
+                                    <h6 class="font-w-600 text-small white-color">Top 10 Tips</h6>
+                                    <h3 class="white-color h5 font-w-600">How to clean?</h3>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn as-btn as-btn-theme" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="position-relative hover-shine hovers hover-scale">
+                                <div>
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-v2-cat-9.jpg" />
+                                </div>
+                                <div class="position-absolute top-0 left-0 p-20px">
+                                    <h6 class="font-w-600 text-small white-color">Top 10 Tips</h6>
+                                    <h3 class="white-color h5 font-w-600">How to clean?</h3>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn as-btn as-btn-theme" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </textarea>
+            <h6>Promotion 5</h6>
+            <label class="e-sb-label" for="e_promotion_05"><input id="e_promotion_05" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <div class="hover-shine">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-11.png" />
+                                </div>
+                                <div>
+                                    <div class="h5 dark-color">PORTABLE SPEAKERS</div>
+                                    <div class="theme-color display-4 font-w-100">MUSI BOOM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 6</h6>
+                <label class="e-sb-label" for="e_promotion_06"><input id="e_promotion_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <div class="hover-shine">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-11.png" />
+                                </div>
+                                <div>
+                                    <div class="h5 dark-color">PORTABLE SPEAKERS</div>
+                                    <div class="theme-color display-4 font-w-100">MUSI BOOM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 7</h6>
+                <label class="e-sb-label" for="e_promotion_07"><input id="e_promotion_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="position-relative hover-shine hovers hover-scale">
+                                    <div>
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-8.png" />
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 left-0 p-30px-t">
+                                        <h3 class="dark-color h5 white-bg p-20px-lr p-10px-tb font-w-600">EARPHONES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="position-relative hover-shine hovers hover-scale">
+                                    <div>
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-9.png" />
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 left-0 p-30px-t">
+                                        <h3 class="dark-color h5 white-bg p-20px-lr p-10px-tb font-w-600">EARPHONES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="position-relative hover-shine hovers hover-scale">
+                                    <div>
+                                        <a href="#">
+                                            <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-10.png" />
+                                        </a>
+                                    </div>
+                                    <div class="position-absolute top-0 left-0 p-30px-t">
+                                        <h3 class="dark-color h5 white-bg p-20px-lr p-10px-tb font-w-600">EARPHONES</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 8</h6>
+                <label class="e-sb-label" for="e_promotion_08"><input id="e_promotion_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section style="background-color: #000;" class="m-100px-t">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/alan-13-v2-12.png" />
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="display-4 white-color font-w-600 m-20px-b">Powerbeats3 Wireless</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <div class="d-flex align-items-center p-10px-t">
+                                    <div class="h5 font-w-700 white-color m-20px-r">$199.00</div>
+                                    <a class="as-btn as-btn-theme" href="#">BUY <i class="fa fa-apple m-10px-l"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 9</h6>
+                <label class="e-sb-label" for="e_promotion_09"><input id="e_promotion_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/promotion-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-15px-tb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 m-15px-tb">
+                                <section class="min-h-250px bg-cover bg-no-repeat d-flex align-items-center justify-content-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/glasses-cat-3.jpg); background-position: right;">
+                                    <div class="p-20px text-center">
+                                        <h6 class="white-color">Get up to</h6>
+                                        <div class="h1 white-color font-w-700">50% Off</div>
+                                        <div class="p-5px-t">
+                                            <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-8 m-15px-tb">
+                                <section class="min-h-250px bg-cover bg-no-repeat d-flex align-items-center justify-content-end" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/glasses-cat-4.jpg); background-position: left;">
+                                    <div class="p-20px text-right">
+                                        <h6 class="white-color">Get up to</h6>
+                                        <div class="h1 white-color font-w-700">50% Off</div>
+                                        <div class="p-5px-t">
+                                            <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Promotion 10</h6>
+                <label class="e-sb-label" for="e_promotion_10"><input id="e_promotion_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.pro_temp11">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/promotion-11.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="p-15px-tb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 m-15px-tb">
+                            <section class="min-h-250px bg-cover bg-no-repeat bg-center d-flex align-items-center justify-content-start" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/glasses-cat-1.jpg);  background-position: right;">
+                                <div class="p-20px">
+                                    <h6 class="white-color">Get up to</h6>
+                                    <div class="h1 white-color font-w-700">50% Off</div>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 m-15px-tb">
+                            <section class="min-h-250px bg-cover bg-no-repeat bg-center d-flex align-items-center justify-content-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/glasses-cat-2.jpg);  background-position: left;">
+                                <div class="p-20px text-center">
+                                    <h6 class="white-color">Get up to</h6>
+                                    <div class="h1 white-color font-w-700">50% Off</div>
+                                    <div class="p-5px-t">
+                                        <a class="as-btn btn-sm as-btn-white" href="#">Shop Now</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </textarea>
+            <h6>Promotion 11</h6>
+            <label class="e-sb-label" for="e_promotion_11"><input id="e_promotion_11" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+
+</templates>

@@ -1,0 +1,331 @@
+/* Transparent 
+------------------------------------*/
+@mixin header-overlay {
+	#wrapwrap.o_header_overlay header:not(.o_header_affix) & {
+		@content;
+	}
+}
+
+/* Color Function
+------------------------------*/
+@function as-yiq-color($color, $light: $as-yiq-light-text, $dark: $as-yiq-dark-text) {
+	$red: red($color);
+	$green: green($color);
+	$blue: blue($color);
+
+	$yiq: (($red * 299) + ($green * 587) + ($blue * 114)) / 1000;
+
+	@if ($yiq >= $as-yiq-contrasted-threshold) {
+		@return $dark;
+	} @else {
+		@return $light;
+	}
+}
+
+// generic transform
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 
+
+//Transition
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin delay($delay){
+	transition-delay:$delay;
+	-webkit-transition-delay:$delay;
+}
+
+
+
+// Media Responsive
+@mixin up-sm {
+	@media(min-width: $as-media-sm + 1 ){
+		@content;
+	}
+}
+
+@mixin down-sm {
+	@media(max-width: $as-media-sm){
+		@content;
+	}
+}
+
+@mixin up-md {
+	@media(min-width: $as-media-md + 1 ){
+		@content;
+	}
+}
+
+@mixin down-md {
+	@media(max-width: $as-media-md){
+		@content;
+	}
+}
+
+@mixin up-lg {
+	@media(min-width: $as-media-lg + 1 ){
+		@content;
+	}
+}
+
+@mixin down-lg {
+	@media(max-width: $as-media-lg){
+		@content;
+	}
+}
+
+@mixin up-xl {
+	@media(min-width: $as-media-xl + 1 ){
+		@content;
+	}
+}
+
+@mixin down-xl {
+	@media(max-width: $as-media-xl){
+		@content;
+	}
+}
+
+
+/* Sidebar Toogle
+------------------------------*/
+@mixin sidebar_toggle {
+	position: fixed;
+    top: 0;
+    left: -350px;
+    bottom: 0;
+    background: $as-white;
+    z-index: 9999;
+    width: 300px;
+    max-height: 100vh;
+    overflow-y: auto;
+    transition: ease all 0.35s;
+    padding-right: 25px;
+    + #products_grid {
+        padding-left: 15px;
+    }
+	> .btn.btn-link.d-lg-none {
+		display: none;
+	}
+	> .collapse.d-lg-block {
+		display: block;
+	}
+	&.products_grid_before_open {
+		left: 0;
+	}
+}
+
+
+/*qty box*/
+@mixin css_quantity {
+	padding: 0;
+	position: relative;
+	border: 1px solid #d7d7d7;
+	width: 130px;
+	.btn {
+	    border: none !important;
+	    box-shadow: none!important;
+	    border-radius: 0!important;
+	    background: none!important;
+	    position: relative;
+	    padding: 0 13px;
+	}
+	.form-control {
+		border: none;
+		height: 40px;
+		max-width: 100%;
+	}
+	.input-group-prepend {
+		margin: 0;
+		@include up-md {
+			border-right: 1px solid #d7d7d7;
+		}
+		i {
+			&:before {
+			    position: absolute;
+			    content: '';
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    margin: auto;
+			    width: 9px;
+			    height: 1px;
+			    background: #888;
+			}
+		}
+	}
+	.input-group-append {
+		margin: 0;
+		@include up-md {
+			border-left: 1px solid #d7d7d7;
+		}
+		i {
+			&:before,
+			&:after {
+				position: absolute;
+			    content: '';
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    margin: auto;
+			    background: #888;
+			}
+			&:before {
+				width: 9px;
+			    height: 1px;
+			}
+			&:after {
+			    height: 9px;
+			    width: 1px;
+			}
+		}
+	}
+}
+
+
+/*sidebar Checkbox*/
+@mixin checkbox {
+	label:not(.css_attribute_color){
+		cursor: pointer;
+		background: none;
+		input[type="checkbox"] {
+			opacity: 0;
+			position: absolute;
+			+ span {
+				position: relative;
+				padding-left: 22px;
+				display: flex;
+				span {
+					margin-left: auto;
+    				font-size: 12px;
+				}
+				&:before {
+				    content: "";
+				    position: absolute;
+				    top: 5px;
+				    left: 3px;
+				    width: 8px;
+				    height: 8px;
+				    box-shadow: 0px 0px 0px 2px $as-white, 0px 0px 0px 3px #dedede;
+				    background: $as-white;
+				}
+			}
+		}
+		&:hover {
+			input[type="checkbox"] {
+				+ span:before {
+					background: $as-theme;
+				}   
+			}
+		}
+		&.active {
+			input[type="checkbox"] {
+				+ span:before {
+					background: $as-theme;
+				}
+			}
+		}
+	}
+
+	&.active {
+		label:not(.css_attribute_color){
+			input[type="checkbox"] {
+				+ span:before {
+					background: $as-theme;
+				}
+			}
+		}
+	}
+}
+
+@mixin checkbox_2 {
+	label:not(.css_attribute_color){
+		cursor: pointer;
+		input[type="checkbox"] {
+			opacity: 0;
+			position: absolute;
+			+ span {
+				position: relative;
+				padding-left: 22px;
+				display: flex;
+				span {
+					margin-left: auto;
+    				font-size: 12px;
+				}
+				&:before {
+					content: "";
+					width: 15px;
+					height: 15px;
+					border: 1px solid #000;
+					position: absolute;
+					top: 1px;
+					left: 0;
+					opacity: 0.2;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					left: 4px;
+					width: 8px;
+					height: 4px;
+					border-left: 1px solid #000;
+					border-bottom: 1px solid #000;
+					top: 5px;
+				    @include rotate(-45);
+				    opacity: 0;
+				}
+			}
+		}
+		&:hover {
+			input[type="checkbox"] {
+				+ span {
+					&:before,
+					&:after {
+						opacity: 1;
+						border-color: $as-theme;
+					}
+				}
+			}
+		}
+		&.active {
+			input[type="checkbox"] {
+				+ span {
+					&:before,
+					&:after {
+						opacity: 1;
+						border-color: $as-theme;
+					}
+				}
+			}
+		}
+	}
+
+	&.active {
+		label:not(.css_attribute_color){
+			input[type="checkbox"] {
+				+ span {
+					&:before,
+					&:after {
+						opacity: 1;
+						border-color: $as-theme;
+					}
+				}
+			}
+		}
+	}
+}

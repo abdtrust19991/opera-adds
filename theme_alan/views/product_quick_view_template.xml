@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="add_cover_quickview" inherit_id="website.layout" active="True">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <t t-call="atharva_theme_base.add_qv_cover_st"/>
+            <t t-call="atharva_theme_base.add_quick_add_to_cover_st"/>
+        </xpath>
+    </template>
+
+    <template id="quick_view" name="Quick View" inherit_id="website_sale.products_item">
+        <xpath expr="//div[hasclass('o_wsale_product_btn')]" position="inside">
+            <t t-call="atharva_theme_base.qv_icon_st"/>
+        </xpath>
+    </template>
+
+
+    <template id="get_product_qv_details_template" name="Get Product Quick View Details" inherit_id="atharva_theme_base.as_product_quick_view_holder">
+        <xpath expr="//div[hasclass('as_quick_view_detail')]" position="inside">
+            <t t-call="atharva_theme_base.product_qv_detail_st"/>
+        </xpath>
+    </template>
+</odoo>

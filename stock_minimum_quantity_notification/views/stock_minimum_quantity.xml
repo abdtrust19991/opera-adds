@@ -1,0 +1,62 @@
+<odoo>
+
+    <record id="stock_min_qty_view_form" model="ir.ui.view">
+        <field name="name">stock.minimum.quantity.view.form</field>
+        <field name="model">stock.minimum.quantity</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" type="object" name="toggle_active" icon="fa-archive">
+                                <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                            </button>
+                    </div>
+                    <group>
+                        <field name="name" readonly="1"/>
+                        <field name="product_id"/>
+                        <field name="min_qty"/>
+
+                    </group>
+                    <group>
+                         <field name="warehouse_ids" widget="many2many_tags"/>
+                        <field name="location_ids" widget="many2many_tags"/>
+                        <field name="user_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="stock_min_qty_view_tree" model="ir.ui.view">
+        <field name="name">stock.minimum.quantity.view.tree</field>
+        <field name="model">stock.minimum.quantity</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="min_qty"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="action_stock_min_qty" model="ir.actions.act_window">
+        <field name="name">Stock Qty Alerts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stock.minimum.quantity</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Add New Alert
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menuitem_stock_min_qty" name="Stock Qty Alerts" parent="stock.menu_stock_inventory_control"
+              action="action_stock_min_qty" sequence="1"/>
+
+
+</odoo>

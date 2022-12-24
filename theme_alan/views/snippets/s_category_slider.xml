@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="as_cat_slider" name="Category Slider">
+        <section class="as_cat_slider" data-collection_id="0" data-collection_name="NO COLLECTION SELECTED">NO COLLECTION SELECTED
+        </section>
+    </template>
+
+    <template id="s_category_slider_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="cat_slider_actions" data-selector=".as_cat_slider">
+                <we-button data-cat_slider_configure="" data-no-preview="true">Change Collection</we-button>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="assets_snippet_category_slider_000" inherit_id="website.assets_frontend">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_alan/static/src/snippets/s_category_slider/000.js"/>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_alan/static/src/snippets/s_category_slider/000.scss"/>
+        </xpath>
+    </template>
+</odoo>

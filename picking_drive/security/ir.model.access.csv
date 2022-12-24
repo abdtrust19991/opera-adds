@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+manager_res_drive,manager_res_drive_id,model_res_driver,,1,1,1,1

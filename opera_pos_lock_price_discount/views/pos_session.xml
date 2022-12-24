@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_pos_session_form_inherit" model="ir.ui.view">
+            <field name="name">pos.session.form.inherit</field>
+            <field name="model">pos.session</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_session_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//button[@id='end_session_opened']" position="attributes">
+                    <attribute name="name">action_pos_session_closing_control_mod</attribute>
+                </xpath>
+
+                <xpath expr="//button[@id='validate_opened']" position="attributes">
+                    <attribute name="name">action_pos_session_closing_control_mod</attribute>
+                </xpath>
+
+                <xpath expr="//button[@id='validate_closing_control']" position="attributes">
+                    <attribute name="name">action_pos_session_validate_mod</attribute>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

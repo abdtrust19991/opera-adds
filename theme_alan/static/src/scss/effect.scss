@@ -1,0 +1,246 @@
+.link-white a {
+	color: rgba(255,255,255,.7);
+	&:hover {
+		color: $as-white;
+	}
+}
+
+/* Box shadow
+---------------------------*/
+.box-shadow-lg {
+  box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+}
+.box-shadow {
+  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+}
+.box-shadow-hover {
+  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  &:hover {
+    box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+  }
+}
+
+.box-shadow-hover-only {
+  box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+    transform: translateY(-.5rem);
+}
+
+[class*=hover-] {
+    transition: all .2s ease-in-out;
+}
+
+/* Border-radius
+--------------------*/
+@for $i from 1 through 10 {
+  .border-bottom-#{$i} {
+    border-bottom: #{$i}px solid;
+  }
+  .border-top-#{$i} {
+    border-top: #{$i}px solid;
+  }
+  .border-right-#{$i} {
+    border-right: #{$i}px solid;
+  }
+  .border-left-#{$i} {
+    border-left: #{$i}px solid;
+  }
+  .border-#{$i} {
+    border: #{$i}px solid;
+  }
+}
+
+.border-color-gray {
+    border-color: #eee;
+}
+.border-color-white {
+    border-color: $as-white;
+}
+.border-color-white-alt {
+    border-color: rgba($as-white, 0.4);
+}
+.border-color-dark {
+    border-color: $as-dark;
+}
+.border-color-theme {
+    border-color: $as-theme;
+}
+
+/* Border-radius
+--------------------*/
+@for $i from 1 through 15 {
+  .border-radius-#{$i} {
+    border-radius: #{$i}px;
+  }
+}
+
+.border-radius-30 {
+  border-radius: 30px;
+}
+.border-radius-50 {
+  border-radius: 50%;
+}
+
+
+/* ----------------------
+* Grayscale Hover
+---------------------------*/
+.grayscale {
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.grayscale-hover {
+  img {
+    -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  &:hover {
+    img {
+      -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1;
+    }
+  }
+}
+
+.transition {
+  @include transition(ease-in-out all 0.35s);
+}
+
+
+/* Slide Hover
+-------------------*/
+.slide-hover {
+  position: relative;
+  overflow: hidden;
+  .slide-hover-in {
+    position: relative;
+    overflow: hidden;
+    &:after {
+      width: 100%;
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 0;
+      bottom: 0;
+      transition: ease all 0.35s;
+    }
+  }
+
+  &:hover {
+    .slide-hover-in:after {
+      left: 100%;
+    }
+  }
+}
+
+
+/* Hover Opacity
+-------------------*/
+.hover-opacity {
+  .hover-opacity-in {
+    opacity: 0;
+  }
+
+  .hover-opacity-in-down {
+    opacity: 0;
+    @include transition(ease all 0.35s);
+    @include transform(translateY(0px))
+  }
+
+  &:hover {
+    .hover-opacity-in {
+      opacity: 1;
+    }
+    .hover-opacity-in-down {
+      opacity: 1;
+      @include transform(translateY(30px))
+    }
+  }
+}
+
+
+
+
+/* Position
+-------------------*/
+.top-0 {
+  top: 0;
+}
+.left-0 {
+  left: 0;
+}
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+
+.all-0 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.o_editable {
+  .position-relative {
+    .position-absolute.all-0 {
+      &:not([href]),
+      &:not(button) {
+        pointer-events: none;
+        * {
+          pointer-events: auto;
+        }
+      }
+    }
+  }
+}
+
+/* Image Hover
+-------------------*/
+.hover-scale {
+  overflow: hidden;
+  img {
+    @include transition(ease-in-out all 0.20s);
+    @include scale(1);
+  }
+  &:hover {
+    img {
+      @include scale(1.1);
+    }
+  }
+}
+
+.hover-shine {
+  position: relative;
+  overflow: hidden;
+  &:after {
+      content: '';
+      position: absolute;
+      top: -30%;
+      left: -40%;
+      width: 0;
+      height: 200%;
+      background-color: rgba(255, 255, 255, 0.4);
+      pointer-events: none;
+      @include rotate(10);
+  }
+  &:hover {
+    &:after {
+      width: 140%;
+        background-color: rgba(255,255,255,0);
+        @include transition(ease-in-out all 0.85s);
+    }
+  }
+}
+
+/* Top Hover
+---------------------------*/
+.hover-top {
+  position: relative;
+  top: 0;
+  &:hover {
+    top:-10px;
+  }
+}

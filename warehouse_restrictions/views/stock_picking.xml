@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="view_stock_picking_type_form_inherit" model="ir.ui.view">
+            <field name="name">stock.picking.type.form.inherit</field>
+            <field name="model">stock.picking.type</field>
+            <field name="inherit_id" ref="stock.view_picking_type_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='warehouse_id']" position="after">
+                    <field name="allowed_users" widget="many2many_tags"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="action_picking_tree_all_inherit" model="ir.actions.act_window">
+            <field name="name">Stock Operations</field>
+            <field name="res_model">stock.picking</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,kanban,form,calendar</field>
+            <field name="domain">[('allowed_users','in',[uid])]</field>
+            <field name="context">{
+                'contact_display': 'partner_address',
+                }
+            </field>
+            <field name="search_view_id" ref="stock.view_picking_internal_search"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click here to create a new transfer.
+                </p>
+                <p>
+                    You can either do it immediately or mark it as Todo for future processing. Use your scanner to
+                    validate the transferred quantity quicker.
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menuitem_all_transfers" name="Transfers" parent="stock.menu_stock_warehouse_mgmt"
+                  action="action_picking_tree_all_inherit" sequence="1"/>
+
+        <record id="stock_picking_type_action_restrict" model="ir.actions.act_window">
+            <field name="name">Inventory</field>
+            <field name="res_model">stock.picking.type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">kanban,form</field>
+            <field name="domain">[('allowed_users','in',[uid])]</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a new operation type.
+                </p>
+                <p>
+                    The operation type system allows you to assign each stock
+                    operation a specific type which will alter its views accordingly.
+                    On the operation type you could e.g. specify if packing is needed by default,
+                    if it should show the customer.
+                </p>
+            </field>
+        </record>
+
+        <record id="stock.action_picking_tree_ready" model="ir.actions.act_window">
+            <field name="domain">[('picking_type_id','=',active_id)]</field>
+        </record>
+
+        <menuitem
+                action="stock_picking_type_action_restrict"
+                id="stock_picking_type_menu_restrict"
+                parent="stock.menu_stock_root" sequence="0"
+                name="Dashboard"/>
+
+
+    </data>
+</odoo>

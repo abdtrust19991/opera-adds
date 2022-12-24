@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_price_table_templates">
+
+<t t-name="theme_alab.price_table_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/price_table-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-40px-b md-m-25px-b sm-m-20px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="font-w-300 h2 dark-color">OUR PRICE</div>
+                                    <p class="font-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="box-shadow white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray">
+                                            <div class="dark-color h2 text-uppercase">Free</div>
+                                            <span class="small">STARTER</span>
+                                        </div>
+                                        <div class="p-30px-lr p-40px-tb text-uppercase">
+                                            <p class="p-5px-b">500GB Bandwidth</p>
+                                            <p class="p-5px-b">Financ Analysing </p>
+                                            <p class="p-5px-b">24hr support</p>
+                                            <p class="p-5px-b">Customer Managemet</p>
+                                            <div class="m-30px-t">
+                                                <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="box-shadow black-bg">
+                                        <div class="p-30px border-bottom-1 border-color-white-alt white-color-alt">
+                                            <div class="white-color h2 text-uppercase">$80</div>
+                                            <span class="small">STARTER</span>
+                                        </div>
+                                        <div class="p-30px-lr p-40px-tb text-uppercase white-color-alt">
+                                            <p class="p-5px-b">500GB Bandwidth</p>
+                                            <p class="p-5px-b">Financ Analysing </p>
+                                            <p class="p-5px-b">24hr support</p>
+                                            <p class="p-5px-b">Customer Managemet</p>
+                                            <div class="m-30px-t">
+                                                <a href="#" class="as-btn btn-sm as-btn-white">BUY NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="box-shadow white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray">
+                                            <div class="dark-color h2 text-uppercase">Free</div>
+                                            <span class="small">STARTER</span>
+                                        </div>
+                                        <div class="p-30px-lr p-40px-tb text-uppercase">
+                                            <p class="p-5px-b">500GB Bandwidth</p>
+                                            <p class="p-5px-b">Financ Analysing </p>
+                                            <p class="p-5px-b">24hr support</p>
+                                            <p class="p-5px-b">Customer Managemet</p>
+                                            <div class="m-30px-t">
+                                                <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="box-shadow white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray">
+                                            <div class="dark-color h2 text-uppercase">Free</div>
+                                            <span class="small">STARTER</span>
+                                        </div>
+                                        <div class="p-30px-lr p-40px-tb text-uppercase">
+                                            <p class="p-5px-b">500GB Bandwidth</p>
+                                            <p class="p-5px-b">Financ Analysing </p>
+                                            <p class="p-5px-b">24hr support</p>
+                                            <p class="p-5px-b">Customer Managemet</p>
+                                            <div class="m-30px-t">
+                                                <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- Container -->
+                    </section>
+                </textarea>
+                <h6>Price Table 1</h6>
+                <label class="e-sb-label" for="e_price_table_01"><input id="e_price_table_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alab.price_table_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/price_table-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row justify-content-center m-40px-b md-m-25px-b sm-m-20px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="font-w-300 after-50px theme-after h1 dark-color p-25px-b m-25px-b">Pricing Table</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center">
+                                            <div class="theme-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="dark-color h1 font-w-600">$10.00</div>
+                                            <span class="small">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center">
+                                            <div class="theme-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="dark-color h1 font-w-600">$10.00</div>
+                                            <span class="small">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center">
+                                            <div class="theme-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="dark-color h1 font-w-600">$10.00</div>
+                                            <span class="small">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center">
+                                            <div class="theme-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="dark-color h1 font-w-600">$10.00</div>
+                                            <span class="small">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-dark">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- Container -->
+                    </section>
+                </textarea>
+                <h6>Price Table 2</h6>
+                <label class="e-sb-label" for="e_price_table_02"><input id="e_price_table_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alab.price_table_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/price_table-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section">
+                        <div class="container">
+                            <div class="row justify-content-center m-40px-b md-m-25px-b sm-m-20px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="font-w-300 after-50px theme-after h1 dark-color p-25px-b m-25px-b">Pricing Table</div>
+                                    <p class="m-0px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg hover-top transition box-shadow-hover">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center theme-bg">
+                                            <div class="white-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="white-color h1 font-w-600">$10.00</div>
+                                            <span class="small white-color-alt">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-theme">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg hover-top transition box-shadow-hover">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center theme-bg">
+                                            <div class="white-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="white-color h1 font-w-600">$10.00</div>
+                                            <span class="small white-color-alt">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-theme">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg hover-top transition box-shadow-hover">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center theme-bg">
+                                            <div class="white-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="white-color h1 font-w-600">$10.00</div>
+                                            <span class="small white-color-alt">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-theme">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray white-bg hover-top transition box-shadow-hover">
+                                        <div class="p-30px border-bottom-1 border-color-gray text-center theme-bg">
+                                            <div class="white-color font-w-500 p-10px-b">Basic Plan</div>
+                                            <div class="white-color h1 font-w-600">$10.00</div>
+                                            <span class="small white-color-alt">First Time Free</span>
+                                        </div>
+                                        <div class="p-20px text-center">
+                                            <p class="m-10px-tb">500GB Bandwidth</p>
+                                            <p class="m-10px-tb">Financ Analysing </p>
+                                            <p class="m-10px-tb">24hr support</p>
+                                            <p class="m-10px-tb">Customer Managemet</p>
+                                        </div>
+                                        <div class="p-20px text-center border-top-1 border-color-gray">
+                                            <a href="#" class="as-btn as-btn as-btn-theme">BUY NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Price Table 3</h6>
+                <label class="e-sb-label" for="e_price_table_03"><input id="e_price_table_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alab.price_table_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/price_table-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f6f6ff;">
+                        <div class="container">
+                            <div class="row justify-content-center m-45px-b sm-m-25px-b">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h1 dark-color text-uppercase font-w-600">Membership</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-15px-lr p-35px-tb text-center white-bg">
+                                        <div class="h2 theme-color font-w-600 m-30px-b">$250/<span class="font-20">mo</span></div>
+                                        <p>Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut labore.</p>
+                                        <div class="font-w-600 dark-color h5 m-25px-tb">Junior</div>
+                                        <a class="as-btn as-btn-theme" href="#">Join Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-15px-lr p-35px-tb text-center white-bg">
+                                        <div class="h2 theme-color font-w-600 m-30px-b">$350/<span class="font-20">mo</span></div>
+                                        <p>Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut labore.</p>
+                                        <div class="font-w-600 dark-color h5 m-25px-tb">Individual</div>
+                                        <a class="as-btn as-btn-theme" href="#">Join Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-15px-lr p-35px-tb text-center white-bg">
+                                        <div class="h2 theme-color font-w-600 m-30px-b">$450/<span class="font-20">mo</span></div>
+                                        <p>Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut labore.</p>
+                                        <div class="font-w-600 dark-color h5 m-25px-tb">Family</div>
+                                        <a class="as-btn as-btn-theme" href="#">Join Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 m-15px-tb">
+                                    <div class="border-1 border-color-gray p-15px-lr p-35px-tb text-center white-bg">
+                                        <div class="h2 theme-color font-w-600 m-30px-b">$550/<span class="font-20">mo</span></div>
+                                        <p>Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut labore.</p>
+                                        <div class="font-w-600 dark-color h5 m-25px-tb">Group</div>
+                                        <a class="as-btn as-btn-theme" href="#">Join Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Price Table 4</h6>
+                <label class="e-sb-label" for="e_price_table_04"><input id="e_price_table_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

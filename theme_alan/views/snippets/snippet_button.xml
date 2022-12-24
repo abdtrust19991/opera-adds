@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options" name="Custom button" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='OptionsTab']//we-select[@data-variable='btn-secondary-outline']" position="after">
+            <we-select string="Custom button" data-variable="custom-buttom">
+            <we-button title="Custom_button_0"
+                data-name="button_custom0_opt"
+                data-customize-website-views="theme_alan.custom_button_0"
+                data-customize-website-variable="'custombtn0'">Default</we-button>
+            <we-button title="Custom_button_1"
+                data-name="button_custom1_opt"
+                data-customize-website-views="theme_alan.custom_button_1"
+                data-customize-website-variable="'custombtn1'">Button style 1</we-button>
+            <we-button title="Custom_button_2"
+                data-name="button_custom2_opt"
+                data-customize-website-views="theme_alan.custom_button_2"
+                data-customize-website-variable="'custombtn2'">Button style 2</we-button>
+            <we-button title="Custom_button_3"
+                data-name="button_custom3_opt"
+                data-customize-website-views="theme_alan.custom_button_3"
+                data-customize-website-variable="'custombtn3'">Button style 3</we-button>
+            <we-button title="Custom_button_4"
+                data-name="button_custom4_opt"
+                data-customize-website-views="theme_alan.custom_button_4"
+                data-customize-website-variable="'custombtn4'">Button style 4</we-button>
+            <we-button title="Custom_button_5"
+                data-name="button_custom5_opt"
+                data-customize-website-views="theme_alan.custom_button_5"
+                data-customize-website-variable="'custombtn5'">Button style 5</we-button>
+            <we-button title="Custom_button_6"
+                data-name="button_custom6_opt"
+                data-customize-website-views="theme_alan.custom_button_6"
+                data-customize-website-variable="'custombtn6'">Button style 6</we-button>
+            <we-button title="Custom_button_7"
+                data-name="button_custom7_opt"
+                data-customize-website-views="theme_alan.custom_button_7"
+                data-customize-website-variable="'custombtn7'">Button style 7</we-button>
+            <we-button title="Custom_button_8"
+                data-name="button_custom8_opt"
+                data-customize-website-views="theme_alan.custom_button_8"
+                data-customize-website-variable="'custombtn8'">Button style 8</we-button>
+            <we-button title="Custom_button_9"
+                data-name="button_custom9_opt"
+                data-customize-website-views="theme_alan.custom_button_9"
+                data-customize-website-variable="'custombtn9'">Button style 9</we-button>
+            <we-button title="Custom_button_10"
+                data-name="button_custom10_opt"
+                data-customize-website-views="theme_alan.custom_button_10"
+                data-customize-website-variable="'custombtn10'">Button style 10</we-button>
+            <we-button title="Custom_button_11"
+                data-name="button_custom11_opt"
+                data-customize-website-views="theme_alan.custom_button_11"
+                data-customize-website-variable="'custombtn11'">Button style 11</we-button>
+            </we-select>
+        </xpath>
+    </template>
+</odoo>

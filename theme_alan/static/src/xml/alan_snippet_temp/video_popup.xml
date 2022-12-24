@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_video_popup_templates">
+
+<t t-name="theme_alan.video_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/video_popup-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/ac-11.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 text-center">
+                                    <div class="white-color h1 m-20px-b font-w-600">Video Tour Alan Academy</div>
+                                    <p class="white-color-alt lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                    <div class="p-25px-t">
+                                        <a class="video-btn white popup-youtube" href="https://www.youtube.com/watch?v=1jtbGjqiYmI"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Video Popup</h6>
+                <label class="e-sb-label" for="e_video_popup_01"><input id="e_video_popup_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

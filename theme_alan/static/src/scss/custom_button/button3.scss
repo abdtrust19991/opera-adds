@@ -1,0 +1,105 @@
+.as-btn {
+    border-radius: 3px;
+    font-size: 14px;
+    border: 2px solid;
+    padding: 10px 25px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: none;
+    outline: none;
+    display: inline-block;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &:not(:disabled),
+    &:not(.disabled) {
+        &:hover {
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.26);
+        }
+        &:focus {
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.26) !important;   
+        }
+    }
+    &.btn-lg {
+        padding: 12px 35px;
+        font-size: 14px;
+    }
+    &.btn-sm {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    &.as-btn-white {
+        background: transparent;
+        color: $as-white;
+        border-color: $as-white;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:hover {
+                color: $as-dark;
+                border-color: $as-white;
+                background: $as-white;
+            }
+        }
+    }
+
+    &.as-btn-dark {
+        background: transparent;
+        color: $as-dark;
+        border-color: $as-dark;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:hover {
+                background: $as-dark !important;
+                color: $as-white !important;
+                border-color: $as-dark !important;
+            }
+        }
+    }
+    &.as-btn-theme {
+        background: transparent;
+        color: $as-theme;
+        border-color: $as-theme;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:hover {
+                background: $as-theme !important;
+                color: $as-white !important;
+                border-color: $as-theme !important;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background: transparent;
+        color: $as-dark;
+        border-color: $as-dark;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:hover {
+                background: $as-dark !important;
+                color: $as-white !important;
+                border-color: $as-dark !important;
+            }
+        }
+    }
+    &.btn-primary {
+        background: transparent;
+        color: $as-theme;
+        border-color: $as-theme;
+        &:not(:disabled),
+        &:not(.disabled) {
+            &:active,
+            &:hover {
+                background: $as-theme !important;
+                color: $as-white !important;
+                border-color: $as-theme !important;
+            }
+        }
+    }
+}

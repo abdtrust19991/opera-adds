@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates id="as_call_to_action_templates">
+
+<t t-name="theme_alan.cta_temp1">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-1.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb" style="background-color:#000;">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9 text-center">
+                                    <div class="m-25px-b h3 white-color font-w-300">AWESOME THEME FOR YOUR BUSINESS WEBSITE</div>
+                                    <a class="as-btn as-btn-white" href="#">Call us now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 1</h6>
+                <label class="e-sb-label" for="e_cta_01"><input id="e_cta_01" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp2">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-2.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f1f1f1;">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <div class="m-30px-b">
+                                        <img src="http://odoo-snippets.atharvasystem.com/source/img/planet-earth.png" />
+                                    </div>
+                                    <div class="dark-color h2 m-20px-b font-w-500">
+                                        Get Start With Alan.
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    <div class="m-30px-t">
+                                        <a class="as-btn as-btn-theme as-btn as-btn-radius" href="#">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 2</h6>
+                <label class="e-sb-label" for="e_cta_02"><input id="e_cta_02" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp3">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-3.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section bg-cover bg-cover bg-no-repeat bg-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/alan-business-bg-6.jpg);">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <div class="white-color h2 font-w-500 m-30px-b">
+                                        Alan is one of the most powerful, amazing and flexible theme on Odoo store.
+                                    </div>
+                                    <a class="as-btn as-btn-white" href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 3</h6>
+                <label class="e-sb-label" for="e_cta_03"><input id="e_cta_03" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp4">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-4.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f1f1f1;">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <div class="h3 font-w-600 dark-color m-30px-b">
+                                        ALAN IS ONE OF THE MOST POWERFUL, AMAZING AND FLEXIBLE THEME ON ODOO STORE.
+                                    </div>
+                                    <a class="as-btn as-btn-dark" href="#">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 4</h6>
+                <label class="e-sb-label" for="e_cta_04"><input id="e_cta_04" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp5">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-5.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section" style="background-color: #f1f1f1;">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <div class="dark-color h2 m-20px-b font-w-600">
+                                        Get Start With Alan.
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    <div class="m-30px-t">
+                                        <a class="as-btn as-btn-theme as-btn as-btn-radius" href="#">GET STARTED</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 5</h6>
+                <label class="e-sb-label" for="e_cta_05"><input id="e_cta_05" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp6">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-6.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-50px-tb theme-bg alan-callto-action-1">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9 text-center">
+                                    <div class="m-30px-b h3 font-w-600 white-color">Looking for a constructor for your next project?</div>
+                                    <a class="as-btn as-btn-white" href="#">Call us now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 6</h6>
+                <label class="e-sb-label" for="e_cta_06"><input id="e_cta_06" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp7">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-7.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section p-0px-b" style="background: #1b1d18;">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 m-15px-tb">
+                                    <div class="h2 font-w-600 white-color m-20px-b">HAVE EXTRA WEIGHT?</div>
+                                    <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p>Take the First Step to Help <span class="font-w-600 theme-color">(800) 123 4567</span></p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn as-btn-theme" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 text-center m-15px-t">
+                                    <img src="http://odoo-snippets.atharvasystem.com/source/img/g-15.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 7</h6>
+                <label class="e-sb-label" for="e_cta_07"><input id="e_cta_07" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp8">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-8.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/g-3.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 text-center text-lg-left m-15px-tb">
+                                    <div class="font-w-600 h1 font-w-600 white-color">FITNESS CLASSES THIS SUMMER.</div>
+                                    <div class="h5 white-color-alt">PAY NOW AND GET <span class="font-w-600 h3 theme-color">35%</span> DISCOUNT.</div>
+                                </div>
+                                <div class="col-lg-4 m-15px-tb text-center text-lg-right">
+                                    <a href="#" class="as-btn as-btn-white">Become a Membur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 8</h6>
+                <label class="e-sb-label" for="e_cta_08"><input id="e_cta_08" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp9">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-9.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/h-3.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="h1 dark-color font-w-500 m-15px-b">Get Online Consultation</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <p>Take the First Step to Help <span class="font-w-600 theme-color">(800) 123 4567</span></p>
+                                    <div class="p-20px-t">
+                                        <a class="as-btn as-btn-theme" href="#">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 9</h6>
+                <label class="e-sb-label" for="e_cta_09"><input id="e_cta_09" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp10">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-10.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section p-0px-b" style="background: #dccfbe;">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 text-center">
+                                    <div class="h1 font-w-600 dark-color m-25px-b">Apply for Admission</div>
+                                    <p class="dark-color-alt font-w-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-theme" href="#">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="http://odoo-snippets.atharvasystem.com/source/img/care-15.jpg" />
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 10</h6>
+                <label class="e-sb-label" for="e_cta_10"><input id="e_cta_10" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp11">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-11.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-60px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/cli-9.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-lg-7 m-15px-tb">
+                                    <div class="media">
+                                        <div class="icon-60px white-color">
+                                            <i class="fa fa-phone fa-2x"></i>
+                                        </div>
+                                        <div class="media-body p-20px-l">
+                                            <div class="h3 white-color m-10px-b font-w-600">Schedule Appointment</div>
+                                            <p class="white-color-alt">Our clinic offers comprehensive solutions for all of your dental needs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 text-center text-lg-right m-15px-tb">
+                                    <a class="as-btn as-btn-white" href="#">Book Appintment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 11</h6>
+                <label class="e-sb-label" for="e_cta_11"><input id="e_cta_11" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp12">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-12.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-60px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/cli-9.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 text-center">
+                                    <div class="white-color h1 font-w-600 m-20px-b">Dr. John Boss</div>
+                                    <p class="lead white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                                    <div class="p-10px-t">
+                                        <a class="as-btn as-btn-white" href="#">Book Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 12</h6>
+                <label class="e-sb-label" for="e_cta_12"><input id="e_cta_12" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp13">
+<div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/cta-13.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="s_parallax parallax s_parallax_is_fixed">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/wine-6.jpg'); background-position: 50% 75%;"></span>
+                    <div class="container">
+                        <div class="row align-items-center text-center justify-content-center screen-85 section">
+                            <div class="col-lg-9 p-10-tb">
+                                <div class="display-4 white-color m-25px-b font-w-600">WINE FOR EVERYONE</div>
+                                <p class="white-color-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-white" href="#">Explore our region</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Call To Action 13</h6>
+            <label class="e-sb-label" for="e_cta_13"><input id="e_cta_13" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+</div>
+</t>
+<t t-name="theme_alan.cta_temp14">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-14.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="section s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/sport-5.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-9 text-center text-lg-left m-15px-tb">
+                                    <div class="white-color h1 m-0px font-w-600">Tennis your stress away in the fresh air!</div>
+                                </div>
+                                <div class="col-lg-3 text-center m-15px-tb text-lg-right">
+                                    <a class="as-btn as-btn-white" href="#">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 14</h6>
+                <label class="e-sb-label" for="e_cta_14"><input id="e_cta_14" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp15">
+    <div class="col-md-3">
+    <div class="e_sb_snnippet_box">
+        <div class="img">
+            <img src="/theme_alan/static/src/icon/cta-15.jpg" />
+        </div>
+        <div class="snippet-as">
+            <textarea class="sr-only snippet-textarea">
+                <section class="section p-0px-b" style="background-color: #f1f1f1;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="box-shadow p-30px sm-p-20px white-bg border-radius-5">
+                                    <div class="h4 dark-color font-w-600 m-15px-b">Opening Hours</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                    <div class="border-1 border-color-gray p-15px-lr m-25px-b">
+                                        <div class="row p-10px-tb border-bottom-1 border-color-gray">
+                                            <div class="col-6"><span class="theme-color">Monday to Friday :</span></div>
+                                            <div class="col-6 text-right"><span class="dark-color font-w-600">09:00 – 20:00 hrs</span></div>
+                                        </div>
+                                        <div class="row p-10px-tb border-bottom-1 border-color-gray">
+                                            <div class="col-6"><span class="theme-color">Saturday :</span></div>
+                                            <div class="col-6 text-right"><span class="dark-color font-w-600">09:00 – 18:00 hrs</span></div>
+                                        </div>
+                                        <div class="row p-10px-tb">
+                                            <div class="col-6"><span class="theme-color">Sunday :</span></div>
+                                            <div class="col-6 text-right"><span class="dark-color font-w-600">09:00 – 18:00 hrs*</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom-1 border-color-gray p-25px-b m-25px-b">Check out seasonal discounts for registered users.</div>
+                                    <div class="h5 font-w-600 dark-color m-25px-b">Need to relax? Want a recharge?</div>
+                                    <a class="as-btn as-btn-theme as-btn" href="#"> FIX AN APPOINTMENT</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="http://odoo-snippets.atharvasystem.com/source/img/spa-14.png" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </textarea>
+            <h6>Call To Action 15</h6>
+            <label class="e-sb-label" for="e_cta_15"><input id="e_cta_15" name="radio-snippet" type="radio" /><span /></label>
+        </div>
+    </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp16">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-16.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-45px-tb text-center" style="background-color: #111;">
+                        <div class="container">
+                            <a class="as-btn as-btn-white" href="#"><i class="fa fa-paper-plane"></i> Get A Free Quote Online Now!</a>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 16</h6>
+                <label class="e-sb-label" for="e_cta_16"><input id="e_cta_16" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp17">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-17.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-80px-tb s_parallax parallax s_parallax_is_fixed">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/movers-7.jpg'); background-position: 50% 75%;"></span>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <div class="white-color h2 font-w-600 m-10px-b ">MOVER PROFESSIONAL MOVING COMPANY IN</div>
+                                        <p class="h5 white-color-alt">NEWYORK, FLORIDA, LAS VEGAS &amp; CALIFONIA</p>
+                                        <div class="btn-bar p-20px-t">
+                                            <a href="#" class="as-btn as-btn-white"> Call Us Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 17</h6>
+                <label class="e-sb-label" for="e_cta_17"><input id="e_cta_17" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp18">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-18.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="p-80px-tb bg-fixed bg-no-repeat bg-cover bg-center-center" style="background-image: url(http://odoo-snippets.atharvasystem.com/source/img/movers-7.jpg);">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 text-center text-lg-left p-15px-tb">
+                                    <div class="white-color h2 font-w-600 m-10px-b ">GET A FREE QUOTE ONLINE NOW</div>
+                                    <p class="h5 font-w-400 white-color-alt">so why are you waiting?</p>
+                                </div>
+                                <div class="col-lg-4 text-center text-lg-right p-15px-tb">
+                                    <a href="#" class="as-btn as-btn-white"> Call Us Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 18</h6>
+                <label class="e-sb-label" for="e_cta_18"><input id="e_cta_18" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp19">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-19.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="overflow-hidden section s_parallax parallax s_parallax_is_fixed border-bottom-1 border-color-gray border-top-1" data-scroll-background-ratio="1" data-name="Parallax">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-5.jpg'); background-position: 50% 75%;">
+                    </span>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <h6 class="white-color h3">Need help?</h6>
+                                <h5 class="display-4 white-color font-w-700">Check Our Community Forum</h5>
+                                <div class="p-20px-t">
+                                    <a class="as-btn as-btn-theme" href="#">Go to Forum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 19</h6>
+                <label class="e-sb-label" for="e_testimonial_19"><input id="e_testimonial_19" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp20">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-20.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section class="overflow-hidden section s_parallax parallax s_parallax_is_fixed border-bottom-1 border-color-gray border-top-1" data-scroll-background-ratio="1" data-name="Parallax">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('http://odoo-snippets.atharvasystem.com/source/img/alan-13-banner-6.jpg'); background-position: 50% 75%;">
+                    </span>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4">
+                                <div class="media align-items-center">
+                                    <div class="icon-60px border-radius-5 white-bg theme-color text-center">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h6 class="white-color">Call us</h6>
+                                        <h5 class="h4 white-color font-w-700 m-0px">+01 511-522-133</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="media align-items-center">
+                                    <div class="icon-60px border-radius-5 white-bg theme-color text-center">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h6 class="white-color">send e-mail</h6>
+                                        <h5 class="h4 white-color font-w-700 m-0px">support@domain.com</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="media align-items-center">
+                                    <div class="icon-60px border-radius-5 white-bg theme-color text-center">
+                                        <i class="fa fa-whatsapp"></i>
+                                    </div>
+                                    <div class="media-body p-15px-l">
+                                        <h6 class="white-color">WhatsApp</h6>
+                                        <h5 class="h4 white-color font-w-700 m-0px">+01 511-522-133</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 20</h6>
+                <label class="e-sb-label" for="e_testimonial_20"><input id="e_testimonial_20" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+<t t-name="theme_alan.cta_temp21">
+    <div class="col-md-3">
+        <div class="e_sb_snnippet_box">
+            <div class="img">
+                <img src="/theme_alan/static/src/icon/cta-21.jpg" />
+            </div>
+            <div class="snippet-as">
+                <textarea class="sr-only snippet-textarea">
+                    <section>
+                    <div class="container">
+                        <section class="bg-cover bg-center bg-no-repeat p-20px-tb" style="background-image: url(http://demo2.ninethemes.net/zeexo/opencart/29/image/catalog/zeexo/glasses/5/banner-05.jpg);">
+                            <div class="row align-items-center justify-content-center no-gutters">
+                                <div class="col-lg-auto m-15px-tb">
+                                    <h3 class="white-color font-w-700 display-4 p-15px-lr m-0px">HUGE SALE</h3>
+                                </div>
+                                <div class="col-lg-auto m-15px-tb">
+                                    <a class="m-15px-lr as-btn as-btn-white" href="#">Shop Now</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    </section>
+                </textarea>
+                <h6>Call To Action 21</h6>
+                <label class="e-sb-label" for="e_testimonial_21"><input id="e_testimonial_21" name="radio-snippet" type="radio" /><span /></label>
+            </div>
+        </div>
+    </div>
+</t>
+
+</templates>

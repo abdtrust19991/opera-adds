@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="faq_form" model="ir.ui.view">
+        <field name="name">faq.form</field>
+        <field name="model">faq</field>
+        <field name="arch" type="xml">
+            <form string="FAQ">
+                <sheet>
+                    <group>
+                        <field name="question"/>
+                        <field name="answer"/>
+                        <field name="website_id"/>
+                        <field name="is_published"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="faq_tree" model="ir.ui.view">
+        <field name="name">faq.tree</field>
+        <field name="model">faq</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="question"/>
+                <field name="website_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_faq" model="ir.actions.act_window">
+        <field name="name">FAQ</field>
+        <field name="res_model">faq</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="faq_main_menu" name="FAQs" parent="website.menu_website_configuration" sequence="9" />
+    <menuitem id="faq_menu" name="FAQ" action="action_faq" parent="faq_main_menu" sequence="2" />
+</odoo>
